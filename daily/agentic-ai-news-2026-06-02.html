@@ -1,0 +1,62 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-06-02</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-06-02</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">AWS</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-06-02.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🔹 <strong>GitHub Copilot CLI เพิ่ม rubber duck, prompt scheduling และ voice input</strong>: Changelog 2 มิ.ย. ระบุว่า Copilot CLI refresh มี second-opinion agent, <code>/every</code> และ <code>/after</code> สำหรับ schedule prompt, voice input และ UI ทดลองแบบใหม่. แหล่งที่มา: <a href="https://github.blog/changelog/2026-06-02-copilot-cli-improved-ui-rubber-duck-prompt-scheduling-and-voice-input/" target="_blank" rel="noreferrer">GitHub Changelog: Copilot CLI</a></p>
+<p>🔹 <strong>GitHub Copilot app technical preview ขยายวงและรองรับ skills/scheduled automations</strong>: แอป desktop สำหรับ agent-native software development เปิดให้เริ่มจาก local folder, เลือกโมเดล, ต่อ MCP servers และ package recurring work เป็น reusable skills/scheduled automations. แหล่งที่มา: <a href="https://github.blog/changelog/2026-06-02-expanded-technical-preview-availability-for-the-github-copilot-app/" target="_blank" rel="noreferrer">GitHub Changelog: Copilot app preview</a></p>
+<p>🔹 <strong>AWS AgentOps ยังเป็น source หลักของ production readiness วันนี้</strong>: โพสต์ 1 มิ.ย. เหมาะใช้เป็น checklist สำหรับการคุม governance, eval และ observability ของ agent ก่อนเปิดใช้จริง. แหล่งที่มา: <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS AgentOps with Bedrock AgentCore</a></p>
+<p>🔹 <strong>ข่าว/โพสต์จากชุมชนไทย: Techsauce เผยงาน Marketing Oops Summit 2026 ธีม Intelligence in Action</strong>: บริบทไทยคือองค์กรกำลังพูดเรื่องใช้ AI/data intelligence ในงานจริง แต่ไม่ใช่ technical announcement. แหล่งที่มา: <a href="https://techsauce.co/pr-news/marketing-oops-summit-2026-intelligence" target="_blank" rel="noreferrer">Techsauce</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🔹 <strong>Copilot CLI กำลังกลายเป็น automation surface</strong>: <code>/every</code> และ <code>/after</code> ทำให้ coding assistant ขยับจาก chat/agent session ไปสู่ scheduled workflow ใกล้ automation มากขึ้น.</p>
+<p>🔹 <strong>Rubber duck agent คือ review loop ในตัว</strong>: เหมาะกับงาน plan/design/test review แต่ยังต้องมี human review ก่อน merge หรือ deploy.</p>
+<p>🔹 <strong>Copilot app เริ่มคล้าย agent workspace</strong>: local folder context, MCP, skills และ scheduled automations เป็นสัญญาณว่า workplace coding agents จะถูกจัดการเป็น package มากขึ้น.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>🔹 <strong>ลอง Copilot CLI scheduling กับงาน read-only ก่อน</strong>: เช่น <code>every morning summarize open PRs</code> หรือ <code>after tests finish explain failures</code>; หลีกเลี่ยงคำสั่ง write/deploy ในช่วงทดลอง.</p>
+<p>🔹 <strong>อ่าน GitHub app preview เพื่อเทียบกับ Codex automation</strong>: จุดที่ควรเทียบคือ scheduled run, local workspace, skills, MCP, audit และ approval flow.</p>
+<p>🔹 <strong>ใช้ AWS AgentOps เป็น baseline สำหรับ Copilot automation</strong>: แม้เป็นคนละ platform แต่หลักการ trace/cost/eval/approval ใช้ได้เหมือนกัน.</p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🔹 <strong>สถานการณ์: ต้อง review งาน agent ก่อนลงมือ</strong>; <strong>แพตเทิร์น: rubber-duck handoff</strong>; template: <code>ส่ง plan + assumptions + risky files + proposed tests ให้ reviewer agent แล้วขอ only blockers</code>; verify ด้วย human final review.</p>
+<p>🔹 <strong>สถานการณ์: recurring coding workflow</strong>; <strong>แพตเทิร์น: scheduled prompt with read-only scope</strong>; ตัวอย่าง: <code>/every weekday 09:00 summarize unresolved PR review comments and failing checks</code>; caveat คืออย่าให้ schedule push/merge เอง.</p>
+<p>🔹 <strong>สถานการณ์: ทำ skill ซ้ำใน Copilot/Codex</strong>; <strong>แพตเทิร์น: skill card</strong>; ใส่ <code>trigger</code>, <code>allowed tools</code>, <code>inputs</code>, <code>output format</code>, <code>verification</code>; ทดสอบกับ repo sandbox ก่อนใช้กับ repo จริง.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🔹 <strong>Copilot กลายเป็นระบบที่ต้องมี automation governance</strong>: scheduling, MCP และ skills ต้องมี policy เหมือน workflow engine ไม่ใช่แค่ developer extension.</p>
+<p>🔹 <strong>Second-opinion agent ลดบาง error แต่ไม่ใช่ control สุดท้าย</strong>: reviewer agent อาจ share blind spot เดียวกับ main agent จึงควรใช้ test/eval/log ควบคู่.</p>
+<p>🔹 <strong>กำหนด safe automation tiers</strong>: tier 1 read-only summary, tier 2 draft patch, tier 3 PR with tests, tier 4 deploy/merge ต้องมี approval และ audit เข้มสุด.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🔹 <strong>ข่าว/โพสต์จากชุมชนไทย: Techsauce event สะท้อน AI adoption ฝั่งธุรกิจไทย</strong>: เหมาะติดตาม use case และ stakeholder language สำหรับคุยกับองค์กรไทย.</p>
+<p>🔹 <strong>ข่าว/โพสต์จากชุมชนไทย: Blognone ยังเป็นช่องตามข่าว Copilot/AI developer ภาษาไทย</strong>: ใช้สรุปให้ทีมไทยอ่านเร็ว แต่ต้องแนบ GitHub Changelog เป็นต้นทาง. แหล่งที่มา: <a href="https://www.blognone.com/topics/github-copilot" target="_blank" rel="noreferrer">Blognone GitHub Copilot</a></p>
+<p>🔹 <strong>ยังไม่พบ public Facebook/community post ที่ควรยกเป็น technical source หลัก</strong>: รายงานวันนี้จึงใช้ Thai web sources ที่ตรวจสอบย้อนกลับได้.</p>
+<p>👥 Team Flow: 🧭 Cody 🟡✅ › 🔍 Lek 🟡✅</p>
+  </main>
+</body>
+</html>

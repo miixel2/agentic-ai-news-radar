@@ -1,0 +1,58 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-05-26</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-05-26</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">AWS</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-05-26.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🔹 <strong>AgenticVBench เปิดโจทย์ eval ใหม่สำหรับ multimodal agents</strong>: arXiv เผยแพร่ benchmark งาน post-production วิดีโอ 100 tasks จาก workflow จริงของผู้เชี่ยวชาญ ครอบคลุม text, image, audio, video, long-horizon planning และ tool use. แหล่งที่มา: <a href="https://arxiv.org/abs/2605.27705" target="_blank" rel="noreferrer">arXiv</a></p>
+<p>🔹 <strong>AWS Bedrock AgentCore ยังเป็น reference สำคัญของ agent infra</strong>: release notes เดือน พ.ค. ระบุ official MCP server สำหรับ Runtime, Memory, Browser และ Code Interpreter ช่วยให้ coding agents เรียกใช้ AgentCore ผ่าน MCP-compatible clients ได้. แหล่งที่มา: <a href="https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/release-notes.html" target="_blank" rel="noreferrer">AWS AgentCore release notes</a></p>
+<p>🔹 <strong>Microsoft Agent Framework May releases ย้ำทิศทาง security-first agent harness</strong>: รุ่นเดือน พ.ค. เพิ่ม shell/Docker execution, memory/todo/session context providers, approval-mode enforcement และ prompt-injection defense. แหล่งที่มา: <a href="https://github.com/microsoft/agent-framework/releases" target="_blank" rel="noreferrer">Microsoft Agent Framework Releases</a></p>
+<p>🔹 <strong>OpenAI Agents SDK ยังเป็น baseline ของ long-running harness</strong>: ชุด SDK evolution เน้น sandbox execution, memory, MCP, skills, <code>AGENTS.md</code>, shell และ patch tools ซึ่งตรงกับ pattern ที่หลาย framework กำลังตาม. แหล่งที่มา: <a href="https://openai.com/index/the-next-evolution-of-the-agents-sdk" target="_blank" rel="noreferrer">OpenAI Agents SDK</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🔹 <strong>agent eval ต้องสะท้อน workflow จริงมากขึ้น</strong>: AgenticVBench แสดงว่าการวัด agent จาก task สั้น ๆ ไม่พอสำหรับงาน multimodal ที่ต้องวางแผนหลายขั้นและใช้เครื่องมือหลายแบบ.</p>
+<p>🔹 <strong>production agent ไม่ใช่แค่ model selection</strong>: ต้องรวม harness, sandbox, memory, identity, observability และ policy control เป็นสถาปัตยกรรมเดียว.</p>
+<p>🔹 <strong>MCP เริ่มเป็น operational interface</strong>: เมื่อ AWS และ Microsoft รองรับ MCP ใน release path จริง ทีม enterprise ต้องออกแบบ MCP gateway เหมือนระบบ integration หลัก.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>🔹 <strong>อ่าน AgenticVBench เพื่อดูวิธีผสม programmatic verifier กับ expert rubric</strong>: เหมาะสำหรับทีมที่สร้าง agent ด้านเอกสาร วิดีโอ marketing หรือ media operations. แหล่งที่มา: <a href="https://arxiv.org/abs/2605.27705" target="_blank" rel="noreferrer">arXiv</a></p>
+<p>🔹 <strong>ทำ checklist readiness ของ agent infra</strong>: runtime isolation, allowed tools, memory write policy, audit trace, human approval และ rollback path.</p>
+<p>🔹 <strong>เทียบ AWS AgentCore กับ stack ที่ใช้อยู่</strong>: ดูว่าส่วนใดของ runtime/memory/browser/code execution ยังเป็น custom glue ที่เสี่ยงเกินจำเป็น. แหล่งที่มา: <a href="https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/release-notes.html" target="_blank" rel="noreferrer">AWS AgentCore release notes</a></p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🔹 <strong>ออกแบบ evaluation ก่อนเปิด production</strong>: สำหรับ agent ที่ลงมือทำจริง ควรมี scenario tests, trace review, tool-call assertions และ failure taxonomy ก่อน rollout.</p>
+<p>🔹 <strong>แยก tool permission ตาม blast radius</strong>: read-only, write, external action, financial/production action ควรมี policy และ approval ต่างกัน.</p>
+<p>🔹 <strong>เลือก framework จาก operational fit</strong>: ถ้าองค์กรอยู่ Azure/.NET ให้ดู Microsoft Agent Framework; ถ้าอยู่ AWS ให้ดู AgentCore; ถ้าต้องการ framework-agnostic tracing/evals ให้ดู LangSmith/OpenTelemetry-style patterns.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🔹 <strong>ยังไม่พบข่าวไทยสดวันที่ 26 ที่มี technical depth สูงพอ</strong>: แหล่งไทยที่เกี่ยวข้องในช่วงนี้ยังเป็นบทความสรุปเชิง adoption มากกว่าประกาศทางเทคนิค.</p>
+<p>🔹 <strong>บทเรียนสำหรับทีมไทย</strong>: ใช้วันข่าวเบาเป็นเวลาทบทวน governance ของ agent โดยเฉพาะ PDPA, log retention, prompt/tool injection และ human accountability.</p>
+<p>🔹 <strong>ข่าว/โพสต์จากชุมชนไทย</strong>: ไม่พบ public Facebook/community post ที่เข้าถึงได้และมี source/code/benchmark เพียงพอสำหรับยกระดับเป็นรายการหลัก.</p>
+<p>👥 Team Flow: 🧭 Cody 🟡✅ › 🔍 Lek 🟡✅</p>
+  </main>
+</body>
+</html>

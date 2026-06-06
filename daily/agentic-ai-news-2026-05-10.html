@@ -1,0 +1,59 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-05-10</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-05-10</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-05-10.md</div>
+  </header>
+  <main>
+    <p>👥 Team Flow: 🧭 Lek 🟡✅</p>
+<h2>ข่าวสำคัญ</h2>
+<p>🔹 <strong>OpenAI เน้น governance สำหรับ coding agents มากขึ้น</strong>: บทความ *Running Codex safely at OpenAI* เมื่อวันที่ 8 พฤษภาคม 2026 อธิบายแนวทาง production ที่ชัดเจนขึ้น ทั้ง sandbox, approval policy, network allow/deny, credential storage ใน OS keyring, และ OpenTelemetry logs สำหรับ audit trail ของ agent-native actions <a href="https://openai.com/index/running-codex-safely/" target="_blank" rel="noreferrer">[OpenAI</a>].</p>
+<p>🔹 <strong>AWS ดัน MCP เข้าสู่ production access layer</strong>: AWS ประกาศ GA ของ <strong>AWS MCP Server</strong> เมื่อวันที่ 6 พฤษภาคม 2026 โดยวางตำแหน่งเป็น managed remote MCP server ที่ใหั AI agents เข้าถึง AWS แบบ secure และ authenticated ผ่านชุด tools ที่จำกัดและควบคุมได้ <a href="https://aws.amazon.com/blogs/aws/the-aws-mcp-server-is-now-generally-available/" target="_blank" rel="noreferrer">[AWS</a>].</p>
+<p>🔹 <strong>Google เติม reliability สำหรับ long-running agent jobs</strong>: Gemini API เพิ่ม <strong>event-driven Webhooks</strong> เมื่อวันที่ 4 พฤษภาคม 2026 เพื่อลด polling สำหรับงานที่รันนาน พร้อมแนวทาง signed delivery และ retry เพื่อรองรับ production workflows <a href="https://blog.google/innovation-and-ai/technology/developers-tools/event-driven-webhooks/" target="_blank" rel="noreferrer">[Google</a>].</p>
+<p>🔹 <strong>Google เติม verifiable RAG ให้ agent stack</strong>: Gemini API File Search อัปเดตเมื่อวันที่ 5 พฤษภาคม 2026 ให้รองรับ multimodal retrieval, custom metadata และ page-level citations ซึ่งสำคัญกับ RAG ที่ต้องตรวจสอบย้อนกลับได้ <a href="https://blog.google/innovation-and-ai/technology/developers-tools/expanded-gemini-api-file-search-multimodal-rag/" target="_blank" rel="noreferrer">[Google</a>].</p>
+<p>🔹 <strong>Anthropic แพ็ก agent เป็น vertical workflow สำเร็จรูปมากขึ้น</strong>: Anthropic เปิดตัว *Agents for financial services* เมื่อวันที่ 5 พฤษภาคม 2026 โดยมี 10 templates พร้อมใช้ผ่าน Claude Cowork, Claude Code และ Claude Managed Agents สะท้อนทิศทางจาก “agent framework” ไปสู่ “domain-ready agent packages” <a href="https://www.anthropic.com/news/finance-agents?cam=claude" target="_blank" rel="noreferrer">[Anthropic</a>].</p>
+<h2>ทำไมควรรู้</h2>
+<p>🔹 <strong>มาตรฐาน production เริ่มชัดขึ้น</strong>: ข่าวรอบนี้ไม่ได้เน้นแค่โมเดลใหม่ แต่เน้นสิ่งที่องค์กรต้องมีจริง ได้แก่ boundary control, auditability, secure tool access, signed callbacks, และ citation-ready retrieval. ถ้าทีมเราจะขึ้น production ในปี 2026 สิ่งเหล่านี้ไม่ใช่ optional แล้ว.</p>
+<p>🔹 <strong>MCP กำลังขยับจาก integration trick ไปเป็น control plane</strong>: ทั้ง AWS MCP Server และ ecosystem รอบ ๆ tool governance สะท้อนว่า MCP เริ่มถูกใช้เป็นชั้นเชื่อมระบบที่ต้องมี policy, identity, และ observability ในตัว ไม่ใช่แค่สะพานต่อ tools.</p>
+<p>🔹 <strong>Agent quality ต้องวัดจาก trace ไม่ใช่แค่ final answer</strong>: งานวิจัยใหม่เรื่อง orchestration traces และ open-source harness อย่าง ARIS ชี้ว่า bottleneck ของ multi-agent systems อยู่ที่การ spawn, delegate, aggregate, และหยุดงานอย่างไร มากกว่าคุณภาพโมเดลล้วน ๆ <a href="https://huggingface.co/papers/2605.02801" target="_blank" rel="noreferrer">[HF Papers: Orchestration Traces</a>] <a href="https://huggingface.co/papers/2605.03042" target="_blank" rel="noreferrer">[HF Papers: ARIS</a>].</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>🔹 <strong>อ่าน OpenAI ชิ้นนี้ถ้ากำลังวาง enterprise guardrails</strong>: ใช้เป็น checklist สำหรับ sandbox scope, approval classes, network policy, และ OTel export ของ coding agents <a href="https://openai.com/index/running-codex-safely/" target="_blank" rel="noreferrer">[OpenAI</a>].</p>
+<p>🔹 <strong>อ่าน AWS MCP Server GA ถ้าทีมต้องให้ agent แตะ AWS จริง</strong>: ประเด็นสำคัญคือ “authenticated access ผ่าน fixed tool surface” ซึ่งช่วยลด anti-pattern แบบให้สิทธิ์กว้างเกินจำเป็น <a href="https://aws.amazon.com/blogs/aws/the-aws-mcp-server-is-now-generally-available/" target="_blank" rel="noreferrer">[AWS</a>].</p>
+<p>🔹 <strong>ลอง Gemini Webhooks + File Search ถ้ากำลังทำ async agent หรือ RAG ที่ต้องพิสูจน์ได้</strong>: คู่นี้เหมาะกับระบบที่ต้องรันนาน, ลด polling, และให้ citation ระดับหน้าเอกสาร <a href="https://blog.google/innovation-and-ai/technology/developers-tools/event-driven-webhooks/" target="_blank" rel="noreferrer">[Google Webhooks</a>] <a href="https://blog.google/innovation-and-ai/technology/developers-tools/expanded-gemini-api-file-search-multimodal-rag/" target="_blank" rel="noreferrer">[Google File Search</a>].</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🔹 <strong>ออกแบบ agent platform เป็น 4 ชั้นจะชัดกว่า</strong>: <code>Identity/Policy</code> → <code>Tool/MCP Access</code> → <code>Runtime/Memory</code> → <code>Telemetry/Evals</code>. ข่าวสัปดาห์นี้หนุนสถาปัตยกรรมแบบนี้เกือบทุกค่าย.</p>
+<p>🔹 <strong>ห้ามข้ามเรื่อง observability ตั้งแต่ต้น</strong>: ถ้าไม่มี trace, approval logs, tool call lineage, และ citation metadata เราจะ debug incident, audit behavior, และเทียบ regression ของ agent ได้ยากมาก.</p>
+<p>🔹 <strong>Vertical agents จะชนะ generic agents ในงานองค์กร</strong>: Anthropic กำลังชี้ให้เห็นว่าตลาดเริ่มให้คุณค่ากับ template + connectors + subagents + governance มากกว่าการมี model เก่งอย่างเดียว. ถ้าจะ build ภายในองค์กร ควรเริ่มจาก 1-2 workflow ที่มี SLA/approval ชัดก่อน.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🔹 <strong>ข่าว/โพสต์จากชุมชนไทย</strong>: Blognone สรุปการอัปเดต <strong>GPT-5.5 Instant</strong> วันที่ 6 พฤษภาคม 2026 ว่าแม่นขึ้น หลอนน้อยลง อ่านภาพดีขึ้น และถูกดันเป็น default model มากขึ้นในสายผู้ใช้ทั่วไป เหมาะเป็นสัญญาณว่าทีมไทยที่ใช้ ChatGPT/API อาจเห็น behavior เปลี่ยนโดยไม่ต้องย้าย workflow ใหญ่ทันที <a href="https://www.blognone.com/node/150448" target="_blank" rel="noreferrer">[Blognone</a>] <a href="https://openai.com/" target="_blank" rel="noreferrer">[แหล่งต้นทาง OpenAI</a>].</p>
+<p>🔹 <strong>ข่าว/โพสต์จากชุมชนไทย</strong>: Techsauce สรุป *Agents for Financial Services* ของ Anthropic เป็นภาษาไทย และอธิบายองค์ประกอบสำคัญอย่าง skills, connectors, และ subagents ได้อ่านง่าย เหมาะส่งต่อให้ stakeholder ไทยที่ยังไม่ตามข่าวฝั่งต้นทาง <a href="https://techsauce.co/ai/anthropic-claude-financial-services-ai-agents" target="_blank" rel="noreferrer">[Techsauce</a>] <a href="https://www.anthropic.com/news/finance-agents?cam=claude" target="_blank" rel="noreferrer">[Anthropic</a>].</p>
+<p>🔹 <strong>สัญญาณเชิงปฏิบัติสำหรับไทย</strong>: ชุมชนไทยเริ่มมีคอนเทนต์ที่พูดถึง agent เป็น workflow ที่ deploy ได้จริง ไม่ใช่แค่ prompt/chatbot แล้ว ดังนั้นทีม solution, cloud, security, และ data ของไทยควรเริ่มคุยเรื่อง policy, approval, RAG citation, และ cost governance พร้อมกันตั้งแต่รอบ pilot.</p>
+  </main>
+</body>
+</html>

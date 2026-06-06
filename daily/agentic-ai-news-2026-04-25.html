@@ -1,0 +1,59 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-04-25</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-04-25</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-04-25.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<ul>
+<li>🚀 OpenAI เปิดตัวการอัปเดต Agents SDK รุ่นใหม่เมื่อ 2026-04-15 เพิ่ม model-native harness, native sandbox execution, snapshot/rehydration และแนวทางแยก harness ออกจาก compute เพื่อความปลอดภัยของ agent ที่ทำงานกับไฟล์/คำสั่ง/โค้ดระยะยาว: <a href="https://openai.com/index/the-next-evolution-of-the-agents-sdk" target="_blank" rel="noreferrer">https://openai.com/index/the-next-evolution-of-the-agents-sdk</a></li>
+<li>🧑‍💼 OpenAI เปิดตัว workspace agents ใน ChatGPT เมื่อ 2026-04-22 สำหรับทีม/องค์กร ให้สร้าง shared agents ที่ทำงานข้าม tools ภายใต้ permission และ governance ขององค์กร: <a href="https://openai.com/index/introducing-workspace-agents-in-chatgpt/" target="_blank" rel="noreferrer">https://openai.com/index/introducing-workspace-agents-in-chatgpt/</a></li>
+<li>🛡️ Anthropic มี session ที่ Google Cloud Next 2026 ช่วง 2026-04-22 ถึง 2026-04-25 เน้น enterprise-ready, long-running agents บน Vertex AI พร้อม safety และบทเรียน multi-agent ที่ใช้ได้จริง: <a href="https://www.anthropic.com/events/anthropic-at-google-cloud-next-2026" target="_blank" rel="noreferrer">https://www.anthropic.com/events/anthropic-at-google-cloud-next-2026</a></li>
+<li>🧭 Anthropic เผยแพร่บทความ Trustworthy agents in practice เมื่อ 2026-04-09 สรุป governance risk ของ agents เช่น prompt injection, unintended action, oversight และการควบคุม autonomy: <a href="https://www.anthropic.com/research/trustworthy-agents" target="_blank" rel="noreferrer">https://www.anthropic.com/research/trustworthy-agents</a></li>
+<li>🧩 Microsoft Agent Framework blog มีโพสต์ล่าสุดเกี่ยวกับ Agent Skills in .NET เมื่อ 2026-04-13 ครอบคลุม skill authoring แบบ file, inline C#, class, script execution และ human approval: <a href="https://devblogs.microsoft.com/semantic-kernel/" target="_blank" rel="noreferrer">https://devblogs.microsoft.com/semantic-kernel/</a></li>
+<li>☁️ AWS อัปเดต ecosystem AgentCore ต่อเนื่อง เช่น Spring AI SDK for Amazon Bedrock AgentCore GA เมื่อ 2026-04-14 และ AWS Agent Registry preview เมื่อ 2026-04-09 สำหรับ discover/share/reuse agents/tools/skills ในองค์กร: <a href="https://aws.amazon.com/blogs/machine-learning/category/artificial-intelligence/amazon-machine-learning/" target="_blank" rel="noreferrer">https://aws.amazon.com/blogs/machine-learning/category/artificial-intelligence/amazon-machine-learning/</a></li>
+</ul>
+<h2>ทำไมควรรู้</h2>
+<ul>
+<li>🧠 แนวโน้มชัดมากว่า agent production stack กำลังย้ายจาก demo orchestration ไปสู่ controlled runtime, sandbox, memory, evals, governance, cost attribution และ enterprise registry</li>
+<li>🔐 Security ไม่ใช่ feature เสริมแล้ว แต่เป็น architecture layer หลัก โดยเฉพาะการแยก credential ออกจาก sandbox, human approval สำหรับ tool/script call และ policy สำหรับ long-running workflows</li>
+<li>🏗️ สำหรับ Solution Architect ควรเริ่มออกแบบ agent platform เป็น lifecycle: design -&gt; tool access -&gt; sandbox/runtime -&gt; memory/session -&gt; eval/observability -&gt; governance -&gt; deployment</li>
+<li>🤝 Multi-agent ยังควรใช้เฉพาะจุดที่ชนะจริง เช่น context isolation, parallel execution, specialization และ verification subagents ไม่ควรแตก agent เพียงเพราะ framework ทำได้</li>
+</ul>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<ul>
+<li>🧪 ทดลอง OpenAI Agents SDK sandbox pattern กับงาน coding/file workflow ขนาดเล็ก แล้ววัด checkpoint/restore และ failure recovery</li>
+<li>🧰 สำรวจ Microsoft Agent Framework skill model ถ้ามีงาน .NET/enterprise เพราะมี human approval และหลายรูปแบบของ skills ที่เหมาะกับทีมใหญ่</li>
+<li>☁️ ถ้าใช้ AWS/Spring Boot/Java ให้ดู Spring AI AgentCore SDK เพราะเชื่อมกับ Java ecosystem ได้ตรงแนวทาง production-ready agents</li>
+<li>📋 สร้าง checklist ภายในสำหรับ agent governance: tool permission, data boundary, audit trail, eval set, fallback, human-in-the-loop และ kill switch</li>
+</ul>
+  </main>
+</body>
+</html>

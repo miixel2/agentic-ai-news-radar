@@ -1,0 +1,337 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News Radar</title>
+  <style>
+    :root { --bg:#f4f7fb; --panel:#fff; --ink:#132134; --muted:#637286; --line:#e1e8f0; --accent:#1667d9; --accent2:#e9f1ff; --tag:#eef3fa; --shadow:0 10px 32px rgba(20,34,56,.07); }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; background:var(--bg); color:var(--ink); font-family:"Segoe UI",Tahoma,Arial,sans-serif; }
+    .page { max-width:1400px; margin:0 auto; padding:23px 18px 34px; }
+    .hero { display:flex; justify-content:space-between; gap:20px; align-items:end; background:linear-gradient(135deg,#12284a,#165aba); color:#fff; padding:22px 25px; border-radius:19px; box-shadow:var(--shadow); }
+    h1 { margin:0 0 4px; letter-spacing:-.03em; font-size:clamp(1.48rem,2.4vw,2.12rem); }
+    .hero p { margin:0; color:#d8e5ff; }
+    .stats { display:flex; gap:11px; flex-wrap:wrap; }
+    .stat { border:1px solid rgba(255,255,255,.25); border-radius:12px; padding:8px 12px; min-width:112px; background:rgba(255,255,255,.09); }
+    .stat b { display:block; font-size:1.05rem; }
+    .stat span { color:#d8e5ff; font-size:.77rem; }
+    .filters { display:flex; gap:8px; flex-wrap:wrap; margin:16px 0 12px; align-items:center; }
+    #search { min-width:250px; flex:1 1 300px; padding:11px 13px; border-radius:11px; border:1px solid var(--line); background:#fff; font-size:.94rem; }
+    .chip, .clear { cursor:pointer; border:1px solid var(--line); background:#fff; color:var(--ink); border-radius:999px; padding:7px 12px; }
+    .chip.active { color:var(--accent); background:var(--accent2); border-color:#b9d3fa; font-weight:600; }
+    .results { color:var(--muted); font-size:.87rem; margin:0 0 11px; }
+    .layout { display:grid; grid-template-columns:minmax(285px,370px) 1fr; gap:13px; height:calc(100vh - 235px); min-height:520px; }
+    .list { overflow:auto; display:grid; gap:8px; align-content:start; padding-right:3px; }
+    .entry { display:block; width:100%; text-align:left; border:1px solid var(--line); border-radius:13px; padding:12px; background:var(--panel); cursor:pointer; color:var(--ink); }
+    .entry:hover, .entry.active { border-color:#b4cff7; background:#f7faff; }
+    .entry time { display:block; font-weight:700; font-size:.97rem; margin-bottom:6px; }
+    .tags { display:flex; flex-wrap:wrap; gap:5px; }
+    .tag { background:var(--tag); color:#506176; border-radius:999px; padding:2px 8px; font-size:.72rem; }
+    .summary { display:block; color:var(--muted); font-size:.82rem; line-height:1.42; margin-top:8px; }
+    .reader { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; box-shadow:0 2px 8px rgba(25,40,61,.03); }
+    #reportFrame { width:100%; height:100%; border:0; background:#fff; }
+    .empty { display:none; color:var(--muted); text-align:center; padding:22px; background:#fff; border-radius:13px; }
+    footer { color:var(--muted); margin-top:14px; font-size:.79rem; }
+    @media (max-width:850px) { .hero { display:block; } .stats { margin-top:17px; } .layout { display:block; height:auto; } .list { max-height:370px; margin-bottom:12px; } .reader { height:70vh; min-height:470px; } }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div>
+        <h1>Agentic AI News Radar</h1>
+        <p>Lightweight index with daily HTML reader pages.</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>42</b><span>Daily pages</span></div>
+        <div class="stat"><b>2026-06-05</b><span>Latest</span></div>
+        <div class="stat"><b>sources/</b><span>Markdown truth</span></div>
+      </div>
+    </section>
+    <section class="filters" aria-label="Filters">
+      <input id="search" type="search" placeholder="Search headline: MCP, Codex, AWS, Thai..." aria-label="Search report summaries">
+      <button class="clear" type="button" id="clear">All</button>
+      <button class="chip" type="button" data-tag="anthropic">Anthropic</button>
+<button class="chip" type="button" data-tag="aws">AWS</button>
+<button class="chip" type="button" data-tag="google">Google</button>
+<button class="chip" type="button" data-tag="microsoft">Microsoft</button>
+<button class="chip" type="button" data-tag="openai">OpenAI</button>
+<button class="chip" type="button" data-tag="prompting">Prompting</button>
+<button class="chip" type="button" data-tag="research">Research</button>
+<button class="chip" type="button" data-tag="safety">Safety</button>
+<button class="chip" type="button" data-tag="skills">Skills</button>
+<button class="chip" type="button" data-tag="thai">Thai</button>
+<button class="chip" type="button" data-tag="workflow">Workflow</button>
+    </section>
+    <div class="results" id="results"></div>
+    <section class="layout">
+      <nav class="list" id="list" aria-label="Daily reports">
+        <button class="entry" type="button" data-page="daily/agentic-ai-news-2026-06-05.html" data-date="2026-06-05" data-tags="openai anthropic google aws microsoft research safety thai prompting skills workflow" data-search="2026-06-05 openai anthropic google aws microsoft research safety thai prompting skills workflow 🔹 วันนี้ไม่พบประกาศใหม่ที่ high-signal กว่า build/github changelog รอบ 2-4 มิ.ย.: สรุปหลักยังเป็น copilot sdk ga, copilot app technical preview, cloud/local sandboxes...">
+  <time datetime="2026-06-05">2026-06-05</time>
+  <span class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></span>
+  <span class="summary">🔹 วันนี้ไม่พบประกาศใหม่ที่ high-signal กว่า Build/GitHub Changelog รอบ 2-4 มิ.ย.: สรุปหลักยังเป็น Copilot SDK GA, Copilot app technical preview, cloud/local sandboxes...</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-06-04.html" data-date="2026-06-04" data-tags="openai aws microsoft safety thai prompting skills workflow" data-search="2026-06-04 openai aws microsoft safety thai prompting skills workflow 🔹 github copilot เพิ่มปุ่ม fix with copilot สำหรับ actions ที่ fail ในแผน pro/pro+/max: ผู้ใช้สามารถให้ copilot cloud agent ตรวจ log, push fix กลับ branch และ tag กลั...">
+  <time datetime="2026-06-04">2026-06-04</time>
+  <span class="tags"><span class="tag">OpenAI</span><span class="tag">AWS</span><span class="tag">Microsoft</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></span>
+  <span class="summary">🔹 GitHub Copilot เพิ่มปุ่ม Fix with Copilot สำหรับ Actions ที่ fail ในแผน Pro/Pro+/Max: ผู้ใช้สามารถให้ Copilot cloud agent ตรวจ log, push fix กลับ branch และ tag กลั...</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-06-03.html" data-date="2026-06-03" data-tags="openai aws microsoft research safety thai prompting skills workflow" data-search="2026-06-03 openai aws microsoft research safety thai prompting skills workflow 🔹 github copilot cli/app ขยับชัดไปทาง agent automation: ข่าว 2 มิ.ย. รวม prompt scheduling, rubber duck reviewer, voice input, mcp servers, reusable skills และ schedu...">
+  <time datetime="2026-06-03">2026-06-03</time>
+  <span class="tags"><span class="tag">OpenAI</span><span class="tag">AWS</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></span>
+  <span class="summary">🔹 GitHub Copilot CLI/app ขยับชัดไปทาง agent automation: ข่าว 2 มิ.ย. รวม prompt scheduling, rubber duck reviewer, voice input, MCP servers, reusable skills และ schedu...</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-06-02.html" data-date="2026-06-02" data-tags="openai aws safety thai prompting skills workflow" data-search="2026-06-02 openai aws safety thai prompting skills workflow 🔹 github copilot cli เพิ่ม rubber duck, prompt scheduling และ voice input: changelog 2 มิ.ย. ระบุว่า copilot cli refresh มี second-opinion agent, /every และ /after สำ...">
+  <time datetime="2026-06-02">2026-06-02</time>
+  <span class="tags"><span class="tag">OpenAI</span><span class="tag">AWS</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></span>
+  <span class="summary">🔹 GitHub Copilot CLI เพิ่ม rubber duck, prompt scheduling และ voice input: Changelog 2 มิ.ย. ระบุว่า Copilot CLI refresh มี second-opinion agent, /every และ /after สำ...</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-06-01.html" data-date="2026-06-01" data-tags="openai aws microsoft research safety thai prompting skills workflow" data-search="2026-06-01 openai aws microsoft research safety thai prompting skills workflow 🔹 aws เผย agentops สำหรับ bedrock agentcore: โพสต์ 1 มิ.ย. วางกรอบ production agent operations รอบ governance/security, build/operations, evaluation และ observability...">
+  <time datetime="2026-06-01">2026-06-01</time>
+  <span class="tags"><span class="tag">OpenAI</span><span class="tag">AWS</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></span>
+  <span class="summary">🔹 AWS เผย AgentOps สำหรับ Bedrock AgentCore: โพสต์ 1 มิ.ย. วางกรอบ production agent operations รอบ governance/security, build/operations, evaluation และ observability...</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-31.html" data-date="2026-05-31" data-tags="openai anthropic microsoft research safety thai skills workflow" data-search="2026-05-31 openai anthropic microsoft research safety thai skills workflow 🔹 microsoft agent framework เตรียมชุดประกาศช่วง build 2026: ทีม microsoft agent framework โพสต์ preview ว่า build 2026 จะมีประกาศฝั่ง agent framework, microsoft found...">
+  <time datetime="2026-05-31">2026-05-31</time>
+  <span class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Skills</span><span class="tag">Workflow</span></span>
+  <span class="summary">🔹 Microsoft Agent Framework เตรียมชุดประกาศช่วง Build 2026: ทีม Microsoft Agent Framework โพสต์ preview ว่า Build 2026 จะมีประกาศฝั่ง Agent Framework, Microsoft Found...</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-30.html" data-date="2026-05-30" data-tags="openai anthropic aws microsoft research safety thai prompting skills workflow" data-search="2026-05-30 openai anthropic aws microsoft research safety thai prompting skills workflow 🔹 github copilot เพิ่ม control ด้าน memory และ model governance สำหรับองค์กร: วันที่ 26 พ.ค. github เพิ่ม repository-level off switch สำหรับ copilot memory, คำสั่ง /m...">
+  <time datetime="2026-05-30">2026-05-30</time>
+  <span class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">AWS</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></span>
+  <span class="summary">🔹 GitHub Copilot เพิ่ม control ด้าน memory และ model governance สำหรับองค์กร: วันที่ 26 พ.ค. GitHub เพิ่ม repository-level off switch สำหรับ Copilot Memory, คำสั่ง /m...</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-29.html" data-date="2026-05-29" data-tags="openai anthropic google aws microsoft research safety thai prompting skills workflow" data-search="2026-05-29 openai anthropic google aws microsoft research safety thai prompting skills workflow 🔹 microsoft agent framework เดินหน้าถี่ในสาย production agent: release python-1.6.0 วันที่ 21 พ.ค. เพิ่ม shell tool สำหรับ local/docker execution, monty-backed codeac...">
+  <time datetime="2026-05-29">2026-05-29</time>
+  <span class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></span>
+  <span class="summary">🔹 Microsoft Agent Framework เดินหน้าถี่ในสาย production agent: release python-1.6.0 วันที่ 21 พ.ค. เพิ่ม Shell tool สำหรับ local/Docker execution, Monty-backed CodeAc...</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-28.html" data-date="2026-05-28" data-tags="google aws microsoft research safety thai prompting skills workflow" data-search="2026-05-28 google aws microsoft research safety thai prompting skills workflow 🔹 agent explorative policy optimization โผล่ใน hugging face papers: งาน axpo มุ่งปรับ multimodal agentic reasoning โดย optimize thinking prefixes และ tool-call resamp...">
+  <time datetime="2026-05-28">2026-05-28</time>
+  <span class="tags"><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></span>
+  <span class="summary">🔹 Agent Explorative Policy Optimization โผล่ใน Hugging Face Papers: งาน AXPO มุ่งปรับ multimodal agentic reasoning โดย optimize thinking prefixes และ tool-call resamp...</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-27.html" data-date="2026-05-27" data-tags="openai aws microsoft research safety thai prompting skills workflow" data-search="2026-05-27 openai aws microsoft research safety thai prompting skills workflow 🔹 agentic clear ถูก submit เข้า hugging face papers: ibm research เสนอ framework สำหรับประเมิน agent behavior แบบ multi-level ที่ระดับ system, trace และ node โดยทำงาน...">
+  <time datetime="2026-05-27">2026-05-27</time>
+  <span class="tags"><span class="tag">OpenAI</span><span class="tag">AWS</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></span>
+  <span class="summary">🔹 Agentic CLEAR ถูก submit เข้า Hugging Face Papers: IBM Research เสนอ framework สำหรับประเมิน agent behavior แบบ multi-level ที่ระดับ system, trace และ node โดยทำงาน...</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-26.html" data-date="2026-05-26" data-tags="openai aws microsoft research safety thai prompting skills workflow" data-search="2026-05-26 openai aws microsoft research safety thai prompting skills workflow 🔹 agenticvbench เปิดโจทย์ eval ใหม่สำหรับ multimodal agents: arxiv เผยแพร่ benchmark งาน post-production วิดีโอ 100 tasks จาก workflow จริงของผู้เชี่ยวชาญ ครอบคลุม te...">
+  <time datetime="2026-05-26">2026-05-26</time>
+  <span class="tags"><span class="tag">OpenAI</span><span class="tag">AWS</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></span>
+  <span class="summary">🔹 AgenticVBench เปิดโจทย์ eval ใหม่สำหรับ multimodal agents: arXiv เผยแพร่ benchmark งาน post-production วิดีโอ 100 tasks จาก workflow จริงของผู้เชี่ยวชาญ ครอบคลุม te...</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-25.html" data-date="2026-05-25" data-tags="openai anthropic google aws microsoft research safety thai workflow" data-search="2026-05-25 openai anthropic google aws microsoft research safety thai workflow 🛡️ anthropic project glasswing initial update (22 พ.ค.): anthropic รายงานว่า mythos preview และพาร์ตเนอร์ราว 50 รายพบช่องโหว่ high/critical มากกว่า 10,000 รายการ และช...">
+  <time datetime="2026-05-25">2026-05-25</time>
+  <span class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Workflow</span></span>
+  <span class="summary">🛡️ Anthropic Project Glasswing initial update (22 พ.ค.): Anthropic รายงานว่า Mythos Preview และพาร์ตเนอร์ราว 50 รายพบช่องโหว่ high/critical มากกว่า 10,000 รายการ และช...</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-24.html" data-date="2026-05-24" data-tags="openai aws safety thai" data-search="2026-05-24 openai aws safety thai 📰 ไม่พบประกาศ agentic ai ใหม่ที่มีนัยสำคัญตรงวันที่นี้จากแหล่งที่ตรวจย้อนหลัง">
+  <time datetime="2026-05-24">2026-05-24</time>
+  <span class="tags"><span class="tag">OpenAI</span><span class="tag">AWS</span><span class="tag">Safety</span><span class="tag">Thai</span></span>
+  <span class="summary">📰 ไม่พบประกาศ Agentic AI ใหม่ที่มีนัยสำคัญตรงวันที่นี้จากแหล่งที่ตรวจย้อนหลัง</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-23.html" data-date="2026-05-23" data-tags="openai anthropic research safety thai" data-search="2026-05-23 openai anthropic research safety thai 📰 ไม่พบประกาศต้นทาง agentic ai ใหม่ที่มีนัยสำคัญเหนือรายการวันที่ 2026-05-22 จากแหล่งที่ตรวจย้อนหลัง">
+  <time datetime="2026-05-23">2026-05-23</time>
+  <span class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span></span>
+  <span class="summary">📰 ไม่พบประกาศต้นทาง Agentic AI ใหม่ที่มีนัยสำคัญเหนือรายการวันที่ 2026-05-22 จากแหล่งที่ตรวจย้อนหลัง</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-22.html" data-date="2026-05-22" data-tags="openai anthropic research safety thai" data-search="2026-05-22 openai anthropic research safety thai 📰 anthropic เผย project glasswing initial update ซึ่งเกี่ยวข้องกับการติดตามความเสี่ยงและการใช้งานโมเดลขั้นสูง: anthropic">
+  <time datetime="2026-05-22">2026-05-22</time>
+  <span class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span></span>
+  <span class="summary">📰 Anthropic เผย Project Glasswing initial update ซึ่งเกี่ยวข้องกับการติดตามความเสี่ยงและการใช้งานโมเดลขั้นสูง: Anthropic</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-21.html" data-date="2026-05-21" data-tags="aws thai" data-search="2026-05-21 aws thai 📰 aws เผยแนวทางสร้าง multi-tenant agents ด้วย amazon bedrock agentcore สำหรับระบบที่ต้องแยกลูกค้าและข้อมูล: aws machine learning blog">
+  <time datetime="2026-05-21">2026-05-21</time>
+  <span class="tags"><span class="tag">AWS</span><span class="tag">Thai</span></span>
+  <span class="summary">📰 AWS เผยแนวทางสร้าง multi-tenant agents ด้วย Amazon Bedrock AgentCore สำหรับระบบที่ต้องแยกลูกค้าและข้อมูล: AWS Machine Learning Blog</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-20.html" data-date="2026-05-20" data-tags="google safety thai" data-search="2026-05-20 google safety thai 📰 ไม่พบประกาศ agentic ai ต้นทางใหม่ที่มีนัยสำคัญตรงวันนี้นอกเหนือจากข่าว google gemini spark ของวันที่ก่อนหน้า">
+  <time datetime="2026-05-20">2026-05-20</time>
+  <span class="tags"><span class="tag">Google</span><span class="tag">Safety</span><span class="tag">Thai</span></span>
+  <span class="summary">📰 ไม่พบประกาศ Agentic AI ต้นทางใหม่ที่มีนัยสำคัญตรงวันนี้นอกเหนือจากข่าว Google Gemini Spark ของวันที่ก่อนหน้า</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-19.html" data-date="2026-05-19" data-tags="anthropic google safety thai workflow" data-search="2026-05-19 anthropic google safety thai workflow 📰 google เปิดตัว gemini spark ซึ่งสะท้อนทิศทาง assistant/agent experience ที่เร็วและเข้าถึงกว้างขึ้น: google blog">
+  <time datetime="2026-05-19">2026-05-19</time>
+  <span class="tags"><span class="tag">Anthropic</span><span class="tag">Google</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Workflow</span></span>
+  <span class="summary">📰 Google เปิดตัว Gemini Spark ซึ่งสะท้อนทิศทาง assistant/agent experience ที่เร็วและเข้าถึงกว้างขึ้น: Google Blog</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-18.html" data-date="2026-05-18" data-tags="anthropic thai" data-search="2026-05-18 anthropic thai 📰 anthropic ประกาศเข้าซื้อ stainless ผู้พัฒนา tooling ด้าน sdk/api ซึ่งเกี่ยวข้องกับ developer experience และ integration quality รอบ claude: anthropic news">
+  <time datetime="2026-05-18">2026-05-18</time>
+  <span class="tags"><span class="tag">Anthropic</span><span class="tag">Thai</span></span>
+  <span class="summary">📰 Anthropic ประกาศเข้าซื้อ Stainless ผู้พัฒนา tooling ด้าน SDK/API ซึ่งเกี่ยวข้องกับ developer experience และ integration quality รอบ Claude: Anthropic News</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-17.html" data-date="2026-05-17" data-tags="openai safety thai" data-search="2026-05-17 openai safety thai 📰 ไม่พบประกาศ agentic ai ใหม่ที่มีนัยสำคัญตรงวันที่นี้จากแหล่งที่ตรวจย้อนหลัง">
+  <time datetime="2026-05-17">2026-05-17</time>
+  <span class="tags"><span class="tag">OpenAI</span><span class="tag">Safety</span><span class="tag">Thai</span></span>
+  <span class="summary">📰 ไม่พบประกาศ Agentic AI ใหม่ที่มีนัยสำคัญตรงวันที่นี้จากแหล่งที่ตรวจย้อนหลัง</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-16.html" data-date="2026-05-16" data-tags="research thai" data-search="2026-05-16 research thai 📰 ไม่พบประกาศ agentic ai ใหม่ที่มีนัยสำคัญตรงวันที่นี้จากแหล่งที่ตรวจย้อนหลัง">
+  <time datetime="2026-05-16">2026-05-16</time>
+  <span class="tags"><span class="tag">Research</span><span class="tag">Thai</span></span>
+  <span class="summary">📰 ไม่พบประกาศ Agentic AI ใหม่ที่มีนัยสำคัญตรงวันที่นี้จากแหล่งที่ตรวจย้อนหลัง</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-15.html" data-date="2026-05-15" data-tags="research thai" data-search="2026-05-15 research thai 📰 hugging face papers แสดงงาน gaia2 ที่ศึกษาการประเมิน agent ในสภาพแวดล้อมที่ tools เปลี่ยนแปลงได้; เป็น research watch: hugging face papers">
+  <time datetime="2026-05-15">2026-05-15</time>
+  <span class="tags"><span class="tag">Research</span><span class="tag">Thai</span></span>
+  <span class="summary">📰 Hugging Face Papers แสดงงาน GAIA2 ที่ศึกษาการประเมิน agent ในสภาพแวดล้อมที่ tools เปลี่ยนแปลงได้; เป็น research watch: Hugging Face Papers</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-14.html" data-date="2026-05-14" data-tags="openai anthropic safety thai" data-search="2026-05-14 openai anthropic safety thai 📰 anthropic เผย education report ซึ่งเป็นสัญญาณ adoption และ governance ที่เกี่ยวข้องรอบข้างกับ agent deployment มากกว่าจะเป็น release ของ agent platform โดยตรง: anth...">
+  <time datetime="2026-05-14">2026-05-14</time>
+  <span class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">Safety</span><span class="tag">Thai</span></span>
+  <span class="summary">📰 Anthropic เผย Education Report ซึ่งเป็นสัญญาณ adoption และ governance ที่เกี่ยวข้องรอบข้างกับ agent deployment มากกว่าจะเป็น release ของ agent platform โดยตรง: Anth...</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-13.html" data-date="2026-05-13" data-tags="openai anthropic safety thai" data-search="2026-05-13 openai anthropic safety thai 📰 openai เผยแนวทางสร้าง sandbox ที่ปลอดภัยและมีประสิทธิผลสำหรับการรัน ai agents: openai">
+  <time datetime="2026-05-13">2026-05-13</time>
+  <span class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">Safety</span><span class="tag">Thai</span></span>
+  <span class="summary">📰 OpenAI เผยแนวทางสร้าง sandbox ที่ปลอดภัยและมีประสิทธิผลสำหรับการรัน AI agents: OpenAI</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-12.html" data-date="2026-05-12" data-tags="openai safety thai" data-search="2026-05-12 openai safety thai 📰 ไม่พบประกาศ agentic ai ใหม่ที่มีนัยสำคัญตรงวันที่นี้จากแหล่งที่ตรวจย้อนหลัง">
+  <time datetime="2026-05-12">2026-05-12</time>
+  <span class="tags"><span class="tag">OpenAI</span><span class="tag">Safety</span><span class="tag">Thai</span></span>
+  <span class="summary">📰 ไม่พบประกาศ Agentic AI ใหม่ที่มีนัยสำคัญตรงวันที่นี้จากแหล่งที่ตรวจย้อนหลัง</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-11.html" data-date="2026-05-11" data-tags="research thai workflow" data-search="2026-05-11 research thai workflow 📰 งานวิจัยบน hugging face papers ในช่วงนี้ติดตามแนวทางการเลือกและ orchestration ของ tools สำหรับ agent; จัดเป็น research watch ไม่ใช่ production release: hugging face...">
+  <time datetime="2026-05-11">2026-05-11</time>
+  <span class="tags"><span class="tag">Research</span><span class="tag">Thai</span><span class="tag">Workflow</span></span>
+  <span class="summary">📰 งานวิจัยบน Hugging Face Papers ในช่วงนี้ติดตามแนวทางการเลือกและ orchestration ของ tools สำหรับ agent; จัดเป็น research watch ไม่ใช่ production release: Hugging Face...</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-10.html" data-date="2026-05-10" data-tags="openai anthropic google aws microsoft research safety thai prompting skills workflow" data-search="2026-05-10 openai anthropic google aws microsoft research safety thai prompting skills workflow 🔹 openai เน้น governance สำหรับ coding agents มากขึ้น: บทความ *running codex safely at openai* เมื่อวันที่ 8 พฤษภาคม 2026 อธิบายแนวทาง production ที่ชัดเจนขึ้น ทั้ง s...">
+  <time datetime="2026-05-10">2026-05-10</time>
+  <span class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></span>
+  <span class="summary">🔹 OpenAI เน้น governance สำหรับ coding agents มากขึ้น: บทความ *Running Codex safely at OpenAI* เมื่อวันที่ 8 พฤษภาคม 2026 อธิบายแนวทาง production ที่ชัดเจนขึ้น ทั้ง s...</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-09.html" data-date="2026-05-09" data-tags="openai safety thai" data-search="2026-05-09 openai safety thai 📰 ไม่พบประกาศ agentic ai ใหม่ที่มีนัยสำคัญตรงวันที่นี้จากแหล่งที่ตรวจย้อนหลัง">
+  <time datetime="2026-05-09">2026-05-09</time>
+  <span class="tags"><span class="tag">OpenAI</span><span class="tag">Safety</span><span class="tag">Thai</span></span>
+  <span class="summary">📰 ไม่พบประกาศ Agentic AI ใหม่ที่มีนัยสำคัญตรงวันที่นี้จากแหล่งที่ตรวจย้อนหลัง</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-08.html" data-date="2026-05-08" data-tags="openai safety thai" data-search="2026-05-08 openai safety thai 📰 openai อธิบายแนวทางการรัน codex อย่างปลอดภัย ครอบคลุม isolation, network access และการจัดการความเสี่ยงเมื่อ coding agent ลงมือทำ: openai">
+  <time datetime="2026-05-08">2026-05-08</time>
+  <span class="tags"><span class="tag">OpenAI</span><span class="tag">Safety</span><span class="tag">Thai</span></span>
+  <span class="summary">📰 OpenAI อธิบายแนวทางการรัน Codex อย่างปลอดภัย ครอบคลุม isolation, network access และการจัดการความเสี่ยงเมื่อ coding agent ลงมือทำ: OpenAI</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-07.html" data-date="2026-05-07" data-tags="aws safety thai" data-search="2026-05-07 aws safety thai 📰 ไม่พบประกาศ agentic ai ใหม่ที่มีนัยสำคัญตรงวันที่นี้จากแหล่งที่ตรวจย้อนหลัง">
+  <time datetime="2026-05-07">2026-05-07</time>
+  <span class="tags"><span class="tag">AWS</span><span class="tag">Safety</span><span class="tag">Thai</span></span>
+  <span class="summary">📰 ไม่พบประกาศ Agentic AI ใหม่ที่มีนัยสำคัญตรงวันที่นี้จากแหล่งที่ตรวจย้อนหลัง</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-06.html" data-date="2026-05-06" data-tags="openai anthropic aws safety thai prompting" data-search="2026-05-06 openai anthropic aws safety thai prompting 📰 aws ประกาศ aws mcp server พร้อมใช้งานทั่วไป ช่วยให้ agents เชื่อม aws knowledge และ actions ผ่านมาตรฐาน mcp: aws news blog">
+  <time datetime="2026-05-06">2026-05-06</time>
+  <span class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">AWS</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span></span>
+  <span class="summary">📰 AWS ประกาศ AWS MCP Server พร้อมใช้งานทั่วไป ช่วยให้ agents เชื่อม AWS knowledge และ actions ผ่านมาตรฐาน MCP: AWS News Blog</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-05.html" data-date="2026-05-05" data-tags="anthropic google thai workflow" data-search="2026-05-05 anthropic google thai workflow 📰 anthropic เปิดตัว claude for financial services พร้อมงานด้าน agents สำหรับ workflow การเงิน: anthropic">
+  <time datetime="2026-05-05">2026-05-05</time>
+  <span class="tags"><span class="tag">Anthropic</span><span class="tag">Google</span><span class="tag">Thai</span><span class="tag">Workflow</span></span>
+  <span class="summary">📰 Anthropic เปิดตัว Claude for Financial Services พร้อมงานด้าน agents สำหรับ workflow การเงิน: Anthropic</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-04.html" data-date="2026-05-04" data-tags="openai google aws microsoft research safety thai skills workflow" data-search="2026-05-04 openai google aws microsoft research safety thai skills workflow 🔹 27-29 เมษายน 2026 ภาพใหญ่ที่แรงสุดยังเป็นเรื่อง &quot;agent stack ย้ายเข้า production cloud&quot; มากกว่าการปล่อยเดโมใหม่: openai กับ microsoft ปรับสัญญาให้ openai เสิร์ฟผลิต...">
+  <time datetime="2026-05-04">2026-05-04</time>
+  <span class="tags"><span class="tag">OpenAI</span><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Skills</span><span class="tag">Workflow</span></span>
+  <span class="summary">🔹 27-29 เมษายน 2026 ภาพใหญ่ที่แรงสุดยังเป็นเรื่อง &quot;agent stack ย้ายเข้า production cloud&quot; มากกว่าการปล่อยเดโมใหม่: OpenAI กับ Microsoft ปรับสัญญาให้ OpenAI เสิร์ฟผลิต...</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-03.html" data-date="2026-05-03" data-tags="google thai workflow" data-search="2026-05-03 google thai workflow 📰 ไม่พบประกาศ agentic ai ใหม่ที่มีนัยสำคัญตรงวันที่นี้จากแหล่งที่ตรวจย้อนหลัง">
+  <time datetime="2026-05-03">2026-05-03</time>
+  <span class="tags"><span class="tag">Google</span><span class="tag">Thai</span><span class="tag">Workflow</span></span>
+  <span class="summary">📰 ไม่พบประกาศ Agentic AI ใหม่ที่มีนัยสำคัญตรงวันที่นี้จากแหล่งที่ตรวจย้อนหลัง</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-02.html" data-date="2026-05-02" data-tags="microsoft thai workflow" data-search="2026-05-02 microsoft thai workflow 📰 ไม่พบประกาศ agentic ai ใหม่ที่มีนัยสำคัญตรงวันที่นี้จากแหล่งที่ตรวจย้อนหลัง">
+  <time datetime="2026-05-02">2026-05-02</time>
+  <span class="tags"><span class="tag">Microsoft</span><span class="tag">Thai</span><span class="tag">Workflow</span></span>
+  <span class="summary">📰 ไม่พบประกาศ Agentic AI ใหม่ที่มีนัยสำคัญตรงวันที่นี้จากแหล่งที่ตรวจย้อนหลัง</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-05-01.html" data-date="2026-05-01" data-tags="aws safety thai" data-search="2026-05-01 aws safety thai 📰 ไม่พบประกาศผลิตภัณฑ์ agentic ai หลักจากแหล่งต้นทางที่มีนัยสำคัญตรงวันนี้">
+  <time datetime="2026-05-01">2026-05-01</time>
+  <span class="tags"><span class="tag">AWS</span><span class="tag">Safety</span><span class="tag">Thai</span></span>
+  <span class="summary">📰 ไม่พบประกาศผลิตภัณฑ์ Agentic AI หลักจากแหล่งต้นทางที่มีนัยสำคัญตรงวันนี้</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-04-30.html" data-date="2026-04-30" data-tags="aws research thai" data-search="2026-04-30 aws research thai 📰 aws เผยฟีเจอร์ amazon bedrock agentcore เพื่อพา agent จากต้นแบบไปสู่ตัวอย่างที่รันได้เร็วขึ้น: aws machine learning blog">
+  <time datetime="2026-04-30">2026-04-30</time>
+  <span class="tags"><span class="tag">AWS</span><span class="tag">Research</span><span class="tag">Thai</span></span>
+  <span class="summary">📰 AWS เผยฟีเจอร์ Amazon Bedrock AgentCore เพื่อพา agent จากต้นแบบไปสู่ตัวอย่างที่รันได้เร็วขึ้น: AWS Machine Learning Blog</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-04-29.html" data-date="2026-04-29" data-tags="openai aws microsoft research safety thai workflow" data-search="2026-04-29 openai aws microsoft research safety thai workflow 📰 aws ประกาศ openai models, codex และ managed agents บน amazon bedrock ใน limited preview: aws">
+  <time datetime="2026-04-29">2026-04-29</time>
+  <span class="tags"><span class="tag">OpenAI</span><span class="tag">AWS</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Workflow</span></span>
+  <span class="summary">📰 AWS ประกาศ OpenAI models, Codex และ Managed Agents บน Amazon Bedrock ใน limited preview: AWS</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-04-28.html" data-date="2026-04-28" data-tags="microsoft thai workflow" data-search="2026-04-28 microsoft thai workflow 📰 microsoft agent framework รองรับ a2a v1 สำหรับการสื่อสาร agent ข้ามแพลตฟอร์ม: microsoft agent framework blog">
+  <time datetime="2026-04-28">2026-04-28</time>
+  <span class="tags"><span class="tag">Microsoft</span><span class="tag">Thai</span><span class="tag">Workflow</span></span>
+  <span class="summary">📰 Microsoft Agent Framework รองรับ A2A v1 สำหรับการสื่อสาร agent ข้ามแพลตฟอร์ม: Microsoft Agent Framework Blog</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-04-27.html" data-date="2026-04-27" data-tags="openai microsoft safety thai" data-search="2026-04-27 openai microsoft safety thai 📰 openai ประกาศความพร้อมใช้งานที่ระดับ fedramp moderate ช่วยขยายเส้นทางการใช้งาน ai ในภาครัฐสหรัฐฯ: openai">
+  <time datetime="2026-04-27">2026-04-27</time>
+  <span class="tags"><span class="tag">OpenAI</span><span class="tag">Microsoft</span><span class="tag">Safety</span><span class="tag">Thai</span></span>
+  <span class="summary">📰 OpenAI ประกาศความพร้อมใช้งานที่ระดับ FedRAMP Moderate ช่วยขยายเส้นทางการใช้งาน AI ในภาครัฐสหรัฐฯ: OpenAI</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-04-26.html" data-date="2026-04-26" data-tags="openai safety thai workflow" data-search="2026-04-26 openai safety thai workflow 📰 ไม่พบประกาศ agentic ai ใหม่ที่มีนัยสำคัญตรงวันที่นี้จากแหล่งที่ตรวจย้อนหลัง">
+  <time datetime="2026-04-26">2026-04-26</time>
+  <span class="tags"><span class="tag">OpenAI</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Workflow</span></span>
+  <span class="summary">📰 ไม่พบประกาศ Agentic AI ใหม่ที่มีนัยสำคัญตรงวันที่นี้จากแหล่งที่ตรวจย้อนหลัง</span>
+</button>
+<button class="entry" type="button" data-page="daily/agentic-ai-news-2026-04-25.html" data-date="2026-04-25" data-tags="openai anthropic google aws microsoft research safety prompting skills workflow" data-search="2026-04-25 openai anthropic google aws microsoft research safety prompting skills workflow 🚀 openai เปิดตัวการอัปเดต agents sdk รุ่นใหม่เมื่อ 2026-04-15 เพิ่ม model-native harness, native sandbox execution, snapshot/rehydration และแนวทางแยก harness ออกจาก c...">
+  <time datetime="2026-04-25">2026-04-25</time>
+  <span class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></span>
+  <span class="summary">🚀 OpenAI เปิดตัวการอัปเดต Agents SDK รุ่นใหม่เมื่อ 2026-04-15 เพิ่ม model-native harness, native sandbox execution, snapshot/rehydration และแนวทางแยก harness ออกจาก c...</span>
+</button>
+        <div class="empty" id="empty">No reports match this filter.</div>
+      </nav>
+      <section class="reader" aria-label="Selected daily report">
+        <iframe id="reportFrame" title="Daily Agentic AI report" src="daily/agentic-ai-news-2026-06-05.html"></iframe>
+      </section>
+    </section>
+    <footer>Generated 2026-06-06 15:12:18 from sources/*.md. The index keeps only dates, tags, and short summaries.</footer>
+  </main>
+  <script>
+    (() => {
+      const entries = [...document.querySelectorAll('.entry')];
+      const frame = document.getElementById('reportFrame');
+      const search = document.getElementById('search');
+      const chips = [...document.querySelectorAll('.chip')];
+      const results = document.getElementById('results');
+      const empty = document.getElementById('empty');
+      let tag = '';
+      let selected = entries[0];
+      function openEntry(entry) {
+        if (!entry) return;
+        entries.forEach(item => item.classList.toggle('active', item === entry));
+        selected = entry;
+        frame.src = entry.dataset.page;
+      }
+      function apply() {
+        const q = search.value.trim().toLowerCase();
+        let shown = [];
+        entries.forEach(entry => {
+          const matchesText = !q || entry.dataset.search.includes(q);
+          const matchesTag = !tag || entry.dataset.tags.split(' ').includes(tag);
+          const visible = matchesText && matchesTag;
+          entry.hidden = !visible;
+          if (visible) shown.push(entry);
+        });
+        results.textContent = shown.length + ' of ' + entries.length + ' daily pages shown';
+        empty.style.display = shown.length ? 'none' : 'block';
+        if (shown.length && (!selected || selected.hidden)) openEntry(shown[0]);
+      }
+      entries.forEach(entry => entry.addEventListener('click', () => openEntry(entry)));
+      search.addEventListener('input', apply);
+      chips.forEach(chip => chip.addEventListener('click', () => {
+        tag = tag === chip.dataset.tag ? '' : chip.dataset.tag;
+        chips.forEach(item => item.classList.toggle('active', item.dataset.tag === tag));
+        apply();
+      }));
+      document.getElementById('clear').addEventListener('click', () => {
+        tag = '';
+        search.value = '';
+        chips.forEach(item => item.classList.remove('active'));
+        apply();
+      });
+      openEntry(selected);
+      apply();
+    })();
+  </script>
+</body>
+</html>

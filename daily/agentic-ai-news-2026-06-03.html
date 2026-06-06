@@ -1,0 +1,67 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-06-03</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-06-03</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">AWS</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-06-03.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🔹 <strong>GitHub Copilot CLI/app ขยับชัดไปทาง agent automation</strong>: ข่าว 2 มิ.ย. รวม prompt scheduling, rubber duck reviewer, voice input, MCP servers, reusable skills และ scheduled automations ใน Copilot app preview. แหล่งที่มา: <a href="https://github.blog/changelog/2026-06-02-copilot-cli-improved-ui-rubber-duck-prompt-scheduling-and-voice-input/" target="_blank" rel="noreferrer">Copilot CLI</a>, <a href="https://github.blog/changelog/2026-06-02-expanded-technical-preview-availability-for-the-github-copilot-app/" target="_blank" rel="noreferrer">Copilot app preview</a></p>
+<p>🔹 <strong>AWS AgentOps วาง production playbook สำหรับ agentic AI</strong>: โพสต์ 1 มิ.ย. เสนอ 4 pillars คือ governance/security, build/operations, evaluation และ observability เพื่อคุม agent ที่ตัดสินใจแบบไม่ deterministic. แหล่งที่มา: <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS AgentOps</a></p>
+<p>🔹 <strong>Hugging Face Agents &amp; MCP Hackathon เริ่มสัปดาห์นี้</strong>: หน้า hackathon ระบุเริ่ม 2 มิ.ย., kickoff 3 มิ.ย. และมี office hours เรื่อง MCP/Gradio/custom components เหมาะสำหรับดูตัวอย่าง community MCP tools. แหล่งที่มา: <a href="https://huggingface.co/Agents-MCP-Hackathon" target="_blank" rel="noreferrer">Hugging Face Agents-MCP-Hackathon</a></p>
+<p>🔹 <strong>งานวิจัย agent evaluation/skills ช่วงปลาย พ.ค. น่าสนใจหลายชิ้น</strong>: Agentic CLEAR, EvalAgent, Agent-BRACE และงาน model-generated skills ชี้ปัญหาร่วมคือ agent ต้องถูกวัดระดับ process, uncertainty และ reusable skill quality. แหล่งที่มา: <a href="https://huggingface.co/papers/2605.22608" target="_blank" rel="noreferrer">Agentic CLEAR</a>, <a href="https://huggingface.co/papers/2605.11378" target="_blank" rel="noreferrer">EvalAgent</a>, <a href="https://huggingface.co/papers/2605.11436" target="_blank" rel="noreferrer">Agent-BRACE</a>, <a href="https://huggingface.co/papers/2605.23899" target="_blank" rel="noreferrer">Model-generated agent skills</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🔹 <strong>AI coding assistant กำลังกลายเป็น scheduled worker</strong>: เมื่อ Copilot มี <code>/every</code>, <code>/after</code>, MCP และ skills ทีมต้องคิด security model แบบ automation platform.</p>
+<p>🔹 <strong>Production agent ไม่ควรปล่อยโดยไม่มี eval loop</strong>: AWS และ paper ล่าสุดย้ำว่าต้องวัด tool correctness, turn behavior, session outcome และ drift หลัง deploy.</p>
+<p>🔹 <strong>Skills เป็นทั้ง productivity และ risk surface</strong>: skill ที่เขียนดีช่วยลด prompt ซ้ำ แต่ skill ที่กว้างหรือไม่ test อาจทำให้ agent ใช้ tool ผิด context.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>🔹 <strong>อ่าน GitHub Copilot CLI/app changelogs ก่อนทำ workflow ใหม่</strong>: โฟกัสที่ scheduling, second-opinion review, MCP และ skill packaging.</p>
+<p>🔹 <strong>อ่าน AWS AgentOps เป็น checklist สำหรับทุก platform</strong>: ใช้กับ OpenAI Agents SDK, Microsoft Agent Framework, LangGraph หรือ Copilot automation ได้.</p>
+<p>🔹 <strong>ติดตาม Hugging Face hackathon examples</strong>: เลือกดูเฉพาะ project ที่มี source code, MCP contract, evaluation หรือ security boundary ชัดเจน.</p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🔹 <strong>สถานการณ์: recurring codebase monitoring</strong>; <strong>แพตเทิร์น: read-only scheduled prompt</strong>; template: <code>ทุกเช้า สรุป failing checks + unresolved PR comments + risky files; ห้ามแก้ไฟล์จนกว่าจะมี approval</code>.</p>
+<p>🔹 <strong>สถานการณ์: agent เขียน patch แล้วไม่แน่ใจ</strong>; <strong>แพตเทิร์น: reviewer-agent gate</strong>; template: <code>ตรวจเฉพาะ blocker: security, data loss, broken tests, policy violation; ส่งผลเป็น must-fix/optional</code>; verify ด้วย tests จริง.</p>
+<p>🔹 <strong>สถานการณ์: สร้าง skill สำหรับทีม</strong>; <strong>แพตเทิร์น: skill minimal contract</strong>; ใส่ <code>trigger</code>, <code>inputs</code>, <code>allowed tools</code>, <code>forbidden actions</code>, <code>output</code>, <code>verification</code>; caveat คือ version skill พร้อม test examples.</p>
+<p>🔹 <strong>สถานการณ์: eval agent workflow</strong>; <strong>แพตเทิร์น: process-level trace review</strong>; เก็บ <code>goal -&gt; plan -&gt; tool call -&gt; observation -&gt; decision -&gt; result</code>; sample 5-10 sessions เพื่อหา failure mode ก่อน production.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🔹 <strong>วาง Copilot/Codex/agent workflow เป็น governed automation tier</strong>: read-only summary, draft patch, PR creation, merge/deploy ควรมี control ต่างระดับกัน.</p>
+<p>🔹 <strong>ซื้อ platform แล้วต้องซื้อ operating model ด้วย</strong>: AgentOps, eval ownership, policy controls และ incident response ต้องพร้อมก่อนขยายใช้งานทั้งองค์กร.</p>
+<p>🔹 <strong>MCP adoption ต้องเริ่มจาก allowlist</strong>: ต่อ tool เท่าที่จำเป็น, แยก read/write, log ทุก call และกำหนด credential boundary ให้ชัด.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🔹 <strong>ข่าว/โพสต์จากชุมชนไทย: Techsauce รายงานงาน Intelligence in Action วันที่ 11 มิ.ย.</strong>: มี local relevance ด้านการใช้ AI/data intelligence ในธุรกิจไทย แต่ควรอ่านเป็น ecosystem signal ไม่ใช่ technical proof. แหล่งที่มา: <a href="https://techsauce.co/pr-news/marketing-oops-summit-2026-intelligence" target="_blank" rel="noreferrer">Techsauce</a></p>
+<p>🔹 <strong>ข่าว/โพสต์จากชุมชนไทย: Blognone topic AI/Copilot ใช้เป็น briefing ภาษาไทยได้ดี</strong>: โดยเฉพาะข่าว Codex/Copilot/Agent HQ แต่ควรแนบ original source เสมอ. แหล่งที่มา: <a href="https://www.blognone.com/topics/artificial-intelligence" target="_blank" rel="noreferrer">Blognone AI</a>, <a href="https://www.blognone.com/topics/github-copilot" target="_blank" rel="noreferrer">Blognone GitHub Copilot</a></p>
+<p>🔹 <strong>ยังไม่พบ public Facebook/community post ที่ผ่านเกณฑ์ source-grounded สำหรับวันนี้</strong>: ไม่มีการใช้ engagement-only content เป็นหลักฐาน.</p>
+<h2>Monthly Trend Synthesis</h2>
+<p>🔹 <strong>เดือนนี้เริ่มด้วย agent operations และ coding automation</strong>: GitHub, AWS, Microsoft และ Hugging Face ต่างขยับจาก demo ไปสู่ scheduling, skills, MCP, eval และ governance.</p>
+<p>🔹 <strong>Solution Architect ควรศึกษา &quot;agent as workflow system&quot;</strong>: ประเด็นสำคัญคือ permission boundary, audit trail, replay, policy, human approval และ cost guardrails.</p>
+<p>🔹 <strong>สำหรับไทย โอกาสใกล้ตัวคือ internal productivity agent</strong>: helpdesk, developer workflow, knowledge search และ compliance-aware coding assistant น่าทำก่อน autonomous action ที่เสี่ยงสูง.</p>
+<p>👥 Team Flow: 🧭 Cody 🟡✅ › 🔍 Lek 🟡✅</p>
+  </main>
+</body>
+</html>

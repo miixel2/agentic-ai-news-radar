@@ -1,0 +1,58 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-05-27</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-05-27</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">AWS</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-05-27.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🔹 <strong>Agentic CLEAR ถูก submit เข้า Hugging Face Papers</strong>: IBM Research เสนอ framework สำหรับประเมิน agent behavior แบบ multi-level ที่ระดับ system, trace และ node โดยทำงานเหนือ observability layer. แหล่งที่มา: <a href="https://huggingface.co/papers/2605.22608" target="_blank" rel="noreferrer">Hugging Face Papers</a>, <a href="https://arxiv.org/abs/2605.22608" target="_blank" rel="noreferrer">arXiv</a></p>
+<p>🔹 <strong>Agent framework comparison เริ่มเป็นสัญญาณจากชุมชน dev</strong>: โพสต์ชุมชนสาย ML/agents เปรียบเทียบ LangGraph, CrewAI, OpenAI Agents SDK, Mastra และ Microsoft Agent Framework โดยสรุปตรงกันว่า production complexity อยู่ที่ evals, memory, observability, routing, retries และ state management มากกว่า framework ชื่อดังเพียงอย่างเดียว. แหล่งที่มา: <a href="https://www.reddit.com/r/learnmachinelearning/comments/1tp1b22/comprehensive_comparison_of_8_opensource_ai_agent/" target="_blank" rel="noreferrer">Reddit discussion</a></p>
+<p>🔹 <strong>Microsoft Agent Framework ยังเป็นหนึ่งในตัวเลือก enterprise ที่ควรจับตา</strong>: release ล่าสุดในเดือน พ.ค. มีการปรับ skill discovery, MCP metadata, approval mode, DevUI security และ hosted-agent observability. แหล่งที่มา: <a href="https://github.com/microsoft/agent-framework/releases" target="_blank" rel="noreferrer">GitHub Releases</a></p>
+<p>🔹 <strong>AWS AgentCore MCP server ย้ำทิศทาง cloud-native agent tools</strong>: AgentCore เปิดให้ MCP clients เรียก runtime, memory, browser และ code interpreter ผ่าน credential chain เดิมของ AWS. แหล่งที่มา: <a href="https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/release-notes.html" target="_blank" rel="noreferrer">AWS AgentCore release notes</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🔹 <strong>observability ต้องต่อด้วย evaluation</strong>: trace ที่ดูได้ยังไม่พอ ถ้าไม่มีระบบสรุป failure mode, task success signal และ node-level diagnosis.</p>
+<p>🔹 <strong>framework debate กำลัง mature ขึ้น</strong>: ชุมชนเริ่มมองว่า “agent framework ไหนดีที่สุด” เป็นคำถามรองจาก “operational layer ของเราพร้อมแค่ไหน”.</p>
+<p>🔹 <strong>agent ที่ใช้ tool หลายตัวต้องมี error budget</strong>: retry, idempotency, timeout และ state recovery ต้องถูกออกแบบเหมือน workflow system.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>🔹 <strong>อ่าน Agentic CLEAR แล้วออกแบบ eval dashboard ภายใน</strong>: เริ่มจาก trace-level labels เช่น planning error, wrong tool, bad memory recall, unsafe action และ missing verification. แหล่งที่มา: <a href="https://huggingface.co/papers/2605.22608" target="_blank" rel="noreferrer">Hugging Face Papers</a></p>
+<p>🔹 <strong>ทำ framework scorecard ของทีมเอง</strong>: ให้คะแนนตาม deployment, auth, tool gateway, memory, evals, observability, cost tracking และ language/runtime fit.</p>
+<p>🔹 <strong>ตรวจ MCP servers ที่ใช้อยู่</strong>: แยก internal/external, read/write, credential scope, data sensitivity และ owner ให้ชัด.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🔹 <strong>ควรมี “agent control plane” ก่อน scale</strong>: รวม registry, policy, trace, cost, eval และ incident review เพื่อไม่ให้ agent กระจายแบบ shadow automation.</p>
+<p>🔹 <strong>ใช้ trace เป็น artifact สำหรับ governance</strong>: ทุก action สำคัญควรย้อนดูได้ว่า prompt, memory, tool call, approval และ output เกิดขึ้นอย่างไร.</p>
+<p>🔹 <strong>สำหรับ coding agents ให้ทดสอบข้าม context boundary</strong>: งานยาวควรถูกทดสอบหลัง compaction/resume เพราะ memory และ file-state drift เป็น failure ที่พบจริง.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🔹 <strong>ยังไม่พบ public Thai community post ที่มี signal สูงในวันนี้</strong>: ผลค้นหาส่วนใหญ่เป็น repost, course/content marketing หรือโพสต์ที่ต้อง login จึงไม่ใช้เป็น source หลัก.</p>
+<p>🔹 <strong>ประเด็นที่ทีมไทยควรถาม vendor</strong>: agent เก็บ log ที่ไหน, memory retention กี่วัน, MCP/tool permissions แยกตาม role ได้ไหม, และมี audit export สำหรับ compliance หรือไม่.</p>
+<p>🔹 <strong>ใช้บทความไทยเป็น stakeholder bridge</strong>: สำหรับผู้บริหารไทย ให้แปลเรื่อง eval/observability เป็นภาษา risk, accountability และ operational control.</p>
+<p>👥 Team Flow: 🧭 Cody 🟡✅ › 🔍 Lek 🟡✅</p>
+  </main>
+</body>
+</html>

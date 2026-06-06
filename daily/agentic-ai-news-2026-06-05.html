@@ -1,0 +1,74 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-06-05</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-06-05</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-06-05.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🔹 <strong>วันนี้ไม่พบประกาศใหม่ที่ high-signal กว่า Build/GitHub Changelog รอบ 2-4 มิ.ย.</strong>: สรุปหลักยังเป็น Copilot SDK GA, Copilot app technical preview, cloud/local sandboxes, cloud automations, Actions fix และ larger context/reasoning. แหล่งที่มา: <a href="https://github.blog/changelog/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🔹 <strong>Copilot SDK GA สำคัญกับทีม platform engineering</strong>: SDK เปิดให้ embed agent runtime ของ Copilot ใน app/tool ภายใน รองรับ custom tools, MCP, system prompt customization, OpenTelemetry, cloud sessions และ hook system. แหล่งที่มา: <a href="https://github.blog/changelog/2026-06-02-copilot-sdk-is-now-generally-available/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🔹 <strong>OpenAI Agents SDK ย้ำ pattern ที่ควรเอามาเป็นมาตรฐาน agent harness</strong>: MCP, skills, AGENTS.md, shell, apply patch, sandbox execution และ snapshot/rehydration เป็น primitive สำหรับงาน long-horizon ที่ต้องคุม environment. แหล่งที่มา: <a href="https://openai.com/index/the-next-evolution-of-the-agents-sdk/" target="_blank" rel="noreferrer">OpenAI</a>, <a href="https://openai.github.io/openai-agents-js/guides/mcp/" target="_blank" rel="noreferrer">OpenAI Agents JS MCP guide</a></p>
+<p>🔹 <strong>Microsoft Foundry + Agent Framework วางแนวทาง multi-agent production</strong>: Microsoft ชู Foundry Agent Service และ Agent Framework เป็น stack สำหรับ build/run agent at scale พร้อม orchestration, eval, observability และ enterprise lifecycle. แหล่งที่มา: <a href="https://devblogs.microsoft.com/foundry/agent-service-build2026/" target="_blank" rel="noreferrer">Microsoft Foundry Blog</a>, <a href="https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-at-build-2026/" target="_blank" rel="noreferrer">Microsoft Agent Framework</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🔹 <strong>ตลาดกำลัง converge ไปที่ agent runtime + tool protocol + governance</strong>: ไม่ว่าจะเป็น Copilot SDK, OpenAI Agents SDK หรือ Microsoft Agent Framework จุดแข็งไม่ใช่ prompt อย่างเดียว แต่คือ runtime, tools, memory/state, trace และ policy.</p>
+<p>🔹 <strong>Copilot สำหรับที่ทำงานต้องดู billing และ policy พร้อมกัน</strong>: context ใหญ่, reasoning สูง, code review, cloud sandbox และ automations มีผลต่อ credit/cost รวมถึงการตั้ง admin policy.</p>
+<p>🔹 <strong>MCP เป็น interface ที่แรงขึ้น แต่ risk ก็ชัดขึ้น</strong>: ต้องมี allowlist, tool permission, source provenance, logging และ security review ก่อนต่อเข้าระบบองค์กร.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>🔹 <strong>อ่าน Copilot SDK GA ถ้าทีมอยากทำ internal developer portal</strong>: จุดน่าสนใจคือ OpenTelemetry + hooks + MCP เพราะเอาไปผูก governance และ observability ได้.</p>
+<p>🔹 <strong>อ่าน DeepLearning.AI course list สำหรับ skill/workflow learning path</strong>: มีหัวข้อ browser agents, agent memory, A2A protocol, Anthropic agent skills และ spec-driven development with coding agents. แหล่งที่มา: <a href="https://www.deeplearning.ai/courses/" target="_blank" rel="noreferrer">DeepLearning.AI Courses</a></p>
+<p>🔹 <strong>อ่าน Anthropic MCP connector/Claude Code MCP docs เป็น reference ฝั่ง remote tools</strong>: ใช้ดู pattern การประกาศ MCP server, tool search และการโหลด tool อย่างระมัดระวัง. แหล่งที่มา: <a href="https://platform.claude.com/docs/en/managed-agents/mcp-connector" target="_blank" rel="noreferrer">Claude API Docs</a>, <a href="https://code.claude.com/docs/en/mcp" target="_blank" rel="noreferrer">Claude Code MCP</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🔹 <strong>สถานการณ์: ทำ agent skill ให้ reusable</strong>; <strong>แพตเทิร์น: progressive skill file</strong>; template: <code>Trigger: ... / Inputs: ... / Steps: ... / Allowed tools: ... / Stop and ask when: ... / Verification: ...</code>; caveat คือเขียนตัวอย่าง input-output 2-3 เคสและทดสอบก่อนแชร์ทีม.</p>
+<p>🔹 <strong>สถานการณ์: ต่อ MCP tool ใหม่เข้าทีม</strong>; <strong>แพตเทิร์น: MCP intake checklist</strong>; ตรวจ owner, auth scope, read/write capability, rate limit, audit log, secret exposure และ fallback; verify ด้วย dry-run read-only ก่อนเปิด write.</p>
+<p>🔹 <strong>สถานการณ์: ใช้ coding agent กับ issue ใหญ่</strong>; <strong>แพตเทิร์น: plan-canvas-review loop</strong>; ให้ agent สร้าง plan/checklist ก่อน patch, update checklist ระหว่างทำ, เปิด diff ที่มี test evidence; caveat คือห้ามให้ merge เองจนกว่า reviewer ผ่าน.</p>
+<p>🔹 <strong>สถานการณ์: eval agent workflow</strong>; <strong>แพตเทิร์น: trace-to-rubric eval</strong>; เก็บ trace แล้วให้ rubric วัด goal completion, tool correctness, unsafe action, unnecessary cost และ recovery behavior; verify ด้วย human spot-check.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🔹 <strong>สถาปัตยกรรม agent ปี 2026 ควรมี control plane แยกชัด</strong>: model/runtime, tool registry, permission policy, memory/context, eval harness, observability และ human approval ไม่ควรปนกันใน prompt เดียว.</p>
+<p>🔹 <strong>สำหรับองค์กรที่ใช้ GitHub อยู่แล้ว Copilot กลายเป็น automation surface จริงจัง</strong>: ใช้ได้กับ PR, Actions, issue triage และ release notes แต่ควรเริ่มจาก draft/assist mode ก่อนให้ autonomous write.</p>
+<p>🔹 <strong>อย่าเลือก framework จาก vendor lock-in อย่างเดียว</strong>: ให้เทียบ standard support เช่น MCP/A2A, telemetry, sandbox, hooks, deployment target, admin policy และ exportable traces.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🔹 <strong>ข่าว/โพสต์จากชุมชนไทย: Techsauce รายงาน SCBX AI Outlook 2026 เรื่อง context management</strong>: มี local relevance สำหรับองค์กรไทยที่กำลังทำ knowledge agent เพราะปัญหาไม่ใช่แค่โมเดล แต่คือข้อมูลธุรกิจและ context ที่ agent ใช้ตัดสินใจ. แหล่งที่มา: <a href="https://techsauce.co/tech-and-biz/scbx-ai-outlook-2026-abundant-intelligence" target="_blank" rel="noreferrer">Techsauce</a></p>
+<p>🔹 <strong>ข่าว/โพสต์จากชุมชนไทย: Techsauce สัมภาษณ์ AWS Summit Bangkok เรื่องบทบาท developer</strong>: เหมาะใช้เป็น conversation starter กับทีมไทยว่า developer จะขยับจาก writer เป็น reviewer/director ของ agent workflow. แหล่งที่มา: <a href="https://techsauce.co/tech-and-biz/adrian-de-luca-aws-summit-bangkok-2026-exclusive-interview-with-techsauce" target="_blank" rel="noreferrer">Techsauce</a></p>
+<p>🔹 <strong>ข่าว/โพสต์จากชุมชนไทย: Techsauce รายงาน Gemini Spark ในมุม agent ส่วนตัว 24 ชั่วโมง</strong>: เป็น ecosystem signal ฝั่ง consumer/Workspace แต่ technical decision ควรอิง official Google/Cloud docs เพิ่มเมื่อจะนำไปใช้จริง. แหล่งที่มา: <a href="https://techsauce.co/news/google-gemini-spark" target="_blank" rel="noreferrer">Techsauce</a></p>
+<p>🔹 <strong>ยังไม่พบ public Facebook/community post ที่ผ่านเกณฑ์ source-grounded สำหรับวันนี้</strong>: ข้ามโพสต์ engagement-only, repost และ course ad ที่ไม่มี insight เชิงเทคนิค.</p>
+<h2>Friday Research Digest</h2>
+<p>🔹 <strong>A Unified Framework for the Evaluation of LLM Agentic Capabilities</strong>: core idea คือรวม benchmark หลายแบบเป็น instruction-tool-environment format และแยกผลจาก framework vs environment ผ่าน sandbox/snapshot; why it matters คือช่วยให้ eval agent reproducible มากขึ้น; practical takeaway คือเก็บ environment snapshot เมื่อวัด agent; read priority: สูง. แหล่งที่มา: <a href="https://arxiv.org/abs/2605.27898" target="_blank" rel="noreferrer">arXiv</a></p>
+<p>🔹 <strong>Code as Agent Harness</strong>: core idea คือมอง code เป็น harness สำหรับ agentic AI ที่ executable, verifiable และ stateful; why it matters คือช่วยย้ายจาก prompt-only ไปสู่ระบบที่ทดสอบได้; practical takeaway คือให้ workflow สำคัญอยู่ใน code/skill/tool contract ไม่ใช่ข้อความยาวล้วน; read priority: สูง. แหล่งที่มา: <a href="https://huggingface.co/papers/2605.18747" target="_blank" rel="noreferrer">Hugging Face Papers</a></p>
+<p>🔹 <strong>Orchard: An Open-Source Agentic Modeling Framework</strong>: core idea คือ framework สำหรับฝึก/วัด agent ที่ใช้ planning, tool use และ GUI interaction โดยใช้ synthetic/distilled tasks; why it matters คือ GUI agents เริ่มต้องการ harness และ dataset ที่โปร่งใส; practical takeaway คือแยก planner, executor และ evaluator ตั้งแต่ต้น; read priority: กลาง-สูง. แหล่งที่มา: <a href="https://huggingface.co/papers/2605.15040" target="_blank" rel="noreferrer">Hugging Face Papers</a></p>
+<p>🔹 <strong>The Evolution of Tool Use in LLM Agents</strong>: core idea คือ survey จาก single-tool call ไปสู่ multi-tool orchestration ที่มี state, feedback, safety, cost และ benchmark design; why it matters คือเป็น map สำหรับออกแบบ tool layer; practical takeaway คืออย่าเริ่มจากเพิ่ม tool จำนวนมาก ให้เริ่มจาก dependency, permission และ failure mode; read priority: กลาง. แหล่งที่มา: <a href="https://arxiv.org/abs/2603.22862" target="_blank" rel="noreferrer">arXiv</a></p>
+<p>🔹 <strong>BAIR Adaptive Parallel Reasoning</strong>: core idea คือ parallel reasoning แบบ fork-join มี tradeoff ระหว่างแก้ inference engine กับทำ orchestration ฝั่ง client; why it matters คือ agent/reasoning workload เริ่มชน cost/latency จริง; practical takeaway คือเลือก engine-agnostic orchestration ก่อนถ้าทีมยังไม่มี infra control ลึก; read priority: กลาง. แหล่งที่มา: <a href="https://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/" target="_blank" rel="noreferrer">BAIR Blog</a></p>
+<h2>Monthly Trend Synthesis</h2>
+<p>🔹 <strong>สัปดาห์แรกของมิ.ย. 2026 ชัดเจนว่า agent platform กำลังเข้าสู่ operating model</strong>: SDK, sandboxes, automations, context controls, traces และ eval เป็นคำหลักมากกว่า chatbot feature.</p>
+<p>🔹 <strong>เทรนด์สำหรับ Solution Architect คือ agent governance by design</strong>: ต้องออกแบบ permission tier, observability, cost limits, human review และ rollback ก่อน rollout ไปทั้งทีม.</p>
+<p>🔹 <strong>สำหรับไทย local relevance อยู่ที่ enterprise adoption และ context management</strong>: ข่าว SCBX/AWS/Techsauce ชี้ว่าองค์กรไทยเริ่มเห็นโจทย์ agent ใน productivity แต่ยังต้องยึด primary technical sources เมื่อเลือก platform.</p>
+<p>👥 Team Flow: 🧭 Cody 🟡✅ › 🔍 Lek 🟡🔍✅</p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-06-04</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-06-04</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">AWS</span><span class="tag">Microsoft</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-06-04.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🔹 <strong>GitHub Copilot เพิ่มปุ่ม Fix with Copilot สำหรับ Actions ที่ fail ในแผน Pro/Pro+/Max</strong>: ผู้ใช้สามารถให้ Copilot cloud agent ตรวจ log, push fix กลับ branch และ tag กลับมาให้ review ได้ เหมาะกับงานแก้ test/lint ที่กินเวลาแต่ความเสี่ยงควรอยู่ใน PR review. แหล่งที่มา: <a href="https://github.blog/changelog/2026-06-04-fix-with-copilot-for-failing-actions-now-in-pro-pro-and-max/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🔹 <strong>GitHub Copilot รองรับ context ใหญ่ขึ้นและปรับ reasoning level ได้</strong>: รองรับ one-million-token context ใน VS Code, Copilot CLI และ Copilot app พร้อมคำเตือนว่า context/reasoning ที่สูงขึ้นกิน AI credits มากขึ้น. แหล่งที่มา: <a href="https://github.blog/changelog/2026-06-04-larger-context-windows-and-configurable-reasoning-levels-for-github-copilot/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🔹 <strong>Copilot app/CLI รอบ Build 2026 ชี้ทางชัดว่า coding agent ต้องมี sandbox, automation และ review surface</strong>: Copilot app preview เปิดให้ลูกค้า Pro/Pro+/Business/Enterprise มากขึ้น, รองรับ canvas, cloud sessions, cloud automations, MCP, skills และ agentic browser. แหล่งที่มา: <a href="https://github.blog/changelog/2026-06-02-expanded-technical-preview-availability-for-the-github-copilot-app/" target="_blank" rel="noreferrer">Copilot app preview</a>, <a href="https://github.blog/changelog/2026-06-02-cloud-and-local-sandboxes-for-github-copilot-now-in-public-preview/" target="_blank" rel="noreferrer">Copilot sandboxes</a></p>
+<p>🔹 <strong>Microsoft Foundry/Agent Framework วางภาพ production multi-agent stack</strong>: Build 2026 เน้น Foundry Agent Service และ Microsoft Agent Framework ที่รวมแนวคิด Semantic Kernel + AutoGen สำหรับ orchestration, eval, observability และ deployment. แหล่งที่มา: <a href="https://devblogs.microsoft.com/foundry/agent-service-build2026/" target="_blank" rel="noreferrer">Microsoft Foundry Blog</a>, <a href="https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-at-build-2026/" target="_blank" rel="noreferrer">Microsoft Agent Framework</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🔹 <strong>AI coding agent เริ่มเข้ามาอยู่ใน workflow จริง ไม่ใช่แค่ chat ใน IDE</strong>: ปุ่ม fix failing Actions และ cloud automation ทำให้ต้องกำหนด policy ว่า agent แก้อะไรได้เองและอะไรต้องรอ human gate.</p>
+<p>🔹 <strong>Context ใหญ่แก้ปัญหา repo ใหญ่ แต่เพิ่มต้นทุนและ risk</strong>: Solution Architect ควรวาง default ให้ใช้ context ปกติ และเปิด context/reasoning สูงเฉพาะ architectural/debugging task ที่มีเหตุผล.</p>
+<p>🔹 <strong>Sandbox กลายเป็น baseline ของ agent tooling</strong>: เมื่อ agent รัน command และแก้ไฟล์ได้ isolation, network policy, credential boundary และ audit log ต้องเป็นข้อกำหนดตั้งแต่ pilot.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>🔹 <strong>อ่าน GitHub Changelog ชุด 2-4 มิ.ย. แบบต่อเนื่อง</strong>: โฟกัส Copilot SDK GA, cloud agent automations, app canvas, sandboxes, context/reasoning และ Actions fix.</p>
+<p>🔹 <strong>อ่าน Microsoft Foundry Build 2026 สำหรับภาพ enterprise agent platform</strong>: ใช้เทียบกับ OpenAI Agents SDK, LangGraph และ Copilot SDK ว่าแต่ละตัวให้ runtime/eval/observability แค่ไหน.</p>
+<p>🔹 <strong>อ่าน OpenAI Agents SDK evolution เป็น reference ฝั่ง harness</strong>: มี primitives สำคัญ เช่น MCP, skills, AGENTS.md, shell, apply patch, sandbox และ snapshot/rehydration. แหล่งที่มา: <a href="https://openai.com/index/the-next-evolution-of-the-agents-sdk/" target="_blank" rel="noreferrer">OpenAI</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🔹 <strong>สถานการณ์: CI fail บ่อยใน repo ทีม</strong>; <strong>แพตเทิร์น: Copilot fix gate</strong>; template: <code>เมื่อ Actions fail ให้ agent เสนอ patch เฉพาะ test/lint/build; ห้ามเปลี่ยน public API; เปิด draft PR พร้อม evidence</code>; verify ด้วย rerun checks.</p>
+<p>🔹 <strong>สถานการณ์: ต้องใช้ context ใหญ่</strong>; <strong>แพตเทิร์น: context budget note</strong>; template: <code>เหตุผลที่ต้องใช้ large context: ...; files/documents ที่จำเป็น: ...; expected output: ...; stop condition: ...</code>; caveat คือ monitor AI credits.</p>
+<p>🔹 <strong>สถานการณ์: เปิด agent ให้รัน command</strong>; <strong>แพตเทิร์น: sandbox profile</strong>; แยก read-only, build/test, write patch และ deploy profile; verify ว่า network/secret access ถูก block ตาม policy.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🔹 <strong>จัด agent capability เป็น tier</strong>: summarize, diagnose, patch, PR, merge/deploy ไม่ควรมี permission เท่ากัน.</p>
+<p>🔹 <strong>ควรวาง cost governance คู่กับ adoption</strong>: context window, reasoning level, cloud sandbox และ code review ล้วนเริ่มมี billing surface ที่ทีมต้องเห็นได้.</p>
+<p>🔹 <strong>เลือก framework จาก operating controls ไม่ใช่ demo speed อย่างเดียว</strong>: eval, trace, sandbox, approval, audit และ rollback สำคัญเท่ากับความฉลาดของโมเดล.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🔹 <strong>ข่าว/โพสต์จากชุมชนไทย: Techsauce สัมภาษณ์ AWS Summit Bangkok เรื่องนิยามใหม่ของ developer ในยุค Agentic AI</strong>: เป็น local signal ว่า enterprise ไทยเริ่มคุยเรื่อง developer-as-director มากขึ้น แต่ควร cross-check technical claim กับ AWS/GitHub/Microsoft primary sources. แหล่งที่มา: <a href="https://techsauce.co/tech-and-biz/adrian-de-luca-aws-summit-bangkok-2026-exclusive-interview-with-techsauce" target="_blank" rel="noreferrer">Techsauce</a></p>
+<p>🔹 <strong>ข่าว/โพสต์จากชุมชนไทย: SCBX AI Outlook 2026 ชี้ context management เป็นคอขวด</strong>: เชื่อมกับข่าว context window/reasoning ได้ดี เพราะองค์กรไทยที่ทำ agent ต้องวาง knowledge/context architecture ไม่ใช่เพิ่ม prompt ยาวอย่างเดียว. แหล่งที่มา: <a href="https://techsauce.co/tech-and-biz/scbx-ai-outlook-2026-abundant-intelligence" target="_blank" rel="noreferrer">Techsauce</a></p>
+<p>🔹 <strong>ยังไม่พบ public Facebook/community post ที่ผ่านเกณฑ์ source-grounded สำหรับวันนี้</strong>: ไม่มีการใช้ engagement-only content เป็นหลักฐาน.</p>
+<h2>Monthly Trend Synthesis</h2>
+<p>🔹 <strong>ต้นเดือนมิ.ย. 2026 เทรนด์เด่นคือ coding agent เข้าสู่ managed workflow</strong>: scheduling, sandbox, context controls, app canvas และ SDK ทำให้ agent กลายเป็นส่วนหนึ่งของ SDLC.</p>
+<p>🔹 <strong>ความพร้อม production วัดจาก control plane</strong>: ทีมควรถามว่าใครอนุมัติ tool, ใครดู trace, ใครรับผิดชอบ cost, และใคร rollback เมื่อ agent ทำผิด.</p>
+<p>👥 Team Flow: 🧭 Cody 🟡✅ › 🔍 Lek 🟡✅</p>
+  </main>
+</body>
+</html>

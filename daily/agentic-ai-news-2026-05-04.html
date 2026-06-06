@@ -1,0 +1,63 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-05-04</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-05-04</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-05-04.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🔹 27-29 เมษายน 2026 ภาพใหญ่ที่แรงสุดยังเป็นเรื่อง &quot;agent stack ย้ายเข้า production cloud&quot; มากกว่าการปล่อยเดโมใหม่: OpenAI กับ Microsoft ปรับสัญญาให้ OpenAI เสิร์ฟผลิตภัณฑ์ได้บนหลาย cloud โดย Azure ยังเป็น primary cloud ส่วน AWS เปิด <a href="https://aws.amazon.com/about-aws/whats-new/2026/04/bedrock-openai-models-codex-managed-agents/" target="_blank" rel="noreferrer">OpenAI models, Codex และ Managed Agents บน Bedrock แบบ limited preview</a> และ OpenAI อธิบายเงื่อนไขใหม่ไว้ในประกาศ <a href="https://openai.com/index/next-phase-of-microsoft-partnership/" target="_blank" rel="noreferrer">The next phase of the Microsoft partnership</a>.</p>
+<p>🔹 ฝั่งมาตรฐาน agent orchestration เดินต่อชัดเจน: Microsoft ออก <a href="https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-version-1-0/" target="_blank" rel="noreferrer">Agent Framework 1.0</a> เป็น production-ready พร้อม A2A/MCP และต่อด้วย <a href="https://devblogs.microsoft.com/agent-framework/a2a-v1-is-here-cross-platform-agent-communication-in-microsoft-agent-framework-for-net/" target="_blank" rel="noreferrer">A2A v1</a> สำหรับคุยข้าม vendor; ฝั่ง OpenAI ขยับ Agents SDK ไปทาง harness ที่มี <a href="https://openai.com/index/the-next-evolution-of-the-agents-sdk/" target="_blank" rel="noreferrer">configurable memory, sandbox-aware orchestration และ MCP/skills/AGENTS.md integration</a>.</p>
+<p>🔹 Google Cloud เดินเกม &quot;platformization&quot; เข้มขึ้น: <a href="https://developers.googleblog.com/agents-cli-in-agent-platform-create-to-production-in-one-cli/" target="_blank" rel="noreferrer">Agents CLI</a> ถูกวางให้ coding agents เรียกใช้สแต็ก Agent Platform/Cloud Run/A2A ได้ตรง ๆ และเอกสาร <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale" target="_blank" rel="noreferrer">Gemini Enterprise Agent Platform</a> ระบุองค์ประกอบ production ชัดมากทั้ง Memory Bank, Evaluation Service, tracing, logging, monitoring และ secure code execution/computer use.</p>
+<p>🔹 AWS ขยับจาก infra ไปสู่ harness สำเร็จรูปจริงจัง: <a href="https://aws.amazon.com/blogs/machine-learning/get-to-your-first-working-agent-in-minutes-announcing-new-features-in-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">Amazon Bedrock AgentCore</a> เน้นว่า agent harness ควรเป็น config ไม่ใช่โค้ดตั้งแต่วันแรก และมี persistent state/microVM isolation ให้ขยายจาก prototype ไป production ได้เร็วขึ้น.</p>
+<p>🔹 ฝั่ง ecosystem/observability ยังย้ำประเด็นเดิมแต่สำคัญ: LangChain ชี้ว่า <a href="https://www.langchain.com/blog/agent-observability-powers-agent-evaluation" target="_blank" rel="noreferrer">agent observability เป็นฐานของ evaluation</a> และเตือนว่า <a href="https://www.langchain.com/blog/your-harness-your-memory" target="_blank" rel="noreferrer">harness ผูกกับ memory ownership</a>; Hugging Face ขยายแนว MCP ผ่าน <a href="https://huggingface.co/docs/hub/en/agents-mcp" target="_blank" rel="noreferrer">HF MCP Server</a> และ <a href="https://huggingface.co/docs/huggingface_hub/main/en/package_reference/mcp" target="_blank" rel="noreferrer">MCPClient/Tiny Agent</a> ให้เชื่อม Hub เข้ากับ agent clients ได้ตรงขึ้น.</p>
+<h2>ทำไมควรรู้</h2>
+<p>🔹 สัปดาห์นี้ไม่ได้เปลี่ยนที่ &quot;โมเดลไหนเก่งสุด&quot; เท่านั้น แต่เปลี่ยนที่ &quot;ใครมี agent runtime ครบกว่า&quot; เพราะทุกค่ายกำลังแข่งกันที่ harness, memory, evals, identity, sandbox และ observability.</p>
+<p>🔹 สัญญาณสำคัญคือ MCP/A2A/skills/AGENTS.md กำลังกลายเป็นชั้น interoperability จริง ไม่ใช่แค่ศัพท์ฮิต; ถ้าทีมยังออกแบบ agent แบบผูกกับ vendor API เดียว จะเริ่มเสียเปรียบด้าน portability.</p>
+<p>🔹 เรื่อง memory ถูกยกระดับจาก UX feature เป็น data-governance concern: ใครเป็นเจ้าของ memory, แก้/ลบได้ไหม, scope ต่อ user อย่างไร, trace ย้อนหลังได้แค่ไหน เริ่มเป็น requirement ระดับ enterprise โดยตรง.</p>
+<p>🔹 งาน evals กำลังขยับจาก benchmark ล้วน ๆ ไปสู่ trace-based continuous improvement ใน production; ถ้าไม่มี telemetry ที่ดี ทีมจะพิสูจน์ ROI และความปลอดภัยของ agent ยากมาก.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>🔹 ถ้าสนใจ memory สำหรับงานยาว อ่าน <a href="https://arxiv.org/abs/2602.22769" target="_blank" rel="noreferrer">AMA-Bench</a>: benchmark นี้ชี้ว่าระบบ memory แบบ similarity retrieval อย่างเดียวมักพลาด causal/objective facts และแนวทางที่เสริม causality graph ยังนำอยู่.</p>
+<p>🔹 ถ้าทำ AI coding agents อ่าน <a href="https://arxiv.org/abs/2604.05278" target="_blank" rel="noreferrer">Spec Kit Agents</a>: ไอเดียหลักคือเพิ่ม context-grounding hooks และ validation hooks เพื่อลด agent ที่ &quot;เดา repo&quot; แทนที่จะ &quot;อ่าน repo&quot;.</p>
+<p>🔹 ถ้าทำ evals ใน software engineering อ่าน <a href="https://arxiv.org/abs/2604.01437" target="_blank" rel="noreferrer">Reproducible, Explainable, and Effective Evaluations of Agentic AI for SE</a>: ข้อเสนอสำคัญคือเก็บ Thought-Action-Result trajectories เพื่อให้เปรียบเทียบ agent แบบอธิบายได้และทำซ้ำได้.</p>
+<p>🔹 ถ้าต้องเปิด agent ให้ใช้เครื่องมือภายนอก อ่าน <a href="https://huggingface.co/docs/hub/en/agents-mcp" target="_blank" rel="noreferrer">Hugging Face MCP Server docs</a> คู่กับ <a href="https://openai.com/index/the-next-evolution-of-the-agents-sdk/" target="_blank" rel="noreferrer">OpenAI Agents SDK update</a> เพื่อดูภาพว่า MCP + harness + sandbox กำลังประกบกันเป็น pattern กลาง.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🔹 Weekly brief (28 เมษายน-4 พฤษภาคม 2026): สิ่งที่เปลี่ยนจริงคือตลาดกำลัง converge ไปที่ &quot;managed harness + open protocol + enterprise controls&quot;. ผู้เล่นที่ชนะระยะใกล้ไม่ใช่คนที่มี agent demo เยอะสุด แต่คือคนที่ทำ identity, memory, tracing, approval, sandbox และ cloud placement ให้ทีมใช้ซ้ำได้.</p>
+<p>🔹 Monthly trend synthesis (ต้นเดือนพฤษภาคม 2026): ตลอด 4-5 สัปดาห์ที่ผ่านมา stack ของ agent เริ่มนิ่งขึ้นเป็น 5 ชั้นคือ model, harness/runtime, tool/protocol, memory/state, observability/evals. จุดต่างของแต่ละค่ายตอนนี้อยู่ที่ความเปิดของแต่ละชั้นและความพร้อมต่อ production มากกว่าความสามารถ chat อย่างเดียว.</p>
+<p>🔹 แนวออกแบบที่ควรถือเป็น baseline ตอนนี้คือ: ใช้ open protocol เมื่อทำได้, แยก harness ออกจาก business logic, เก็บ trace ระดับ step, ทำ memory lifecycle ให้ตรวจสอบได้, และ treat code execution เป็น isolated capability ไม่ใช่สิทธิ์กว้างบน host.</p>
+<p>🔹 ถ้าต้องเลือกลงทุนตอนนี้ ให้เริ่มจาก 3 อย่างก่อน: 1) observability ที่อ่าน trace agent ได้จริง 2) eval harness ที่ rerun ได้สม่ำเสมอ 3) policy/memory layer ที่ควบคุม user scope และ data retention ได้.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🔹 ข่าว/โพสต์จากชุมชนไทย: <a href="https://www.techtalkthai.com/openai-on-aws-is-launched/" target="_blank" rel="noreferrer">TechTalkThai สรุป OpenAI บน AWS</a> ได้ตรงกับประกาศหลักของ AWS และช่วยแปล impact ฝั่ง enterprise ไทยได้ดี โดยเฉพาะมุมเรื่อง Codex/agent workloads เข้า Bedrock.</p>
+<p>🔹 ข่าว/โพสต์จากชุมชนไทย: <a href="https://www.techtalkthai.com/openai-and-microsoft-amend-partnership-agreement/" target="_blank" rel="noreferrer">TechTalkThai สรุปการแก้สัญญา OpenAI-Microsoft</a> สอดคล้องกับประกาศทางการของ <a href="https://openai.com/index/next-phase-of-microsoft-partnership/" target="_blank" rel="noreferrer">OpenAI</a> และ <a href="https://blogs.microsoft.com/blog/2026/04/27/the-next-phase-of-the-microsoft-openai-partnership/" target="_blank" rel="noreferrer">Microsoft</a>; ประเด็นสำคัญสำหรับไทยคือ multi-cloud AI procurement จะคุยง่ายขึ้น.</p>
+<p>🔹 ข่าว/โพสต์จากชุมชนไทย: <a href="https://techsauce.co/news/google-cloud-next-2026-agentic-enterprise-gemini-tpu" target="_blank" rel="noreferrer">Techsauce สรุป Google Cloud Next 2026 ด้าน Agentic stack</a> มีประโยชน์ในฐานะ local digest แต่ควรอ่านคู่กับ <a href="https://developers.googleblog.com/agents-cli-in-agent-platform-create-to-production-in-one-cli/" target="_blank" rel="noreferrer">Agents CLI</a> และ <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale" target="_blank" rel="noreferrer">Agent Platform scale docs</a> เพื่อไม่พลาดรายละเอียดเชิงสถาปัตยกรรม.</p>
+<p>🔹 ข่าว/โพสต์จากชุมชนไทย: <a href="https://www.blognone.com/node/150424" target="_blank" rel="noreferrer">Blognone รายงาน Palo Alto Networks ซื้อ Portkey</a> เป็นสัญญาณว่าตลาด &quot;AI gateway / agent security control plane&quot; เริ่ม consolidate แล้ว ซึ่งเกี่ยวกับ enterprise agent governance โดยตรง แม้ไม่ใช่ประกาศจาก vendor agent หลัก.</p>
+<p>🔹 รอบนี้ไม่พบโพสต์ใหม่จาก devhub.in.th, DataRockie หรือ public Facebook pages/groups ที่มีสัญญาณสูงพอและเพิ่มสาระเชิงเทคนิคจากรอบก่อน; จึงไม่ดึงมาใส่เพื่อเลี่ยงข่าวซ้ำ/ข่าวเบา.</p>
+  </main>
+</body>
+</html>
