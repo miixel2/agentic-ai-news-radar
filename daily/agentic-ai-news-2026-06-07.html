@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-06-07</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-06-07</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Microsoft</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-06-07.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🔹 <strong>วันนี้ไม่พบประกาศใหม่ที่ high-signal กว่า cluster ข่าววันที่ 2-5 มิ.ย.</strong>: จุดที่ควรจับต่อยังเป็น Copilot SDK GA, enterprise-managed plugins, OpenAI Agents SDK harness/sandbox และ AWS AgentCore governance patterns. แหล่งที่มา: <a href="https://github.blog/changelog/" target="_blank" rel="noreferrer">GitHub Changelog</a>, <a href="https://openai.com/index/the-next-evolution-of-the-agents-sdk/" target="_blank" rel="noreferrer">OpenAI</a>, <a href="https://aws.amazon.com/blogs/machine-learning/" target="_blank" rel="noreferrer">AWS AI Blog</a></p>
+<p>🔹 <strong>Google Cloud I/O 26 ย้ำ Agentic Enterprise</strong>: Gemini Enterprise, Agent Platform, Antigravity, Gemini Spark, Managed Agents API และ CodeMender สะท้อนทิศทาง agent runtime + governance + secure execution. แหล่งที่มา: <a href="https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud" target="_blank" rel="noreferrer">Google Cloud Blog</a></p>
+<p>🔹 <strong>OpenAI Agents SDK วาง pattern สำหรับ sandbox execution และ manifest</strong>: รองรับการ mount data, output directory, sandbox provider และ separation ระหว่าง harness กับ compute. แหล่งที่มา: <a href="https://openai.com/index/the-next-evolution-of-the-agents-sdk/" target="_blank" rel="noreferrer">OpenAI</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🔹 <strong>Agent platform กำลังกลายเป็น operating layer</strong>: สิ่งที่ต่างกันระหว่าง demo กับ production คือ sandbox, state, snapshot, approval, telemetry และ rollback.</p>
+<p>🔹 <strong>Personal/enterprise agents ต้องมี approval design</strong>: Google Spark ระบุ explicit approval สำหรับ action เสี่ยงสูง และ secure runtime แยก session ซึ่งเป็น pattern ที่ควรเอามาใช้กับ agent ภายใน.</p>
+<p>🔹 <strong>Coding agent ต้องถูกมองเป็น supply-chain participant</strong>: plugin, MCP, generated code, dependency และ PR ต้องผ่าน policy เหมือน developer คนหนึ่ง.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>🔹 <strong>อ่าน Google Cloud I/O agent update</strong> เพื่อดูภาพ end-to-end ของ agent development, orchestration, governance และ security agent. แหล่งที่มา: <a href="https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud" target="_blank" rel="noreferrer">Google Cloud Blog</a></p>
+<p>🔹 <strong>อ่าน OpenAI Agents SDK separation pattern</strong> เพื่อออกแบบให้ credentials ไม่อยู่ใน sandbox ที่ model-generated code ทำงาน. แหล่งที่มา: <a href="https://openai.com/index/the-next-evolution-of-the-agents-sdk/" target="_blank" rel="noreferrer">OpenAI</a></p>
+<p>🔹 <strong>อ่าน Microsoft Agent Framework Build sessions list</strong> สำหรับหัวข้อ multi-agent, evals, observability, MCP, skills, Playwright CLI, OpenTelemetry และ A2A. แหล่งที่มา: <a href="https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-at-build-2026/" target="_blank" rel="noreferrer">Microsoft Agent Framework</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🔹 <strong>สถานการณ์: agent ต้องทำงานหลายขั้นตอน</strong>; <strong>แพตเทิร์น: approval map</strong>; template: <code>safe_read=auto / draft_write=auto / external_send=approval / money_or_delete=approval</code>; verify ด้วย scenario test ก่อน rollout.</p>
+<p>🔹 <strong>สถานการณ์: build internal coding agent</strong>; <strong>แพตเทิร์น: sandbox manifest</strong>; ระบุ input mount, output path, dependency policy และ network policy; caveat คือห้ามให้ secret อยู่ใน workspace ที่ agent แก้ไฟล์ได้.</p>
+<p>🔹 <strong>สถานการณ์: agent ทำงานข้าม tool</strong>; <strong>แพตเทิร์น: trace-first workflow</strong>; ทุก tool call ต้องมี <code>intent</code>, <code>resource</code>, <code>result</code>, <code>cost</code>, <code>approval</code>; verify ด้วย review trace 5 เคสแรกทุกสัปดาห์.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🔹 <strong>ควรออกแบบ agent boundary เป็นระบบ ไม่ใช่ prompt</strong>: boundary ต้องอยู่ใน sandbox, gateway, policy, identity และ CI/security validation.</p>
+<p>🔹 <strong>เลือก framework จาก governance primitives</strong>: ดู MCP/A2A support, tracing, approval, deployment target, state recovery และ admin controls.</p>
+<p>🔹 <strong>สำหรับงานไทย-language knowledge agent ต้องมี context hygiene</strong>: แยก source of truth, hot cache, memory, retrieval และ human review เพื่อคุม hallucination.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🔹 <strong>ข่าว/โพสต์จากชุมชนไทย: SCBX AI Outlook 2026 พูดถึง Typhoon/OCR/ASR และ sovereign AI</strong>: เป็น local signal ว่าภาษาไทย, edge/on-prem และข้อมูลเฉพาะองค์กรจะสำคัญขึ้นสำหรับ adoption ในไทย. แหล่งที่มา: <a href="https://techsauce.co/tech-and-biz/scbx-ai-outlook-2026-abundant-intelligence" target="_blank" rel="noreferrer">Techsauce</a></p>
+<p>🔹 <strong>ข่าว/โพสต์จากชุมชนไทย: AWS Summit Bangkok interview เสนอ AI-DLC เป็น spec-driven alternative ต่อ vibe coding</strong>: เหมาะกับทีมไทยที่ต้องส่ง production software ไม่ใช่ prototype อย่างเดียว. แหล่งที่มา: <a href="https://techsauce.co/tech-and-biz/adrian-de-luca-aws-summit-bangkok-2026-exclusive-interview-with-techsauce" target="_blank" rel="noreferrer">Techsauce</a></p>
+<p>🔹 <strong>Blognone AI topic ยังไม่พบข่าวใหม่ช่วง 24-72 ชม. ที่เกี่ยวกับ agent production โดยตรง</strong>: ใช้เป็น watchlist ต่อ แต่วันนี้ไม่ยกเป็นข่าวหลัก. แหล่งที่มา: <a href="https://www.blognone.com/topics/ai" target="_blank" rel="noreferrer">Blognone AI</a></p>
+<h2>Monthly Trend Synthesis</h2>
+<p>🔹 <strong>เดือนนี้ agent adoption กำลังย้ายจาก individual productivity ไป enterprise control plane</strong>: เทรนด์ร่วมคือ managed runtime, secure sandbox, policy, eval และ observability.</p>
+<p>🔹 <strong>สิ่งที่ควรศึกษาเพิ่มคือ spec-driven AI development</strong>: เพราะช่วยให้ human intent, agent output และ audit trail อยู่ในระบบเดียวกัน.</p>
+<p>👥 Team Flow: 🧭 Cody 🟡✅ › 🔍 Lek 🟡🔍✅</p>
+  </main>
+</body>
+</html>

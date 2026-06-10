@@ -1,0 +1,62 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-06-10</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-06-10</h1>
+    <div class="tags"><span class="tag">Google</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-06-10.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🔹 <strong>Hugging Face Daily Papers วันที่ 10 มิ.ย. มี agent papers หลายชิ้นน่าติดตาม</strong>: SearchSwarm, Retrospective Harness Optimization, Workflow-GYM, Online Skill Learning for Web Agents และ Struct-Searcher สะท้อนงานวิจัยที่มุ่ง delegation, harness optimization, long-horizon eval และ skill retrieval. แหล่งที่มา: <a href="https://huggingface.co/papers" target="_blank" rel="noreferrer">Hugging Face Papers</a></p>
+<p>🔹 <strong>GitHub security validation สำหรับ third-party coding agents เป็นข่าว practical ที่สุดของรอบ 24-72 ชม.</strong>: CodeQL, dependency vulnerability checks และ secret scanning ถูกขยายให้ agent-generated code จาก agents ภายนอก ไม่ใช่เฉพาะ Copilot cloud agent. แหล่งที่มา: <a href="https://github.blog/changelog/2026-06-09-security-validation-for-third-party-coding-agents/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🔹 <strong>Google Cloud ย้ำ Managed Agents API และ secure runtime</strong>: Agent Platform ให้ custom agents reasoning/tool/code execution ใน Google-hosted environments พร้อม governance/security protections; Spark ใช้ isolated ephemeral VM และ Agent Gateway สำหรับ DLP. แหล่งที่มา: <a href="https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud" target="_blank" rel="noreferrer">Google Cloud Blog</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🔹 <strong>Research trend วันนี้คือ agent harness ไม่ใช่แค่ model benchmark</strong>: papers ใหม่พูดถึง trajectory rollouts, skill learning, long-horizon professional tasks และ delegation intelligence.</p>
+<p>🔹 <strong>Production trend คือ validation by default</strong>: GitHub ทำให้ agent-generated code ต้องเจอ security checks แบบเดียวกับมนุษย์ ซึ่งเป็น baseline ที่ควรคัดลอกไปทุกระบบ.</p>
+<p>🔹 <strong>Enterprise agent runtime ต้องแยก session และ enforce DLP</strong>: Google Spark/Agent Platform เป็นตัวอย่างชัดของ fresh isolated runtime + gateway policy.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>🔹 <strong>อ่าน Hugging Face Daily Papers แล้วเลือก 1 paper มาทำ internal reading note</strong>: เริ่มจาก Retrospective Harness Optimization หรือ Workflow-GYM เพราะเกี่ยวกับ eval/ปรับปรุง agent workflow โดยตรง. แหล่งที่มา: <a href="https://huggingface.co/papers" target="_blank" rel="noreferrer">Hugging Face Papers</a></p>
+<p>🔹 <strong>อ่าน GitHub third-party agent validation</strong> เพื่อปรับ branch protection และ required checks ให้รองรับ agent PR. แหล่งที่มา: <a href="https://github.blog/changelog/2026-06-09-security-validation-for-third-party-coding-agents/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🔹 <strong>อ่าน Google Cloud Managed Agents/Spark section</strong> เพื่อดู pattern secure runtime, explicit approval และ DLP gateway สำหรับ enterprise agents. แหล่งที่มา: <a href="https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud" target="_blank" rel="noreferrer">Google Cloud Blog</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🔹 <strong>สถานการณ์: ปรับปรุง skill จากผลรันจริง</strong>; <strong>แพตเทิร์น: trajectory-to-skill patch</strong>; เก็บ successful/failed traces, สรุป failure mode, patch skill เฉพาะจุด, แล้วทดสอบกับ replay set; caveat คือห้ามเพิ่มกฎยาวจน skill ใช้ยาก.</p>
+<p>🔹 <strong>สถานการณ์: eval computer-use agent</strong>; <strong>แพตเทิร์น: long-horizon task harness</strong>; แยก task spec, environment snapshot, allowed actions, success oracle และ cost/latency budget; verify ด้วย human replay 3 เคสที่ fail.</p>
+<p>🔹 <strong>สถานการณ์: agent deep research</strong>; <strong>แพตเทิร์น: delegation ledger</strong>; ทุก subtask ต้องมี query, source, claim, confidence และ reviewer decision; caveat คือห้ามนับจำนวน sources เป็นคุณภาพ.</p>
+<p>🔹 <strong>สถานการณ์: ใช้ coding agent ใน repo จริง</strong>; <strong>แพตเทิร์น: security-first PR</strong>; บังคับ CodeQL, dependency review, secret scanning, tests และ owner review; verify ว่า finding ถูกแก้โดย patch ไม่ใช่ suppress.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🔹 <strong>Agent architecture ปีนี้ควรมี &quot;learning loop&quot; ที่ตรวจสอบได้</strong>: skills, prompts และ SOPs ควรเปลี่ยนจาก evidence ใน trace ไม่ใช่จากความรู้สึก.</p>
+<p>🔹 <strong>Research-to-production bridge คือ harness</strong>: งานวิจัยใหม่หลายชิ้นชี้ว่าความสามารถ agent ขึ้นกับ environment, tools, memory, evaluator และ feedback loop.</p>
+<p>🔹 <strong>Security posture ต้องตาม agent autonomy</strong>: ยิ่ง agent ทำงานยาวและแก้โค้ดเองได้ ยิ่งต้องเพิ่ม isolation, required checks, data policy และ approval gate.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🔹 <strong>ข่าว/โพสต์จากชุมชนไทย: ใช้ข่าว GitHub 9 มิ.ย. เป็นบทเรียน rollout สำหรับทีมไทย</strong>: ก่อนเปิด third-party coding agents ให้กำหนด repo tier, data class, security checks และ reviewer requirement เป็นภาษาไทยที่ทีมเข้าใจตรงกัน. แหล่งที่มา: <a href="https://github.blog/changelog/2026-06-09-security-validation-for-third-party-coding-agents/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🔹 <strong>ข่าว/โพสต์จากชุมชนไทย: SCBX/Techsauce เรื่อง context management สอดคล้องกับ research trend วันนี้</strong> เพราะ skill learning และ harness optimization ต้องพึ่ง context/memory ที่จัดการดี. แหล่งที่มา: <a href="https://techsauce.co/tech-and-biz/scbx-ai-outlook-2026-abundant-intelligence" target="_blank" rel="noreferrer">Techsauce</a></p>
+<p>🔹 <strong>ยังไม่พบ Thai public Facebook/community post ที่มี source-grounded technical detail สูงพอ</strong>: รอบนี้จึงใช้ Thai ecosystem notes จาก Techsauce และ cross-check กับ primary global sources.</p>
+<p>👥 Team Flow: 🧭 Cody 🟡✅ › 🔍 Lek 🟡🔍✅</p>
+  </main>
+</body>
+</html>
