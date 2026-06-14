@@ -1,0 +1,72 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-06-12</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-06-12</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">Google</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-06-12.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🔹 <strong>GitHub Copilot code review เพิ่ม controls สำหรับองค์กร</strong>: GitHub เพิ่ม organization-level runner controls, content exclusion support และยกเลิก limit 4,000 characters ของ custom instructions สำหรับ Copilot code review ทำให้ทีม enterprise คุม runner, ข้อมูลที่ agent เห็น และ review policy ได้ละเอียดขึ้น. แหล่งที่มา: <a href="https://github.blog/changelog/2026-06-12-copilot-code-review-new-configurations-and-controls/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🔹 <strong>OpenAI Academy เพิ่มคอร์ส Agents and Workflows</strong>: OpenAI เปิดคอร์ส AI Foundations, Applied AI Foundations และ Agents and Workflows โดยเน้นจาก prompt เดี่ยวไปสู่ workflow ที่มี inputs, tools, checkpoints และ human review. แหล่งที่มา: <a href="https://openai.com/index/academy-courses-applying-ai-at-work/" target="_blank" rel="noreferrer">OpenAI</a></p>
+<p>🔹 <strong>LangChain ออก guide เลือก sandbox สำหรับ agent</strong>: บทความชี้ risk จาก prompt injection เมื่อ agent มี sensitive data, untrusted content และ outbound channel พร้อมแนะนำ isolated filesystem, limited network, resource limits, lifecycle control และ kernel-level isolation. แหล่งที่มา: <a href="https://www.langchain.com/blog/how-to-choose-the-right-sandbox-for-your-agent" target="_blank" rel="noreferrer">LangChain</a></p>
+<p>🔹 <strong>Anthropic มีประกาศหลายชิ้นด้าน model access / enterprise regulated industries</strong>: ข่าววันที่ 12 มิ.ย. ครอบคลุม directive ระงับ access บางโมเดล, public record และ partnership กับ TCS สำหรับ regulated industries; ต้องติดตามผลกระทบเชิง compliance ก่อนเลือกโมเดลในองค์กร. แหล่งที่มา: <a href="https://www.anthropic.com/news" target="_blank" rel="noreferrer">Anthropic News</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🔹 <strong>Copilot review กำลังเข้าสู่ governance layer</strong>: การตั้ง runner ระดับองค์กรและ content exclusion แปลว่า AI review ไม่ใช่แค่ developer convenience แต่เป็นเรื่อง infra, policy และ data boundary.</p>
+<p>🔹 <strong>Agent training เริ่มเน้น repeatable workflow มากกว่า prompt trick</strong>: คอร์สของ OpenAI ย้ำว่าการใช้งานจริงต้องนิยาม input, model/tool, checkpoint, cost และ human oversight ให้ชัด.</p>
+<p>🔹 <strong>Sandbox คือ control หลักของ production agents</strong>: ถ้า agent รันโค้ดเองได้ ต้องลด blast radius ด้วย filesystem/network/resource boundary ก่อนหวังพึ่ง prompt หรือ model behavior.</p>
+<p>🔹 <strong>Vendor access / regulation risk ต้องอยู่ใน architecture decision</strong>: ข่าว Anthropic ชี้ว่า model availability, export control และ regulated-industry partnership อาจเปลี่ยน deployment path ได้เร็ว.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>🔹 <strong>อ่าน Copilot code review controls</strong> แล้วลองทำ policy matrix: <code>repo sensitivity -&gt; runner type -&gt; content exclusion -&gt; required human reviewer</code>. แหล่งที่มา: <a href="https://github.blog/changelog/2026-06-12-copilot-code-review-new-configurations-and-controls/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🔹 <strong>อ่าน LangChain sandbox guide</strong> แล้วเช็ก agent ของทีมว่ามี lethal trifecta ครบหรือไม่: sensitive data, untrusted content, outbound communication. แหล่งที่มา: <a href="https://www.langchain.com/blog/how-to-choose-the-right-sandbox-for-your-agent" target="_blank" rel="noreferrer">LangChain</a></p>
+<p>🔹 <strong>อ่าน OpenAI Academy announcement</strong> เพื่อปรับ onboarding ภายในองค์กรจาก &quot;ใช้ AI ได้&quot; เป็น &quot;ออกแบบ workflow ที่ตรวจได้&quot;. แหล่งที่มา: <a href="https://openai.com/index/academy-courses-applying-ai-at-work/" target="_blank" rel="noreferrer">OpenAI</a></p>
+<p>🔹 <strong>ติดตาม Hugging Face Daily Papers วันที่ 12 มิ.ย.</strong> มีหลายงานเกี่ยวกับ agent memory, computer-use benchmark, search agents, tool workflow และ safety. แหล่งที่มา: <a href="https://huggingface.co/papers/date/2026-06-12" target="_blank" rel="noreferrer">Hugging Face Papers</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🔹 <strong>สถานการณ์: จะเปิด Copilot code review ในองค์กร</strong>; <strong>แพตเทิร์น: policy-before-review</strong>; กำหนด runner, excluded paths, instruction files และ reviewer owner ก่อนเปิดใช้; ตัวอย่าง checklist: <code>Allowed runner? Excluded secrets? Team instructions loaded? Required checks still enforced?</code>.</p>
+<p>🔹 <strong>สถานการณ์: agent ต้องรัน script วิเคราะห์ข้อมูล</strong>; <strong>แพตเทิร์น: sandbox threat checklist</strong>; จำกัดไฟล์เข้า sandbox, allowlist network, ตั้ง CPU/memory/time limit และทำลาย sandbox หลังงานเสร็จ; verify ด้วย test prompt injection ที่พยายามอ่าน secret และส่งออกนอกระบบ.</p>
+<p>🔹 <strong>สถานการณ์: เปลี่ยน prompt ให้เป็น workflow</strong>; <strong>แพตเทิร์น: checkpointed workflow plan</strong>; template: <code>Input -&gt; Tools -&gt; Draft output -&gt; Quality gate -&gt; Human decision -&gt; Final artifact</code>; caveat คือทุก gate ต้องมี evidence ไม่ใช่แค่คำว่า &quot;reviewed&quot;.</p>
+<p>🔹 <strong>สถานการณ์: ใช้ custom instructions ยาวขึ้นใน Copilot</strong>; <strong>แพตเทิร์น: instruction layering</strong>; แยก <code>global policy</code>, <code>repo conventions</code>, <code>review rubric</code>, <code>do-not-touch paths</code>; verify ด้วย PR ทดลองที่ตั้งใจละเมิด rule.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🔹 <strong>วาง AI coding agent เป็น workload ที่ต้องมี runtime policy</strong>: Runner, sandbox, network egress, secret handling และ audit trail ควรถูกออกแบบเหมือน production workload.</p>
+<p>🔹 <strong>อย่ารวม &quot;ความฉลาดของโมเดล&quot; กับ &quot;ความน่าเชื่อถือของระบบ&quot;</strong>: Model ช่วย reasoning ได้ แต่ reliability มาจาก harness, eval, workflow gates, rollback และ human accountability.</p>
+<p>🔹 <strong>ควรมี agent governance backlog</strong>: เพิ่มงานเช่น content exclusion taxonomy, cost center mapping, model access policy, incident playbook และ red-team prompt injection tests.</p>
+<p>🔹 <strong>ซื้อเครื่องมือ agent ให้ถามเรื่อง evidence ก่อน feature</strong>: ถามว่า log อะไรได้, replay ได้ไหม, policy บังคับที่ runtime หรือ prompt, และแยก human approval ตรงไหน.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🔹 <strong>ข่าว/โพสต์จากชุมชนไทย: TechTalkThai ชวนงาน DevSecOps Meetup หัวข้อ Build and Govern Agentic AI in Production</strong>: น่าสนใจเพราะเน้น AI lifecycle, observability และ governance กับ Gemini Enterprise Agent Platform ในบริบทองค์กรไทย. แหล่งที่มา: <a href="https://www.techtalkthai.com/devsecops-meetup-uild-and-govern-agentic-ai-in-production-with-gemini-enterprise-agent-platform-30-jun-2026-on-site-meetup/" target="_blank" rel="noreferrer">TechTalkThai</a></p>
+<p>🔹 <strong>ข่าว/โพสต์จากชุมชนไทย: TechTalkThai รายงาน OpenAI เข้าซื้อ Ona</strong>: ใช้เป็นสัญญาณ local awareness เรื่อง cloud sandbox / long-running agents แต่ข้อเทคนิคควร cross-check กับประกาศ OpenAI/Ona เมื่อมี primary detail เพิ่ม. แหล่งที่มา: <a href="https://www.techtalkthai.com/openai-acquires-ai-agent-orchestration-startup-ona/" target="_blank" rel="noreferrer">TechTalkThai</a></p>
+<p>🔹 <strong>ข่าว/โพสต์จากชุมชนไทย: TechTalkThai รายงาน npm v12 security changes</strong>: แม้ไม่ใช่ agent news โดยตรง แต่สำคัญกับ AI coding workflow เพราะ install scripts และ Git/remote dependencies เป็นช่องทาง supply-chain ที่ agent อาจ trigger อัตโนมัติ. แหล่งที่มา: <a href="https://www.techtalkthai.com/github-npm-v12-security-changes-supply-chain-attacks/" target="_blank" rel="noreferrer">TechTalkThai</a></p>
+<p>🔹 <strong>ยังไม่พบ public Facebook/community post ที่เข้าถึงได้และมี technical evidence สูงพอในวันนี้</strong>: จึงใช้แหล่งข่าวไทยที่อ่านได้สาธารณะและ cross-check กับ global/official sources เป็นหลัก.</p>
+<h2>Friday Research Digest</h2>
+<p>🔹 <strong>EvoArena</strong>: core idea คือวัด memory evolution ของ LLM agents ใน environment ที่เปลี่ยนไป; สำคัญเพราะ agent production ต้องจำสิ่งที่ยังถูกและลืมสิ่งที่ stale; practical takeaway คือเพิ่ม test สำหรับ memory freshness; read priority: สูง. แหล่งที่มา: <a href="https://huggingface.co/papers/date/2026-06-12" target="_blank" rel="noreferrer">Hugging Face Papers</a></p>
+<p>🔹 <strong>WeaveBench</strong>: core idea คือ benchmark computer-use agents ระยะยาวบน hybrid interfaces; สำคัญเพราะงานจริงไม่ได้อยู่แค่ API หรือ browser อย่างเดียว; practical takeaway คือวัด task completion พร้อม recovery และ UI/tool handoff; read priority: สูง. แหล่งที่มา: <a href="https://huggingface.co/papers/date/2026-06-12" target="_blank" rel="noreferrer">Hugging Face Papers</a></p>
+<p>🔹 <strong>FORT-Searcher / TreeSeeker / WebChallenger</strong>: core idea รวมกันคือทำ search agents ให้ทน shortcut และ trial-error ได้ดีขึ้น; practical takeaway คือ eval search agent ต้องมี task ที่เดาไม่ได้จาก shortcut; read priority: กลาง-สูง. แหล่งที่มา: <a href="https://huggingface.co/papers/date/2026-06-12" target="_blank" rel="noreferrer">Hugging Face Papers</a></p>
+<p>🔹 <strong>The Cold-Start Safety Gap in LLM Agents</strong>: core idea คือ agent ใหม่/ยังไม่มี context อาจมี safety gap ก่อน policy และ memory ตั้งตัว; practical takeaway คือใส่ default-deny guardrails ใน first-run; read priority: สูงสำหรับทีม platform/security. แหล่งที่มา: <a href="https://huggingface.co/papers/date/2026-06-12" target="_blank" rel="noreferrer">Hugging Face Papers</a></p>
+<p>👥 Team Flow: 🧭 Cody 🟡✅ › 🔍 Lek 🟡🔍✅</p>
+  </main>
+</body>
+</html>
