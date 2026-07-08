@@ -1,0 +1,58 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-07-02</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-07-02</h1>
+    <div class="tags"><span class="tag">Anthropic</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-07-02.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🔹 <strong>GitHub Copilot เพิ่ม telemetry สำหรับ enterprise governance</strong>: usage metrics API แม่นขึ้น ครอบคลุม Copilot CLI, IDE attribution และ AI credit attribution มากขึ้น เหมาะกับทีมที่ต้องวัด adoption/cost จริงก่อนขยาย pilot. แหล่งที่มา: <a href="https://github.blog/changelog/2026-07-02-improved-accuracy-and-coverage-in-copilot-usage-metrics-reports/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🔹 <strong>Copilot CLI ใน GitHub Actions ใช้ <code>GITHUB_TOKEN</code> ได้แล้ว</strong>: ลดความเสี่ยงจาก long-lived PAT และเพิ่ม permission <code>copilot-requests: write</code> สำหรับ automation. แหล่งที่มา: <a href="https://github.blog/changelog/2026-07-02-copilot-cli-no-longer-needs-a-personal-access-token-in-github-actions/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🔹 <strong>Copilot agent session streaming เปิด public preview</strong>: enterprise managed users ดู prompts, responses และ tool calls จากหลาย client ได้ผ่าน streaming endpoint หรือ REST API. แหล่งที่มา: <a href="https://github.blog/changelog/2026-07-02-copilot-agent-session-streaming-is-now-in-public-preview/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🔹 <strong>Anthropic เสนอ cyber jailbreak severity framework</strong>: แบ่ง severity ด้วย capability gain, breadth, weaponization และ discoverability เพื่อคุยเรื่อง risk แบบมีภาษาเดียวกัน. แหล่งที่มา: <a href="https://www.anthropic.com/news/fable-safeguards-jailbreak-framework" target="_blank" rel="noreferrer">Anthropic</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🔹 <strong>Agentic AI เริ่มขยับจาก feature เป็น control plane</strong>: telemetry, audit log, SIEM, budgets และ token policy กลายเป็นงานสถาปัตยกรรมหลัก ไม่ใช่งานเสริม.</p>
+<p>🔹 <strong>Security posture ดีขึ้นเมื่อ automation ไม่ต้องเก็บ PAT</strong>: แต่ต้องกำหนด workflow permission, org billing policy และ session limit ให้ชัดก่อนเปิดใช้ใน CI.</p>
+<p>🔹 <strong>Monthly trend synthesis</strong>: กรกฎาคมเริ่มด้วย theme “observe, budget, govern” มากกว่า “แค่เพิ่ม agent ใหม่”.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>🔹 <strong>อ่าน Copilot usage records API</strong> เพื่อออกแบบ dashboard ที่แยก IDE, CLI, cloud agent และ tool-call activity. แหล่งที่มา: <a href="https://github.blog/changelog/2026-07-02-copilot-agent-session-streaming-is-now-in-public-preview/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🔹 <strong>อ่าน Anthropic CJS framework</strong> แล้วแปลงเป็น rubric ภายในสำหรับ red-team finding ของ agent ที่มี tool use. แหล่งที่มา: <a href="https://www.anthropic.com/news/fable-safeguards-jailbreak-framework" target="_blank" rel="noreferrer">Anthropic</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🔹 <strong>สถานการณ์: ต้องเปิด Copilot CLI ใน CI</strong>; <strong>แพตเทิร์น: tokenless workflow gate</strong>; template: <code>permissions: { contents: read, copilot-requests: write }</code> + policy enablement + session credit limit; verify ด้วย audit log และ billing dashboard.</p>
+<p>🔹 <strong>สถานการณ์: agent มี tool calls หลายระบบ</strong>; <strong>แพตเทิร์น: session telemetry review</strong>; เก็บ prompt, response, tool call, repo, actor, cost center; caveat: ต้องทำ data minimization ก่อนส่งเข้า SIEM.</p>
+<p>🔹 <strong>สถานการณ์: red-team พบ jailbreak</strong>; <strong>แพตเทิร์น: CJS triage</strong>; ประเมิน capability gain, breadth, weaponization, discoverability; verify ด้วย reproduction harness ที่แยก benign/dual-use.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🔹 <strong>คำแนะนำสั้น ๆ</strong>: ถ้าจะนำ coding agent เข้าองค์กร ให้เริ่มจาก policy + telemetry + budget owner ก่อน rollout เพิ่ม ไม่อย่างนั้นวัด ROI และ incident response ยาก.</p>
+<p>🔹 <strong>Architecture note</strong>: session streaming ทำให้ agent observability เชื่อมกับ security operations ได้ แต่ต้องออกแบบ retention, masking และ access control ตั้งแต่แรก.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🔹 <strong>ข่าว/โพสต์จากชุมชนไทย: TechTalkThai มีบทความ local enterprise เรื่อง AI, Cloud และ Cyber Trust</strong>; ใช้เป็นสัญญาณว่าองค์กรไทยสนใจ governance/consulting มากขึ้น แต่เป็น guest post จึงควร cross-check กับ primary sources. แหล่งที่มา: <a href="https://www.techtalkthai.com/" target="_blank" rel="noreferrer">TechTalkThai</a></p>
+<p>👥 Team Flow: 🧭 Cody 🟡✅ › 🔍 Lek 🟡🔍✅</p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-07-06</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-07-06</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-07-06.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🔹 <strong>Anthropic เผยเบื้องหลัง Claude Code</strong>: บทความ “The Making of Claude Code” ชี้ว่า coding agent ที่ใช้งานจริงต้องผสาน CLI workflow, tool use, feedback จาก power users และ engineering loop ที่สั้น. แหล่งที่มา: <a href="https://www.anthropic.com/features/making-of-claude-code" target="_blank" rel="noreferrer">Anthropic</a></p>
+<p>🔹 <strong>TechTalkThai รายงาน Tenable เข้าร่วม Anthropic Project Glasswing</strong>: เป็น local enterprise signal เรื่อง AI + cyber defense แต่เป็น guest post จึงควร cross-check กับ Anthropic cyber-safeguards framework. แหล่งที่มา: <a href="https://www.techtalkthai.com/" target="_blank" rel="noreferrer">TechTalkThai</a> และ <a href="https://www.anthropic.com/news/fable-safeguards-jailbreak-framework" target="_blank" rel="noreferrer">Anthropic</a></p>
+<p>🔹 <strong>Weekly brief: สัปดาห์นี้เด่นที่ observability, budgets, CLI agents และ safety rubric</strong>: GitHub เพิ่ม usage/streaming controls, Anthropic เสนอ jailbreak severity, LangChain พูด cost/evals, arXiv เริ่มมีงานวัด rollout จริง.</p>
+<h2>ทำไมควรรู้</h2>
+<p>🔹 <strong>What changed</strong>: agentic coding ย้ายจาก “ช่วยเขียน code” ไปสู่ “ทำงานเป็น session ที่ต้อง audit, stream, budget และ evaluate”.</p>
+<p>🔹 <strong>Impact for builders</strong>: ต้องออกแบบ agent ให้เห็น trajectory ไม่ใช่แค่ final answer เพราะ failure มักเกิดระหว่าง tool call, permission หรือ context drift.</p>
+<p>🔹 <strong>Production readiness</strong>: พร้อมใช้งานขึ้นเมื่อมี trace, session record, retry policy, human gate และ cost cap.</p>
+<p>🔹 <strong>Security/governance risk</strong>: cyber-capable models ต้องมี rubric แยก benign defensive work, dual-use และ prohibited behavior แบบตรวจสอบได้.</p>
+<p>🔹 <strong>Thai relevance</strong>: องค์กรไทยเริ่มคุย AI + cyber trust + data streaming มากขึ้น เหมาะกับการทำ governance playbook ภาษาไทย.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>🔹 <strong>อ่าน Anthropic Claude Code story</strong> เพื่อดู product/engineering loop ของ coding agent ที่กลายเป็น workflow จริง. แหล่งที่มา: <a href="https://www.anthropic.com/features/making-of-claude-code" target="_blank" rel="noreferrer">Anthropic</a></p>
+<p>🔹 <strong>อ่าน GitHub Copilot session streaming</strong> เพื่อเตรียม SIEM/audit design สำหรับ coding agents. แหล่งที่มา: <a href="https://github.blog/changelog/2026-07-02-copilot-agent-session-streaming-is-now-in-public-preview/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🔹 <strong>อ่าน arXiv Microsoft rollout study</strong> เพื่อวาง pilot metrics. แหล่งที่มา: <a href="https://arxiv.org/abs/2607.01418" target="_blank" rel="noreferrer">arXiv</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🔹 <strong>สถานการณ์: Monday weekly planning</strong>; <strong>แพตเทิร์น: agent readiness review</strong>; checklist: scope, tool permissions, cost cap, eval set, trace visibility, rollback owner; verify ด้วย dry run 3 tasks.</p>
+<p>🔹 <strong>สถานการณ์: coding agent ทำหลาย step</strong>; <strong>แพตเทิร์น: trajectory review</strong>; ให้ agent บันทึก plan, touched files, commands, test result, unresolved risk; caveat: อย่าเก็บ secrets ใน trace.</p>
+<p>🔹 <strong>สถานการณ์: cyber/security task</strong>; <strong>แพตเทิร์น: dual-use gate</strong>; require authorization statement + target scope + allowed actions before tool execution.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🔹 <strong>คำแนะนำสั้น ๆ</strong>: roadmap สัปดาห์นี้ควรเริ่มจาก “visibility first” แล้วค่อยเพิ่ม autonomy.</p>
+<p>🔹 <strong>What to study next</strong>: Copilot usage records, Anthropic CJS, OpenAI Agents SDK guardrails/tracing, MCP permission patterns และ rollout analytics.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🔹 <strong>ข่าว/โพสต์จากชุมชนไทย: TechTalkThai มี signal ด้าน Project Glasswing และ AI cyber defense</strong>; ใช้เป็นหัวข้อคุยกับทีม security ไทยได้ แต่ควรยึด primary source ของ Anthropic เป็นหลัก. แหล่งที่มา: <a href="https://www.techtalkthai.com/" target="_blank" rel="noreferrer">TechTalkThai</a> และ <a href="https://www.anthropic.com/news/fable-safeguards-jailbreak-framework" target="_blank" rel="noreferrer">Anthropic</a></p>
+<p>👥 Team Flow: 🧭 Cody 🟡✅ › 🔍 Lek 🟡🔍✅</p>
+  </main>
+</body>
+</html>

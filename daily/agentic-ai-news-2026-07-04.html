@@ -1,0 +1,56 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-07-04</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-07-04</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-07-04.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🔹 <strong>ไม่มี global primary release ใหม่ที่มีสัญญาณสูงในวันนี้</strong>: backfill วันนี้จึงสรุป evergreen practice จากแหล่ง official/high-signal ของสัปดาห์เดียวกัน.</p>
+<p>🔹 <strong>OpenAI Agents SDK เน้น primitives สำหรับ production agents</strong>: agents, handoffs, guardrails, sessions, tracing, MCP และ human-in-the-loop เป็น baseline ที่ดีสำหรับออกแบบ agent runtime. แหล่งที่มา: <a href="https://openai.github.io/openai-agents-python/" target="_blank" rel="noreferrer">OpenAI Agents SDK</a></p>
+<p>🔹 <strong>MCP เป็นมาตรฐานเชื่อม agent กับ data/tools/workflows</strong>: เหมาะกับ reusable tool surface แต่ต้องคุม permission และ data boundary. แหล่งที่มา: <a href="https://modelcontextprotocol.io/docs/getting-started/intro" target="_blank" rel="noreferrer">MCP Docs</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🔹 <strong>วันเงียบคือเวลาจัดระเบียบ architecture</strong>: agent ที่ดีไม่ได้เกิดจาก prompt เดียว แต่เกิดจาก runtime, permissions, tools, memory, eval และ observability ที่ต่อกันครบ.</p>
+<p>🔹 <strong>Monthly trend synthesis</strong>: สัปดาห์แรกของเดือนย้ำว่า skill/workflow reuse ต้องไปคู่กับ governance.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>🔹 <strong>อ่าน OpenAI Agents SDK overview</strong> เพื่อเทียบว่า workflow ไหนควรใช้ managed runtime และ workflow ไหนควรใช้ Responses API ตรง ๆ. แหล่งที่มา: <a href="https://openai.github.io/openai-agents-python/" target="_blank" rel="noreferrer">OpenAI Agents SDK</a></p>
+<p>🔹 <strong>อ่าน MCP intro</strong> เพื่อออกแบบ tool contract ที่ใช้ได้หลาย client เช่น IDE, chat, desktop agent และ automation. แหล่งที่มา: <a href="https://modelcontextprotocol.io/docs/getting-started/intro" target="_blank" rel="noreferrer">MCP Docs</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🔹 <strong>สถานการณ์: สร้าง reusable agent skill</strong>; <strong>แพตเทิร์น: skill card</strong>; template: <code>when to use / inputs / allowed tools / refusal rules / output artifact / verification</code>; caveat: อย่าให้ skill ขอสิทธิ์กว้างเกิน use case.</p>
+<p>🔹 <strong>สถานการณ์: agent ต้องใช้ external tools</strong>; <strong>แพตเทิร์น: least-privilege MCP server</strong>; expose เฉพาะ action ที่จำเป็น, log arguments, mask secrets; verify ด้วย test prompt ที่พยายามข้าม policy.</p>
+<p>🔹 <strong>สถานการณ์: long-running workflow</strong>; <strong>แพตเทิร์น: checkpointed handoff</strong>; บังคับ agent เขียน status, pending decisions, artifacts และ next action ก่อนส่งต่อ.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🔹 <strong>คำแนะนำสั้น ๆ</strong>: ทำ agent platform checklist 6 ช่อง: identity, tool permission, memory/session, eval, observability, human gate.</p>
+<p>🔹 <strong>Risk note</strong>: MCP/tool ecosystem เร็วมาก ควรมี registry ภายในและ review process ก่อนอนุญาต server ใหม่.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🔹 <strong>ข่าว/โพสต์จากชุมชนไทย: ไม่มี item ไทยที่มี technical signal สูงพอสำหรับวันนี้</strong>; evergreen ที่ควรทำคือแปล agent governance checklist เป็นภาษาไทยสำหรับทีม developer/IT/security ใช้ร่วมกัน.</p>
+<p>👥 Team Flow: 🧭 Cody 🟡✅ › 🔍 Lek 🟡🔍✅</p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,58 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-07-03</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-07-03</h1>
+    <div class="tags"><span class="tag">Anthropic</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-07-03.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🔹 <strong>Research digest: Microsoft rollout study ของ CLI coding agents</strong>: arXiv รายงานการ rollout Claude Code และ GitHub Copilot CLI ใน Microsoft ช่วงต้นปี 2026 พบ adoption กระจายผ่าน social networks และกลุ่มที่ใช้ต่อมี merge PR เพิ่มราว 24% โดยใช้ merged PR เป็น proxy. แหล่งที่มา: <a href="https://arxiv.org/abs/2607.01418" target="_blank" rel="noreferrer">arXiv</a></p>
+<p>🔹 <strong>LangChain ชี้ปัญหา coding-agent cost</strong>: บทความ July 2 เน้นว่า coding agent bill ต้องแก้ด้วย measurement, routing และ eval ไม่ใช่แค่ห้ามใช้ model แพง. แหล่งที่มา: <a href="https://www.langchain.com/blog" target="_blank" rel="noreferrer">LangChain Blog</a></p>
+<p>🔹 <strong>Copilot cost centers รองรับ AI credit pools</strong>: ทำให้การคุม usage-based billing เป็นระดับทีม/ศูนย์ต้นทุนชัดขึ้น. แหล่งที่มา: <a href="https://github.blog/changelog/2026-07-02-cost-centers-now-support-included-usage-caps/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🔹 <strong>Friday research takeaway</strong>: ROI ของ coding agents ต้องวัดทั้ง adoption, retention, merged work, churn และ cost ไม่ใช่ดู demo success.</p>
+<p>🔹 <strong>องค์กรควรมอง “visible peer use” เป็น rollout lever</strong>: จาก paper, network effect ภายในทีมอาจสำคัญกว่าการประกาศ policy จากบนลงล่าง.</p>
+<p>🔹 <strong>Monthly trend synthesis</strong>: รอบต้นเดือนชี้ว่า agent rollout ต้องมีทั้ง behavioral telemetry และ cost attribution.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>🔹 <strong>Read priority 1: Microsoft CLI rollout paper</strong>; core idea คือวัดผล agent ในงานจริงระดับองค์กร; practical takeaway คือเก็บ cohort adoption และ PR metrics ตั้งแต่ pilot. แหล่งที่มา: <a href="https://arxiv.org/abs/2607.01418" target="_blank" rel="noreferrer">arXiv</a></p>
+<p>🔹 <strong>Read priority 2: GitHub cost center updates</strong>; core idea คือผูก spend กับ organization/cost center; practical takeaway คือทำ budget guardrail ก่อนเปิด CI agent. แหล่งที่มา: <a href="https://github.blog/changelog/label/copilot/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🔹 <strong>Read priority 3: LangChain cost guidance</strong>; core idea คือ cost ต้องผูกกับ task quality/eval; practical takeaway คือ route model ตาม risk และ expected value. แหล่งที่มา: <a href="https://www.langchain.com/blog" target="_blank" rel="noreferrer">LangChain Blog</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🔹 <strong>สถานการณ์: pilot coding agent ในทีมใหญ่</strong>; <strong>แพตเทิร์น: cohort rollout scorecard</strong>; template: <code>activated -&gt; weekly active -&gt; PR merged -&gt; review comments -&gt; rollback/churn -&gt; credits used</code>; caveat: merged PR ไม่เท่ากับ business value.</p>
+<p>🔹 <strong>สถานการณ์: ค่า agent เพิ่มเร็ว</strong>; <strong>แพตเทิร์น: model routing by task class</strong>; ใช้ model ถูกสำหรับ refactor/test/doc และ model แพงเฉพาะ architecture/security; verify ด้วย eval set ราย task.</p>
+<p>🔹 <strong>สถานการณ์: ต้องสรุป Friday research</strong>; <strong>แพตเทิร์น: evidence-first digest</strong>; ใส่ core idea, why it matters, practical takeaway, read priority เพื่อกัน hype.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🔹 <strong>คำแนะนำสั้น ๆ</strong>: ทำ agent rollout เป็น product analytics project: define funnel, cost center, quality signal และ human review ก่อนคุยเรื่อง scale.</p>
+<p>🔹 <strong>Production readiness</strong>: ควรมี kill switch, budget cap, audit trail และ policy ว่า agent เปิด PR ได้แค่ repo/branch ไหน.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🔹 <strong>ข่าว/โพสต์จากชุมชนไทย: TechTalkThai รายงาน ClickHouse/INOX partnership ในไทย</strong>; relevance คือ real-time analytics เป็น data substrate สำคัญสำหรับ agent observability และ operational AI. แหล่งที่มา: <a href="https://www.techtalkthai.com/" target="_blank" rel="noreferrer">TechTalkThai</a></p>
+<p>👥 Team Flow: 🧭 Cody 🟡✅ › 🔍 Lek 🟡🔍✅</p>
+  </main>
+</body>
+</html>
