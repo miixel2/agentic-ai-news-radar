@@ -1,0 +1,72 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-07-14</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-07-14</h1>
+    <div class="tags"><span class="tag">Anthropic</span><span class="tag">AWS</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-07-14.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<ul>
+<li>🛡️ GitHub Copilot app เพิ่มคำสั่ง <code>/security-review</code> public preview สำหรับสแกน in-flight code changes และให้คำแนะนำแก้ vulnerability ก่อน code lands <a href="https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app/" target="_blank" rel="noreferrer">GitHub Changelog</a></li>
+<li>🔎 GitHub code scanning เริ่มแสดง AI-powered security detections บน pull requests เพื่อขยาย coverage เหนือภาษา/framework ที่ CodeQL ยังไม่ครอบคลุม <a href="https://github.blog/changelog/2026-07-14-code-scanning-shows-ai-security-detections-on-pull-requests/" target="_blank" rel="noreferrer">GitHub Changelog</a></li>
+<li>🧩 Copilot for JetBrains ขยาย BYOK/customization, รองรับ Claude agent customizations, local sandboxing และ built-in debugger skill สำหรับ Copilot CLI sessions <a href="https://github.blog/changelog/2026-07-14-github-copilot-for-jetbrains-expands-byok-capabilities/" target="_blank" rel="noreferrer">GitHub Changelog</a></li>
+<li>🏥 AWS เผย case study Bluesight ใช้ Amazon Bedrock AgentCore พัฒนา Prism จาก prototype เป็น agentic healthcare compliance solution ที่ใช้กับ health systems แล้ว <a href="https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-solution-at-bluesight-with-amazon-bedrock/" target="_blank" rel="noreferrer">AWS Blog</a></li>
+</ul>
+<h2>ทำไมควรรู้</h2>
+<ul>
+<li>🧯 Security review กำลังขยับจาก pipeline ท้ายทางเข้ามาอยู่ใน coding loop ทำให้ developer เห็นช่องโหว่ก่อน PR และแก้เร็วขึ้น <a href="https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app/" target="_blank" rel="noreferrer">GitHub Changelog</a></li>
+<li>🧠 AI detections บน PR มีค่าใน codebase ที่ CodeQL coverage ไม่ครบ แต่ต้องสื่อสารว่าเป็น informational และใช้ AI credits ระหว่าง preview <a href="https://github.blog/changelog/2026-07-14-code-scanning-shows-ai-security-detections-on-pull-requests/" target="_blank" rel="noreferrer">GitHub Changelog</a></li>
+<li>🧰 JetBrains local sandboxing + debugger skill บอกทิศทางว่า coding agent จะต้องทำงานใกล้ IDE จริง พร้อม boundary เรื่อง sandbox/provider/policy <a href="https://github.blog/changelog/2026-07-14-github-copilot-for-jetbrains-expands-byok-capabilities/" target="_blank" rel="noreferrer">GitHub Changelog</a></li>
+</ul>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<ul>
+<li>🛡️ ทดลอง <code>/security-review</code> กับ branch ที่มี test fixture แล้วเทียบผลกับ CodeQL/Dependabot/secret scanning ก่อนเปิดให้ทีมหลัก <a href="https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app/" target="_blank" rel="noreferrer">GitHub Changelog</a></li>
+<li>🔍 เปิด AI security detections เฉพาะ repo ที่ CodeQL default setup พร้อม และวัด false positive/false negative จาก reviewer feedback <a href="https://github.blog/changelog/2026-07-14-code-scanning-shows-ai-security-detections-on-pull-requests/" target="_blank" rel="noreferrer">GitHub Changelog</a></li>
+<li>🧪 อ่าน case Bluesight เพื่อดู pattern จาก single-product assistant ไปสู่ multi-product agentic platform ที่มี compliance domain ชัด <a href="https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-solution-at-bluesight-with-amazon-bedrock/" target="_blank" rel="noreferrer">AWS Blog</a></li>
+</ul>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<ul>
+<li>🛡️ สถานการณ์: coding ก่อนเปิด PR; Pattern: pre-PR security review; Template: “Run /security-review, list only high-confidence findings, patch with tests, rerun scan, attach residual-risk note.” <a href="https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app/" target="_blank" rel="noreferrer">GitHub Changelog</a></li>
+<li>🧩 สถานการณ์: IDE หลายตัวในองค์กร; Pattern: provider policy matrix; ระบุว่า VS Code, Visual Studio, JetBrains ใช้ provider/model/sandbox/approval แบบไหนและใครอนุมัติ <a href="https://github.blog/changelog/2026-07-14-github-copilot-for-jetbrains-expands-byok-capabilities/" target="_blank" rel="noreferrer">GitHub Changelog</a></li>
+<li>🧪 สถานการณ์: AI detection เป็น informational; Pattern: reviewer calibration; ให้ security reviewer tag finding เป็น true/false/needs-rule แล้วใช้ปรับ rollout <a href="https://github.blog/changelog/2026-07-14-code-scanning-shows-ai-security-detections-on-pull-requests/" target="_blank" rel="noreferrer">GitHub Changelog</a></li>
+</ul>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<ul>
+<li>🏛️ จุดออกแบบสำคัญคือ “shift-left without blind trust”: เอา AI security เข้า IDE/PR ได้ แต่ต้องมี policy, test proof และ reviewer calibration <a href="https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app/" target="_blank" rel="noreferrer">GitHub Changelog</a></li>
+<li>🔐 Local sandboxing ใน IDE ต้องผูกกับ data classification เพราะ agent อาจแตะไฟล์ credential, config หรือ customer data ในเครื่อง dev <a href="https://github.blog/changelog/2026-07-14-github-copilot-for-jetbrains-expands-byok-capabilities/" target="_blank" rel="noreferrer">GitHub Changelog</a></li>
+<li>🏥 Bedrock AgentCore case ชี้ว่า production agent ควรเริ่มจาก domain workflow เดียวที่วัดผลได้ ก่อนขยายเป็น platform หลาย product <a href="https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-solution-at-bluesight-with-amazon-bedrock/" target="_blank" rel="noreferrer">AWS Blog</a></li>
+</ul>
+<h2>Thai Ecosystem Watch</h2>
+<ul>
+<li>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: Techsauce Global Summit 2026 วางธีม Agentic AI / AI Transformation สำหรับองค์กรในภูมิภาค เป็นสัญญาณว่า local conversation กำลังขยับจาก chatbot ไปสู่ AI-native enterprise roadmap <a href="https://summit.techsauce.co/" target="_blank" rel="noreferrer">Techsauce Global Summit</a></li>
+<li>🇹🇭 ทีมไทยที่ใช้ JetBrains/Visual Studio ควรทดสอบ policy parity กับ VS Code เพราะ Copilot feature ใหม่เริ่มต่างตาม IDE และมีผลต่อ governance จริง <a href="https://github.blog/changelog/2026-07-14-github-copilot-for-jetbrains-expands-byok-capabilities/" target="_blank" rel="noreferrer">GitHub Changelog</a></li>
+</ul>
+  </main>
+</body>
+</html>
