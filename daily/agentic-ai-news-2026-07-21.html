@@ -1,0 +1,73 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-07-21</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-07-21</h1>
+    <div class="tags"><span class="tag">Anthropic</span><span class="tag">Google</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-07-21.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<ul>
+<li>⚡ GitHub เพิ่ม Gemini 3.6 Flash ใน GitHub Copilot เป็นอีกตัวเลือก model สำหรับงานที่ต้องการ latency/cost profile ต่างจาก frontier coding model <a href="https://github.blog/changelog/2026-07-21-gemini-3-6-flash-is-now-available-in-github-copilot/" target="_blank" rel="noreferrer">GitHub Changelog</a></li>
+<li>🧠 Anthropic docs อัปเดต guidance เรื่อง model choice โดยชี้ให้ใช้ reasoning effort สูงขึ้นกับ coding และ high-autonomy agentic work <a href="https://docs.anthropic.com/en/docs/about-claude/models/choosing-a-model" target="_blank" rel="noreferrer">Anthropic Docs</a></li>
+<li>🔎 Claude web search tool docs อธิบาย dynamic filtering เพื่อคัดผลค้นหาก่อนเข้า context window ลด prompt bloat ในงาน research agents <a href="https://docs.anthropic.com/en/docs/build-with-claude/tool-use/web-search-tool" target="_blank" rel="noreferrer">Anthropic Docs</a></li>
+<li>📚 Hugging Face Papers มีงาน MCP/agent security และ benchmark ต่อเนื่อง สะท้อนว่า tool-use protocol เริ่มเป็น research/security surface หลักของ agents <a href="https://huggingface.co/papers?q=Model+Context+Protocol+%28MCP%29" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+</ul>
+<h2>ทำไมควรรู้</h2>
+<ul>
+<li>🧮 Model choice ใน Copilot เริ่มเป็น optimization problem: เลือก model ตาม task risk, latency, cost และ review burden มากกว่าตามชื่อรุ่นอย่างเดียว <a href="https://github.blog/changelog/2026-07-21-gemini-3-6-flash-is-now-available-in-github-copilot/" target="_blank" rel="noreferrer">GitHub Changelog</a></li>
+<li>🧠 High-autonomy work ต้องคิดเรื่อง effort budget: ใช้ reasoning สูงกับงาน architecture/refactor/security แต่ไม่ควรใช้กับทุก prompt <a href="https://docs.anthropic.com/en/docs/about-claude/models/choosing-a-model" target="_blank" rel="noreferrer">Anthropic Docs</a></li>
+<li>🔍 Dynamic filtering เป็น pattern สำคัญสำหรับ research agents เพราะช่วยลด context noise และลดโอกาสให้ข้อมูลไม่เกี่ยวข้องพา agent หลุดทาง <a href="https://docs.anthropic.com/en/docs/build-with-claude/tool-use/web-search-tool" target="_blank" rel="noreferrer">Anthropic Docs</a></li>
+<li>🔐 MCP security papers เตือนว่า tool metadata, permission, server trust และ protocol conformance ต้องกลายเป็น checklist จริงก่อนเปิด MCP ให้ทีมกว้าง <a href="https://huggingface.co/papers?q=Model+Context+Protocol+%28MCP%29" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+</ul>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<ul>
+<li>⚙️ ทำ Copilot model routing rule: quick explanation ใช้ fast model, risky code change ใช้ stronger coding model, security review ใช้ model + scanner + human gate <a href="https://github.blog/changelog/2026-07-21-gemini-3-6-flash-is-now-available-in-github-copilot/" target="_blank" rel="noreferrer">GitHub Changelog</a></li>
+<li>🧪 ทดลอง search-filter loop: query → filter relevance → cite only retained sources → produce answer พร้อม “dropped because” log สั้น ๆ <a href="https://docs.anthropic.com/en/docs/build-with-claude/tool-use/web-search-tool" target="_blank" rel="noreferrer">Anthropic Docs</a></li>
+<li>📖 อ่าน MCP security/benchmark cluster บน Hugging Face เพื่อหา eval cases สำหรับ tool poisoning, prompt injection และ wrong-tool selection <a href="https://huggingface.co/papers?q=Model+Context+Protocol+%28MCP%29" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+</ul>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<ul>
+<li>⚡ สถานการณ์: งาน IDE มีทั้งถามเร็วและแก้จริง; Pattern: model ladder; Template: “Classify task: explain/refactor/security/migration. Pick model tier. Record reason.”; Verify: sample cost vs accepted outcome <a href="https://github.blog/changelog/2026-07-21-gemini-3-6-flash-is-now-available-in-github-copilot/" target="_blank" rel="noreferrer">GitHub Changelog</a></li>
+<li>🔎 สถานการณ์: agent research ใช้ web/tool เยอะ; Pattern: dynamic filtering; Example: “Keep only primary source, publication date, API behavior, and implementation steps; drop opinion-only summaries.” <a href="https://docs.anthropic.com/en/docs/build-with-claude/tool-use/web-search-tool" target="_blank" rel="noreferrer">Anthropic Docs</a></li>
+<li>🔐 สถานการณ์: เพิ่ม MCP server ใหม่; Pattern: server intake card; ระบุ owner, tools exposed, auth scope, logging, rate limit, conformance test และ allowed repos ก่อนเปิดใช้ <a href="https://huggingface.co/papers?q=Model+Context+Protocol+%28MCP%29" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+</ul>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<ul>
+<li>🏛️ Multi-model Copilot/agent workflow ต้องมี routing policy ที่ audit ได้ ไม่อย่างนั้น cost optimization จะกลายเป็น guesswork ของแต่ละ developer <a href="https://github.blog/changelog/2026-07-21-gemini-3-6-flash-is-now-available-in-github-copilot/" target="_blank" rel="noreferrer">GitHub Changelog</a></li>
+<li>🧱 Search-capable agents ควรมี retrieval budget, filtering step, citation requirement และ refusal path เมื่อ source quality ไม่พอ <a href="https://docs.anthropic.com/en/docs/build-with-claude/tool-use/web-search-tool" target="_blank" rel="noreferrer">Anthropic Docs</a></li>
+<li>🛡️ MCP adoption ควรเดินคู่กับ threat model เพราะ protocol ที่ทำให้ต่อ tool ง่ายขึ้นก็เพิ่ม blast radius ของ tool poisoning และ permission leakage <a href="https://huggingface.co/papers?q=Model+Context+Protocol+%28MCP%29" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+</ul>
+<h2>Thai Ecosystem Watch</h2>
+<ul>
+<li>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: วันนี้ไม่พบ Thai community item ที่มี source/code/benchmark ใหม่ชัดพอ จึงไม่ยก Facebook engagement เป็นสัญญาณคุณภาพ <a href="https://www.techtalkthai.com/" target="_blank" rel="noreferrer">TechTalkThai</a></li>
+<li>🇹🇭 ทีมไทยที่เริ่มใช้หลายโมเดลควรทำคู่มือภาษาไทยแบบสั้น: เลือก model ตาม risk/cost, ห้ามส่ง secret, MCP ต้องผ่าน owner approval, และ PR ต้องมี evidence <a href="https://docs.anthropic.com/en/docs/about-claude/models/choosing-a-model" target="_blank" rel="noreferrer">Anthropic Docs</a></li>
+</ul>
+  </main>
+</body>
+</html>
