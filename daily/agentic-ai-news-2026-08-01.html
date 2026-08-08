@@ -1,0 +1,74 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-08-01</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-08-01</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">AWS</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-08-01.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<ul>
+<li>🔌 หลัง MCP 2026-07-28 final ทีมที่มี MCP server ควรเริ่ม migration plan สำหรับ stateless core, Tasks extension และ deprecated Roots/Sampling/Logging <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>⚙️ OpenAI GPT-5.6 efficiency note ให้ playbook ด้าน context/cache/tool-loop optimization สำหรับ Codex และ ChatGPT Work-style agents <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></li>
+<li>🧠 Hugging Face Agentic Resource Discovery เป็นสัญญาณว่า tool/skill catalog จะกลายเป็น infrastructure ชั้นใหม่ของ agents <a href="https://huggingface.co/blog/agentic-resource-discovery-launch" target="_blank" rel="noreferrer">Hugging Face</a></li>
+</ul>
+<h2>ทำไมควรรู้</h2>
+<ul>
+<li>🧭 เดือนใหม่ควรเริ่มด้วย inventory: agents ไหนใช้ MCP, tool catalog ไหนไม่มี owner, eval ไหนยังไม่มี expected outcome <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>⚙️ การลด context bloat และรักษา cache prefix จะมีผลต่อ budget มากขึ้นเมื่อ agents ทำงานยาว <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></li>
+<li>🧠 Discovery layer ช่วยให้ไม่ต้อง pre-install ทุก capability แต่ต้องมี governance ของ catalog เอง <a href="https://huggingface.co/blog/agentic-resource-discovery-launch" target="_blank" rel="noreferrer">Hugging Face</a></li>
+</ul>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<ul>
+<li>🧾 ทำ August agent stack inventory: model, framework, MCP servers, skills, memory, evals, owners <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>🧮 เลือก 1 workflow แล้ววัด cache hit/context growth ต่อ agent run <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></li>
+<li>🗂️ ออกแบบ catalog card สำหรับ tools/skills ก่อนให้ agent ค้นหาเอง <a href="https://huggingface.co/blog/agentic-resource-discovery-launch" target="_blank" rel="noreferrer">Hugging Face</a></li>
+</ul>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<ul>
+<li>🧾 สถานการณ์: เปิดเดือนใหม่ของ agent platform; Pattern: stack inventory review; Template: “Capability, owner, auth scope, eval score, incident contact, next review date”; Verify: owner ยืนยันทุกแถว <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>⚙️ สถานการณ์: prompt cache แตกบ่อย; Pattern: stable prefix discipline; Example: keep system/tools order deterministic, put volatile state later; Caveat: test with real tool-list changes <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></li>
+</ul>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<ul>
+<li>🏗️ August trend เริ่มชัด: agent platform = protocol + harness + discovery + eval + governance ไม่ใช่ chatbot UI <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>📌 ความได้เปรียบจะมาจาก operating discipline: versioned configs, good docs, eval loops และ security boundaries <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS</a></li>
+</ul>
+<h2>Thai Ecosystem Watch</h2>
+<ul>
+<li>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: Techsauce/Cisco ชี้ช่องว่าง readiness ขององค์กรไทยต่อ AI agents; ควรใช้เป็นเหตุผลทำ infrastructure/security assessment ก่อน rollout <a href="https://techsauce.co/ai/cisco-ai-agents-security-network-infrastructure-thailand" target="_blank" rel="noreferrer">Techsauce</a></li>
+<li>🇹🇭 ข้อเสนอ: สร้าง “AI Agent Readiness” ภาษาไทย 1 หน้า: data, identity, network, approval, observability, owner, budget <a href="https://techsauce.co/ai/cisco-ai-agents-security-network-infrastructure-thailand" target="_blank" rel="noreferrer">Techsauce</a></li>
+</ul>
+<h2>Monthly Trend Synthesis</h2>
+<ul>
+<li>📈 Trend: July ปิดด้วย MCP final, AgentOps, harness efficiency และ Thai agentic infrastructure; August ควรโฟกัส migration + governance ไม่ใช่ไล่ลอง tool ใหม่อย่างเดียว <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>🧭 Study next: MCP 2026-07-28 migration, agent loop profiling, tool catalog design, production eval, security incident playbook <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></li>
+</ul>
+  </main>
+</body>
+</html>

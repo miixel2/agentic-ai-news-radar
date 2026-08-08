@@ -1,0 +1,69 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-08-04</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-08-04</h1>
+    <div class="tags"><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-08-04.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<ul>
+<li>🔎 Hugging Face Papers ชู Tool-to-Agent Retrieval สำหรับ routing ในระบบ multi-agent ที่มี tools/MCP servers จำนวนมาก <a href="https://huggingface.co/papers?q=agent-level+retrieval" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+<li>🧠 Hugging Face Agentic Resource Discovery เสนอ catalog/search layer สำหรับ tools, skills และ agents <a href="https://huggingface.co/blog/agentic-resource-discovery-launch" target="_blank" rel="noreferrer">Hugging Face</a></li>
+<li>🔌 MCP 2026-07-28 cacheable lists ช่วยให้ catalog/tool listings มี TTL และ deterministic order <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+</ul>
+<h2>ทำไมควรรู้</h2>
+<ul>
+<li>🔎 เมื่อ tools เยอะขึ้น ปัญหาใหญ่คือ retrieval/routing ไม่ใช่แค่ prompt engineering <a href="https://huggingface.co/papers?q=agent-level+retrieval" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+<li>🧠 Discovery ที่ดีต้องมี metadata เพียงพอ: capability, risk, auth, examples, owner, freshness <a href="https://huggingface.co/blog/agentic-resource-discovery-launch" target="_blank" rel="noreferrer">Hugging Face</a></li>
+<li>🔌 MCP cache hints ช่วยสร้าง stable context สำหรับ clients และลดค่าใช้จ่ายจากการโหลด tool schema ซ้ำ <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+</ul>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<ul>
+<li>🗂️ ทำ tool card 1 หน้า: name, when to use, when not to use, inputs, side effects, auth, examples <a href="https://huggingface.co/blog/agentic-resource-discovery-launch" target="_blank" rel="noreferrer">Hugging Face</a></li>
+<li>🔎 สร้าง eval “wrong tool selected” จาก incident หรือ ticket ที่ agent เคยพลาด <a href="https://huggingface.co/papers?q=agent-level+retrieval" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+<li>🧾 ใส่ TTL/cacheScope ให้ list endpoints ใน MCP server เมื่อ SDK รองรับ <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+</ul>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<ul>
+<li>🧰 สถานการณ์: agent มี tools 50+; Pattern: two-stage selection; Template: “retrieve candidate tools -&gt; ask model to justify top 3 -&gt; call only approved tool”; Verify: compare against labeled tool set <a href="https://huggingface.co/papers?q=agent-level+retrieval" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+<li>🧾 สถานการณ์: tool schema เปลี่ยนบ่อย; Pattern: catalog freshness gate; Example: reject stale tool card if last verified &gt; 30 days; Caveat: owner ต้องรับผิดชอบ <a href="https://huggingface.co/blog/agentic-resource-discovery-launch" target="_blank" rel="noreferrer">Hugging Face</a></li>
+</ul>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<ul>
+<li>🗺️ Tool catalog คือ architecture artifact ใหม่ ต้องมี lifecycle เหมือน API catalog หรือ service catalog <a href="https://huggingface.co/blog/agentic-resource-discovery-launch" target="_blank" rel="noreferrer">Hugging Face</a></li>
+<li>🧪 ถ้าไม่มี labeled eval สำหรับ tool routing คุณจะไม่รู้ว่า agent เลือก tool ถูกเพราะเข้าใจหรือเพราะโชคดี <a href="https://huggingface.co/papers?q=agent-level+retrieval" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+</ul>
+<h2>Thai Ecosystem Watch</h2>
+<ul>
+<li>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: DevHub platform แสดงโปรเจกต์ AI agent/LINE bot ภาษาไทยพร้อม repo/demo บางส่วน เป็นแหล่ง local signal ที่ควรดูจากหลักฐานผลงาน ไม่ใช่ engagement <a href="https://devhub.in.th/th/" target="_blank" rel="noreferrer">DevHub</a></li>
+<li>🇹🇭 ข้อเสนอ: ทำ catalog ภาษาไทยของ internal tools ให้ business owner อ่านเข้าใจ เช่น “เรียกดูใบแจ้งหนี้”, “แก้สถานะ ticket”, “ส่ง LINE แจ้งเตือน” พร้อม risk level <a href="https://devhub.in.th/th/" target="_blank" rel="noreferrer">DevHub</a></li>
+</ul>
+  </main>
+</body>
+</html>

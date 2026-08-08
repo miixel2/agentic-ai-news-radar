@@ -1,0 +1,76 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-08-03</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-08-03</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-08-03.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<ul>
+<li>🔌 MCP 2026-07-28 เริ่มเป็น baseline ใหม่ของ agent tooling สัปดาห์นี้ โดย SDK หลักและ Claude rollout เริ่มรองรับ spec ใหม่ <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>⚙️ OpenAI agentic harness note ให้กรอบคิดเรื่อง efficiency ที่กระทบ Codex/ChatGPT Work และ agent loops โดยตรง <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></li>
+<li>🧪 AWS/Google Cloud ย้ำทิศทาง production agents: eval, observability, identity, registry, gateway และ long-running runtime <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS</a></li>
+</ul>
+<h2>ทำไมควรรู้</h2>
+<ul>
+<li>🔌 Spec ใหม่ทำให้ MCP scale ง่ายขึ้น แต่ migration ต้องดูทั้ง transport, auth, Tasks และ cache behavior <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>⚙️ Efficiency work บอกว่าทีมต้อง optimize agent loop ไม่ใช่ optimize prompt อย่างเดียว <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></li>
+<li>🧪 Cloud platforms กำลัง converge ที่ enterprise control plane สำหรับ agents ไม่ใช่แค่ SDK สร้าง demo <a href="https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform" target="_blank" rel="noreferrer">Google Cloud</a></li>
+</ul>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<ul>
+<li>🧭 ทำ weekly review: MCP migration status, agent eval failures, top cost workflows, security exceptions <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>🧮 ตั้ง metric <code>cost_per_successful_session</code> แยกจาก cost per token <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></li>
+<li>🏛️ อ่าน Google Agent Platform governance features แล้ว map กับ control plane ภายในของตัวเอง <a href="https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform" target="_blank" rel="noreferrer">Google Cloud</a></li>
+</ul>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<ul>
+<li>🧪 สถานการณ์: weekly agent ops; Pattern: Monday review board; Template: “Top failures, eval deltas, cost spikes, auth denials, human escalations, next fixes”; Verify: owner ต่อทุก action <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS</a></li>
+<li>🧮 สถานการณ์: ผู้บริหารถาม ROI; Pattern: cost per successful outcome; Example: total model/tool/runtime cost divided by sessions accepted by human reviewer; Caveat: ต้องนิยาม success ก่อน <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></li>
+</ul>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<ul>
+<li>🏢 สัปดาห์นี้ควรเปลี่ยนคำถามจาก “ใช้ agent framework ตัวไหนดี” เป็น “agent control plane ของเราครบหรือยัง” <a href="https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform" target="_blank" rel="noreferrer">Google Cloud</a></li>
+<li>🔐 Control plane ขั้นต่ำควรมี identity, policy, tool registry, eval, traces, cost owner และ incident workflow <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS</a></li>
+</ul>
+<h2>Thai Ecosystem Watch</h2>
+<ul>
+<li>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: Techsauce รายงานทั้ง Huawei initiative และ Cisco readiness gap จึงควรจับคู่ “โอกาสลงทุน AI infra” กับ “ความพร้อม security/network” ในแผนองค์กรไทย <a href="https://techsauce.co/news/huawei-thailand-ai-ecosystem-initiative-agentic-infrastructure" target="_blank" rel="noreferrer">Techsauce</a></li>
+<li>🇹🇭 ข้อเสนอ: ตั้ง agent review board เล็ก ๆ ภาษาไทยที่มี IT, security, business owner, dev lead ก่อนเปิด pilot ข้ามแผนก <a href="https://techsauce.co/ai/cisco-ai-agents-security-network-infrastructure-thailand" target="_blank" rel="noreferrer">Techsauce</a></li>
+</ul>
+<h2>Weekly Agentic AI Brief</h2>
+<ul>
+<li>🗓️ What changed: MCP final กลายเป็นข่าวหลัก; OpenAI ชี้ efficiency ของ harness; cloud vendors เน้น AgentOps/control plane <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>🧱 Impact: Builders ต้องทำ migration, loop profiling, catalog hygiene และ eval จาก real workflow <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></li>
+<li>🛡️ Risks: auth/session migration, tool over-permission, silent failures, prompt-cache churn และ incident data ที่ hosted LLM วิเคราะห์ไม่ได้ <a href="https://huggingface.co/blog/security-incident-july-2026" target="_blank" rel="noreferrer">Hugging Face</a></li>
+<li>🇹🇭 Thai relevance: องค์กรไทยควรลงทุน readiness/security พร้อมกับ agentic infrastructure ไม่ใช่ซื้อ platform แล้วค่อยตามแก้ <a href="https://techsauce.co/ai/cisco-ai-agents-security-network-infrastructure-thailand" target="_blank" rel="noreferrer">Techsauce</a></li>
+</ul>
+  </main>
+</body>
+</html>

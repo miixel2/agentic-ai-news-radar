@@ -1,0 +1,70 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-07-28</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-07-28</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-07-28.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<ul>
+<li>🔌 MCP 2026-07-28 final ออกแล้ว: stateless core, Multi Round-Trip Requests, header-based routing, cacheable list results, Tasks extension, authorization hardening และ SDK Tier 1 ที่อัปเดตแล้ว <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>🧩 Anthropic/Claude เริ่ม rollout support MCP 2026-07-28 โดยเน้น stateless core และ extensions สำหรับ Claude apps/platform <a href="https://claude.com/blog/bringing-mcp-2026-07-28-to-claude" target="_blank" rel="noreferrer">Claude Blog</a></li>
+<li>🛠️ MCP Go SDK v1.7.0 รองรับ protocol ใหม่ โดย preserve backward compatibility กับเวอร์ชันเก่า <a href="https://github.com/modelcontextprotocol/go-sdk/releases" target="_blank" rel="noreferrer">GitHub Releases</a></li>
+</ul>
+<h2>ทำไมควรรู้</h2>
+<ul>
+<li>🚦 Gateway/WAF สามารถ route และ authorize ตาม <code>Mcp-Method</code>/<code>Mcp-Name</code> headers ได้ ลดการ parse body เพื่อควบคุม tool traffic <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>🔁 MRTR ทำให้ tool ขอ input/approval ระหว่างทางได้บน protocol stateless แทนการพึ่ง stream ที่เปิดค้าง <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>🧾 Cacheable tool/resource lists ช่วยลด context churn และช่วยให้ prompt cache เสถียรขึ้นสำหรับ agent clients <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+</ul>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<ul>
+<li>🔌 อ่าน spec note แล้วกำหนด policy: tool ไหนเรียกได้, tool ไหนต้อง approval, tool ไหนต้อง block ที่ gateway <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>🧩 ทดสอบ Claude/Codex/Cursor/VS Code client ที่ใช้อยู่กับ MCP server ใหม่ทีละตัวก่อนเปิดให้ทั้งทีม <a href="https://claude.com/blog/bringing-mcp-2026-07-28-to-claude" target="_blank" rel="noreferrer">Claude Blog</a></li>
+<li>🛠️ ถ้าใช้ Go SDK ให้ทดสอบ <code>StreamableHTTPOptions.Stateless = true</code> ใน staging ก่อน production <a href="https://github.com/modelcontextprotocol/go-sdk/releases" target="_blank" rel="noreferrer">GitHub Releases</a></li>
+</ul>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<ul>
+<li>🔐 สถานการณ์: MCP ผ่าน enterprise gateway; Pattern: header policy; Example: allow <code>tools/list</code>, rate-limit <code>tools/call</code>, require approval for <code>deploy</code> tool; Verify: gateway logs show method/name <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>🔁 สถานการณ์: tool ต้องถามยืนยัน; Pattern: MRTR approval; Template: “If destructive action, return input_required with reason/options; client retries with signed approval”; Caveat: log approval identity <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>🧾 สถานการณ์: tool catalog ใหญ่; Pattern: cache hints; Verify: list order deterministic และ cache invalidation ชัดเจน <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+</ul>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<ul>
+<li>🏛️ MCP 2026-07-28 ทำให้ agent integration เข้าใกล้ web architecture ปกติ: stateless, routable, cacheable, governable <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>🧯 Breaking changes ควรถูกจัดเป็น migration project ขนาดเล็กพร้อม staging matrix ไม่ใช่อัปเดต SDK แบบเงียบ ๆ <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+</ul>
+<h2>Thai Ecosystem Watch</h2>
+<ul>
+<li>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: ยังไม่พบประกาศไทยที่วิเคราะห์ MCP final เชิงลึกในวันนี้; สำหรับทีมไทยควรแชร์สรุปภายในเรื่อง stateless MCP, auth และ gateway policy ก่อนให้หลายทีมต่อ tools เอง <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>🇹🇭 Evergreen: ทำ glossary ไทยสั้น ๆ สำหรับ MCP: tool, resource, prompt, task, authorization, approval, gateway เพื่อให้ product/security คุยกับ dev รู้เรื่องเดียวกัน <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+</ul>
+  </main>
+</body>
+</html>

@@ -1,0 +1,69 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-07-29</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-07-29</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Research</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-07-29.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<ul>
+<li>⚙️ OpenAI อธิบาย GPT-5.6 efficiency stack รวมถึง agentic harness ที่ลด context bloat, reuse work และรักษา prompt-cache prefix ให้เสถียร <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></li>
+<li>🔌 MCP final ทำให้ cacheable lists และ stateless request model สำคัญขึ้นสำหรับ agents ที่ต้องเรียก tools หลายรอบ <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>📚 Hugging Face Papers มีงาน TheMCPCompany benchmark สำหรับ agents ที่ใช้ task-specific MCP tools มากกว่า 18,000 tools <a href="https://huggingface.co/papers?q=general-purpose+agents" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+</ul>
+<h2>ทำไมควรรู้</h2>
+<ul>
+<li>⚙️ Performance ของ agents ไม่ได้มาจาก model อย่างเดียว แต่มาจาก harness: context packing, tool iteration, caching และ repeated work <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></li>
+<li>🧾 MCP cache hints ช่วยให้ tool catalog ไม่ทำให้ prompt cache แตกทุกครั้งที่ reconnect <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>📚 Benchmark ที่มี tool จำนวนมากบอกว่า retrieval/selection ของ tools คือ competency สำคัญ ไม่ใช่แค่ reasoning <a href="https://huggingface.co/papers?q=general-purpose+agents" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+</ul>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<ul>
+<li>🧮 วัด agent run เป็น timeline: model calls, tool calls, context size, cache hit, retry และ human waits <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></li>
+<li>🔧 ทำ tool list deterministic และใส่ TTL ชัดเจนสำหรับ MCP server ภายใน <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>📚 อ่าน TheMCPCompany เพื่อออกแบบ eval ว่า agent เลือก tool ถูกไหมเมื่อมีเครื่องมือเยอะ <a href="https://huggingface.co/papers?q=general-purpose+agents" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+</ul>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<ul>
+<li>⚙️ สถานการณ์: agent ช้าและแพง; Pattern: repeated-region audit; Template: “For each loop, log context bytes, tool schema bytes, cache status, result size”; Verify: ลด context bloat แล้ว task success ไม่ตก <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></li>
+<li>🔎 สถานการณ์: tools เยอะ; Pattern: tool retrieval eval; Example: goal -&gt; expected tool set -&gt; selected tool set -&gt; outcome; Caveat: อย่าให้ description คลุมเครือ <a href="https://huggingface.co/papers?q=general-purpose+agents" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+</ul>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<ul>
+<li>🧠 Agent architecture ต้องออกแบบ “เศรษฐศาสตร์ของ loop” เพราะ cost เล็ก ๆ ในแต่ละ iteration คูณหลายสิบครั้ง <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></li>
+<li>🧭 MCP + benchmark trend ชี้ว่าอนาคตของ enterprise agents คือ tool portfolio management: catalog, retrieval, policy, eval <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+</ul>
+<h2>Thai Ecosystem Watch</h2>
+<ul>
+<li>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: DevHub บทความ Harness Engineering อธิบาย AGENTS.md แบบสารบัญและแยก docs/ เพื่อให้ agent อ่านบริบทอย่างเป็นระบบ เหมาะกับทีม dev ไทยที่เริ่มใช้ coding agents <a href="https://devhub.in.th/en/blog/openai-harness-engineering-codex-zero-code" target="_blank" rel="noreferrer">DevHub</a></li>
+<li>🇹🇭 ข้อเสนอ: นำแนวคิด “AGENTS.md สั้น + docs/ เป็นแหล่งความจริง” ไปใช้กับ repo ไทยก่อนเพิ่ม automation ที่ซับซ้อน <a href="https://devhub.in.th/en/blog/openai-harness-engineering-codex-zero-code" target="_blank" rel="noreferrer">DevHub</a></li>
+</ul>
+  </main>
+</body>
+</html>

@@ -1,0 +1,71 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-08-08</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-08-08</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">AWS</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-08-08.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<ul>
+<li>🔌 สรุป 24-72 ชม. ล่าสุด: ไม่มี launch ใหม่ใหญ่เท่า MCP final แต่ผลกระทบของ MCP 2026-07-28 ยังเป็นงานเร่งสำหรับทีมที่มี custom MCP servers <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>⚙️ OpenAI GPT-5.6 efficiency article ยังเป็นอ่านหลักสำหรับการลด cost/latency ของ agent loops โดยเฉพาะ context bloat และ prompt caching <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></li>
+<li>🛡️ Hugging Face security incident เป็น case study สำคัญเรื่อง agentic attacker และ defender-side AI operations <a href="https://huggingface.co/blog/security-incident-july-2026" target="_blank" rel="noreferrer">Hugging Face</a></li>
+</ul>
+<h2>ทำไมควรรู้</h2>
+<ul>
+<li>🔌 ทีมที่รอ “ให้ spec นิ่งก่อน” ตอนนี้ควรเริ่ม migration/proof-of-compatibility แล้ว เพราะ MCP final ออกแล้ว <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>⚙️ Agent cost ไม่ได้อยู่แค่ token price แต่อยู่ในจำนวน loop, repeated context, tool schema size และ cache misses <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></li>
+<li>🛡️ Security readiness ต้องรองรับทั้ง misuse prevention และ incident response ที่วิเคราะห์ข้อมูลอ่อนไหวได้ใน boundary ขององค์กร <a href="https://huggingface.co/blog/security-incident-july-2026" target="_blank" rel="noreferrer">Hugging Face</a></li>
+</ul>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<ul>
+<li>✅ ทำ MCP smoke test: list tools, call read-only tool, call approval-required tool, reject unauthorized tool, verify logs <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>🧮 ทำ agent cost trace 1 workflow แล้วหาว่าเวลาหมดกับ model, tool, test, wait หรือ repeated context <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></li>
+<li>🧯 เพิ่ม self-hosted/offline analysis option ใน security playbook สำหรับ incident logs ที่ส่งเข้า hosted model ไม่ได้ <a href="https://huggingface.co/blog/security-incident-july-2026" target="_blank" rel="noreferrer">Hugging Face</a></li>
+</ul>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<ul>
+<li>🔌 สถานการณ์: หลัง MCP final; Pattern: compatibility smoke suite; Template: “discover/list/call/approval/auth-deny/cache/log replay”; Verify: run in CI และบันทึก protocol version <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>⚙️ สถานการณ์: agent run แพง; Pattern: loop budget; Example: max 8 model iterations, max 3 repeated file reads, require checkpoint before extra budget; Caveat: อย่า cap จน task สำคัญ fail เงียบ <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></li>
+<li>🛡️ สถานการณ์: security triage; Pattern: redact-then-local-analyze; Verify: sample incident payload ไม่ออกนอก approved boundary <a href="https://huggingface.co/blog/security-incident-july-2026" target="_blank" rel="noreferrer">Hugging Face</a></li>
+</ul>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<ul>
+<li>🏛️ รอบนี้ควร focus ที่ “agent operating system” ขององค์กร: protocol migration, tool catalog, eval, cost tracing, security playbook และ Thai rollout readiness <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>📌 ถ้ามีทรัพยากรจำกัด ให้เริ่มจาก read-only agents + human approval + trace/eval ก่อน autonomy เต็มรูปแบบ <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS</a></li>
+</ul>
+<h2>Thai Ecosystem Watch</h2>
+<ul>
+<li>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: Techsauce รายงาน Huawei Thailand AI Ecosystem Initiative/CodeArts Agent และ Cisco readiness gap; ภาพรวมคือไทยเริ่มสนใจ agentic infrastructure แต่ความพร้อม security/data ยังเป็นตัวคุมความเร็ว <a href="https://techsauce.co/news/huawei-thailand-ai-ecosystem-initiative-agentic-infrastructure" target="_blank" rel="noreferrer">Techsauce</a></li>
+<li>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: DevHub Harness Engineering ให้บทเรียนภาษาไทยเรื่อง agent-legible repo, AGENTS.md สั้น และ feedback loops สำหรับทีม dev ที่ใช้ coding agents <a href="https://devhub.in.th/en/blog/openai-harness-engineering-codex-zero-code" target="_blank" rel="noreferrer">DevHub</a></li>
+<li>🇹🇭 ข้อเสนอ: ทำ pilot agent ไทยแบบควบคุมได้: workflow เดียว, read-only ก่อน, owner ชัด, approval ภาษาไทย, dashboard ง่าย และ eval จากเคสจริง <a href="https://techsauce.co/ai/cisco-ai-agents-security-network-infrastructure-thailand" target="_blank" rel="noreferrer">Techsauce</a></li>
+</ul>
+  </main>
+</body>
+</html>

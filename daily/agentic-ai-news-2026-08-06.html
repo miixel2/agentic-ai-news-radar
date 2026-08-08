@@ -1,0 +1,69 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-08-06</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-08-06</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-08-06.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<ul>
+<li>🧰 DeepLearning.AI community ยังชู short courses ด้าน Agent Memory, Agent Skills และ A2A เป็น learning path สำหรับ builders <a href="https://community.deeplearning.ai/c/news-and-announcements/24" target="_blank" rel="noreferrer">DeepLearning.AI Community</a></li>
+<li>🧠 Hugging Face Agents docs รวม agent traces และ MCP/skills integration เป็น reference ที่ดีสำหรับทีม open-source stack <a href="https://huggingface.co/docs/hub/agents" target="_blank" rel="noreferrer">Hugging Face Docs</a></li>
+<li>⚙️ OpenAI harness efficiency note ย้ำว่าการจัด context และ repeated work ส่งผลกับ agent reliability/cost มาก <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></li>
+</ul>
+<h2>ทำไมควรรู้</h2>
+<ul>
+<li>🧰 Skills เป็นวิธีทำให้ความรู้ของทีมกลายเป็น executable instructions ที่ agent ใช้ซ้ำได้ <a href="https://community.deeplearning.ai/c/news-and-announcements/24" target="_blank" rel="noreferrer">DeepLearning.AI Community</a></li>
+<li>🧠 Traces ช่วยเปลี่ยน failure จาก “agent มั่ว” เป็น evidence ที่ debug ได้ <a href="https://huggingface.co/docs/hub/agents" target="_blank" rel="noreferrer">Hugging Face Docs</a></li>
+<li>⚙️ Context hygiene เป็นงาน architecture ไม่ใช่แค่ prompt craft เพราะมันกระทบทั้ง latency, cache และ correctness <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></li>
+</ul>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<ul>
+<li>🧾 เลือกหนึ่ง workflow แล้วเขียน skill: trigger, context needed, steps, forbidden actions, verification, final format <a href="https://community.deeplearning.ai/c/news-and-announcements/24" target="_blank" rel="noreferrer">DeepLearning.AI Community</a></li>
+<li>🔍 เปิด trace logging สำหรับ agent run ที่สำคัญ และบันทึก tool inputs/outputs แบบ redact secrets <a href="https://huggingface.co/docs/hub/agents" target="_blank" rel="noreferrer">Hugging Face Docs</a></li>
+<li>⚙️ ตรวจ AGENTS.md/skills ที่ยาวเกิน 150-200 บรรทัด แล้วแยกเป็น docs/ หรือ task-specific skills <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></li>
+</ul>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<ul>
+<li>🧰 สถานการณ์: งานซ้ำในทีม dev; Pattern: concise skill; Template: “Use when X; Inputs Y; Steps 1-5; Verify with Z; Stop if A”; Caveat: version skill พร้อม repo changes <a href="https://community.deeplearning.ai/c/news-and-announcements/24" target="_blank" rel="noreferrer">DeepLearning.AI Community</a></li>
+<li>🔍 สถานการณ์: agent failure debug; Pattern: trace-to-eval loop; Example: failed trace -&gt; minimal reproduction -&gt; regression eval; Verify: eval fails before fix and passes after <a href="https://huggingface.co/docs/hub/agents" target="_blank" rel="noreferrer">Hugging Face Docs</a></li>
+</ul>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<ul>
+<li>📚 Learning agenda สำหรับทีม agent ไม่ควรมีแค่ model API แต่ต้องครอบคลุม memory, skills, traces, eval และ security <a href="https://community.deeplearning.ai/c/news-and-announcements/24" target="_blank" rel="noreferrer">DeepLearning.AI Community</a></li>
+<li>🧠 ความรู้ใน repo ควรเป็น machine-legible: architecture docs, runbooks, schemas, examples และ tests ที่ agent อ่าน/รันได้ <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></li>
+</ul>
+<h2>Thai Ecosystem Watch</h2>
+<ul>
+<li>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: DevHub Harness Engineering เป็นภาษาไทยที่เหมาะกับทีมไทยเริ่มคุยเรื่อง agent-legible repository และ feedback loops <a href="https://devhub.in.th/en/blog/openai-harness-engineering-codex-zero-code" target="_blank" rel="noreferrer">DevHub</a></li>
+<li>🇹🇭 ข้อเสนอ: ทำ workshop ภายใน 60 นาทีให้ dev ไทยเขียน skill แรกจากงานจริง เช่น bugfix, PR review หรือ deploy verification <a href="https://devhub.in.th/en/blog/openai-harness-engineering-codex-zero-code" target="_blank" rel="noreferrer">DevHub</a></li>
+</ul>
+  </main>
+</body>
+</html>

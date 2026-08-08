@@ -1,0 +1,75 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-08-07</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-08-07</h1>
+    <div class="tags"><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-08-07.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<ul>
+<li>📚 งาน ACL 2026 เรื่อง Interlat สำรวจการสื่อสารระหว่าง agents ใน latent space แทน natural language และรายงาน inference acceleration สูงในบาง setting <a href="https://aclanthology.org/2026.acl-long.1248/" target="_blank" rel="noreferrer">ACL Anthology</a></li>
+<li>📚 Hugging Face Papers เรื่อง MCP benchmarks/tool retrieval ยังชี้ว่าการเลือกเครื่องมือและ environment simulation เป็น research frontier ของ agents <a href="https://huggingface.co/papers?q=Model+Context+Protocol+%28MCP%29" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+<li>🔌 MCP 2026-07-28 ทำให้ research/production บรรจบกันมากขึ้น เพราะ protocol เริ่มรองรับ long-running tasks, stateless scale และ auth hardening <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+</ul>
+<h2>ทำไมควรรู้</h2>
+<ul>
+<li>📚 Latent communication ยังเป็น research มากกว่า production แต่สะท้อนว่า multi-agent efficiency จะไม่หยุดแค่ prompt protocol <a href="https://aclanthology.org/2026.acl-long.1248/" target="_blank" rel="noreferrer">ACL Anthology</a></li>
+<li>🔎 MCP benchmark work ทำให้ทีม production มีไอเดียสร้าง eval ที่วัด tool success/tool parameter accuracy ได้ <a href="https://huggingface.co/papers?q=Model+Context+Protocol+%28MCP%29" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+<li>🔌 Protocol maturity ช่วยให้ research ideas ถูกทดลองบน infrastructure ที่ใกล้ production มากขึ้น <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+</ul>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<ul>
+<li>📖 อ่าน Interlat เพื่อเข้าใจข้อจำกัด natural-language agent-to-agent communication แต่ยังไม่ควรนำไป production โดยตรง <a href="https://aclanthology.org/2026.acl-long.1248/" target="_blank" rel="noreferrer">ACL Anthology</a></li>
+<li>🧪 ทำ eval จาก MCP task จริง: tool selected, parameter correctness, side effect correctness, final answer <a href="https://huggingface.co/papers?q=Model+Context+Protocol+%28MCP%29" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+<li>🔌 ตรวจว่า long-running tasks ควรใช้ MCP Tasks extension หรือ workflow engine ภายนอก <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+</ul>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<ul>
+<li>🧪 สถานการณ์: Friday research-to-practice; Pattern: paper distillation card; Template: core idea, assumptions, production gap, smallest experiment, kill criteria; Verify: ไม่เอา paper ไปใช้ถ้าไม่มี eval <a href="https://aclanthology.org/2026.acl-long.1248/" target="_blank" rel="noreferrer">ACL Anthology</a></li>
+<li>🔎 สถานการณ์: MCP agent eval; Pattern: parameter-accuracy rubric; Example: expected tool args vs actual args, with risk severity; Caveat: redact secrets in traces <a href="https://huggingface.co/papers?q=Model+Context+Protocol+%28MCP%29" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+</ul>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<ul>
+<li>🧭 Research digest สัปดาห์นี้ให้ lesson ชัด: อย่าเชื่อแค่ final answer; ต้องวัด communication, tool choice, parameter accuracy และ execution quality <a href="https://huggingface.co/papers?q=Model+Context+Protocol+%28MCP%29" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+<li>🔬 แยก “น่าศึกษา” กับ “น่าใช้จริง” ให้ชัด โดยใช้ readiness rubric: dependency, observability, rollback, security, measurable outcome <a href="https://aclanthology.org/2026.acl-long.1248/" target="_blank" rel="noreferrer">ACL Anthology</a></li>
+</ul>
+<h2>Thai Ecosystem Watch</h2>
+<ul>
+<li>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: ไม่พบ Thai research digest ใหม่ที่ high-signal วันนี้; แนะนำใช้หัวข้อ MCP/tool eval ทำ reading group ไทยในทีมแทน <a href="https://huggingface.co/papers?q=Model+Context+Protocol+%28MCP%29" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+<li>🇹🇭 Evergreen: ให้ทีมไทยสรุป paper เป็น “เอาไปลองอะไรใน sprint นี้” มากกว่าสรุป abstract ยาว ๆ <a href="https://aclanthology.org/2026.acl-long.1248/" target="_blank" rel="noreferrer">ACL Anthology</a></li>
+</ul>
+<h2>Friday Research Digest</h2>
+<ul>
+<li>📚 Core idea: Interlat ทดลอง latent-space communication ระหว่าง agents; Why it matters: ลด overhead ของ natural-language coordination; Practical takeaway: ตอนนี้ใช้เป็น research lens ไม่ใช่ production pattern; Read priority: กลาง <a href="https://aclanthology.org/2026.acl-long.1248/" target="_blank" rel="noreferrer">ACL Anthology</a></li>
+<li>📚 Core idea: MCP benchmarks วัด tool success และ parameter accuracy; Why it matters: agents พลาดได้ก่อนถึง final answer; Practical takeaway: เพิ่ม rubric ต่อ tool call; Read priority: สูง <a href="https://huggingface.co/papers?q=Model+Context+Protocol+%28MCP%29" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+<li>📚 Core idea: MCP 2026-07-28 Tasks/stateless core ทำให้ long-running agents deploy ง่ายขึ้น; Why it matters: research prototype จะเข้า production ได้เร็วขึ้น; Practical takeaway: เลือก task lifecycle ให้เหมาะ; Read priority: สูง <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+</ul>
+  </main>
+</body>
+</html>

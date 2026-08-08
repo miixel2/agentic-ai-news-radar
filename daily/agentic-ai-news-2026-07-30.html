@@ -1,0 +1,69 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-07-30</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-07-30</h1>
+    <div class="tags"><span class="tag">AWS</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-07-30.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<ul>
+<li>🔐 MCP 2026-07-28 เพิ่ม authorization hardening เช่น issuer validation, client metadata documents direction และ deprecate DCR ในอนาคต <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>🧠 Hugging Face security incident ชี้ practical lesson ว่า defender ควรมี self-hosted model สำหรับ forensic analysis เมื่อ hosted guardrails block payload/log อันตราย <a href="https://huggingface.co/blog/security-incident-july-2026" target="_blank" rel="noreferrer">Hugging Face</a></li>
+<li>🧪 AWS AgentOps เสนอให้ version agent/tool/memory config เป็น deployable artifacts และประเมินทั้ง dev/prod <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS</a></li>
+</ul>
+<h2>ทำไมควรรู้</h2>
+<ul>
+<li>🔐 MCP auth ไม่ใช่ optional polish; เมื่อ tools ทำ action จริง ต้องมี issuer binding, scope และ audit ที่ตรวจย้อนหลังได้ <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>🧯 AI-driven intrusion ทำให้ security team ต้องซ้อมทั้ง offensive speed และ defensive AI workflow <a href="https://huggingface.co/blog/security-incident-july-2026" target="_blank" rel="noreferrer">Hugging Face</a></li>
+<li>📦 Agent config ที่ไม่ versioned จะ debug/rollback ยาก โดยเฉพาะเมื่อ prompt, memory และ tools เปลี่ยนพร้อมกัน <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS</a></li>
+</ul>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<ul>
+<li>🛡️ ทำ MCP auth review: OAuth issuer, client identity, tool scope, secret handling, audit log, revoke path <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>🧪 เพิ่ม “known bad” forensic prompts/logs ใน offline security lab เพื่อทดสอบ model fallback <a href="https://huggingface.co/blog/security-incident-july-2026" target="_blank" rel="noreferrer">Hugging Face</a></li>
+<li>📦 เก็บ agent config ใน git และผูก deployment กับ commit/hash <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS</a></li>
+</ul>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<ul>
+<li>🔐 สถานการณ์: agent เรียก tools ที่กระทบข้อมูลลูกค้า; Pattern: issuer-bound client + scoped tools; Template: “agent identity X may call tool Y only for tenant Z and purpose P”; Verify: negative auth tests <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>📦 สถานการณ์: prompt/memory drift; Pattern: config release note; ทุก deploy ต้องบันทึก prompt hash, tool schema hash, eval score และ rollback owner <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS</a></li>
+</ul>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<ul>
+<li>🏢 Enterprise agents ต้องใช้ SDLC จริง: design review, threat model, CI eval, staged rollout, telemetry และ incident playbook <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS</a></li>
+<li>🔐 MCP gateways ควรเป็น control plane กลางสำหรับ tool traffic ไม่ใช่ให้แต่ละทีมเปิด endpoint เองแบบกระจาย <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+</ul>
+<h2>Thai Ecosystem Watch</h2>
+<ul>
+<li>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: Techsauce สัมภาษณ์ Cisco ระบุช่องว่างความพร้อมด้าน infrastructure/security ขององค์กรไทยต่อ AI agents จึงควรเริ่มจาก readiness assessment <a href="https://techsauce.co/ai/cisco-ai-agents-security-network-infrastructure-thailand" target="_blank" rel="noreferrer">Techsauce</a></li>
+<li>🇹🇭 ข้อเสนอ: ก่อน POC agent ในไทย ให้ทำ checklist 6 เรื่อง: data, network, identity, logging, approval, incident owner <a href="https://techsauce.co/ai/cisco-ai-agents-security-network-infrastructure-thailand" target="_blank" rel="noreferrer">Techsauce</a></li>
+</ul>
+  </main>
+</body>
+</html>

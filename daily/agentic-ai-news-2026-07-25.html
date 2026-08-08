@@ -1,0 +1,69 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-07-25</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-07-25</h1>
+    <div class="tags"><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-07-25.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<ul>
+<li>🔌 MCP 2026-07-28 กำลังจะเป็นจุดเปลี่ยนสำคัญ: stateless core, extensions framework, Tasks และ auth hardening ทำให้ MCP ใกล้ production-grade integration layer มากขึ้น <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>🧰 AWS โพสต์ production blueprint สำหรับประเมิน agents ด้วย Strands + Bedrock AgentCore โดยเน้น eval pipeline และ failure detection <a href="https://aws.amazon.com/blogs/machine-learning/category/artificial-intelligence/amazon-machine-learning/" target="_blank" rel="noreferrer">AWS</a></li>
+<li>🏢 Google Cloud เผยชุด demo สำหรับ Gemini Enterprise Agent Platform พร้อมแนวทางใช้ Agents CLI/skills ใน coding agents <a href="https://cloud.google.com/blog/products/ai-machine-learning/13-demos-on-gemini-enterprise-agent-platform" target="_blank" rel="noreferrer">Google Cloud</a></li>
+</ul>
+<h2>ทำไมควรรู้</h2>
+<ul>
+<li>🔌 MCP แบบ stateless ลดภาระ sticky session/shared store แต่บังคับให้ทีมคิด explicit handles, routing headers และ auth scope ให้รัดกุม <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>🧪 Production agents ต้องวัดมากกว่า answer quality: ต้องเห็น tool success, session outcome, silent failures และ cost ต่อ interaction <a href="https://aws.amazon.com/blogs/machine-learning/category/artificial-intelligence/amazon-machine-learning/" target="_blank" rel="noreferrer">AWS</a></li>
+<li>🧭 Skills/CLI guides ของ Google Cloud สะท้อนแนวโน้มใหม่: agent platform ต้องสอน coding agent ให้เข้าใจ platform patterns ไม่ใช่แค่มี SDK <a href="https://cloud.google.com/blog/products/ai-machine-learning/13-demos-on-gemini-enterprise-agent-platform" target="_blank" rel="noreferrer">Google Cloud</a></li>
+</ul>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<ul>
+<li>🔍 อ่าน MCP release candidate แล้วทำรายการ MCP server ภายในที่พึ่ง session state หรือ SSE transport <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>🧪 สร้าง eval table 4 ชั้น: tool call, turn, session outcome, production drift <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS</a></li>
+<li>🧰 ทดลองทำ skill สั้น ๆ ให้ coding agent รู้ command, deploy target, rollback และ verification path ของ platform <a href="https://cloud.google.com/blog/products/ai-machine-learning/13-demos-on-gemini-enterprise-agent-platform" target="_blank" rel="noreferrer">Google Cloud</a></li>
+</ul>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<ul>
+<li>🔌 สถานการณ์: MCP server ต้อง scale; Pattern: stateless handle; Template: “create_x returns x_id; all later tools require x_id”; Verify: load test โดยปิด sticky session <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>🧪 สถานการณ์: agent ตอบถูกบางครั้งแต่พังเงียบ; Pattern: silent-failure eval; Example: seed cases ที่ health check ผ่านแต่ outcome ผิด; Caveat: ต้องมี expected business outcome <a href="https://aws.amazon.com/blogs/machine-learning/category/artificial-intelligence/amazon-machine-learning/" target="_blank" rel="noreferrer">AWS</a></li>
+</ul>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<ul>
+<li>🏛️ MCP ควรถูกวางหลัง API gateway/identity policy เหมือน integration surface จริง ไม่ใช่ config ทดลองในเครื่อง developer <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>📊 AgentOps ต้องรวม product owner, security, platform และ QA เพราะ failure ของ agent มักข้ามขอบเขตทีมเดียว <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS</a></li>
+</ul>
+<h2>Thai Ecosystem Watch</h2>
+<ul>
+<li>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: Techsauce รายงาน Huawei Thailand AI Ecosystem Initiative และ CodeArts Agent ในไทย เป็นสัญญาณว่า vendor ecosystem เริ่มผลัก agentic infrastructure ในตลาดองค์กรไทย <a href="https://techsauce.co/news/huawei-thailand-ai-ecosystem-initiative-agentic-infrastructure" target="_blank" rel="noreferrer">Techsauce</a></li>
+<li>🇹🇭 ข้อควรทำ: ทีมไทยควรแยก “ประกาศ vendor” ออกจาก production readiness โดยขอ reference architecture, data residency, audit log และ security boundary ก่อน pilot <a href="https://techsauce.co/news/huawei-thailand-ai-ecosystem-initiative-agentic-infrastructure" target="_blank" rel="noreferrer">Techsauce</a></li>
+</ul>
+  </main>
+</body>
+</html>

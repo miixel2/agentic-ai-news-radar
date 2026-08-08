@@ -1,0 +1,69 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-08-05</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-08-05</h1>
+    <div class="tags"><span class="tag">AWS</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-08-05.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<ul>
+<li>🔐 Hugging Face security incident ยังเป็น case study สำคัญเรื่อง autonomous AI-driven intrusion และ defender-side AI forensics <a href="https://huggingface.co/blog/security-incident-july-2026" target="_blank" rel="noreferrer">Hugging Face</a></li>
+<li>🛡️ MCP 2026-07-28 auth changes เช่น issuer validation และ client credential binding ทำให้ MCP security posture โตขึ้น <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>🧪 AWS AgentOps แนะนำ observability หลายชั้นเพื่อ trace decision, monitor quality drop และดู cost per interaction <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS</a></li>
+</ul>
+<h2>ทำไมควรรู้</h2>
+<ul>
+<li>🔐 Agentic attackers ใช้ automation scale สูง; defenders ต้องลดเวลา triage และ reconstruction ด้วย AI แต่ยังคุม data boundary <a href="https://huggingface.co/blog/security-incident-july-2026" target="_blank" rel="noreferrer">Hugging Face</a></li>
+<li>🛡️ MCP auth hardening ทำให้ security team มีจุดจับนโยบายชัดขึ้น แต่ต้อง implement จริงใน gateway/client <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>📉 Quality drop ของ agent อาจเกิดจาก tool drift, prompt change, data change หรือ auth failure ไม่ใช่ model อย่างเดียว <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS</a></li>
+</ul>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<ul>
+<li>🧯 ทำ tabletop exercise: agent ถูก prompt-injected ให้เรียก tool ผิด จะ detect/stop/escalate อย่างไร <a href="https://huggingface.co/blog/security-incident-july-2026" target="_blank" rel="noreferrer">Hugging Face</a></li>
+<li>🔐 เพิ่ม negative tests สำหรับ OAuth issuer/client mismatch ใน MCP integration <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>📊 ทำ dashboard แยก model failures, tool failures, auth denials, human approval waits และ cost spikes <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS</a></li>
+</ul>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<ul>
+<li>🧯 สถานการณ์: agent security review; Pattern: action kill-chain log; Template: goal -&gt; tool retrieval -&gt; auth decision -&gt; tool call -&gt; side effect -&gt; evidence; Verify: replay ได้จาก logs <a href="https://huggingface.co/blog/security-incident-july-2026" target="_blank" rel="noreferrer">Hugging Face</a></li>
+<li>🔐 สถานการณ์: MCP tool destructive; Pattern: policy + approval + issuer validation; Caveat: approval ต้องผูกกับ identity และ request payload <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+</ul>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<ul>
+<li>🛡️ Agent security ต้องขยายจาก prompt injection ไปสู่ supply chain ของ tools, datasets, credentials และ runtime sandboxes <a href="https://huggingface.co/blog/security-incident-july-2026" target="_blank" rel="noreferrer">Hugging Face</a></li>
+<li>📊 Observability ที่ดีต้องช่วย “replay decision” ไม่ใช่แค่ดู latency/token graphs <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS</a></li>
+</ul>
+<h2>Thai Ecosystem Watch</h2>
+<ul>
+<li>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: Techsauce/Cisco readiness gap เหมาะใช้คุยกับผู้บริหารไทยเรื่อง security/network/data foundation ก่อน autonomous agents <a href="https://techsauce.co/ai/cisco-ai-agents-security-network-infrastructure-thailand" target="_blank" rel="noreferrer">Techsauce</a></li>
+<li>🇹🇭 ข้อเสนอ: เริ่มจาก agent ที่ read-only หรือ human-approved action ก่อน แล้วค่อยขยายไป workflow ที่มี side effect <a href="https://techsauce.co/ai/cisco-ai-agents-security-network-infrastructure-thailand" target="_blank" rel="noreferrer">Techsauce</a></li>
+</ul>
+  </main>
+</body>
+</html>

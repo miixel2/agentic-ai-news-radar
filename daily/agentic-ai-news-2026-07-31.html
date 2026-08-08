@@ -1,0 +1,75 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-07-31</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-07-31</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-07-31.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<ul>
+<li>📚 OpenAI engineering note อธิบาย agentic harness ของ GPT-5.6: ลด context bloat, รักษา cache prefix และลด repeated work ใน loop <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></li>
+<li>📚 Hugging Face Papers มี Tool-to-Agent Retrieval สำหรับเลือก agent/tool ใน multi-agent systems ที่มี tools หรือ MCP servers จำนวนมาก <a href="https://huggingface.co/papers?q=agent-level+retrieval" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+<li>📚 Hugging Face Papers มีแนวคิด cryptographically verifiable authorization สำหรับ autonomous agents ที่ต้องพิสูจน์ว่า request สอดคล้อง policy <a href="https://huggingface.co/papers?q=autonomous+AI+agents" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+</ul>
+<h2>ทำไมควรรู้</h2>
+<ul>
+<li>⚙️ Harness efficiency เป็นจุดแข่งของ agent products: context, tools, cache และ orchestration ส่งผลต่อ cost/latency โดยตรง <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></li>
+<li>🔎 Tool-to-agent retrieval แก้ปัญหา context dilution เมื่อ agent catalog ใหญ่เกินจะ chunk แบบหยาบ <a href="https://huggingface.co/papers?q=agent-level+retrieval" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+<li>🔐 Verifiable authorization เป็นทิศทางสำคัญเมื่อ agents เริ่มทำ action ที่ต้อง audit หรือพิสูจน์ policy compliance <a href="https://huggingface.co/papers?q=autonomous+AI+agents" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+</ul>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<ul>
+<li>🧮 ทำ agent loop profiler สำหรับงาน coding/research ที่ใช้เกิน 10 tool calls <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></li>
+<li>🧰 ทดลอง index tools แบบ metadata-rich: parent agent, tool capability, risk, auth scope, examples <a href="https://huggingface.co/papers?q=agent-level+retrieval" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+<li>🔐 อ่าน authorization paper เพื่อคิด “policy proof” สำหรับ tools ที่ทำ transfer, delete, deploy หรือ update config <a href="https://huggingface.co/papers?q=autonomous+AI+agents" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+</ul>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<ul>
+<li>⚙️ สถานการณ์: agent วนซ้ำอ่านไฟล์/เรียก tool เดิม; Pattern: work reuse memo; Template: “Before repeating a tool, check prior result id and freshness”; Verify: compare success/cost ก่อนหลัง <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></li>
+<li>🔎 สถานการณ์: multi-agent routing; Pattern: tool-first retrieval; Example: find exact tool capability then route to owning agent; Caveat: ต้องมี metadata relationship ที่ถูกต้อง <a href="https://huggingface.co/papers?q=agent-level+retrieval" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+</ul>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<ul>
+<li>🏗️ Research สัปดาห์นี้บอกว่า production agents ต้องมี “agent runtime engineering” จริงจัง: profiling, retrieval, policy proof และ eval <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></li>
+<li>🔐 Authorization ของ agents จะขยับจาก “ใครเรียก” ไปสู่ “คำขอนี้สอดคล้อง policy ใน context นี้หรือไม่” <a href="https://huggingface.co/papers?q=autonomous+AI+agents" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+</ul>
+<h2>Thai Ecosystem Watch</h2>
+<ul>
+<li>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: ยังไม่พบ paper digest ภาษาไทยคุณภาพสูงสำหรับวันนี้; แนะนำทีมไทยใช้ Friday digest นี้เป็น reading list สำหรับ architecture/security guild <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></li>
+<li>🇹🇭 Evergreen: แปล acceptance criteria ของ agent เป็นภาษาไทยให้ business owner ตรวจได้ เช่น “ต้องอ้างหลักฐานจากระบบ X ก่อนทำ action Y” <a href="https://huggingface.co/papers?q=autonomous+AI+agents" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+</ul>
+<h2>Friday Research Digest</h2>
+<ul>
+<li>📚 Core idea: GPT-5.6 efficiency note ชี้ว่า agent harness ต้องลด repeated work และ context bloat; Why it matters: cost/latency คูณตามจำนวน loop; Practical takeaway: ทำ loop profiler; Read priority: สูง <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></li>
+<li>📚 Core idea: Tool-to-Agent Retrieval ฝัง tool และ parent agent ใน retrieval space เดียว; Why it matters: routing ดีขึ้นเมื่อ tools เยอะ; Practical takeaway: index tool metadata แยกจาก agent description; Read priority: กลาง-สูง <a href="https://huggingface.co/papers?q=agent-level+retrieval" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+<li>📚 Core idea: Verifiable authorization สำหรับ autonomous agents เสนอ policy proof ต่อ request; Why it matters: audit/compliance จะเข้มขึ้น; Practical takeaway: เริ่มจาก signed approval + policy logs; Read priority: กลาง <a href="https://huggingface.co/papers?q=autonomous+AI+agents" target="_blank" rel="noreferrer">Hugging Face Papers</a></li>
+</ul>
+  </main>
+</body>
+</html>
