@@ -1,0 +1,79 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-08-10</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-08-10</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">AWS</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-08-10.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<ul>
+<li>🧠 OpenAI Help Center อัปเดตว่า Assistants API deprecated และจะถูกถอดในเดือน ส.ค. 2026; โปรเจกต์ใหม่ควรใช้ Responses API/Agents stack <a href="https://help.openai.com/en/articles/8550641-assistants-api" target="_blank" rel="noreferrer">OpenAI Help</a></li>
+<li>⚙️ OpenAI GPT-5.6 ยังเป็น reference สำคัญสำหรับ agent economics: model family ใหม่เน้น work-per-token, Programmatic Tool Calling และ multi-agent beta ใน Responses API <a href="https://openai.com/index/gpt-5-6/" target="_blank" rel="noreferrer">OpenAI</a></li>
+<li>🔌 MCP <code>2026-07-28</code> เป็น change หลักของสัปดาห์: stateless, routable, cacheable และมี extension/deprecation policy ชัดขึ้น <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+</ul>
+<h2>ทำไมควรรู้</h2>
+<ul>
+<li>🧠 ถ้ายังมี Assistants API workloads ต้องทำ migration plan ทันที: inventory assistant/thread/file usage, map tools, แล้วย้าย flow ที่สำคัญก่อน <a href="https://help.openai.com/en/articles/8550641-assistants-api" target="_blank" rel="noreferrer">OpenAI Help</a></li>
+<li>⚙️ Programmatic Tool Calling ชี้แนวทางลด loop cost: ไม่ต้องส่ง intermediate output ทุกชิ้นกลับเข้า model ถ้า code/agent harness กรองได้ก่อน <a href="https://openai.com/index/gpt-5-6/" target="_blank" rel="noreferrer">OpenAI</a></li>
+<li>🔌 MCP ใหม่ทำให้ gateway, WAF และ observability เห็น method/tool name ได้ง่ายขึ้น แต่ต้องทดสอบ clients เก่าที่พึ่ง session/GET stream <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+</ul>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<ul>
+<li>✅ ทำ Assistants migration sheet: endpoint, tool, file store, retention owner, target Responses design, cutover date <a href="https://help.openai.com/en/articles/8550641-assistants-api" target="_blank" rel="noreferrer">OpenAI Help</a></li>
+<li>🧮 ทำ cost trace ต่อ workflow: model calls, tool calls, repeated context, cache hit/miss, latency และ human approval wait <a href="https://openai.com/index/gpt-5-6/" target="_blank" rel="noreferrer">OpenAI</a></li>
+<li>🧱 อ่าน AWS AgentOps เป็น playbook เสริมเรื่อง governance, build/ops, evaluation และ observability ของ agents <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS</a></li>
+</ul>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<ul>
+<li>🧠 สถานการณ์: migration จาก Assistants API; Pattern: “compatibility wrapper first”; Template: keep public app contract stable, swap orchestration behind it, run golden conversations; Verify: compare tool calls and final outputs <a href="https://help.openai.com/en/articles/8550641-assistants-api" target="_blank" rel="noreferrer">OpenAI Help</a></li>
+<li>⚙️ สถานการณ์: agent loop แพง; Pattern: intermediate reducer; Example: tool returns 500 rows, reducer keeps top 10 + anomaly count before model sees it; Caveat: log raw output securely for audit <a href="https://openai.com/index/gpt-5-6/" target="_blank" rel="noreferrer">OpenAI</a></li>
+<li>🧪 สถานการณ์: production agent rollout; Pattern: four-layer eval; test tool correctness, turn quality, session outcome, and live drift separately <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS</a></li>
+</ul>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<ul>
+<li>🏛️ Weekly priority: combine migration risk and platform risk. Assistants API sunset is application risk; MCP upgrade is integration risk; both need owner/date/test evidence <a href="https://help.openai.com/en/articles/8550641-assistants-api" target="_blank" rel="noreferrer">OpenAI Help</a></li>
+<li>📌 Architecturally, the winning pattern is “agent harness as product”: observable loop, explicit tool policy, versioned prompts/skills, cost budget และ human-review gate <a href="https://openai.com/index/gpt-5-6/" target="_blank" rel="noreferrer">OpenAI</a></li>
+</ul>
+<h2>Thai Ecosystem Watch</h2>
+<ul>
+<li>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: DevHub’s Harness Engineering article is useful Thai-language context for AGENTS.md-as-index, docs-based context, and agent-legible logs <a href="https://devhub.in.th/en/blog/openai-harness-engineering-codex-zero-code" target="_blank" rel="noreferrer">DevHub</a></li>
+<li>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: Techsauce Summit 2026 เป็นจุดติดตาม local enterprise AI/startup adoption ปลายเดือนนี้ แต่ technical claims ควร cross-check กับ official sources <a href="https://summit.techsauce.co/" target="_blank" rel="noreferrer">Techsauce Summit</a></li>
+<li>🇹🇭 ข้อเสนอ: หากองค์กรไทยยังมี ChatGPT/assistant prototype เก่า ให้จัด “agent migration clinic” 1 วันเพื่อ map API, data retention, governance และ cost owner</li>
+</ul>
+<h2>Weekly Agentic AI Ecosystem Brief</h2>
+<ul>
+<li>🧭 What changed: MCP final spec เปลี่ยน production substrate; OpenAI Assistants API เข้าช่วง migration urgency; GitHub/AWS แสดง ecosystem support แล้ว <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>🏗️ Impact for builders: งานสำคัญไม่ใช่ demo เพิ่ม แต่คือ compatibility tests, cost tracing, migration wrappers และ tool permission model <a href="https://openai.com/index/gpt-5-6/" target="_blank" rel="noreferrer">OpenAI</a></li>
+<li>🛡️ Security/governance risks: stateless HTTP agents scale ง่ายขึ้นทั้งดีและเสี่ยงขึ้น ต้องมี issuer validation, gateway policy, least privilege และ audit trail <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>🇹🇭 Thai relevance: โอกาสของทีมไทยคือทำ playbook ภาษาไทยสำหรับ safe agent rollout ในองค์กร ไม่ใช่ขาย “AI agent” แบบไร้ boundary</li>
+<li>📚 What to study next: Responses migration, MCP 2026-07-28 transport/auth, AgentOps eval layers, and coding-agent repo instructions</li>
+</ul>
+  </main>
+</body>
+</html>

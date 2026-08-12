@@ -1,0 +1,71 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-08-12</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-08-12</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-08-12.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<ul>
+<li>🧭 สรุป 24-72 ชม. ล่าสุด: ไม่พบ launch ใหญ่ใหม่จากแหล่งหลักที่เปลี่ยนทิศทาง agent stack แต่ความเร่งยังอยู่ที่ Assistants API migration, MCP 2026-07-28 และ coding-agent governance <a href="https://help.openai.com/en/articles/8550641-assistants-api" target="_blank" rel="noreferrer">OpenAI Help</a></li>
+<li>🔌 MCP official spec <code>2026-07-28</code> เป็น baseline ใหม่สำหรับ agent tool interoperability: stateless HTTP, mandatory method/name headers, cacheable list results และ auth hardening <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>🧑‍💻 GitHub Copilot changelog ช่วงล่าสุดยังเน้น enterprise controls, MCP support, metrics, billing/cost visibility และ agent automation มากกว่าฟีเจอร์ consumer flashy <a href="https://github.blog/changelog/label/copilot/" target="_blank" rel="noreferrer">GitHub Changelog</a></li>
+</ul>
+<h2>ทำไมควรรู้</h2>
+<ul>
+<li>🧭 สัปดาห์นี้เป็น “implementation debt week”: ทีมที่มี assistants, MCP servers, coding agents หรือ internal tools ควรปิดช่อง migration/observability ก่อนเพิ่ม use case ใหม่ <a href="https://help.openai.com/en/articles/8550641-assistants-api" target="_blank" rel="noreferrer">OpenAI Help</a></li>
+<li>🔌 MCP stateless ช่วย scale แต่ทำให้ต้องชัดเรื่อง protocol version, header routing, issuer validation, deprecation window และ backward compatibility <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>🧑‍💻 Copilot workplace relevance อยู่ที่ policy, usage metrics, cost centers, agent session streaming และ MCP integration ซึ่งตรงกับสิ่งที่ enterprise ต้องวัดจริง <a href="https://github.blog/changelog/label/copilot/" target="_blank" rel="noreferrer">GitHub Changelog</a></li>
+</ul>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<ul>
+<li>✅ ทำ “Agent Platform Readiness” 90 นาที: API sunset inventory, MCP compatibility, cost trace, sandbox boundary, owner และ next test <a href="https://help.openai.com/en/articles/8550641-assistants-api" target="_blank" rel="noreferrer">OpenAI Help</a></li>
+<li>🔎 อ่าน GitHub Engineering เรื่อง Copilot code review/agentic workflows เพื่อดูแนวคิด evidence-driven review และ harness design <a href="https://github.blog/engineering/" target="_blank" rel="noreferrer">GitHub Engineering</a></li>
+<li>🧱 อ่าน Google Agent Executor เป็นแนวคิด runtime สำหรับ durable/resumable long-running agents แม้ยังไม่ได้ใช้ Google stack <a href="https://cloud.google.com/blog/products/ai-machine-learning/agent-executor-googles-distributed-agent-runtime" target="_blank" rel="noreferrer">Google Cloud</a></li>
+</ul>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<ul>
+<li>🧭 สถานการณ์: มีหลาย agent tools กระจาย; Pattern: agent platform scorecard; Template: protocol version, auth boundary, data retention, eval owner, cost owner, rollback owner; Verify: ทุก production tool มี owner และ smoke test <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></li>
+<li>🧑‍💻 สถานการณ์: ใช้ coding agent ในทีม; Pattern: PR evidence gate; Example: agent ต้องแนบ tests run, changed-files summary, risk note, and rollback note before review; Caveat: reviewer ยังต้องอ่าน diff จริง <a href="https://github.blog/engineering/" target="_blank" rel="noreferrer">GitHub Engineering</a></li>
+<li>🧱 สถานการณ์: long-running agent งานหลายชั่วโมง; Pattern: durable checkpoint; Example: persist plan, current step, tool outputs hash, approval state; Verify: kill/restart แล้ว resume โดยไม่ทำ action ซ้ำ <a href="https://cloud.google.com/blog/products/ai-machine-learning/agent-executor-googles-distributed-agent-runtime" target="_blank" rel="noreferrer">Google Cloud</a></li>
+</ul>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<ul>
+<li>🏛️ Recommendation: รอบนี้ให้จัด backlog เป็น 4 lane: Assistants migration, MCP upgrade, coding-agent governance, and Thai enablement/training <a href="https://help.openai.com/en/articles/8550641-assistants-api" target="_blank" rel="noreferrer">OpenAI Help</a></li>
+<li>📌 Metric ที่ควรมีใน dashboard: success rate, human intervention rate, cost per successful task, tool error rate, policy denial rate, and incident rollback time <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS</a></li>
+</ul>
+<h2>Thai Ecosystem Watch</h2>
+<ul>
+<li>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: DevHub ยังเป็นแหล่งภาษาไทยที่มีบทความ coding-agent/harness engineering ใช้ onboard dev ไทยได้ แต่ควรผูกกับ original source เสมอ <a href="https://devhub.in.th/th/blog" target="_blank" rel="noreferrer">DevHub</a></li>
+<li>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: Techsauce Summit 2026 ใกล้จัดปลายเดือนนี้ เป็นโอกาสติดตาม enterprise/startup AI ไทย แต่ยังไม่ใช่หลักฐาน technical adoption จนกว่าจะมี case/source ชัด <a href="https://summit.techsauce.co/" target="_blank" rel="noreferrer">Techsauce Summit</a></li>
+<li>🇹🇭 ข้อเสนอ: สร้าง Thai “Agent Readiness Checklist” 1 หน้าให้ทีมธุรกิจอ่านได้: scope, data, approval, logging, cost, security, fallback และ owner</li>
+</ul>
+  </main>
+</body>
+</html>

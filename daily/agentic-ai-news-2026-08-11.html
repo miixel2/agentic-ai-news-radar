@@ -1,0 +1,71 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-08-11</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-08-11</h1>
+    <div class="tags"><span class="tag">Anthropic</span><span class="tag">AWS</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-08-11.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<ul>
+<li>🛡️ Anthropic’s containment write-up เป็น practical reference สำหรับลด blast radius ของ agents: sandbox, VM, egress control, credential boundary และ approval fatigue <a href="https://www.anthropic.com/engineering/how-we-contain-claude" target="_blank" rel="noreferrer">Anthropic</a></li>
+<li>🧪 LangChain’s recent eval/observability posts ชี้ว่า deep agents ต้องวัด harness, traces และ failure modes ไม่ใช่วัด model อย่างเดียว <a href="https://www.langchain.com/blog?category_equal=%5B%22LangGraph%22%5D" target="_blank" rel="noreferrer">LangChain Blog</a></li>
+<li>🔌 Hugging Face Agents docs รวม MCP server, skills, CLI และ agent traces สำหรับเชื่อม coding agents กับ Hub แบบเป็นระบบ <a href="https://huggingface.co/docs/hub/en/agents-overview" target="_blank" rel="noreferrer">Hugging Face</a></li>
+</ul>
+<h2>ทำไมควรรู้</h2>
+<ul>
+<li>🛡️ Human approval อย่างเดียวไม่พอเมื่อ prompt เยอะและผู้ใช้เริ่ม approve อัตโนมัติ; containment ต้องกำหนดสิ่งที่ agent “ทำได้” ไม่ใช่แค่ถามก่อนทำ <a href="https://www.anthropic.com/engineering/how-we-contain-claude" target="_blank" rel="noreferrer">Anthropic</a></li>
+<li>🧪 Agent eval ที่ดีต้อง replay ได้และมี trace หลักฐาน: prompt, tool call, observation, diff, test, cost และ decision point <a href="https://www.langchain.com/blog?category_equal=%5B%22LangGraph%22%5D" target="_blank" rel="noreferrer">LangChain Blog</a></li>
+<li>🔌 HF’s MCP/Skills direction ยืนยันว่า “skills + tools + traces” กำลังกลายเป็นรูปแบบมาตรฐานของ coding-agent ecosystem <a href="https://huggingface.co/docs/hub/en/agents-overview" target="_blank" rel="noreferrer">Hugging Face</a></li>
+</ul>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<ul>
+<li>✅ ทำ containment checklist: workspace boundary, credential exclusion, deny-by-default network, write allowlist, secret scanning และ rollback path <a href="https://www.anthropic.com/engineering/how-we-contain-claude" target="_blank" rel="noreferrer">Anthropic</a></li>
+<li>🧪 ทดลอง trace review 1 งาน coding agent: เปิดดูทุก tool call แล้ว tag failure ว่า context, tool, model, test, หรือ instruction <a href="https://www.langchain.com/blog?category_equal=%5B%22LangGraph%22%5D" target="_blank" rel="noreferrer">LangChain Blog</a></li>
+<li>🔌 ต่อ HF MCP/Skills เฉพาะ read-only ก่อน เช่น model/dataset search แล้วค่อยเปิด action tools หลังมี audit <a href="https://huggingface.co/docs/hub/en/agents-overview" target="_blank" rel="noreferrer">Hugging Face</a></li>
+</ul>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<ul>
+<li>🛡️ สถานการณ์: coding agent ต้องรัน shell; Pattern: sandbox-first execution; Template: “read workspace, write workspace only, deny network, no home secrets, approve destructive”; Verify: agent อ่าน <code>~/.aws</code> หรือ <code>.env</code> นอก scope ไม่ได้ <a href="https://www.anthropic.com/engineering/how-we-contain-claude" target="_blank" rel="noreferrer">Anthropic</a></li>
+<li>🧪 สถานการณ์: agent ทำงานสำเร็จบ้างไม่สำเร็จบ้าง; Pattern: trace taxonomy; Example labels: missing context, bad tool schema, flaky dependency, weak test oracle, unsafe autonomy; Caveat: อย่าแก้ด้วย prompt อย่างเดียว <a href="https://www.langchain.com/blog?category_equal=%5B%22LangGraph%22%5D" target="_blank" rel="noreferrer">LangChain Blog</a></li>
+<li>🧰 สถานการณ์: เพิ่มความสามารถให้ agent; Pattern: skill before tool; Skill บอก workflow/checklist, tool ทำ action; Verify: skill โหลดเมื่อ relevant และไม่บวมจนกิน context <a href="https://huggingface.co/docs/hub/en/agents-overview" target="_blank" rel="noreferrer">Hugging Face</a></li>
+</ul>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<ul>
+<li>🏛️ Agent security architecture ควรมี 3 ชั้น: environment containment, model/policy guardrails, and external-content/tool permission boundary <a href="https://www.anthropic.com/engineering/how-we-contain-claude" target="_blank" rel="noreferrer">Anthropic</a></li>
+<li>📌 สำหรับองค์กร ให้เริ่ม governance จาก “ใครอนุมัติให้ agent เข้าถึงอะไร” และ “จะรู้ได้อย่างไรว่า agent ทำอะไรไปแล้ว” ก่อนเพิ่ม autonomy <a href="https://www.langchain.com/blog?category_equal=%5B%22LangGraph%22%5D" target="_blank" rel="noreferrer">LangChain Blog</a></li>
+</ul>
+<h2>Thai Ecosystem Watch</h2>
+<ul>
+<li>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: DevHub profile/project showcase เริ่มเห็น no-code AI agent/LINE bot และ Thai-language AI POS projects เป็นสัญญาณ adoption ระดับ local builders แต่ยังควรตรวจ source/code/demo ก่อนอ้างเป็น case study <a href="https://devhub.in.th/th/" target="_blank" rel="noreferrer">DevHub</a></li>
+<li>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: Techsauce Summit 2026 เหมาะใช้จับชีพจร enterprise AI ไทยช่วงปลายเดือน แต่รายงาน technical implementation ควรผูกกับ vendor docs หรือ customer case ที่ตรวจสอบได้ <a href="https://summit.techsauce.co/" target="_blank" rel="noreferrer">Techsauce Summit</a></li>
+<li>🇹🇭 ข้อเสนอ: Thai agent workshop ที่คุ้มคือ “sandbox + approval + audit log” มากกว่า prompt trick เพราะเป็นทักษะ production ที่ทีมใช้ซ้ำได้</li>
+</ul>
+  </main>
+</body>
+</html>
