@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-08-13</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-08-13</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">AWS</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-08-13.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🤖 ไม่พบประกาศ primary-source ใหม่ที่มีนัยสำคัญในช่วง 24-72 ชั่วโมงล่าสุดจากแหล่งหลักที่ตรวจวันนี้ จึงคัด “ของใหม่ที่ยังควรเข้าคิวศึกษา” จากรอบปลาย ก.ค. เป็นหลัก: <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP 2026-07-28 specification</a> เปลี่ยน core เป็น stateless, เพิ่ม header-based routing, cacheable list results, authorization hardening และ governed extensions.</p>
+<p>🧰 AWS ระบุว่า AgentCore Gateway รองรับ MCP <code>2026-07-28</code> แล้วแบบ opt-in ผ่าน <code>supportedVersions</code>; เหมาะกับทีมที่ต้องรองรับ client เก่าและใหม่พร้อมกันก่อน migration เต็มรูปแบบ: <a href="https://aws.amazon.com/blogs/machine-learning/how-agentcore-gateway-supports-the-mcp-2026-07-28-spec/" target="_blank" rel="noreferrer">AWS AgentCore Gateway + MCP 2026-07-28</a>.</p>
+<p>📊 GitHub เพิ่มการรายงาน usage ของ Copilot app เข้าไปใน Copilot usage metrics rollups ระดับ user/feature/model/language ทำให้ทีมวัด adoption ของ agent-driven development ได้ละเอียดขึ้น: <a href="https://github.blog/changelog/2026-07-28-github-copilot-app-usage-metrics-now-expand-across-report-rollups/" target="_blank" rel="noreferrer">GitHub Changelog</a>.</p>
+<p>🔬 OpenAI เผย field report ว่า coding agents เริ่มช่วยงาน scientific software modernization ในโดเมนอย่าง genomics โดยลดภาระด้าน packaging, testing, optimization และ maintenance: <a href="https://openai.com/index/scientific-computing-agentic-ai/" target="_blank" rel="noreferrer">OpenAI</a>.</p>
+<h2>ทำไมควรรู้</h2>
+<p>🧭 MCP stateless ทำให้การ deploy MCP server ในองค์กรง่ายขึ้นมาก เพราะไม่ต้องพึ่ง sticky session/session store ระดับ transport เท่าเดิม แต่ต้อง audit ว่า app state ถูกส่งเป็น explicit handle ที่ agent มองเห็นและส่งต่อได้ถูกต้อง.</p>
+<p>🛡️ จุดเปลี่ยนของ agent tooling ตอนนี้คือ governance มากกว่า demo: MCP เพิ่ม issuer validation/deprecation policy, AWS เน้น gateway versioning, และ GitHub เพิ่ม metrics สำหรับดูว่า agent app ถูกใช้จริงโดยใคร ใช้กับโมเดล/ภาษาอะไร.</p>
+<p>📈 สำหรับ Copilot/Codex rollout ในองค์กร metric granularity สำคัญขึ้น เพราะช่วยแยก “มีคนเปิดใช้” ออกจาก “สร้างงานจริง ตรวจ PR จริง และกิน token/credit ที่ไหน”.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📘 อ่าน MCP release note แล้วทำ checklist migration: <code>Mcp-Method</code>, <code>Mcp-Name</code>, protocol version header, cache hints, deprecated Roots/Sampling/Logging และ DCR-to-CIMD path: <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a>.</p>
+<p>🧪 ลองแนวคิด AgentOps ของ AWS: แยก eval เป็นระดับ tool, turn, session outcome และ system outcome พร้อม trace/cost telemetry ตั้งแต่ต้น: <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS AgentOps</a>.</p>
+<p>🧠 อ่าน BAIR เรื่อง belief states สำหรับ long-horizon interaction; takeaway คือ memory ที่ดีควรเป็น state ที่ตรวจได้และแก้ได้ ไม่ใช่แค่ transcript ยาว ๆ: <a href="https://bair.berkeley.edu/blog/2026/07/26/abbel/" target="_blank" rel="noreferrer">BAIR ABBEL</a>.</p>
+<p>🔎 อ่าน Hugging Face Papers เรื่อง Skill Retrieval Augmentation เพื่อออกแบบ skill registry ที่ agent ดึงเฉพาะ skill ที่เกี่ยวข้องแทนการยัดทุก skill เข้า context: <a href="https://huggingface.co/papers?q=skill+retrieval" target="_blank" rel="noreferrer">Hugging Face Papers</a>.</p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🧩 สถานการณ์: MCP server ต้อง scale หลาย instance; Pattern: stateless transport + explicit state handle; Template: “เมื่อ tool สร้าง resource ให้ return <code>{resource_id}</code> ใน structured output และบังคับให้ step ถัดไปส่ง id นั้นเป็น argument”; Verify: run replay test โดยสลับ instance ระหว่าง calls.</p>
+<p>🧯 สถานการณ์: agent เรียก tool ที่มีผลกระทบสูง; Pattern: human-review gate ตาม risk class; Template: “ถ้า action เขียนข้อมูล/ใช้เงิน/แตะ prod ให้ agent สรุป intent, target, diff/expected effect, rollback ก่อนขออนุมัติ”; Verify: audit log ต้องโยง user, agent session, tool call และผลลัพธ์ได้.</p>
+<p>📚 สถานการณ์: repo มี skills เยอะ; Pattern: skill retrieval แทน skill stuffing; Template: “retrieve top 3 skills by task, read only entrypoint + relevant reference, then report why selected”; Caveat: ต้องมี metadata/tag ที่ดี ไม่งั้น retrieval จะพา agent ไปผิดทาง.</p>
+<p>📉 สถานการณ์: วัด ROI ของ coding agents; Pattern: usage metrics + outcome metrics; Template: map <code>session_count</code>, <code>prompt_count</code>, token usage, LOC deltas เข้ากับ PR cycle time, failed-check recovery และ reviewer rework; Verify: อย่านับ LOC เป็นคุณค่าโดยตรง.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏗️ ออกแบบ agent platform เหมือนระบบ production integration: identity, policy, gateway, observability, eval, rollback และ cost controls ต้องมาก่อนขยาย use case.</p>
+<p>🔐 MCP version migration ควรทำแบบ dual-stack: เปิด version ใหม่ใน gateway/staging, ทดสอบ client ที่รองรับ header ใหม่, แล้วค่อยประกาศ cutover; อย่าผูก state สำคัญไว้กับ session transport.</p>
+<p>🧾 สำหรับ coding agent governance ให้เริ่มจาก three-layer evidence: task plan, execution trace, และ verification artifact เช่น test log/screenshot/PR diff เพื่อให้ reviewer ตรวจได้เร็ว.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: Techsauce รายงาน Huawei เปิด Thailand AI Ecosystem Initiative และนำ Agentic Infrastructure/CodeArts Agent เข้าไทย ประเด็นที่น่าติดตามคือ ecosystem, infra, skill development และ trustworthy AI ในบริบทองค์กรไทย: <a href="https://techsauce.co/news/huawei-thailand-ai-ecosystem-initiative-agentic-infrastructure" target="_blank" rel="noreferrer">Techsauce</a>.</p>
+<p>🏢 ข่าว/โพสต์จากชุมชนไทย: TechTalkThai สรุปเวที Enterprise AI &amp; Data 2026 มีหลาย session ที่โยงจาก pilot สู่ production, AI Agent, workflow, data และ ROI ขององค์กรไทย เหมาะเป็น local signal ว่า demand เริ่มขยับจากทดลองสู่การวัดผลจริง: <a href="https://conf.techtalkthai.com/tai26/" target="_blank" rel="noreferrer">TechTalkThai</a>.</p>
+<p>🧑‍💻 ข่าว/โพสต์จากชุมชนไทย: DevHub มี project showcase “AppGu — AI Agent Builder” ที่สะท้อน use case ไทยของ no-code agent + LINE bot + multi-tenant + quota billing; ยังเป็น community showcase ไม่ใช่ benchmark แต่มีคุณค่าเชิง product pattern: <a href="https://www.devhub.in.th/en/showcase/thanawin/appgu-ai-agent-builder/" target="_blank" rel="noreferrer">DevHub</a>.</p>
+<p>📌 ข่าว/โพสต์จากชุมชนไทย: Techsauce ชี้ไทยมี AI diffusion เติบโตเร็วแต่ฐานใช้งานยังไม่กว้าง และกลุ่ม office worker ไทยมีการใช้ multi-step workflows/multi-agent สูงกว่าค่าเฉลี่ยโลกตาม Microsoft AI Tour Bangkok 2026; ควร cross-check กับรายงานต้นทางเมื่อใช้ประกอบแผนงบประมาณ: <a href="https://techsauce.co/news/thailand-ai-diffusion-second-fastest-87-percent-opportunity" target="_blank" rel="noreferrer">Techsauce</a>.</p>
+  </main>
+</body>
+</html>
