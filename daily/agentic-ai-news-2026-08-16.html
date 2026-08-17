@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-08-16</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-08-16</h1>
+    <div class="tags"><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-08-16.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🤖 วันอาทิตย์ 2026-08-16 ไม่มีข่าว primary-source ใหม่ที่เด่นพอจาก global sources ที่ตรวจ จึงใช้ backfill เป็น learning item ด้าน agent memory, data systems และ observability ที่ยังเกี่ยวกับ production readiness โดยตรง.</p>
+<p>🧠 BAIR เสนอว่า memory ของ agent ระยะยาวควรเป็น belief state ที่ตรวจและแก้ได้ ไม่ใช่แค่สรุป transcript ยาว ๆ เพราะงาน long-horizon ต้องรู้ว่าอะไรควรจำและอะไรควรลืม: <a href="https://bair.berkeley.edu/blog/2026/07/26/abbel/" target="_blank" rel="noreferrer">BAIR ABBEL</a></p>
+<p>🗄️ BAIR อีกบทชี้ว่าเมื่อ agent ทำ data work จำนวนมาก ระบบข้อมูลต้องรองรับ agentic speculation, structured memory, concurrent edits และ rollback semantics มากกว่า pattern BI แบบเดิม: <a href="https://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/" target="_blank" rel="noreferrer">BAIR Data Systems</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🧭 Memory ที่เป็น Markdown/embedding อย่างเดียวพอสำหรับทีมเล็ก แต่เมื่อ agent จำนวนมากใช้ความรู้ร่วมกัน จะเริ่มมีปัญหาเรื่อง retrieval, stale lessons, concurrent writes และ trace ที่พา agent ทำผิดซ้ำ: <a href="https://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/" target="_blank" rel="noreferrer">BAIR Data Systems</a></p>
+<p>🔍 Belief state ทำให้ reviewer เข้าไปแก้ “สิ่งที่ agent เชื่อ” ได้ตรงกว่าแก้ prompt หรือ transcript หลังบ้าน เหมาะกับ support, research, coding และ ops workflows ที่กินเวลาหลายรอบ: <a href="https://bair.berkeley.edu/blog/2026/07/26/abbel/" target="_blank" rel="noreferrer">BAIR ABBEL</a></p>
+<p>🛠️ AgentOps ของ AWS ย้ำว่าการ debug agent ต้องดู tool, turn, session และ system outcome พร้อม telemetry/cost ไม่ใช่แค่ final answer: <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS AgentOps</a></p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📘 อ่าน BAIR ABBEL เพื่อออกแบบ memory schema ที่ human ตรวจได้ เช่น claim, evidence, confidence, expiry และ owner: <a href="https://bair.berkeley.edu/blog/2026/07/26/abbel/" target="_blank" rel="noreferrer">BAIR ABBEL</a></p>
+<p>📊 อ่าน BAIR Data Systems เพื่อคิดเรื่อง structured corrective memory และ multi-agent shared state ก่อนทำ agent swarm ภายในองค์กร: <a href="https://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/" target="_blank" rel="noreferrer">BAIR Data Systems</a></p>
+<p>🧰 อ่าน AWS AgentCore Observability จากรายการ AWS ML blog ล่าสุดเพื่อเตรียม bottleneck/cost diagnosis สำหรับ long-running sessions: <a href="https://aws.amazon.com/blogs/machine-learning/" target="_blank" rel="noreferrer">AWS ML Blog</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🧠 สถานการณ์: agent ต้องจำงานข้าม session; Pattern: structured memory card; Template: <code>{scope, applies_to, evidence_link, corrective_instruction, expires_at}</code>; Verify: retrieval test ต้องดึง memory ที่เกี่ยวจริงและไม่ดึงบทเรียนผิดบริบท: <a href="https://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/" target="_blank" rel="noreferrer">BAIR Data Systems</a></p>
+<p>📝 สถานการณ์: long-horizon task เริ่มหลุดเป้า; Pattern: belief checkpoint; Template: “ก่อน tool รอบใหม่ ให้ agent เขียน 5 ข้อ: goal, known facts, uncertainties, next action, stop condition”; Verify: human reviewer แก้ belief ได้ก่อน resume: <a href="https://bair.berkeley.edu/blog/2026/07/26/abbel/" target="_blank" rel="noreferrer">BAIR ABBEL</a></p>
+<p>📉 สถานการณ์: agent ช้าและแพง; Pattern: telemetry by layer; Template: log model latency, tool latency, token/cost, retry count, memory hits; Caveat: ต้องผูก trace id ข้าม model/tool/session: <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS AgentOps</a></p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏢 ก่อนเสนอ multi-agent ให้ถามว่าจำเป็นต้องมี “shared memory substrate” หรือไม่ ถ้าใช่ ต้องมี schema, access control, versioning, dedupe และ policy ว่า memory ไหนคือ corrective knowledge: <a href="https://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/" target="_blank" rel="noreferrer">BAIR Data Systems</a></p>
+<p>🔐 Memory เป็น data asset ที่มีความเสี่ยง privacy/security พอ ๆ กับ database เพราะอาจเก็บข้อสรุปจากข้อมูลภายใน จึงต้องมี retention, deletion และ source trace: <a href="https://bair.berkeley.edu/blog/2026/07/26/abbel/" target="_blank" rel="noreferrer">BAIR ABBEL</a></p>
+<p>🧪 Eval memory ต้องแยกจาก eval answer: วัดว่า agent ดึง memory ถูกไหม, memory ทำให้แก้ปัญหาเร็วขึ้นไหม, และ memory stale ทำให้เกิด regression หรือไม่: <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS AgentOps</a></p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: Techsauce เรื่อง Gemini Spark ในไทยช่วยชี้ว่า agent ที่ทำงาน background และ schedule ได้กำลังถูกสื่อสารสู่ผู้ใช้ทั่วไป ไม่ใช่แค่ developer tools: <a href="https://techsauce.co/ai/gemini-spark-thailand-google-ai-pro" target="_blank" rel="noreferrer">Techsauce</a></p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: Techsauce เรื่อง “Loop Engineering” เป็น learning item ภาษาไทยที่ใช้คุยกับทีม non-technical ได้ว่า agent work คือการออกแบบ loop, feedback และ stop condition มากกว่าการเขียน prompt ครั้งเดียว: <a href="https://techsauce.co/ai/loop-engineering-agentic-ai-beyond-prompt-engineering" target="_blank" rel="noreferrer">Techsauce</a></p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: DevHub AppGu ช่วยเห็นตลาดไทยที่ต้องการ LINE bot/agent builder แบบ multi-tenant จึงควรใส่ quota, audit และ data isolation ตั้งแต่แรก: <a href="https://www.devhub.in.th/en/showcase/thanawin/appgu-ai-agent-builder/" target="_blank" rel="noreferrer">DevHub</a></p>
+  </main>
+</body>
+</html>

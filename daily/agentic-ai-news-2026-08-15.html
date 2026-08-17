@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-08-15</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-08-15</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-08-15.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🤖 ไม่พบประกาศใหญ่ใหม่ในวันที่ 2026-08-15 จาก OpenAI/Anthropic/GitHub/AWS/Google Cloud ที่มีน้ำหนักพอจะเป็น headline รายวัน จึงเน้น practical guide ที่ยังใหม่และใช้ได้ทันทีสำหรับ production agents.</p>
+<p>🧱 LangGraph docs วางภาพชัดว่า LangGraph เป็น orchestration runtime สำหรับ long-running, stateful agents พร้อม durable execution, human-in-the-loop, memory, streaming และ debugging ผ่าน LangSmith: <a href="https://docs.langchain.com/oss/python/langgraph/overview" target="_blank" rel="noreferrer">LangGraph Overview</a></p>
+<p>☁️ Google-managed MCP servers เปิดให้ใช้กับ Google Cloud services โดยเน้น IAM, Model Armor, OTel tracing และ Cloud Audit Logs สำหรับ tool governance ระดับองค์กร: <a href="https://cloud.google.com/blog/products/ai-machine-learning/google-managed-mcp-servers-are-available-for-everyone" target="_blank" rel="noreferrer">Google Cloud Blog</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🧭 Production agent ไม่ได้จบที่ prompt: ต้องมี runtime ที่ resume ได้, state ที่ตรวจได้, และจุด human review ที่แก้ state ได้ ไม่ใช่แค่ chat loop: <a href="https://docs.langchain.com/oss/python/langgraph/overview" target="_blank" rel="noreferrer">LangGraph Overview</a></p>
+<p>🛡️ MCP ในองค์กรกำลังย้ายจาก local connector ไปสู่ managed/remote endpoint ที่ผูก IAM, audit และ prompt-injection defense เข้ากับ platform เดิม: <a href="https://cloud.google.com/blog/products/ai-machine-learning/google-managed-mcp-servers-are-available-for-everyone" target="_blank" rel="noreferrer">Google Cloud Blog</a></p>
+<p>📦 Application structure ของ LangGraph ชี้ว่าการ deploy agent ควรมองเป็น repo artifact มี <code>langgraph.json</code>, dependencies, graph entrypoint และ env config ชัดเจน: <a href="https://docs.langchain.com/oss/python/langgraph/application-structure" target="_blank" rel="noreferrer">LangChain Docs</a></p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📘 อ่าน LangGraph application structure แล้วทำ template repo มาตรฐานสำหรับทีม เช่น <code>agent.py</code>, <code>tools.py</code>, <code>state.py</code>, <code>langgraph.json</code>, eval folder: <a href="https://docs.langchain.com/oss/python/langgraph/application-structure" target="_blank" rel="noreferrer">LangChain Docs</a></p>
+<p>🔐 อ่าน Google MCP managed server capability เพื่อเทียบกับนโยบาย tool access ขององค์กรที่ใช้ Google Cloud อยู่แล้ว: <a href="https://cloud.google.com/blog/products/ai-machine-learning/google-managed-mcp-servers-are-available-for-everyone" target="_blank" rel="noreferrer">Google Cloud Blog</a></p>
+<p>🧪 อ่าน LangSmith deployment quickstart เพื่อเข้าใจข้อกำหนด deploy stateful agent จาก GitHub repo: <a href="https://docs.langchain.com/oss/python/langgraph/deploy" target="_blank" rel="noreferrer">LangChain Docs</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🧩 สถานการณ์: ทีมเริ่มทำ agent หลายตัว; Pattern: repo-first agent package; Template: <code>graphs: { support_agent: &#39;./support/agent.py:agent&#39; }</code> + dependency lock + env example; Verify: run local graph ก่อน deploy: <a href="https://docs.langchain.com/oss/python/langgraph/application-structure" target="_blank" rel="noreferrer">LangChain Docs</a></p>
+<p>🧯 สถานการณ์: agent ใช้ cloud APIs; Pattern: MCP + IAM deny + audit; Template: “ทุก MCP endpoint ต้องผูก service account/role เฉพาะงาน และบันทึก trace id ต่อ tool call”; Verify: สุ่ม audit Cloud Logs หลัง run: <a href="https://cloud.google.com/blog/products/ai-machine-learning/google-managed-mcp-servers-are-available-for-everyone" target="_blank" rel="noreferrer">Google Cloud Blog</a></p>
+<p>👥 สถานการณ์: ต้องให้คนตรวจระหว่างทาง; Pattern: interrupt/human-in-the-loop state edit; Template: “pause ก่อน action เสี่ยงสูง พร้อมแสดง state, proposed tool call, expected effect”; Verify: resume แล้ว trace ต้องยังโยง decision เดิมได้: <a href="https://docs.langchain.com/oss/python/langgraph/overview" target="_blank" rel="noreferrer">LangGraph Overview</a></p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏗️ เลือก runtime จาก operational requirement: ถ้างานยาวและมี state ให้เน้น durable execution/checkpoint; ถ้างาน API tool หนาแน่นให้เน้น gateway/IAM/audit; ถ้างาน compliance สูงให้เริ่มจาก trace/eval ก่อน scale: <a href="https://docs.langchain.com/oss/python/langgraph/overview" target="_blank" rel="noreferrer">LangGraph Overview</a></p>
+<p>🔎 Tool governance ควรมี catalog และ owner ต่อ tool ไม่ใช่ config JSON ลอย ๆ เพราะ MCP ทำให้เพิ่มความสามารถง่ายจนเสี่ยงเกิด shadow integration: <a href="https://cloud.google.com/blog/products/ai-machine-learning/google-managed-mcp-servers-are-available-for-everyone" target="_blank" rel="noreferrer">Google Cloud Blog</a></p>
+<p>📐 สำหรับ architecture review ให้ถาม 5 ข้อ: state อยู่ที่ไหน, tool ใครเป็น owner, auth ใช้อะไร, eval วัดระดับไหน, และ rollback action อย่างไร: <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS AgentOps</a></p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: Techsauce รายงาน Huawei Thailand AI Ecosystem Initiative และ CodeArts Agent/Open Beta ในไทย เป็น local signal ว่า AI infra + coding agent เริ่มถูกขายเป็น platform package แก่องค์กรไทย: <a href="https://techsauce.co/news/huawei-thailand-ai-ecosystem-initiative-agentic-infrastructure" target="_blank" rel="noreferrer">Techsauce</a></p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: บทความ Agentic Commerce ของ Techsauce ช่วยอธิบาย use case agent-facing customer journey แต่ควรแยก “vision” ออกจากความพร้อมด้าน payment, identity และ dispute handling: <a href="https://techsauce.co/tech-and-biz/what-is-agentic-commerce" target="_blank" rel="noreferrer">Techsauce</a></p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: ประเด็นองค์กรไทยต้องการ AI Agents แต่ readiness ยังต่ำ ควรถูกแปลงเป็น checklist ด้าน data access, network, identity, logging และ human approval ก่อนเริ่ม pilot: <a href="https://techsauce.co/ai/cisco-ai-agents-security-network-infrastructure-thailand" target="_blank" rel="noreferrer">Techsauce</a></p>
+  </main>
+</body>
+</html>
