@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-08-18</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-08-18</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Microsoft</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-08-18.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🤖 วันนี้ 2026-08-18 ไม่พบประกาศ primary-source ใหม่ในรอบ 24-72 ชั่วโมงที่แรงพอจะกลบชุดประกาศปลาย ก.ค.; โฟกัสวันนี้จึงเป็น “เตรียม production agent stack” จากแหล่งล่าสุดที่ยัง actionable.</p>
+<p>🧩 MCP 2026-07-28 เป็นฐานสำคัญของ agent tooling รอบนี้: protocol core กลายเป็น stateless, มี header routing, cacheable list results, authorization hardening และ Tasks extension: <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></p>
+<p>👨‍💻 GitHub Copilot code review เปิด agent skills และ MCP เป็น GA ทำให้ทีมฝังมาตรฐาน repo, context ภายใน และ read-only external context เข้า review workflow ได้เป็นระบบขึ้น: <a href="https://github.blog/changelog/2026-07-29-copilot-code-review-agent-skills-and-mcp-now-generally-available/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🏢 Microsoft Agent Framework วางภาพใหม่ของ agents, harnesses และ graph workflows โดยรวมแนว AutoGen/Semantic Kernel เข้ากับ session, middleware, MCP clients, telemetry และ human-in-the-loop: <a href="https://learn.microsoft.com/en-us/agent-framework/overview/" target="_blank" rel="noreferrer">Microsoft Learn</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🔐 MCP แบบ stateless ไม่ได้แปลว่า risk หายไป; identity, issuer validation, credential boundary และ audit ต่อ request สำคัญกว่าเดิม เพราะทุก tool call ต้องอธิบายได้ว่าใคร/agent ไหนทำอะไร: <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Spec</a></p>
+<p>📊 GitHub จะเปิด default model enablement policy ให้ Copilot Business/Enterprise มีผลวันที่ 2026-08-26; admin ควรรีวิวก่อน model ใหม่ที่ GA จะเปิดตาม policy อัตโนมัติ: <a href="https://github.blog/changelog/2026-07-29-default-model-enablement-for-copilot-business-and-enterprise/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>⚙️ OpenAI อธิบาย agentic harness efficiency ว่าลด context bloat, tool overhead และ repeated work สำคัญเท่าการทำ model ให้เร็วขึ้น โดยเฉพาะงาน Codex/ChatGPT Work ที่มีหลาย tool iteration: <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></p>
+<p>☁️ AWS และ Google Cloud ชี้ไปทิศเดียวกัน: production agents ต้องมี runtime durability, observability, identity, memory/state และ governance layer ไม่ใช่แค่ prompt + tool list: <a href="https://aws.amazon.com/blogs/machine-learning/optimizing-production-agents-with-amazon-bedrock-agentcore-observability/" target="_blank" rel="noreferrer">AWS AgentCore Observability</a> / <a href="https://cloud.google.com/blog/products/ai-machine-learning/whats-new-in-gemini-enterprise-agent-platform" target="_blank" rel="noreferrer">Google Agent Platform</a></p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📘 อ่าน Microsoft Agent Framework overview ถ้าทีมใช้ .NET/Python/Go และต้องตัดสินใจว่า task ควรเป็น agent, harness หรือ workflow graph: <a href="https://learn.microsoft.com/en-us/agent-framework/overview/" target="_blank" rel="noreferrer">Microsoft Learn</a></p>
+<p>🧪 อ่าน LangChain เรื่อง governed agents และ eval engineering เพื่อออกแบบ cost/control/compliance loop ก่อนเปิด agent ให้ผู้ใช้จริง: <a href="https://www.langchain.com/blog" target="_blank" rel="noreferrer">LangChain Blog</a></p>
+<p>🧠 อ่าน BAIR ABBEL สำหรับแนวคิด belief state แทนการสรุป history ยาว ๆ ใน long-horizon interaction; เหมาะกับ memory design ที่ต้องประหยัด context: <a href="https://bair.berkeley.edu/blog/future/" target="_blank" rel="noreferrer">BAIR Blog</a></p>
+<p>🛠️ อ่าน AWS AgentCore Gateway MCP 2026-07-28 ถ้าต้องดู migration path ระหว่าง protocol version เก่า/ใหม่โดยไม่ทำ client เดิมพัง: <a href="https://aws.amazon.com/blogs/machine-learning/how-agentcore-gateway-supports-the-mcp-2026-07-28-spec/" target="_blank" rel="noreferrer">AWS Blog</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🧭 สถานการณ์: มีงานหลายขั้นที่บางส่วน deterministic; Pattern: “workflow ก่อน agent”; Template: “Step graph สำหรับ path คงที่, agent เฉพาะจุดที่ต้องเลือก tool/plan เอง, human approval ก่อน write action”; Verify: trace ต้อง replay ได้: <a href="https://learn.microsoft.com/en-us/agent-framework/overview/" target="_blank" rel="noreferrer">Microsoft Agent Framework</a></p>
+<p>🔐 สถานการณ์: เปิด MCP ให้ coding/review agent; Pattern: per-request trust envelope; Template: “tool name + caller identity + issuer + scope + action risk + audit id”; Caveat: stateless server ยังต้องมี application-level state handle ที่ตรวจสิทธิ์ทุกครั้ง: <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noreferrer">MCP Blog</a></p>
+<p>📦 สถานการณ์: เขียน agent skill ให้ทีมใช้ซ้ำ; Pattern: progressive disclosure; Template: “SKILL.md เป็นสารบัญสั้น, ลิงก์ไป docs/checklists/examples เฉพาะงาน, ใส่ acceptance criteria และ commands”; Verify: agent หยิบ skill ถูกใน 5-10 งานตัวอย่าง: <a href="https://github.blog/changelog/2026-07-29-copilot-code-review-agent-skills-and-mcp-now-generally-available/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>📉 สถานการณ์: agent แพงหรือช้า; Pattern: cache-aware context; Template: “แยก stable instructions, tool schemas, repo conventions ให้อยู่ prefix คงที่; ส่งเฉพาะ delta/trace ที่จำเป็น”; Verify: วัด token, latency, tool-call count ก่อน/หลัง: <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" target="_blank" rel="noreferrer">OpenAI</a></p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏗️ Architecture baseline ควรมีอย่างน้อย 6 ชั้น: model/router, harness/runtime, tool/MCP gateway, identity/policy, memory/state, observability/eval/cost dashboard: <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS AgentOps</a></p>
+<p>🧯 Governance ที่ควรทำทันทีคือ inventory ของ agents/tools/models, permission tier, approval matrix, data boundary, logging schema และ rollback/recovery path สำหรับ action ที่ agent ทำผิด.</p>
+<p>👥 สำหรับองค์กรที่ใช้ Copilot Enterprise ให้รีวิว model policy ก่อน 2026-08-26 และเริ่มทดลอง <code>.github/skills/*/SKILL.md</code> กับ code review rules ที่วัดผลได้ เช่น security checklist, migration rule, API contract rule: <a href="https://github.blog/changelog/2026-07-29-default-model-enablement-for-copilot-business-and-enterprise/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: Gemini Spark เข้าไทยสะท้อนว่าผู้ใช้ไทยจะเริ่มคุ้นกับ background personal agents, scheduled tasks และ reusable skills มากขึ้น แต่ action สำคัญยังต้องมี confirmation: <a href="https://techsauce.co/ai/gemini-spark-thailand-google-ai-pro" target="_blank" rel="noreferrer">Techsauce</a></p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: บทสัมภาษณ์ Cisco ชี้ช่องว่าง readiness ขององค์กรไทยด้าน AI agents โดยเน้น infrastructure, security, network และ observability เป็นตัวคุมการ scale: <a href="https://techsauce.co/ai/cisco-ai-agents-security-network-infrastructure-thailand" target="_blank" rel="noreferrer">Techsauce/Cisco</a></p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: DevHub มีตัวอย่าง AppGu no-code AI agent builder ที่เชื่อม LINE bot, multi-tenant workspace และ credit billing เหมาะดูเป็น local SaaS pattern: <a href="https://www.devhub.in.th/en/showcase/thanawin/appgu-ai-agent-builder/" target="_blank" rel="noreferrer">DevHub</a></p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: บทความ Harness Engineering ภาษาไทยของ DevHub ใช้เป็นสื่อทีมได้ดี แต่ควรอ่านคู่กับต้นทาง OpenAI เพื่อแยก insight เชิง workflow ออกจากตัวเลข/claim ที่ต้องตรวจสอบ: <a href="https://devhub.in.th/en/blog/openai-harness-engineering-codex-zero-code" target="_blank" rel="noreferrer">DevHub</a> / <a href="https://openai.com/index/the-next-evolution-of-the-agents-sdk/" target="_blank" rel="noreferrer">OpenAI Agents SDK</a></p>
+  </main>
+</body>
+</html>
