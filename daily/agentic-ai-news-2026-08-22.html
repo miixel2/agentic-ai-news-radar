@@ -1,0 +1,58 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-08-22</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-08-22</h1>
+    <div class="tags"><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-08-22.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🤖 ไม่พบประกาศ primary-source ใหม่ในวันเสาร์ที่แรงกว่าชุด GitHub Copilot Slack/Teams วันที่ 2026-08-21; โฟกัสวันนี้คือการแปลง preview เหล่านั้นเป็น rollout checklist.</p>
+<p>💬 GitHub Copilot ใน Slack/Teams ทำให้ agent session กลายเป็น shared artifact: ทีมเห็น plan, diff, validation output และสามารถ steer งานจาก conversation เดิม: <a href="https://github.blog/changelog/2026-08-21-the-new-github-copilot-experience-in-slack/" target="_blank" rel="noreferrer">Slack</a> / <a href="https://github.blog/changelog/2026-08-21-shared-agentic-work-with-github-copilot-in-microsoft-teams/" target="_blank" rel="noreferrer">Teams</a></p>
+<p>🔐 AWS AgentCore temporal policies + rate limiting เป็น evergreen governance item ที่ควรอ่านคู่กับ shared coding agents เพราะ agent ทำงานยาวขึ้นและใช้ cost/tools ต่อเนื่อง: <a href="https://aws.amazon.com/blogs/machine-learning/control-agent-behaviors-and-cost-beyond-a-single-action-new-capabilities-in-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS AI Blog</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>👥 Shared agent work เพิ่มทั้ง transparency และ blast radius; ถ้า channel มี context ผิดหรือคน steer ผิด agent ก็อาจสร้าง PR จากสมมติฐานผิดได้เร็วขึ้น.</p>
+<p>💸 Cloud agent + sandbox + AI credits ต้องมี budget guardrail ตั้งแต่ pilot ไม่ใช่ค่อยดูหลัง usage พุ่ง.</p>
+<p>🧯 Temporal policy ของ AWS เป็น pattern ที่ดีสำหรับทุก platform: บาง action ปลอดภัยเดี่ยว ๆ แต่ไม่ปลอดภัยเมื่อเกิดเป็น sequence.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📘 อ่าน GitHub docs ที่ลิงก์จาก changelog เพื่อดู setup, permissions, repository selection และ approval rule ก่อนเปิดใช้กับทีมจริง: <a href="https://github.blog/changelog/2026-08-21-the-new-github-copilot-experience-in-slack/" target="_blank" rel="noreferrer">GitHub Slack Changelog</a></p>
+<p>📘 อ่าน AWS AgentCore governance post เพื่อเอาแนวคิด temporal policy/rate limit ไปทำ platform checklist: <a href="https://aws.amazon.com/blogs/machine-learning/control-agent-behaviors-and-cost-beyond-a-single-action-new-capabilities-in-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS AI Blog</a></p>
+<p>🧪 อ่าน ReCreate paper ถ้าสนใจการสร้าง domain agents จาก interaction histories และ experience-driven improvement: <a href="https://huggingface.co/papers?q=Domain+Agent" target="_blank" rel="noreferrer">HF Papers</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🧭 สถานการณ์: pilot Copilot ใน Slack/Teams; Pattern: channel-to-PR checklist; Template: “allowed channels, default repos, who can start session, write-access rule, approval rule, artifact retention”; Verify: dry run ด้วย repo sandbox.</p>
+<p>💸 สถานการณ์: cloud agent cost ไม่แน่นอน; Pattern: budget envelope; Template: “per-user AI credit budget + sandbox budget + alert at 50/80/100% + stop condition”; Caveat: แยก budget pilot กับ production.</p>
+<p>🔁 สถานการณ์: agent ทำ action หลายขั้น; Pattern: sequence policy; Template: “ถ้า action A เกิดแล้ว action B ต้องใช้ค่าเดียวกัน/ต้องมี approval/ต้องอยู่ใน time window”; Verify: simulate blocked path.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏗️ Shared coding agent ไม่ใช่แค่ integration กับ chat แต่เป็น delivery control plane ขนาดเล็ก ต้องมี identity, repo scope, sandbox, spend control, audit และ PR governance.</p>
+<p>🔐 ให้ตั้ง policy ว่า agent-authored PR ทุกอันต้องระบุ conversation source, tool/action summary, validation evidence และ human reviewer ที่รับผิดชอบ.</p>
+<p>📊 Pilot metric ควรรวม adoption learning: prompt examples ที่ใช้ได้, steering mistakes, approval overrides, cost per accepted PR และ incidents จาก context ambiguity.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: ไม่มีโพสต์ไทยใหม่ที่มี technical evidence เพิ่มจากเมื่อวาน; local signal ที่ยังควรติดตามคือ Gemini Enterprise Experience Center ในไทย เพราะอาจสร้าง use case/อบรม agentic AI สำหรับองค์กรไทยต่อเนื่อง: <a href="https://techsauce.co/pr-news/tangerine-gemini-enterprise-experience-center" target="_blank" rel="noreferrer">Techsauce</a></p>
+  </main>
+</body>
+</html>

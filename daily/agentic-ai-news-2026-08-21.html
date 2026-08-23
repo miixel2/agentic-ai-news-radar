@@ -1,0 +1,63 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-08-21</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-08-21</h1>
+    <div class="tags"><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-08-21.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>💬 GitHub เปิด public preview ให้ GitHub Copilot ทำงานใน Slack ผ่าน <code>@GitHub</code>: วางแผน, triage issue, investigate, implement, validate ใน cloud sandbox และเปิด PR จากบทสนทนาได้: <a href="https://github.blog/changelog/2026-08-21-the-new-github-copilot-experience-in-slack/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>👥 GitHub เปิด shared agentic work ใน Microsoft Teams: เริ่ม cloud agent session จาก channel/thread/DM, ให้ทีมช่วย steer งาน และต่อไปยัง terminal, Copilot app หรือ IDE ได้: <a href="https://github.blog/changelog/2026-08-21-shared-agentic-work-with-github-copilot-in-microsoft-teams/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>☁️ AWS เผยแนวคิด Agentic Data Operations Platform บน Bedrock สำหรับ data pipeline lifecycle แบบ Bronze/Silver/Gold โดยใช้ specialized agents และ governance inline: <a href="https://aws.amazon.com/blogs/machine-learning/category/post-types/thought-leadership/" target="_blank" rel="noreferrer">AWS AI Blog</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🧭 Copilot ใน Slack/Teams เปลี่ยน agent จาก private assistant เป็น shared work surface; team prompt, context และ decision trail จะกลายเป็นส่วนหนึ่งของ delivery process.</p>
+<p>🔐 ทั้ง Slack และ Teams preview ย้ำ human-in-the-loop: PR จาก agent identity สามารถต้องการ approval เพิ่มก่อน merge เหมาะกับ compliance oversight.</p>
+<p>🏭 AWS ADOP ชี้ว่าการทำ agent ใน data engineering ต้องวาง governance ตั้งแต่ ingestion ถึง validation ไม่ใช่ให้ agent แก้ pipeline แบบ ad hoc.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📘 อ่าน GitHub Slack preview เพื่อออกแบบ conversational handoff จาก incident/bug thread ไปเป็น PR: <a href="https://github.blog/changelog/2026-08-21-the-new-github-copilot-experience-in-slack/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>📘 อ่าน GitHub Teams preview ถ้าองค์กรใช้ Teams เป็น meeting/action-item hub: <a href="https://github.blog/changelog/2026-08-21-shared-agentic-work-with-github-copilot-in-microsoft-teams/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🧪 อ่าน Agentic Transaction paper สำหรับแนวคิด ACID-like semantics ใน long-horizon agent workflows: <a href="https://huggingface.co/papers/2608.13900" target="_blank" rel="noreferrer">HF Papers</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>💬 สถานการณ์: bug เกิดใน Slack/Teams; Pattern: shared agent handoff; Template: “@GitHub investigate issue X, use repo Y, produce plan first, do not change files until approved, open PR with validation log”; Verify: PR link กลับไป conversation และมี reviewer จริง.</p>
+<p>✅ สถานการณ์: agent เปิด PR จาก chat; Pattern: extra approval gate; Template: “agent-authored PR requires N+1 approvals, cannot self-merge, must include test evidence”; Caveat: อย่าให้ channel excitement แทน code review.</p>
+<p>🧾 สถานการณ์: data pipeline agent; Pattern: transaction-like stages; Template: “explore -&gt; propose -&gt; execute -&gt; validate -&gt; commit state”; Verify: rollback ได้ถ้า validation fail.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏗️ Collaboration-agent architecture ต้องมี conversation source, permission mapping, sandbox policy, PR identity, approval rule และ audit log ที่โยงกันครบ.</p>
+<p>🔐 ความเสี่ยงใหม่คือ context leakage จาก chat channel เข้า repo/tool action; ควรกำหนด default repo, allowed commands, sensitive-channel exclusion และ secret scanning ใน transcript/artifacts.</p>
+<p>📊 ควรวัด impact ด้วย cycle time จาก thread-to-PR, review rework, failed sandbox validation, approval latency และ incident จาก permission/context mismatch.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: Techsauce รายงาน Tangerine + Google Cloud เปิด Gemini Enterprise Experience Center ในไทย เพื่อดัน work transformation/agentic AI สำหรับองค์กรไทย; อ่านคู่กับ Google Cloud training path เพื่อแยก PR/local adoption จาก technical playbook: <a href="https://techsauce.co/pr-news/tangerine-gemini-enterprise-experience-center" target="_blank" rel="noreferrer">Techsauce</a> / <a href="https://cloud.google.com/blog/topics/training-certifications/free-gemini-enterrprise-training" target="_blank" rel="noreferrer">Google Cloud Blog</a></p>
+<h2>Research Digest</h2>
+<p>🧪 Agent Lightning v1.0: core idea คือ harnessed agentic RL ที่ฝึกจาก loop จริงของ agent harness; why matters เพราะ coding agents อยู่ใน runtime/tool/context loop ไม่ใช่ standalone LLM; takeaway คือ eval/train ต้อง mirror production harness; priority: สูง: <a href="https://huggingface.co/papers/2608.17528" target="_blank" rel="noreferrer">HF Papers</a></p>
+<p>🧪 SPADE: core idea คือ self-play environment designer สร้าง executable tasks ให้ reasoning agent ฝึก; why matters เพราะลดการพึ่ง static benchmark; takeaway คือใช้ generated environments ได้แต่ต้องมี hidden validation; priority: กลาง-สูง: <a href="https://huggingface.co/papers/2608.19197" target="_blank" rel="noreferrer">HF Papers</a></p>
+<p>🧪 Agentic Transaction: core idea คือ semantic ACID สำหรับ agent workflow; why matters เพราะ production agents ต้อง atomic/consistent/isolated/durable ในเชิงความหมาย; takeaway คือออกแบบ rollback, validation และ state boundary ก่อนให้ agent write; priority: สูง: <a href="https://huggingface.co/papers/2608.13900" target="_blank" rel="noreferrer">HF Papers</a></p>
+<p>🧪 Second Thought: core idea คือใช้ช่วงรอ action/observation ให้ reasoning branch ทำงานขนาน; why matters เพราะลด sequential bottleneck ของ ReAct; takeaway คือ parallel reasoning ต้องตรวจว่าไม่สร้าง stale assumptions; priority: กลาง: <a href="https://huggingface.co/papers/2608.13667" target="_blank" rel="noreferrer">HF Papers</a></p>
+  </main>
+</body>
+</html>

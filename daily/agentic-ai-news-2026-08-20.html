@@ -1,0 +1,58 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-08-20</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-08-20</h1>
+    <div class="tags"><span class="tag">Google</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-08-20.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🧪 Hugging Face Papers วันที่ 2026-08-20 มี SPADE: self-play RL ที่ให้ LLM ออกแบบ executable environments แล้วฝึก reasoning/tool-use agent ใน environment เหล่านั้น: <a href="https://huggingface.co/papers/2608.19197" target="_blank" rel="noreferrer">HF Papers</a></p>
+<p>🧠 มี paper “Agency Is Frame-Dependent” ชี้ว่าการวัด agency ต้องนิยาม reference frame ก่อน เหมาะกับทีมที่กำลังถกนิยาม “agent autonomy” ใน governance: <a href="https://huggingface.co/papers?q=agency" target="_blank" rel="noreferrer">HF Papers</a></p>
+<p>☁️ Google Cloud โปรโมต learning path สำหรับ production agents เช่น MCP, memory/state, skills, AgentOps, governance/security และ hackathon ช่วง 2026-08-03 ถึง 2026-08-31: <a href="https://cloud.google.com/blog/topics/training-certifications/free-gemini-enterrprise-training" target="_blank" rel="noreferrer">Google Cloud Blog</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🧩 SPADE สำคัญเพราะเปลี่ยน environment generation ให้เป็นส่วนที่เรียนรู้ได้ ไม่ใช่ชุด benchmark คงที่; แนวนี้อาจกระทบการฝึก agent สำหรับ tool-use และ coding workflow ในอนาคต.</p>
+<p>📏 “Agency” ที่ไม่ระบุกรอบวัดทำให้ policy คุยกันยาก; solution architect ควรกำหนด autonomy level ตาม action scope, reversibility, data sensitivity และ human approval.</p>
+<p>🎓 Google Cloud training path สะท้อนว่า enterprise agents กำลังกลายเป็น skill stack: MCP, memory/state, reusable skills, observability, CI/CD และ governance.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📘 อ่าน SPADE เพื่อดูแนวคิด executable environment + regret targeting สำหรับ agent training: <a href="https://huggingface.co/papers/2608.19197" target="_blank" rel="noreferrer">HF Papers</a></p>
+<p>🧭 อ่าน Google Cloud agent learning path ถ้าทีมต้องทำ roadmap upskill จาก prototype ไป production: <a href="https://cloud.google.com/blog/topics/training-certifications/free-gemini-enterrprise-training" target="_blank" rel="noreferrer">Google Cloud Blog</a></p>
+<p>🧠 อ่าน BAIR เรื่อง belief update สำหรับ long-horizon interaction เป็น evergreen memory design: <a href="https://bair.berkeley.edu/blog/archive/" target="_blank" rel="noreferrer">BAIR Blog</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🧪 สถานการณ์: ทำ eval สำหรับ agent tool-use; Pattern: executable task harness; Template: “reset(), step(action), reward(), verifier(), transcript”; Verify: task replay deterministic และแยก hidden validation.</p>
+<p>📏 สถานการณ์: ต้องอนุมัติ autonomy level; Pattern: frame-first policy; Template: “Agent X วัด agency เฉพาะ scope Y, tools Z, data class A, max spend B, human gate C”; Caveat: ห้ามใช้คำว่า autonomous แบบกว้าง ๆ ใน risk review.</p>
+<p>🧠 สถานการณ์: agent ต้องจำงานหลายรอบ; Pattern: memory/state split; Template: “state = facts current task, memory = lessons reusable, audit = why action happened”; Verify: memory ไม่เก็บ secret/PII เกินจำเป็น.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏗️ Roadmap การทำ agent platform ควรแยก 3 backlog: runtime/tooling, governance/observability และ learning enablement สำหรับทีมใช้งานจริง.</p>
+<p>🔐 ถ้าเริ่มทำ self-improving/eval-generating agents ต้องมี holdout validation, policy guardrails และ human review ของ generated environment เพราะ agent อาจ optimize กับ signal ที่ผิด.</p>
+<p>📊 Training plan สำหรับองค์กรควรวัดได้: จำนวน workflow ที่มี MCP/tool inventory, memory policy, trace dashboard, eval suite และ rollback guide.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: ยังไม่พบ Thai technical post ใหม่ที่น่าเชื่อถือกว่า primary sources วันนี้; สำหรับ local enablement ให้ใช้ Google Cloud learning path เป็นฐาน แล้วเสริมสื่อไทยที่อธิบาย MCP/memory/AgentOps ภายหลัง: <a href="https://cloud.google.com/blog/topics/training-certifications/free-gemini-enterrprise-training" target="_blank" rel="noreferrer">Google Cloud Blog</a></p>
+  </main>
+</body>
+</html>
