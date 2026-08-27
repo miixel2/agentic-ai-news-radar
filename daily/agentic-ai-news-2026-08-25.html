@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-08-25</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-08-25</h1>
+    <div class="tags"><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-08-25.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🧪 LangChain เผย workflow สร้าง agent environments/tasks จาก traces, code และ human input โดยแยก “spec generation” กับ “Spec2Task” เพื่อทำ eval ที่ปรับปรุงต่อเนื่องได้: <a href="https://www.langchain.com/blog/building-agent-environments-and-tasks" target="_blank" rel="noreferrer">LangChain</a></p>
+<p>🧠 LangChain OpenWiki 0.4.0 เสนอ self-correcting memory: ผูก claims กับ evidence version เพื่อรู้ว่า knowledge เริ่ม stale เมื่อ source เปลี่ยน: <a href="https://www.langchain.com/blog/self-correcting-memory-openwiki" target="_blank" rel="noreferrer">LangChain</a></p>
+<p>🛠️ GitHub Copilot app เปิด Customize tab GA รวม MCP servers, plugins, skills และ canvases ไว้เป็นจุดเดียวสำหรับปรับ Copilot ให้เข้ากับ workflow ทีม: <a href="https://github.blog/changelog/2026-08-25-github-copilot-app-customize-tab-is-generally-available/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>📄 งานวิจัยใหม่บน Hugging Face Papers ชี้ว่า mobile/personal agents ต้องถูกวัดด้วย runtime constraints, tool calling, memory และ sub-agent collaboration ไม่ใช่ static function matching: <a href="https://huggingface.co/papers/2608.23035" target="_blank" rel="noreferrer">MobilePA-Bench</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🧪 Agent eval กำลังขยับจาก final score ไปสู่ environment + rubric + trace ที่ reproduce ได้ ซึ่งเหมาะกับ production regression testing.</p>
+<p>🧠 Memory ที่ดีต้อง “ลืมได้” เมื่อ evidence เปลี่ยน; สำหรับ repo/wiki/knowledge base ภายใน ควรเก็บ claim-level provenance.</p>
+<p>🧩 Customize surface ของ Copilot ทำให้ MCP/skills เข้าง่ายขึ้น แต่ก็เพิ่มภาระ governance: ใครติดตั้งอะไร, ใช้ข้อมูลอะไร, และ update อย่างไร.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📘 อ่าน LangChain eval-engineering guide เพื่อทำ benchmark จาก production traces แบบมี human review: <a href="https://www.langchain.com/blog/building-agent-environments-and-tasks" target="_blank" rel="noreferrer">LangChain</a></p>
+<p>📘 อ่าน OpenWiki memory post เพื่อเอา claim-evidence model ไปใช้กับ internal docs หรือ runbooks: <a href="https://www.langchain.com/blog/self-correcting-memory-openwiki" target="_blank" rel="noreferrer">LangChain</a></p>
+<p>📘 อ่าน Copilot Customize tab GA เพื่อวาง taxonomy ของ MCP/plugin/skill ที่อนุญาตในทีม: <a href="https://github.blog/changelog/2026-08-25-github-copilot-app-customize-tab-is-generally-available/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🧪 สถานการณ์: อยากวัด agent จากงานจริง; Pattern: trace-to-task; Template: “trace cluster -&gt; task spec -&gt; synthetic environment -&gt; rubric -&gt; replay”; Verify: run ด้วย model หลาย tier เพื่อตรวจ task ง่าย/ยากเกินไป.</p>
+<p>🧠 สถานการณ์: internal wiki drift; Pattern: claim-backed memory; Template: “statement, evidence path, evidence version, verified_at, stale reason”; Caveat: claim ที่ stale ต้องคงสถานะจน recheck จริง.</p>
+<p>🧩 สถานการณ์: เปิด Copilot customization; Pattern: customization registry; เก็บ owner, data class, scopes, update policy, audit sink และ deprecation date.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏗️ Agent platform ที่ mature ต้องมี eval factory: ดึง traces, สร้าง task specs, สร้าง environment, run regression, แล้ว feed กลับไปปรับ prompt/skills/harness.</p>
+<p>🔐 Skill และ MCP ไม่ควรถูกติดตั้งตามความสะดวกอย่างเดียว; ควรผ่าน allowlist, version pinning, data classification และ periodic review.</p>
+<p>📌 สิ่งที่ควรทำวันนี้: เลือก workflow จริง 1 เรื่อง แล้วสร้าง task spec + rubric ก่อนค่อย automate การสร้าง environment.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: TechTalkThai เตรียม TTT Virtual Summit 2026 วันที่ 26-27 ส.ค. มี session ไทยเรื่อง AI stack, DevOps Agent และ Multimodal/AI Agents สำหรับองค์กร: <a href="https://conf.techtalkthai.com/tvc26/" target="_blank" rel="noreferrer">TechTalkThai</a></p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: ประเด็นที่ควรติดตามจากงานไทยคือการเชื่อม AI Platform กับ cloud/container infra และการวัด cost/performance เช่น TTFT, goodput, troubleshooting time.</p>
+  </main>
+</body>
+</html>

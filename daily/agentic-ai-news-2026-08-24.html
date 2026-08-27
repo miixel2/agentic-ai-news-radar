@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-08-24</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-08-24</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-08-24.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🤖 LangChain เผยกรณี Toyota North America ใช้ Deep Agents, LangGraph และ LangSmith เพื่อทำ internal AI platform ที่มี 50+ agents ใน production และใช้ observability เป็นฐานคุย ROI/ความปลอดภัย: <a href="https://www.langchain.com/blog/how-toyota-north-america-put-enterprise-ai-on-the-balance-sheet-with-deep-agents-and-langsmith" target="_blank" rel="noreferrer">LangChain</a></p>
+<p>💬 GitHub Copilot ใน Slack ยังเป็น signal สำคัญของสัปดาห์: agentic coding เริ่มจากบทสนทนา, ทำงานใน cloud sandbox, เปิด PR และผูกกับ existing permissions/budget: <a href="https://github.blog/changelog/2026-08-21-the-new-github-copilot-experience-in-slack/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🔐 AWS Security Blog เน้น pattern “agent เป็น orchestrator ไม่ใช่ gatekeeper” โดยส่ง user authorization context ไปให้ downstream systems บังคับสิทธิ์เอง: <a href="https://aws.amazon.com/blogs/security/propagate-user-authorization-context-in-ai-agents-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS Security Blog</a></p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: Techsauce รายงาน Tangerine + Google Cloud เปิด Gemini Enterprise Experience Center ในไทย เป็นสัญญาณ local enterprise adoption สำหรับ agentic/work transformation: <a href="https://techsauce.co/pr-news/tangerine-gemini-enterprise-experience-center" target="_blank" rel="noreferrer">Techsauce</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🏭 Enterprise agents เริ่มถูกวัดด้วย operational ROI, adoption telemetry และ permission-gated data access ไม่ใช่แค่ demo accuracy.</p>
+<p>🧭 Slack-to-PR workflow ทำให้ agent กลายเป็น shared work object ของทีม จึงต้องมี owner, approval, trace และ channel hygiene.</p>
+<p>🔐 Authorization ต้องอยู่ที่ infrastructure/data layer; ถ้าฝังไว้ใน prompt หรือ agent code อย่างเดียว จะเสี่ยง prompt injection และ data leakage.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📘 อ่าน Toyota case เพื่อดู pattern ของ agent platform, reusable skills และ observability สำหรับผู้บริหาร: <a href="https://www.langchain.com/blog/how-toyota-north-america-put-enterprise-ai-on-the-balance-sheet-with-deep-agents-and-langsmith" target="_blank" rel="noreferrer">LangChain</a></p>
+<p>📘 อ่าน AWS AgentCore authorization post เพื่อออกแบบ OBO token exchange, ABAC/session tags และ downstream enforcement: <a href="https://aws.amazon.com/blogs/security/propagate-user-authorization-context-in-ai-agents-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS Security Blog</a></p>
+<p>📘 อ่าน GitHub Copilot Slack preview เพื่อเตรียม playbook สำหรับ “conversation -&gt; investigation -&gt; PR -&gt; human approval”: <a href="https://github.blog/changelog/2026-08-21-the-new-github-copilot-experience-in-slack/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🧩 สถานการณ์: ต้องทำ enterprise agent platform; Pattern: reusable skill library; Template: “domain, tools, data sources, permission boundary, examples, validation steps”; Verify: skill แต่ละตัวต้องมี owner และ expiry review.</p>
+<p>🔐 สถานการณ์: agent เข้าถึงหลาย data source; Pattern: user-scoped tool calls; Template: “authenticate user -&gt; issue scoped token -&gt; tool enforces access -&gt; trace decision”; Caveat: อย่าให้ agent ถือ long-lived credentials.</p>
+<p>📊 สถานการณ์: ต้องพิสูจน์ ROI; Pattern: Andon-style agent dashboard; วัด accepted task, failed tool call, retrieval miss, cost/task, review override และ business outcome.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏗️ สัปดาห์นี้ควรออกแบบ agent platform เป็น control plane: identity, skills, MCP/tool registry, sandbox, observability, budget, approval และ incident rollback.</p>
+<p>🔐 สำหรับ coding agents ในองค์กร ให้เริ่ม pilot กับ repo ที่มี test gate ชัด และบังคับ human review สำหรับ PR ที่มาจาก agent identity.</p>
+<p>📌 สิ่งที่ควรทำทันที: ทำ inventory ว่า agent ใช้ข้อมูลอะไร, ใครอนุมัติ tool access, trace เก็บที่ไหน และ metric ใดบอกว่าคุ้มค่าจริง.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: Gemini Enterprise Experience Center ในไทยควรถูกมองเป็น adoption signal มากกว่า technical proof; ต้องรอดู workshop, reference architecture หรือ use case ที่เปิดรายละเอียดเพิ่ม: <a href="https://techsauce.co/pr-news/tangerine-gemini-enterprise-experience-center" target="_blank" rel="noreferrer">Techsauce</a></p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: DevHub ยังมีบทความ Harness Engineering ภาษาไทยที่ช่วยอธิบายบทบาทใหม่ของ engineer ได้ดี แต่ควรอ่านคู่กับเอกสาร/แหล่งต้นทางเสมอ: <a href="https://devhub.in.th/th/blog/openai-harness-engineering-codex-zero-code" target="_blank" rel="noreferrer">DevHub</a></p>
+<h2>Weekly Agentic AI Ecosystem Brief</h2>
+<p>🗓️ What changed: agent entrypoints ย้ายจาก IDE ไป collaboration tools, enterprise platforms เริ่มเน้น authorization/observability และ case studies เริ่มพูดภาษา ROI.</p>
+<p>🧱 Impact for builders: สิ่งที่ต้องสร้างไม่ใช่ agent เดี่ยว แต่เป็นระบบรอบ agent ที่ทำให้ทีมสั่งงาน ตรวจสอบ และหยุดงานได้.</p>
+<p>🔐 Production readiness: readiness checklist ควรมี identity, scoped tools, sandbox, eval traces, cost caps, PR approval และ audit log.</p>
+<p>🇹🇭 Thai relevance: ไทยเริ่มมี enterprise AI center/event signal มากขึ้น เหมาะทำ internal enablement ภาษาไทยสำหรับผู้บริหารและทีม dev.</p>
+<p>📚 Study next: LangSmith eval/observability, AWS AgentCore security patterns, GitHub Copilot cloud agent controls และ skill lifecycle governance.</p>
+  </main>
+</body>
+</html>

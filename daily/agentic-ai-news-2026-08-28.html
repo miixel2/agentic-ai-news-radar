@@ -1,0 +1,67 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-08-28</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-08-28</h1>
+    <div class="tags"><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-08-28.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🔐 GitHub Copilot global model policy GA เป็นข่าวสำคัญสุดสำหรับ workplace rollout สัปดาห์นี้ เพราะทำให้ admin คุม default availability ของโมเดลใหม่/ยังไม่ configure ได้ชัดขึ้น: <a href="https://github.blog/changelog/2026-08-26-global-model-policy-generally-available/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🧪 LangChain เผยวิธีสร้าง agent eval environments/tasks จาก traces และ world specs; เป็น practical playbook สำหรับทีมที่อยากปรับ agent ด้วย regression data: <a href="https://www.langchain.com/blog/building-agent-environments-and-tasks" target="_blank" rel="noreferrer">LangChain</a></p>
+<p>🧠 LangChain OpenWiki self-correcting memory เสนอ claim-evidence tracking เพื่อกัน stale knowledge ใน repo/wiki ที่ agent ใช้เป็นบริบท: <a href="https://www.langchain.com/blog/self-correcting-memory-openwiki" target="_blank" rel="noreferrer">LangChain</a></p>
+<p>🛡️ Google Cloud และ AWS ต่างเน้น control plane สำหรับ production agents: gateway, quota, tool filtering, trace, user-scoped authorization และ downstream enforcement: <a href="https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud" target="_blank" rel="noreferrer">Google Cloud</a> / <a href="https://aws.amazon.com/blogs/security/propagate-user-authorization-context-in-ai-agents-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS Security Blog</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🧭 Agentic AI ตอนนี้เดินหน้าในสองเส้นพร้อมกัน: เพิ่มความสามารถด้วย skills/memory/evals และลด blast radius ด้วย model/tool/identity policy.</p>
+<p>🔐 สำหรับองค์กร ความเสี่ยงหลักไม่ใช่ agent “ตอบผิด” เท่านั้น แต่คือ agent ใช้ tool ถูกตัวแต่สิทธิ์กว้างเกิน, memory stale หรือไม่มี trace ให้ audit.</p>
+<p>🧪 Builder ที่เริ่มจาก eval environment ก่อนจะได้ feedback loop ที่ยั่งยืนกว่าแก้ prompt หลัง production incident ทุกครั้ง.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📘 GitHub Copilot global model policy: ใช้เป็นต้นแบบทำ model governance matrix ในทีม: <a href="https://github.blog/changelog/2026-08-26-global-model-policy-generally-available/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>📘 LangChain agent environments/tasks: ใช้สร้าง benchmark จาก traces และ human-reviewed specs: <a href="https://www.langchain.com/blog/building-agent-environments-and-tasks" target="_blank" rel="noreferrer">LangChain</a></p>
+<p>📘 OpenWiki self-correcting memory: ใช้กับ internal docs, code wiki และ reusable knowledge ของ agent: <a href="https://www.langchain.com/blog/self-correcting-memory-openwiki" target="_blank" rel="noreferrer">LangChain</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🧪 สถานการณ์: จะเพิ่ม skill ใหม่ให้ coding agent; Pattern: skill canary; Template: “baseline no-skill run, skill run, cost delta, failure attribution, rollback criteria”; Verify: skill ไม่เพิ่ม mandatory steps เกินจำเป็น.</p>
+<p>🧠 สถานการณ์: agent ใช้ memory ระยะยาว; Pattern: evidence-backed memory; Template: “claim, source, version, confidence, stale check, reverify command”; Caveat: memory ที่ไม่มี evidence ควรต่ำกว่า source ปัจจุบัน.</p>
+<p>🔐 สถานการณ์: เปิด Copilot หลายโมเดล; Pattern: model-policy release gate; Template: “allowed workloads, data classes, autonomy level, cost cap, fallback, review date”; Verify: admin setting ตรงกับ policy doc.</p>
+<p>🛡️ สถานการณ์: agent เรียก MCP/tools; Pattern: gateway-first tools; ใช้ allowlist, payload filtering, quotas, audit logs และ kill switch ก่อนเปิด write tools.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏗️ Recommendation: วาง agent platform backlog เป็น 4 lane คือ governance, evals, memory/knowledge, และ developer workflow; อย่าปล่อยให้แต่ละทีมติดตั้ง MCP/skills เองแบบไร้ทะเบียน.</p>
+<p>🔐 Security baseline ควรมี user-scoped auth, read-mostly default, human approval for writes, model policy, tool gateway และ trace retention.</p>
+<p>📌 Next slice: สร้าง “Agent Readiness Checklist” สำหรับ POC ไทย/องค์กร โดยบังคับให้ตอบเรื่อง data, tools, approval, eval, cost และ owner ก่อนเริ่ม build.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: TechTalkThai TTT Virtual Summit 2026 มีหัวข้อ DevOps Agent, AI stack/inference และ Multimodal/AI Agents ที่ตรงกับ production-readiness ขององค์กรไทย: <a href="https://conf.techtalkthai.com/tvc26/" target="_blank" rel="noreferrer">TechTalkThai</a></p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: Techsauce รายงาน Gemini Enterprise Experience Center ในไทย เป็น signal ว่า AI agent/work transformation กำลังถูกขายเป็น enterprise enablement ไม่ใช่เฉพาะ developer tooling: <a href="https://techsauce.co/pr-news/tangerine-gemini-enterprise-experience-center" target="_blank" rel="noreferrer">Techsauce</a></p>
+<h2>Friday Research Digest</h2>
+<p>📄 <strong>Demystifying Agent Skills</strong> — Core idea: skills ช่วยหลัก ๆ ด้วย procedural anchoring แต่มี retrieval bottleneck และ brittle assumptions; Why it matters: skill library ใหญ่ไม่ได้แปลว่าดีขึ้นเสมอ; Practical takeaway: ทำ skill retrieval/eval แยกจาก success score; Priority: สูง: <a href="https://huggingface.co/papers/2608.14036" target="_blank" rel="noreferrer">Hugging Face Papers</a></p>
+<p>📄 <strong>Agent Skills Can Be Harmful</strong> — Core idea: skill ที่ดูเกี่ยวข้องอาจทำให้ agent พลาด requirement หรือเพิ่ม cost; Why it matters: reusable skills ต้องมี failure attribution; Practical takeaway: ทำ no-skill vs skill A/B test ก่อนเปิดใช้ทั้งทีม; Priority: สูง: <a href="https://huggingface.co/papers/2608.11888" target="_blank" rel="noreferrer">Hugging Face Papers</a></p>
+<p>📄 <strong>SkillJack</strong> — Core idea: poisoned experiences อาจถูกสกัดเป็น persistent malicious skills; Why it matters: self-evolving agents เพิ่ม attack surface ใหม่; Practical takeaway: skill lifecycle ต้องมี provenance, review และ revocation; Priority: สูงมากสำหรับ security teams: <a href="https://huggingface.co/papers/2608.03509" target="_blank" rel="noreferrer">Hugging Face Papers</a></p>
+<p>📄 <strong>The Handoff Tax</strong> — Core idea: การสลับ model ระหว่าง coding-agent trajectory มี trade-off ด้าน quality/cost ตามข้อมูลที่ handoff; Why it matters: tiered model routing ต้องวัด handoff ไม่ใช่ดูราคาอย่างเดียว; Practical takeaway: เก็บ compacted trajectory + repo state แล้วทดสอบ model handoff; Priority: กลาง-สูง: <a href="https://huggingface.co/papers/2608.24358" target="_blank" rel="noreferrer">Hugging Face Papers</a></p>
+<p>📄 <strong>Permission Denied</strong> — Core idea: hardened enterprise environments ทำให้ coding-agent success/cost เปลี่ยนมากและแตกต่างตาม model; Why it matters: permissive sandbox benchmark มองไม่เห็น production friction; Practical takeaway: เพิ่ม policy-constrained eval ก่อน rollout; Priority: สูง: <a href="https://huggingface.co/papers/2608.02670" target="_blank" rel="noreferrer">Hugging Face Papers</a></p>
+  </main>
+</body>
+</html>

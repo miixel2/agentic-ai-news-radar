@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-08-26</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-08-26</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-08-26.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🔐 GitHub Copilot global model policy GA เริ่ม rollout enforcement ถึง 1 ก.ย.; model ที่ยังไม่ configure จะ inherit global policy และ open-weight/model ที่มี data retention requirement ถูกปิดเป็นค่า default: <a href="https://github.blog/changelog/2026-08-26-global-model-policy-generally-available/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🧭 LangChain August newsletter รวม signal ใหม่ของเดือน: agent eval environments, self-correcting memory, LangSmith Engine improvements และ enterprise Deep Agents case study: <a href="https://www.langchain.com/blog" target="_blank" rel="noreferrer">LangChain Blog</a></p>
+<p>💸 OpenAI อัปเดต GPT-5.6 Sol ลดราคา API/credits มากกว่า 20% ชั่วคราว 3 เดือน เป็นสัญญาณว่าต้นทุน frontier agent workloads ยังเป็นพื้นที่แข่งขันสำคัญ: <a href="https://openai.com/index/gpt-5-6/" target="_blank" rel="noreferrer">OpenAI</a></p>
+<p>🧪 Anthropic Alignment เผย CHIVE pipeline สำหรับหาและอธิบายพฤติกรรมโมเดลในโลกจริงด้วย counterfactual prompt edits; เหมาะกับทีมที่ทำ eval/interpretability เชิงพฤติกรรม: <a href="https://alignment.anthropic.com/2026/chive/" target="_blank" rel="noreferrer">Anthropic Alignment</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🔐 Model policy กลายเป็น governance primitive: องค์กรต้องระบุว่า model ใดใช้ได้, ใช้กับ workload ใด และมี data retention boundary อย่างไร.</p>
+<p>💸 ต้นทุน agent ไม่ใช่แค่ token price; ต้องรวม retry, tool calls, failed trajectories, review time และ sandbox runtime.</p>
+<p>🧪 CHIVE ชี้ว่าการอธิบายพฤติกรรม LLM ควรทดสอบด้วย counterfactual ไม่ใช่เชื่อ narrative ของโมเดลหรือ activation tool อย่างเดียว.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📘 อ่าน GitHub global model policy แล้วทำ model matrix สำหรับทีม: allowed, optional, blocked, retention caveat, owner: <a href="https://github.blog/changelog/2026-08-26-global-model-policy-generally-available/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>📘 อ่าน LangChain posts วันที่ 24-25 ส.ค. เพื่อเอา eval environments + self-correcting memory มาใช้เป็น agent platform backlog: <a href="https://www.langchain.com/blog" target="_blank" rel="noreferrer">LangChain Blog</a></p>
+<p>📘 อ่าน CHIVE เพื่อออกแบบ behavior investigation ที่วัดผลจาก prompt edits หลายรอบ ไม่ใช่ single anecdote: <a href="https://alignment.anthropic.com/2026/chive/" target="_blank" rel="noreferrer">Anthropic Alignment</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🔐 สถานการณ์: มีหลาย model ใน Copilot/agent platform; Pattern: model policy matrix; Template: “model, status, workloads, retention, max autonomy, budget, fallback”; Verify: policy sync กับ IDE/app/cloud agent settings.</p>
+<p>💸 สถานการณ์: agent cost บวม; Pattern: tiered execution; ใช้ model เล็กสำหรับ triage/spec/checklist และยกระดับเฉพาะ reasoning/implementation ที่ยาก; Caveat: วัด handoff quality ทุกครั้ง.</p>
+<p>🧪 สถานการณ์: เจอพฤติกรรมแปลกของ agent; Pattern: counterfactual repro pack; Template: “original prompt, edited prompt, N runs, expected delta, observed delta, trace links.”</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏗️ การเลือก model ต้องเป็น architecture decision ไม่ใช่ preference ส่วนตัว: ผูกกับ data class, autonomy level, latency/cost SLO และ audit requirement.</p>
+<p>🔐 ก่อนเปิด model ใหม่ให้ทั้งองค์กร ให้ตอบ 4 คำถาม: เก็บข้อมูลไหม, tool access ระดับไหน, budget ใครรับผิดชอบ, rollback ทำอย่างไร.</p>
+<p>📌 สิ่งที่ควรทำ: สร้าง policy-as-doc แล้วผูกเข้ากับ Copilot/agent settings เพื่อให้การเปลี่ยน model เป็น controlled rollout.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: TTT Virtual Summit 2026 เริ่มวันนี้ มีหัวข้อ AI stack/inference engine ที่เกี่ยวกับ production agent cost และ performance โดยตรง: <a href="https://conf.techtalkthai.com/tvc26/" target="_blank" rel="noreferrer">TechTalkThai</a></p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: สำหรับทีมไทย ควรแปลง model policy เป็นภาษาองค์กรที่อ่านง่าย เช่น “ข้อมูลลูกค้าใช้ model กลุ่มไหนได้” และ “งานใดต้อง human approval.”</p>
+  </main>
+</body>
+</html>

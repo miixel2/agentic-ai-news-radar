@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-08-27</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-08-27</h1>
+    <div class="tags"><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-08-27.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🏗️ Google Cloud “what’s new” เน้น Apigee AI Gateway สำหรับ governance ของ MCP/tool calls, quotas, logging และ centralized control ใน agent ecosystems: <a href="https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud" target="_blank" rel="noreferrer">Google Cloud</a></p>
+<p>🧪 LangChain eval-engineering pattern จาก 25 ส.ค. ยังเป็น practical source ที่แรงที่สุดสำหรับ builder: สร้าง world spec, task spec, environment และ rubric จาก traces เพื่อปรับ agent อย่างมีหลักฐาน: <a href="https://www.langchain.com/blog/building-agent-environments-and-tasks" target="_blank" rel="noreferrer">LangChain</a></p>
+<p>🔐 AWS AgentCore security guidance ย้ำว่า agent ต้องไม่เป็นตัวบังคับสิทธิ์เอง; ใช้ user-scoped credentials, session tags และ OBO token exchange ให้ downstream systems enforce access: <a href="https://aws.amazon.com/blogs/security/propagate-user-authorization-context-in-ai-agents-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS Security Blog</a></p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: TechTalkThai schedule วันนี้มี session “DevOps Agent” และ “Multimodal &amp; AI Agents” สำหรับองค์กรไทย เน้น infra, troubleshooting และ business use case: <a href="https://conf.techtalkthai.com/tvc26/" target="_blank" rel="noreferrer">TechTalkThai</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🧱 Enterprise agent architecture กำลัง converge ที่ “gateway + policy + trace” เพราะ tool calls/MCP คือจุดเสี่ยงจริงเมื่อ agent เริ่มทำงานแทนคน.</p>
+<p>🧪 ทีมที่ไม่มี eval environments จะปรับ agent แบบเดาสุ่ม; trace-to-task ช่วยเปลี่ยน production incidents ให้เป็น regression tests.</p>
+<p>🇹🇭 Local events เริ่มพูดถึง AI agents คู่กับ cloud/container infra แปลว่าตลาดไทยกำลังเข้าสู่ phase production readiness ไม่ใช่แค่ chatbot adoption.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📘 อ่าน Google Cloud Apigee AI Gateway notes เพื่อวาง MCP/tool gateway pattern: <a href="https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud" target="_blank" rel="noreferrer">Google Cloud</a></p>
+<p>📘 อ่าน AWS security post เพื่อออกแบบ least-privilege agents ที่ไม่ถือ credential ถาวร: <a href="https://aws.amazon.com/blogs/security/propagate-user-authorization-context-in-ai-agents-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS Security Blog</a></p>
+<p>📘 อ่าน TechTalkThai agenda เพื่อหา local reference topics สำหรับ internal enablement ภาษาไทย: <a href="https://conf.techtalkthai.com/tvc26/" target="_blank" rel="noreferrer">TechTalkThai</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🛡️ สถานการณ์: MCP/tool calls กระจายหลายทีม; Pattern: tool gateway; Template: “tool id, scope, auth, rate limit, payload filter, log sink, kill switch”; Verify: block/allow decision ต้อง trace ได้.</p>
+<p>🧪 สถานการณ์: incident จาก agent ผิดพลาด; Pattern: incident-to-eval; ขั้นตอน: เก็บ trace -&gt; เขียน task spec -&gt; mock environment -&gt; rubric -&gt; run ก่อน merge fix.</p>
+<p>👥 สถานการณ์: agent troubleshooting infra; Pattern: DevOps agent guardrail; ให้ read-only observability ก่อน, write/remediation ต้องมี approval และ runbook mapping.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏗️ ถ้าจะนำ agent เข้า production ให้เริ่มที่ gateway และ observability ก่อน ไม่ใช่เพิ่มความฉลาดของ model อย่างเดียว.</p>
+<p>🔐 Architecture decision สำคัญ: บังคับสิทธิ์ที่ downstream service, เก็บ trace ที่ gateway/runtime และใช้ model policy เพื่อควบคุม exposure.</p>
+<p>📌 สิ่งที่ควรทำ: ทำ “agent threat model” หนึ่งหน้า ครอบคลุม prompt injection, over-broad tools, stale memory, cost spike และ unauthorized data access.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: งาน TechTalkThai วันที่ 27 ส.ค. มีหัวข้อที่เหมาะต่อ solution architect ไทย ได้แก่ AI stack/inference, DevOps Agent และ Multimodal/AI Agents: <a href="https://conf.techtalkthai.com/tvc26/" target="_blank" rel="noreferrer">TechTalkThai</a></p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: สัญญาณที่น่าติดตามคือ vendor ในไทยเริ่มขาย “AI Platform” คู่กับ infra governance; ควรถามเรื่อง logging, data residency, approval gate และ cost control ในทุก POC.</p>
+  </main>
+</body>
+</html>
