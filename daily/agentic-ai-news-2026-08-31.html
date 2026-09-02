@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-08-31</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-08-31</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-08-31.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🗂️ AWS Agent Registry GA ช่วยให้องค์กรมี catalog กลางสำหรับ agents, tools, skills, MCP และ custom resources พร้อม discovery/governance plane: <a href="https://aws.amazon.com/blogs/machine-learning/manage-agents-tools-and-skills-at-scale-with-aws-agent-registry/" target="_blank" rel="noreferrer">AWS</a></p>
+<p>🧰 Google Cloud เผยแนวคิด “agents delegate better” เน้นการแยกงานให้ subagents/tools พร้อมบริบทและ success criteria ที่ชัดเจน: <a href="https://cloud.google.com/blog/products/ai-machine-learning/how-agents-can-delegate-better" target="_blank" rel="noreferrer">Google Cloud</a></p>
+<p>🧪 OpenAI Agents SDK changelog 0.22.0 tighten failure handling, output guardrail isolation, failed/incomplete response handling และ checkpoint usage snapshot: <a href="https://openai.github.io/openai-agents-python/release/" target="_blank" rel="noreferrer">OpenAI Agents SDK</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🧭 Registry กลายเป็น missing control plane ของ enterprise agents เพราะช่วยลด duplicated tools, shadow agents, version drift และ unclear ownership.</p>
+<p>🔐 SDK-level guardrail behavior สำคัญกับ audit เพราะ blocked output ต้องไม่รั่วกลับเข้า session history หรือ replay state แบบ payload-bearing.</p>
+<p>🧩 Delegation quality ไม่ได้มาจาก subagent เยอะ แต่มาจาก task boundary, context package, verification signal และ handoff protocol.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📘 AWS Agent Registry GA: อ่านเพื่อออกแบบ internal agent/tool catalog: <a href="https://aws.amazon.com/blogs/machine-learning/manage-agents-tools-and-skills-at-scale-with-aws-agent-registry/" target="_blank" rel="noreferrer">AWS</a></p>
+<p>📘 Google delegation guidance: ใช้เป็น template สำหรับ multi-agent task decomposition: <a href="https://cloud.google.com/blog/products/ai-machine-learning/how-agents-can-delegate-better" target="_blank" rel="noreferrer">Google Cloud</a></p>
+<p>📘 OpenAI Agents SDK release notes: เช็ก breaking change ก่อน upgrade SDK: <a href="https://openai.github.io/openai-agents-python/release/" target="_blank" rel="noreferrer">OpenAI Agents SDK</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🗂️ สถานการณ์: tools/skills กระจายหลายทีม; Pattern: minimal registry; fields: “name, owner, version, data class, auth scope, approval status, last eval, deprecation date”; Verify: agent ใช้เฉพาะ approved catalog.</p>
+<p>🧪 สถานการณ์: delegate ให้ subagent; Pattern: bounded handoff card; Template: “objective, files/sources, constraints, done criteria, forbidden actions, return format”; Caveat: งานที่ context หนาเกินไปอาจเหมาะกับ single agent มากกว่า.</p>
+<p>🔐 สถานการณ์: upgrade Agents SDK; Pattern: replay-state regression; ทดสอบ guardrail blocked-output, incomplete response และ resume checkpoint ก่อนเปิด production.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏗️ Recommendation: ทำ agent registry แบบ pragmatic เริ่มจาก spreadsheet/JSON catalog ก็ได้ แต่ต้องผูกกับ CI, permission review และ eval result ให้ได้เร็ว.</p>
+<p>📌 Next slice: เพิ่ม “approved tools only” policy ใน agent harness แล้วเก็บ telemetry ว่า agent ขอ tool ไหนแต่ถูกปฏิเสธ เพื่อดู governance gap จริง.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: Qwen Conference Thailand 2026 ประกาศ agenda ครอบคลุม Agentic AI, Agentic Coding AI และ AI Production Platform สำหรับองค์กรไทย: <a href="https://www.techtalkthai.com/alibaba-cloud-qwen-conference-thailand-2026/" target="_blank" rel="noreferrer">TechTalkThai</a></p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: TechTalkThai summit week สะท้อนว่า local enterprise conversation กำลังเชื่อม AI agents กับ cloud/container/security platform: <a href="https://conf.techtalkthai.com/tvc26/" target="_blank" rel="noreferrer">TechTalkThai</a></p>
+<h2>Weekly Agentic AI Ecosystem Brief</h2>
+<p>🧭 What changed: ช่วง 2026-08-25 ถึง 2026-08-31 ข่าวเด่นคือ governance/control plane มากกว่า model spectacle: Copilot policy, OpenAI plugin marketplace sync, AWS Registry และ Anthropic MHS.</p>
+<p>🏗️ Impact for builders: เริ่มทำ agent platform inventory, skill/plugin lifecycle และ delegated-work templates ก่อน scale จำนวน agents.</p>
+<p>🔐 Production readiness: จุดที่ต้องพิสูจน์คือ guardrail replay safety, registry approval, model policy, trace retention และ egress control.</p>
+<p>🇹🇭 Thai relevance: ตลาดไทยเริ่มพูดเรื่อง enterprise AI/agentic coding ในงานสัมมนาหลายค่าย จังหวะนี้เหมาะทำ readiness checklist สำหรับองค์กร.</p>
+<p>📚 What to study next: agent registry design, guardrail failure semantics, multi-agent delegation และ policy-constrained evals.</p>
+  </main>
+</body>
+</html>

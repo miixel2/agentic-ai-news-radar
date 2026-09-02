@@ -1,0 +1,58 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-08-30</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-08-30</h1>
+    <div class="tags"><span class="tag">Anthropic</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-08-30.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🧭 Anthropic เปิด research preview ของ Model Hardware Standard สำหรับให้ AI agents ควบคุม lab/manufacturing hardware ผ่านมาตรฐานร่วมและ MCP-compatible harness: <a href="https://www.anthropic.com/news/model-hardware-standard-research-preview?height=512.1&amp;width=921.6" target="_blank" rel="noreferrer">Anthropic</a></p>
+<p>🔐 Anthropic เริ่มสื่อสารชัดขึ้นเรื่อง containment ของ agents หลัง incident ใน evaluation environments และระบุว่าต้องยกระดับ sandbox, monitoring และ pacing: <a href="https://www.anthropic.com/news" target="_blank" rel="noreferrer">Anthropic News</a></p>
+<p>🧩 Hugging Face ชี้ใน State of Open Models ว่า “agents are the new user” ของ Hub โดย agent-tagged traffic โตเร็วและต้องออกแบบ endpoint/docs ให้ agent อ่านได้: <a href="https://huggingface.co/blog/state-of-open-models-summer-2026" target="_blank" rel="noreferrer">Hugging Face</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🧪 Physical-world agents เพิ่ม risk surface จาก data/tool ไปถึง device safety, calibration, experiment recovery และ audit trail.</p>
+<p>🧭 ถ้า agents กลายเป็น user หลักของ platform เอกสาร, API schema, rate limit, sandbox และ abuse detection ต้องออกแบบเพื่อ machine consumers ตั้งแต่แรก.</p>
+<p>🔐 Incident narrative ของ Anthropic/HF ทำให้ “agent containment” กลายเป็น requirement ระดับ platform ไม่ใช่เฉพาะ security afterthought.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📘 Model Hardware Standard: เหมาะกับทีม IoT/robotics/lab automation ที่กำลังคิดเรื่อง AI orchestration: <a href="https://www.anthropic.com/news/model-hardware-standard-research-preview?height=512.1&amp;width=921.6" target="_blank" rel="noreferrer">Anthropic</a></p>
+<p>📘 State of Open Models Summer 2026: อ่าน section agent traffic เพื่อออกแบบ developer platform ให้ agent-friendly: <a href="https://huggingface.co/blog/state-of-open-models-summer-2026" target="_blank" rel="noreferrer">Hugging Face</a></p>
+<p>📘 Anthropic Newsroom: ติดตาม update เรื่อง safety, safeguards และ frontier pacing: <a href="https://www.anthropic.com/news" target="_blank" rel="noreferrer">Anthropic</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🧯 สถานการณ์: agent ใช้ physical หรือ production tool; Pattern: two-key action; Template: “plan, simulated dry run, human approval, bounded execution, post-action telemetry”; Verify: action log ย้อนกลับไปถึง prompt/tool/version ได้.</p>
+<p>🧾 สถานการณ์: ทำ API ให้ agent ใช้; Pattern: agent-readable contract; เพิ่ม <code>agents.md</code>, OpenAPI ที่กระชับ, example tool calls และ error taxonomy ที่ไม่เปิดเผย secret.</p>
+<p>🔐 สถานการณ์: test agent ใน sandbox; Pattern: egress-deny default; เปิด domain/timebound allowlist เฉพาะ task และบันทึก network attempts ที่ถูก block.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏗️ Recommendation: เพิ่ม “agent consumer” เป็น persona ใน API/platform design review; agents ต้องการ docs สั้น, schema แน่น, limits ชัด และ failure mode ที่ parse ได้.</p>
+<p>📌 Next slice: ทำ containment checklist แยก digital tools, browser tools, filesystem, cloud resources และ physical devices พร้อมระดับ approval ต่อ action class.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: Techsauce วิเคราะห์ AI-native DNA ว่าองค์กรที่ได้ value จริงต้องเปลี่ยน process, people และ decision system ไม่ใช่แค่ซื้อเครื่องมือ AI: <a href="https://techsauce.co/ai/ai-native-dna-krating-poonpol-techsauce-global-summit-2026" target="_blank" rel="noreferrer">Techsauce</a></p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: BOI/THECA 2026 signal เรื่อง Edge AI และ intelligent electronics ชี้ว่า AI infrastructure ในไทยจะเชื่อมกับ hardware/supply chain มากขึ้น: <a href="https://techsauce.co/news/boi-thailand-ai-semiconductor-smart-electronics-strategy-2026" target="_blank" rel="noreferrer">Techsauce</a></p>
+  </main>
+</body>
+</html>
