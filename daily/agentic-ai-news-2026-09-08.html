@@ -1,0 +1,61 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-09-08</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-09-08</h1>
+    <div class="tags"><span class="tag">AWS</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-09-08.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🧪 AWS เผย automated agent evaluation ด้วย Amazon Bedrock AgentCore และ GitHub Actions: deploy agent/MCP server, invoke test prompts, score responses และ block PR เมื่อ behavior regress: <a href="https://aws.amazon.com/blogs/machine-learning/category/artificial-intelligence/amazon-machine-learning/" target="_blank" rel="noreferrer">AWS AI Blog</a></p>
+<p>🛠️ AWS เผย HPE Zerto agentic troubleshooting system บน Amazon Bedrock ที่ deploy on-premises และ grounding กับ disaster recovery data: <a href="https://aws.amazon.com/blogs/machine-learning/category/artificial-intelligence/amazon-machine-learning/" target="_blank" rel="noreferrer">AWS AI Blog</a></p>
+<p>🔐 GitHub เพิ่ม enterprise-managed sandbox ใน Copilot for JetBrains พร้อม policy diagnostics, terminal connection และ project context: <a href="https://github.blog/changelog/month/09-2026/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🏢 GitHub Enterprise Server 3.22 GA มี capability ใหม่ รวมถึง admin configuration สำหรับ Copilot CLI ตาม changelog: <a href="https://github.blog/changelog/month/09-2026/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🧩 LangChain เผย “Organizing Context in a Multi-Agent Harness” เป็น practical signal เรื่อง context architecture: <a href="https://www.langchain.com/blog" target="_blank" rel="noreferrer">LangChain Blog</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🧪 Agent eval เข้า CI/CD แล้ว: นี่คือจุดเปลี่ยนจาก demo agent ไป production software lifecycle.</p>
+<p>🔐 Sandbox/policy diagnostics ใน IDE สำคัญสำหรับ enterprise เพราะ coding agent ต้องทำงานในเครื่อง dev จริงที่มี secrets, files และ terminal.</p>
+<p>🏗️ On-prem troubleshooting agent ชี้ว่าบาง use case ไม่ควรส่ง operational data ออกไปนอก environment ลูกค้า.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📘 AWS automated agent evaluation: ใช้เป็น blueprint สำหรับ PR gate ของ agent behavior: <a href="https://aws.amazon.com/blogs/machine-learning/category/artificial-intelligence/amazon-machine-learning/" target="_blank" rel="noreferrer">AWS</a></p>
+<p>📘 GitHub September changelog: อ่าน sandbox และ GHES updates: <a href="https://github.blog/changelog/month/09-2026/" target="_blank" rel="noreferrer">GitHub</a></p>
+<p>📘 LangChain multi-agent harness: อ่านเพื่อจัด context ระหว่าง subagents: <a href="https://www.langchain.com/blog" target="_blank" rel="noreferrer">LangChain</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🧪 สถานการณ์: agent behavior เปลี่ยนตาม prompt/model; Pattern: agent eval in CI; Template: “deploy test env, seed tools/data, run prompts, score rubric, block on regression, attach trace”.</p>
+<p>🔐 สถานการณ์: coding agent ใน IDE; Pattern: sandbox policy diagnostics; ตรวจ blocked operation, file access, terminal command, network domain; Verify: developer เห็นเหตุผลที่ถูก block.</p>
+<p>🏢 สถานการณ์: operational troubleshooting; Pattern: local/on-prem grounding; keep logs, topology, runbooks ใกล้ environment; Caveat: ต้องแยก read-only diagnostics กับ write actions.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏗️ Recommendation: ทุก agent ที่มี tool/action ควรมี CI eval อย่างน้อย smoke suite ก่อน deploy.</p>
+<p>📌 Next slice: สร้าง eval set 20 เคสจาก incident/runbook จริง แบ่งเป็น success, refusal, escalation และ tool-failure.</p>
+<p>🔎 Watch item: “score responses” ต้อง calibrate กับ human labels ไม่เช่นนั้น CI gate จะปลอมความมั่นใจ.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: ยังไม่พบข่าวไทยใหม่ที่มี technical depth เพียงพอสำหรับวันนี้.</p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: สำหรับทีมไทยที่ทำ DevOps/SRE agent ให้เริ่มจาก on-prem/read-only troubleshooting ก่อนเปิด automated remediation.</p>
+  </main>
+</body>
+</html>

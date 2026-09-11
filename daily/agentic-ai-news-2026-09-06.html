@@ -1,0 +1,59 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-09-06</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-09-06</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">AWS</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-09-06.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🧭 ไม่พบประกาศ primary-source ใหม่ที่มีน้ำหนักสูงในรอบวันหยุดนี้ จึงเก็บเป็น evergreen learning สำหรับ agent governance.</p>
+<p>🧩 LangChain/AWS/OpenAI/GitHub สัปดาห์นี้สะท้อน pattern เดียวกัน: agent ต้องมี policy, identity, memory, eval และ observability ก่อน production: <a href="https://openai.com/products/release-notes/" target="_blank" rel="noreferrer">OpenAI</a> / <a href="https://www.langchain.com/blog" target="_blank" rel="noreferrer">LangChain</a> / <a href="https://aws.amazon.com/blogs/machine-learning/category/artificial-intelligence/amazon-machine-learning/" target="_blank" rel="noreferrer">AWS</a> / <a href="https://github.blog/changelog/month/09-2026/" target="_blank" rel="noreferrer">GitHub</a></p>
+<p>🧠 Hugging Face blog ยังมีรายการ “BenchMIRT: What are LLM benchmarks actually measuring?” เป็น reminder ว่า benchmark interpretation ต้องระวัง: <a href="https://huggingface.co/blog" target="_blank" rel="noreferrer">Hugging Face</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🧭 วันที่ข่าวเงียบเป็นเวลาที่ดีสำหรับ hardening checklist เพราะทีมมักข้ามเรื่อง owner, rollback และ audit ระหว่างไล่ตาม feature ใหม่.</p>
+<p>🔐 Agent governance ที่ดีต้องดูทั้ง tool permission, data class, action reversibility, memory retention และ cost cap.</p>
+<p>🧪 Evals ที่ดีต้องทดสอบ failure mode ไม่ใช่เฉพาะ average score.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📘 OpenAI release notes: ทบทวน safety monitoring และ Codex policy controls: <a href="https://openai.com/products/release-notes/" target="_blank" rel="noreferrer">OpenAI</a></p>
+<p>📘 AWS AgentOps/AgentCore posts: ทบทวน four pillars ของ governance, build/ops, eval, observability: <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS</a></p>
+<p>📘 Hugging Face benchmark posts: ใช้เป็น prompt ให้ทีมถามว่า metric วัดอะไรจริง: <a href="https://huggingface.co/blog" target="_blank" rel="noreferrer">Hugging Face</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🧾 สถานการณ์: ก่อนเปิด agent pilot; Pattern: production readiness card; Template: “owner, allowed tools, denied tools, data class, eval suite, rollback, audit, cost cap, human gate”.</p>
+<p>🧪 สถานการณ์: agent eval ยังบาง; Pattern: failure-first eval; เพิ่ม prompt injection, tool denial, missing auth, stale memory, ambiguous goal; Verify: failure ถูก classify ไม่ใช่ถูกซ่อน.</p>
+<p>💸 สถานการณ์: agent ใช้ token/tool เยอะ; Pattern: cost attribution per workflow; วัด cost ต่อ successful outcome ไม่ใช่ cost ต่อ request.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏗️ Recommendation: ตั้ง “agent promotion gate” เหมือน release gate: dev demo ผ่านแล้วต้องผ่าน policy/eval/observability ก่อน production.</p>
+<p>📌 Next slice: เอา one-page readiness card ไปใช้กับ agent ตัวแรกของทีม แล้วปรับจาก incident จริง.</p>
+<p>🔎 Watch item: อย่าให้ memory เป็น archive ถาวรโดยไม่ตั้ง expiry/ownership.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: ยังไม่พบ Thai ecosystem item ใหม่ที่ควรใส่เป็นข่าวหลัก.</p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: สำหรับองค์กรไทย ควรเริ่มจาก governance ภาษาไทยที่ผู้บริหารเข้าใจได้ เช่น “AI ทำอะไรแทนคนได้/ไม่ได้” มากกว่าเอกสาร technical-only.</p>
+  </main>
+</body>
+</html>

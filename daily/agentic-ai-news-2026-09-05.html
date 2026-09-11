@@ -1,0 +1,59 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-09-05</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-09-05</h1>
+    <div class="tags"><span class="tag">Research</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-09-05.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🧑‍💻 Soba Labs เผยบทความ voice agents in production: automate predictable/recoverable calls first และปล่อย complaints/emergencies/irreversible decisions ให้คนดูแล: <a href="https://sobalabs.ai/blog/" target="_blank" rel="noreferrer">Soba Labs</a></p>
+<p>🧩 LangChain ช่วงสัปดาห์นี้ยังเน้น MCP, managed identity, multi-agent harness และ agent context organization เป็นหัวข้อหลักสำหรับ builders: <a href="https://www.langchain.com/blog" target="_blank" rel="noreferrer">LangChain Blog</a></p>
+<p>🧠 Hugging Face blog ช่วง Sep 3 มีหัวข้อ coding-agent memory, structured outputs และ benchmark measurement ที่เหมาะกับทีมทำ agent evaluation: <a href="https://huggingface.co/blog" target="_blank" rel="noreferrer">Hugging Face Blog</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🧭 แม้วันเสาร์ไม่มี vendor release ใหญ่ แต่บทเรียน production สำคัญคือเลือก automate งานที่ recover ได้ก่อน.</p>
+<p>☎️ Voice agents เสี่ยงสูงกว่าข้อความเพราะผู้ใช้คาดหวัง real-time action; irreversible action จึงต้องมี human gate.</p>
+<p>🧪 Benchmark และ structured output ยังเป็นฐานของ agent reliability เพราะ production agent ต้องตอบได้ทั้งถูกและอยู่ใน schema.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📘 Soba Labs voice agents: อ่านเพื่อจัดลำดับ use case ก่อน automate call center: <a href="https://sobalabs.ai/blog/" target="_blank" rel="noreferrer">Soba Labs</a></p>
+<p>📘 LangChain blog: อ่านหัวข้อ MCP/context harness ต่อจาก Sep 3: <a href="https://www.langchain.com/blog" target="_blank" rel="noreferrer">LangChain</a></p>
+<p>📘 Hugging Face Blog: อ่าน memory/structured-output/benchmark posts เพื่อใช้ใน evaluation backlog: <a href="https://huggingface.co/blog" target="_blank" rel="noreferrer">Hugging Face</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>☎️ สถานการณ์: เริ่ม voice agent pilot; Pattern: recoverability triage; Template: “predictable, reversible, low-emotion, clear policy, measurable outcome”; Verify: escalation rate และ bad-transfer rate.</p>
+<p>🧾 สถานการณ์: agent ต้องตอบ JSON/schema; Pattern: structured-output eval set; เก็บ happy path, malformed input, missing field, conflicting instruction; Caveat: schema pass ไม่เท่ากับ business correctness.</p>
+<p>🧠 สถานการณ์: benchmark selection; Pattern: benchmark-fit note; ระบุ task similarity, metric limitation, failure examples; Verify: เทียบกับ human-labeled local eval.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏗️ Recommendation: สำหรับ voice/contact-center agent ให้เริ่มจาก “read-only assist + draft reply” ก่อน action-taking agent.</p>
+<p>📌 Next slice: ทำ triage table ของ call types: automate now, assist only, human only, never automate.</p>
+<p>🔎 Watch item: หลีกเลี่ยงการใช้ benchmark เดียวตัดสิน production readiness; ต้องมี local eval ที่สะท้อนงานจริง.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: ยังไม่พบ public Thai source วันนี้ที่มีรายละเอียดเทคนิคหรือ primary links เพียงพอ.</p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: สำหรับทีมไทยที่ทำ LINE/voice bot ควรนำ recoverability triage ไปใช้ก่อนเปิด action-taking agent ให้ลูกค้าจริง.</p>
+  </main>
+</body>
+</html>

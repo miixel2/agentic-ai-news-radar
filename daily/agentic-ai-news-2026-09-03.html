@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-09-03</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-09-03</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">AWS</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-09-03.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🚀 OpenAI เปิดตัว GPT-6 Astra สำหรับงาน coding, research, computer use และงาน multi-step ระยะยาว พร้อม async tool calling, mid-turn steering และ safety monitoring สำหรับ agent work: <a href="https://openai.com/products/release-notes/" target="_blank" rel="noreferrer">OpenAI Release Notes</a></p>
+<p>🛡️ OpenAI เพิ่ม Codex policy controls สำหรับ browser/native app use เช่น website exceptions, upload/download restrictions, saved approvals และ app allow/block rules: <a href="https://openai.com/products/release-notes/" target="_blank" rel="noreferrer">OpenAI Release Notes</a></p>
+<p>🧩 LangChain อัปเดต MCP in LangChain โดยเน้น stateless protocol และ elicitation สำหรับ agent ที่ต้องถามกลับอย่างมีโครงสร้าง: <a href="https://www.langchain.com/blog" target="_blank" rel="noreferrer">LangChain Blog</a></p>
+<p>🏗️ AWS เผยแนวทาง migrate agentic workloads ไป Amazon Bedrock AgentCore จาก LangGraph support agent ไป Runtime, Gateway, Memory และ Strands Agents: <a href="https://aws.amazon.com/blogs/machine-learning/migrate-agentic-workloads-to-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS</a></p>
+<p>🧠 Hugging Face มีบทความ “Give Your Coding Agents a Memory You Own” เป็น signal เรื่อง memory ownership ของ coding agents: <a href="https://huggingface.co/blog" target="_blank" rel="noreferrer">Hugging Face Blog</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🧭 วันนี้ชัดเจนว่า frontier model release ไม่ได้มาเดี่ยว ๆ แต่มาพร้อม control surface: tool calling, mid-run steering, policy, monitoring และ review stop.</p>
+<p>🔐 Codex controls ทำให้ enterprise rollout ต้องออกแบบ browser/app policy เป็นส่วนหนึ่งของ agent governance ไม่ใช่แค่ endpoint security.</p>
+<p>🧩 LangChain MCP update ช่วยย้ำว่า agent protocol ต้องรองรับ interaction semantics เช่น ask-for-missing-info ไม่ใช่ tool call อย่างเดียว.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📘 OpenAI release notes: อ่าน migration caveats ของ Astra และ Responses API controls: <a href="https://openai.com/products/release-notes/" target="_blank" rel="noreferrer">OpenAI</a></p>
+<p>📘 AWS AgentCore migration: ใช้เป็น checklist แยก local prototype กับ hosted production agent: <a href="https://aws.amazon.com/blogs/machine-learning/migrate-agentic-workloads-to-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS</a></p>
+<p>📘 LangChain MCP update: อ่านเพื่อออกแบบ tool protocol ที่ถามกลับได้: <a href="https://www.langchain.com/blog" target="_blank" rel="noreferrer">LangChain</a></p>
+<p>📘 Hugging Face memory item: อ่านเพื่อทบทวนว่า memory ของ coding agent ควรอยู่ในมือทีม ไม่ใช่กล่องดำ: <a href="https://huggingface.co/blog" target="_blank" rel="noreferrer">Hugging Face</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🧰 สถานการณ์: agent ต้องรันงานยาว; Pattern: mid-turn steering checkpoint; Template: “goal, current state, next action, allowed correction, stop condition”; Verify: agent รับ correction โดยไม่เริ่มงานซ้ำ.</p>
+<p>🔐 สถานการณ์: เปิด browser/native access; Pattern: policy matrix; ระบุ allowed sites/apps, upload/download, history, devtools, approval TTL; Caveat: allow list ไม่ควรแทน data-classification policy.</p>
+<p>🧠 สถานการณ์: coding agent ต้องจำบริบททีม; Pattern: owned memory store; เก็บ decision, invariant, failure note, expiry; Verify: memory มี owner และ pruning rule.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏗️ Recommendation: ทำ “agent runtime policy baseline” ก่อนให้ทีมเปิดใช้ model/tool ใหม่: tool scope, browser scope, memory scope, logging, interruption และ review owner.</p>
+<p>📌 Next slice: สร้าง acceptance checklist สำหรับ agent long-running work 1 หน้า แล้วใช้กับ Codex, Copilot, Claude Code และ LangGraph workflows.</p>
+<p>🔎 Watch item: Astra rollout ยังจำกัดบางองค์กร จึงควรบันทึก availability แยกจาก architectural readiness.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: ยังไม่พบประกาศไทยใหม่ที่มี primary-source ชัดในวันนี้ จึงควรใช้ global primary sources เป็นฐานก่อน.</p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: devhub ยังมีบทความ Harness Engineering ภาษาไทยที่ยังใช้เป็น evergreen learning สำหรับทีมไทยที่เริ่มทำ coding agents: <a href="https://devhub.in.th/th/blog/openai-harness-engineering-codex-zero-code" target="_blank" rel="noreferrer">devhub</a></p>
+<h2>Monthly Trend Synthesis</h2>
+<p>📈 สัปดาห์แรกของเดือนชี้ว่า agent stack กำลังเลื่อนจาก “model capability” ไปสู่ “runtime governability”.</p>
+<p>🧭 หัวข้อที่ควรติดตามทั้งเดือนคือ agent memory ownership, policy-as-runtime, plugin/skill packaging และ eval ใน CI.</p>
+  </main>
+</body>
+</html>

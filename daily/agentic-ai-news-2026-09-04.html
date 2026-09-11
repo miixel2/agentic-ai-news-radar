@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-09-04</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-09-04</h1>
+    <div class="tags"><span class="tag">AWS</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-09-04.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🧑‍💻 GitHub Copilot weekly releases รอบ Aug 31 เพิ่ม model choice/content protections และ VS Code session management เพื่อจัดการ agent sessions และ PR readiness: <a href="https://github.blog/changelog/month/09-2026/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🚀 GitHub ระบุ GPT-6 Astra พร้อมใช้งานใน GitHub Copilot สำหรับงาน long-horizon autonomous coding และ agentic tasks: <a href="https://github.blog/changelog/month/09-2026/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🧠 AWS เผยแนวทาง lifecycle policies สำหรับ AgentCore Memory: scoring, consolidation, pruning และ workflow กลางคืนด้วย Step Functions/CDK: <a href="https://aws.amazon.com/blogs/machine-learning/category/artificial-intelligence/amazon-machine-learning/" target="_blank" rel="noreferrer">AWS AI Blog</a></p>
+<p>📞 AWS โชว์ multimodal WhatsApp ordering assistant บน Bedrock AgentCore ที่แยก channel layer กับ ordering layer และใช้ shared memory ต่อ customer: <a href="https://aws.amazon.com/blogs/machine-learning/category/artificial-intelligence/amazon-machine-learning/" target="_blank" rel="noreferrer">AWS AI Blog</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🧭 Copilot กำลังกลายเป็น governed agent workspace มากขึ้น: model access, content protection, session management และ PR readiness อยู่ใน workflow เดียว.</p>
+<p>🧠 Memory lifecycle เป็นเรื่อง production hygiene: memory ที่ไม่ prune จะกลายเป็น compliance risk และทำให้ response quality แย่ลง.</p>
+<p>📞 Multimodal agent บน channel จริงทำให้ architecture ต้องแยก conversation state, customer identity, channel adapter และ business action ออกจากกัน.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📘 GitHub September changelog: ใช้ track Copilot policy/model/session changes: <a href="https://github.blog/changelog/month/09-2026/" target="_blank" rel="noreferrer">GitHub</a></p>
+<p>📘 AWS AgentCore memory lifecycle: อ่านเพื่อออกแบบ retention/pruning job สำหรับ agent memory: <a href="https://aws.amazon.com/blogs/machine-learning/category/artificial-intelligence/amazon-machine-learning/" target="_blank" rel="noreferrer">AWS</a></p>
+<p>📘 AWS AgentCore channel agent examples: อ่านเพื่อดู separation of concerns ใน production agents: <a href="https://aws.amazon.com/blogs/machine-learning/category/artificial-intelligence/amazon-machine-learning/" target="_blank" rel="noreferrer">AWS</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🧠 สถานการณ์: agent จำข้อมูลผู้ใช้หลายวัน; Pattern: nightly memory hygiene; Template: “score usefulness, merge duplicates, expire stale facts, log deletion reason”; Verify: regression test ไม่พึ่ง memory ที่ถูก prune.</p>
+<p>🧑‍💻 สถานการณ์: ทีมใช้ Copilot หลาย model; Pattern: model policy matrix; ระบุ default, fallback, blocked model, sensitive-work rule; Caveat: ต้องสื่อสารก่อน model deprecation.</p>
+<p>📞 สถานการณ์: agent หลายช่องทาง; Pattern: channel adapter; ให้ WhatsApp/voice/web ส่ง normalized event เข้า business workflow เดียว; Verify: action audit log เหมือนกันทุกช่องทาง.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏗️ Recommendation: เพิ่ม memory lifecycle เข้า reference architecture ของ agent ทุกตัวก่อนเปิด pilot กับข้อมูลจริง.</p>
+<p>📌 Next slice: ทำ memory retention policy 3 ชั้น: session, durable preference, regulated business record.</p>
+<p>🔎 Watch item: Copilot model availability เปลี่ยนเร็ว ควรผูก governance กับ policy ไม่ใช่ hardcode model name ใน workflow.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: ยังไม่พบข่าวไทยใหม่ที่เพิ่มสาระเชิงเทคนิคเหนือ primary sources; เก็บพื้นที่ให้ learning item แทน.</p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: devhub project showcase “Thaitober” มี signal เรื่องทีมเล็กใช้ Linear/skill workflow เชื่อม story-branch-PR เป็น local workflow idea: <a href="https://devhub.in.th/en/showcase/sutheerap/thaitober/" target="_blank" rel="noreferrer">devhub</a></p>
+<h2>Research Digest</h2>
+<p>📚 Core idea: agent memory ต้องมี lifecycle; Why it matters: ลด stale context และ compliance risk; Practical takeaway: schedule prune/consolidate job; Read priority: สูงสำหรับ production agent.</p>
+<p>📚 Core idea: model choice ใน coding agent ต้องมี policy; Why it matters: model deprecation และ capability drift กระทบทีม; Practical takeaway: ตั้ง default/fallback/allowed list; Read priority: สูงสำหรับ enterprise Copilot.</p>
+<p>📚 Core idea: multimodal agent ควรแยก channel กับ domain workflow; Why it matters: audit และ testing ง่ายขึ้น; Practical takeaway: normalize events ก่อนเข้า planner; Read priority: กลาง-สูง.</p>
+  </main>
+</body>
+</html>

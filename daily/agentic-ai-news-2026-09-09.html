@@ -1,0 +1,62 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-09-09</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-09-09</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-09-09.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🔐 GitHub เปิด enterprise managed permissions สำหรับ GitHub Copilot agent operations ให้ admin ควบคุม centrally ว่า operation ใด block, require approval หรือ allow without prompt: <a href="https://github.blog/changelog/month/09-2026/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🛠️ GitHub เพิ่ม agentic autofix สำหรับ Code Quality findings โดยเลือกได้สูงสุด 25 findings แล้ว assign ให้ Copilot ช่วยแก้ backlog: <a href="https://github.blog/changelog/month/09-2026/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🛡️ GitHub เพิ่ม repository rulesets เพื่อ block PR ที่ introduce exposed secrets ไม่ให้ merge: <a href="https://github.blog/changelog/month/09-2026/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🧩 LangChain เผยหัวข้อ managed credentials และ per-caller identity สำหรับ Managed Deep Agents: <a href="https://www.langchain.com/blog" target="_blank" rel="noreferrer">LangChain Blog</a></p>
+<p>📦 Hugging Face blog มี IBM Granite time-series update และ safety article “Safety for Whom?” เป็น research/ops background สำหรับ AI evaluation: <a href="https://huggingface.co/blog" target="_blank" rel="noreferrer">Hugging Face Blog</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🔐 Copilot agent operations governance เป็น missing layer สำคัญ: agent ทำ action ได้มากขึ้นจึงต้องควบคุมระดับ operation ไม่ใช่แค่เปิด/ปิดทั้งระบบ.</p>
+<p>🛠️ Agentic autofix ทำให้ backlog remediation เร็วขึ้น แต่ต้องมี review gate เพราะ bulk fix อาจสร้าง regression.</p>
+<p>🧩 Per-caller identity สำคัญมากเมื่อ agent เรียก tool แทนผู้ใช้; audit ต้องตอบได้ว่า “ใครให้ agent ทำอะไร”.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📘 GitHub Copilot managed permissions: ใช้เป็น governance reference สำหรับ coding agents: <a href="https://github.blog/changelog/month/09-2026/" target="_blank" rel="noreferrer">GitHub</a></p>
+<p>📘 GitHub agentic autofix: อ่านเพื่อวาง code quality remediation workflow: <a href="https://github.blog/changelog/month/09-2026/" target="_blank" rel="noreferrer">GitHub</a></p>
+<p>📘 LangChain managed identity: อ่านเพื่อออกแบบ credential boundary ใน agent platform: <a href="https://www.langchain.com/blog" target="_blank" rel="noreferrer">LangChain</a></p>
+<p>📘 Hugging Face safety/benchmark items: ใช้เป็น background สำหรับ eval policy: <a href="https://huggingface.co/blog" target="_blank" rel="noreferrer">Hugging Face</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🔐 สถานการณ์: เปิด agent operations ในองค์กร; Pattern: operation permission matrix; columns: read, write, delete, deploy, spend, external-send; rows: allow, require approval, block.</p>
+<p>🛠️ สถานการณ์: ใช้ agentic autofix; Pattern: batch remediation with guardrails; จำกัด findings ต่อ PR, require tests, require human review, track revert rate.</p>
+<p>🧑‍💼 สถานการณ์: agent ใช้ credential แทน user; Pattern: per-caller identity; tool call ต้องแนบ user, agent, purpose, approval id, scope; Verify: audit query ย้อนดูได้.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏗️ Recommendation: ยกระดับ policy จาก “ใครใช้ Copilot ได้” เป็น “Copilot agent ทำ operation อะไรได้ ภายใต้เงื่อนไขใด”.</p>
+<p>📌 Next slice: สร้าง permission taxonomy กลางขององค์กร แล้ว map ไปยัง Copilot, Codex, cloud agent และ internal tools.</p>
+<p>🔎 Watch item: Bulk autofix ดีต่อ backlog แต่ต้องวัด false fix, test pass, review burden และ post-merge incident.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: ยังไม่พบข่าวไทยวันนี้ที่มี source link และ technical detail เพียงพอ.</p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: ประเด็น managed permission เหมาะกับองค์กรไทยที่เริ่มให้ coding agent แตะ repo สำคัญ เพราะช่วยตอบ audit/compliance ได้ชัดขึ้น.</p>
+  </main>
+</body>
+</html>

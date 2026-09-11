@@ -1,0 +1,68 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-09-07</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-09-07</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">AWS</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-09-07.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🗓️ Weekly brief: สัปดาห์ที่ผ่านมา agent ecosystem ขยับชัดใน 4 เรื่อง: frontier coding model, runtime policy, MCP/skills/plugins และ production memory/eval.</p>
+<p>🚀 OpenAI GPT-6 Astra และ Codex controls เป็นแกน model + governance ของสัปดาห์: <a href="https://openai.com/products/release-notes/" target="_blank" rel="noreferrer">OpenAI Release Notes</a></p>
+<p>🧩 LangChain เพิ่ม MCP/context-harness material สำหรับ agent architecture และ multi-agent work: <a href="https://www.langchain.com/blog" target="_blank" rel="noreferrer">LangChain Blog</a></p>
+<p>🏗️ AWS AgentCore posts เพิ่มตัวอย่าง migration, AI-DLC, memory lifecycle และ channel agents: <a href="https://aws.amazon.com/blogs/machine-learning/category/artificial-intelligence/amazon-machine-learning/" target="_blank" rel="noreferrer">AWS AI Blog</a></p>
+<p>🧑‍💻 GitHub Copilot changelog ช่วง Sep 1-4 เน้น model access, content exclusions, budget expiration, code review approval และ upcoming model deprecations: <a href="https://github.blog/changelog/label/copilot/" target="_blank" rel="noreferrer">GitHub Copilot Changelog</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🧭 What changed: agent stack กำลังรวม model, runtime, policy, memory, eval และ developer workflow เข้าเป็น control plane เดียว.</p>
+<p>🏗️ Impact for builders: การเลือก framework/model น้อยลงกว่าการออกแบบ harness, skill, plugin, CI eval และ audit trail.</p>
+<p>🔐 Security/governance risks: browser/app access, memory retention, tool auth, model deprecation และ cost overrun ต้องมี policy ก่อน pilot ใหญ่.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📘 OpenAI release notes สำหรับ Astra/Codex policy: <a href="https://openai.com/products/release-notes/" target="_blank" rel="noreferrer">OpenAI</a></p>
+<p>📘 AWS AgentOps เป็น baseline production readiness: <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS</a></p>
+<p>📘 LangChain recent posts สำหรับ MCP/context harness: <a href="https://www.langchain.com/blog" target="_blank" rel="noreferrer">LangChain</a></p>
+<p>📘 GitHub Copilot changelog สำหรับ workplace coding-agent governance: <a href="https://github.blog/changelog/label/copilot/" target="_blank" rel="noreferrer">GitHub</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🧩 สถานการณ์: ทีมมีหลาย agent skill; Pattern: skill catalog card; ใส่ “เมื่อใช้, ห้ามใช้, inputs, tools, owner, eval case”; Verify: skill ถูกโหลดเฉพาะตอนจำเป็น.</p>
+<p>🧪 สถานการณ์: agent merge PR/แก้ code; Pattern: CI eval gate; รัน task prompts, tool-denial cases, regression cases ก่อนอนุมัติ; Caveat: ต้องมี human review สำหรับ high-risk code.</p>
+<p>🔐 สถานการณ์: plugin/MCP เพิ่มเร็ว; Pattern: approved integration registry; เก็บ auth scope, data access, write capability, logs, uninstall owner.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏗️ Production readiness: ให้เริ่มจาก “agent control plane lite” ได้แก่ registry, policy, memory lifecycle, eval-in-CI, observability และ cost cap.</p>
+<p>📌 Thai relevance: องค์กรไทยที่เริ่ม Enterprise AI ควรถามเรื่อง data residency, partner support, Thai-language workflow และ change management ตั้งแต่ต้น.</p>
+<p>🔎 What to study next: MCP/skills/plugins packaging, human-in-the-loop design, memory governance และ Copilot/Codex enterprise policy.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: ยังไม่พบข่าวไทยใหม่ที่มี primary source ชัด แต่สัญญาณ OpenAI/Fellow Intelligence และงาน Qwen Thailand จากสัปดาห์ก่อนยังเกี่ยวกับ enterprise adoption ในไทย.</p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: ทีมไทยควรแปล weekly brief นี้เป็น internal checklist: “agent ตัวนี้มี owner, policy, eval, memory rule, rollback แล้วหรือยัง”.</p>
+<h2>Weekly Agentic AI Ecosystem Brief</h2>
+<p>🧭 What changed: model capability เพิ่ม แต่ governance surface เพิ่มเร็วกว่า.</p>
+<p>🏗️ Impact for builders: งานสำคัญคือทำให้ agent ทำงานซ้ำได้ ตรวจสอบได้ และหยุดได้.</p>
+<p>🔐 Risks: memory bloat, overly broad browser/tool access, hidden model deprecation, unaudited plugin access.</p>
+<p>🇹🇭 Thai relevance: ใช้ local partner/community เพื่อ adoption ได้ แต่ architecture decision ควร cross-check กับ primary vendor docs.</p>
+<p>📚 Study next: Responses async tools, Codex policies, GitHub Copilot policies, AgentCore memory/eval, LangChain MCP/context harness.</p>
+  </main>
+</body>
+</html>

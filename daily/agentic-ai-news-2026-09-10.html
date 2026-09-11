@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-09-10</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-09-10</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">Google</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-09-10.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>☁️ Google Cloud เปิดตัว Google Cloud Developer Plugin สำหรับ AI coding agents รวม skills + tools + Developer Knowledge MCP server เพื่อช่วย agent ทำงานกับ Google Cloud อย่างมี guardrails: <a href="https://cloud.google.com/blog/topics/developers-practitioners/introducing-the-google-cloud-developer-plugin-for-ai-coding-agents" target="_blank" rel="noreferrer">Google Cloud Blog</a></p>
+<p>🧩 Google ระบุ plugin ใช้ Agent Plugins specification แบบ vendor-neutral สำหรับ packaging Agent Skills และ MCP servers เป็น bundle เดียว: <a href="https://cloud.google.com/blog/topics/developers-practitioners/introducing-the-google-cloud-developer-plugin-for-ai-coding-agents" target="_blank" rel="noreferrer">Google Cloud Blog</a></p>
+<p>📚 LangChain เผย case study Credit Genie ใช้ OpenWiki เพื่อ keep codebase knowledge fresh, searchable และ automated: <a href="https://www.langchain.com/blog" target="_blank" rel="noreferrer">LangChain Blog</a></p>
+<p>🧑‍💻 GitHub Copilot governance items จาก Sep 8-9 ยังเป็น key signal ต่อเนื่องสำหรับ enterprise coding-agent rollout: <a href="https://github.blog/changelog/month/09-2026/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>☁️ Cloud-specific plugin แก้ปัญหา tool coupling: agent ต้องใช้ docs, CLI, auth, project context และ guardrails ร่วมกัน ไม่ใช่ skill แยกชิ้น.</p>
+<p>🧩 Agent Plugins standard ทำให้ skill + MCP packaging เริ่มกลายเป็น distribution layer ของ agent ecosystem.</p>
+<p>📚 Codebase knowledge ที่สดและ searchable ลด context waste และลด hallucination ใน coding agents.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📘 Google Cloud Developer Plugin: อ่านเพื่อดู plugin structure และ Codex CLI install path: <a href="https://cloud.google.com/blog/topics/developers-practitioners/introducing-the-google-cloud-developer-plugin-for-ai-coding-agents" target="_blank" rel="noreferrer">Google Cloud</a></p>
+<p>📘 LangChain OpenWiki case study: อ่านเพื่อคิดเรื่อง automated codebase knowledge: <a href="https://www.langchain.com/blog" target="_blank" rel="noreferrer">LangChain</a></p>
+<p>📘 GitHub September changelog: อ่าน governance updates ที่กระทบ coding agent: <a href="https://github.blog/changelog/month/09-2026/" target="_blank" rel="noreferrer">GitHub</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🧩 สถานการณ์: skill เยอะจนจัดการยาก; Pattern: plugin bundle; รวม skills, MCP config, docs grounding และ guardrail notes ตาม domain; Verify: install/uninstall ได้เป็นหน่วยเดียว.</p>
+<p>☁️ สถานการณ์: agent จัดการ cloud project; Pattern: auth-first workflow; Template: “detect account/project, list planned IAM changes, request approval, apply minimal scope, log commands”.</p>
+<p>📚 สถานการณ์: coding agent ไม่เข้าใจ codebase; Pattern: living codebase wiki; auto-index architecture, APIs, decisions, generated schema; Caveat: ต้องกัน stale docs ด้วย freshness check.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏗️ Recommendation: เริ่มคิด “plugin as deployment unit” สำหรับ agent enablement ภายในองค์กร เช่น cloud plugin, data plugin, repo plugin, compliance plugin.</p>
+<p>📌 Next slice: ทำ pilot plugin เล็กหนึ่งตัวที่รวม docs, commands, policy และ eval prompts สำหรับ platform ที่ทีมใช้จริง.</p>
+<p>🔎 Watch item: Plugin ที่มี MCP/tool access ต้องมี permission review เท่ากับ integration app ไม่ใช่แค่ docs package.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: ยังไม่พบข่าวไทยใหม่ที่ควรยกเป็นข่าวหลักในวันนี้.</p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: สำหรับทีมไทยที่ใช้ Google Cloud/Codex/Claude Code ควรลองแนวคิด plugin bundle เพื่อมาตรฐาน onboarding และลด handoff friction.</p>
+  </main>
+</body>
+</html>

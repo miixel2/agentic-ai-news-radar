@@ -1,0 +1,69 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-09-11</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-09-11</h1>
+    <div class="tags"><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-09-11.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🧭 รอบ 24 ชั่วโมงล่าสุดไม่มีประกาศ primary-source ใหม่ที่ใหญ่กว่า Sep 9-10 signals; โฟกัสวันนี้จึงเป็น Friday research digest และ practical consolidation.</p>
+<p>☁️ Google Cloud Developer Plugin ยังเป็น signal สดสุดของสัปดาห์เรื่อง skills + MCP + docs grounding เป็น installable bundle สำหรับ coding agents: <a href="https://cloud.google.com/blog/topics/developers-practitioners/introducing-the-google-cloud-developer-plugin-for-ai-coding-agents" target="_blank" rel="noreferrer">Google Cloud Blog</a></p>
+<p>🔐 GitHub Copilot managed permissions สำหรับ agent operations เป็น governance item สำคัญสุดสำหรับ workplace coding assistants ในสัปดาห์นี้: <a href="https://github.blog/changelog/month/09-2026/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🧪 AWS automated agent evaluation with GitHub Actions เป็น practical blueprint ที่ควรนำไปใช้กับ agent CI: <a href="https://aws.amazon.com/blogs/machine-learning/category/artificial-intelligence/amazon-machine-learning/" target="_blank" rel="noreferrer">AWS AI Blog</a></p>
+<p>🧩 LangChain posts เรื่อง multi-agent context และ managed identity ตอกย้ำว่า agent architecture ต้องออกแบบ context/credential boundary: <a href="https://www.langchain.com/blog" target="_blank" rel="noreferrer">LangChain Blog</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🧭 สัปดาห์นี้ตอบคำถามเดียวกันจากหลาย vendor: “agent ทำงานแทนคนได้มากขึ้น แล้วเราคุม, วัด, audit และหยุดมันอย่างไร”.</p>
+<p>🔐 Governance ย้ายจาก policy document ไปอยู่ใน runtime: managed permissions, browser/app controls, sandbox, operation approvals และ per-caller identity.</p>
+<p>🧪 Eval ย้ายจาก manual QA ไปอยู่ใน CI/CD: prompt suite, rubric scoring, trace attachment และ PR blocking.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📘 Google Cloud Developer Plugin: อ่านเพื่อดู plugin packaging ของ skills/MCP: <a href="https://cloud.google.com/blog/topics/developers-practitioners/introducing-the-google-cloud-developer-plugin-for-ai-coding-agents" target="_blank" rel="noreferrer">Google Cloud</a></p>
+<p>📘 GitHub Copilot September changelog: อ่าน managed permissions, sandbox และ agentic autofix: <a href="https://github.blog/changelog/month/09-2026/" target="_blank" rel="noreferrer">GitHub</a></p>
+<p>📘 AWS AgentCore evaluation/memory posts: อ่านเพื่อทำ CI gate และ memory lifecycle: <a href="https://aws.amazon.com/blogs/machine-learning/category/artificial-intelligence/amazon-machine-learning/" target="_blank" rel="noreferrer">AWS</a></p>
+<p>📘 Hugging Face recent blog: อ่าน benchmark/safety/agent-memory items สำหรับ research backlog: <a href="https://huggingface.co/blog" target="_blank" rel="noreferrer">Hugging Face</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🧪 สถานการณ์: agent change ก่อน merge; Pattern: PR-attached eval trace; Template: “task id, prompt, tools used, score, failure class, human override”; Verify: reviewer เห็น trace ก่อน approve.</p>
+<p>🔐 สถานการณ์: agent operation risk ต่างกัน; Pattern: approval ladder; low-risk read allowed, medium write approval, high-risk deploy/payment human-only.</p>
+<p>🧩 สถานการณ์: ทำ internal plugin; Pattern: bundle docs + skills + MCP + eval; Caveat: ต้องมี permission manifest และ uninstall path.</p>
+<p>🧠 สถานการณ์: memory-driven agent; Pattern: memory provenance; ทุก memory มี source, confidence, expiry, owner; Verify: agent อ้าง stale memory แล้วถูก test จับได้.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏗️ Recommendation: สรุป architecture target เป็น “Agent Control Plane MVP” ภายในเดือนนี้: registry, policy, identity, memory lifecycle, eval CI, trace observability และ cost attribution.</p>
+<p>📌 Next slice: เลือกหนึ่ง workflow coding-agent จริง แล้ว map controls เหล่านี้ลงตารางก่อนเพิ่ม automation ใหม่.</p>
+<p>🔎 Watch item: Plugin marketplace และ agent skills จะโตเร็ว แต่ความเสี่ยงหลักคือ permission sprawl และ stale instructions.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: ยังไม่พบ Thai public post วันนี้ที่มี technical source link เพียงพอสำหรับยกเป็นข่าวหลัก.</p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: ข้อสรุปสำหรับองค์กรไทยคือควรเริ่ม “AI agent governance playbook ภาษาไทย” เพื่อคุยกับผู้บริหาร, security, legal และ engineering ด้วยภาษาเดียวกัน.</p>
+<h2>Research Digest</h2>
+<p>📚 Core idea: Agent plugins bundle skills, MCP และ docs grounding; Why it matters: ลด tool coupling และ setup drift; Practical takeaway: package domain capability เป็น plugin พร้อม permission manifest; Read priority: สูง.</p>
+<p>📚 Core idea: Managed agent permissions คุม operation เป็นราย action; Why it matters: เปิด agent โดยไม่เปิดความเสี่ยงทั้งก้อน; Practical takeaway: ทำ allow/approval/block matrix; Read priority: สูง.</p>
+<p>📚 Core idea: Agent evaluation ควรอยู่ใน CI; Why it matters: prompt/model/tool changes ทำ behavior regress ได้; Practical takeaway: block PR เมื่อ eval suite fail; Read priority: สูง.</p>
+<p>📚 Core idea: Context organization คือ architecture work; Why it matters: multi-agent harness พังได้จาก context leak/stale state; Practical takeaway: แยก task state, memory, docs, tool output และ handoff summary; Read priority: กลาง-สูง.</p>
+<p>📚 Core idea: Benchmark/safety articles ต้องใช้เป็นคำถาม ไม่ใช่คำตอบสุดท้าย; Why it matters: metric อาจวัดไม่ตรงงานจริง; Practical takeaway: calibrate กับ human-labeled local eval; Read priority: กลาง.</p>
+  </main>
+</body>
+</html>
