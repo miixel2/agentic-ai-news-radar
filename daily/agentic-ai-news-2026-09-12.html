@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-09-12</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-09-12</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">Google</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-09-12.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🚀 OpenAI เปิด public beta ของ Agents API สำหรับสร้าง cloud agents ด้วย Codex harness, hosted/partner sandboxes, MCP tools, tool search, context compaction และ subagents: <a href="https://openai.com/index/introducing-the-agents-api/" target="_blank" rel="noreferrer">OpenAI</a></p>
+<p>☁️ Google Cloud เปิดตัว Google Cloud Developer Plugin สำหรับ AI coding agents โดย bundle skills, official docs grounding, programmatic tooling และ Developer Knowledge MCP server ตามแนว Agent Plugins: <a href="https://cloud.google.com/blog/topics/developers-practitioners/introducing-the-google-cloud-developer-plugin-for-ai-coding-agents" target="_blank" rel="noreferrer">Google Cloud Blog</a></p>
+<p>🔐 GitHub Copilot เพิ่ม enterprise managed permissions สำหรับ agent operations ให้แอดมินกำหนด read/write/shell/network ว่า block, require approval หรือ allow ได้จากส่วนกลาง: <a href="https://github.blog/changelog/2026-09-09-enterprise-managed-permissions-for-github-copilot-agent-operations/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🧠 Hugging Face เปิดตัว funes เป็น memory layer สำหรับ coding agents ที่ index session traces แบบ local-first, มี provenance, ใช้ได้ข้าม Claude Code/Codex/pi/Hermes และ sync เป็น private dataset ได้: <a href="https://huggingface.co/blog/funes" target="_blank" rel="noreferrer">Hugging Face Blog</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🏗️ Agent platform กำลังย้ายจาก prompt chain ไปเป็น managed harness: context, tools, sandbox, long-running state และ subagent orchestration กลายเป็น infrastructure layer.</p>
+<p>🔐 Enterprise rollout จะชนะหรือแพ้ที่ operation policy: ถ้าอนุญาต agent ทำงานจริง ต้องมี action-level controls ไม่ใช่แค่เปิด/ปิด Copilot ทั้งองค์กร.</p>
+<p>🧩 Plugins/skills/MCP เริ่มเป็น distribution unit ของ agent capability; ทีม platform ควรคิดเรื่อง versioning, permissions, uninstall และ audit ตั้งแต่วันแรก.</p>
+<p>🧠 Memory ที่ดีไม่ใช่แค่ summary แต่ต้องมี raw evidence, provenance, freshness และ secret scanning เพื่อกัน stale/unsafe recall.</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📘 Agents API overview: อ่านเพื่อดูรูปแบบ managed Codex harness, MCP tools, hosted sandbox และ subagent config: <a href="https://openai.com/index/introducing-the-agents-api/" target="_blank" rel="noreferrer">OpenAI</a></p>
+<p>📘 Google Cloud Developer Plugin: อ่านเพื่อออกแบบ internal plugin ที่รวม docs + skills + MCP + guardrails: <a href="https://cloud.google.com/blog/topics/developers-practitioners/introducing-the-google-cloud-developer-plugin-for-ai-coding-agents" target="_blank" rel="noreferrer">Google Cloud</a></p>
+<p>📘 GitHub Copilot managed permissions: อ่านเพื่อทำ policy matrix สำหรับ shell, file, network และ approval gates: <a href="https://github.blog/changelog/2026-09-09-enterprise-managed-permissions-for-github-copilot-agent-operations/" target="_blank" rel="noreferrer">GitHub</a></p>
+<p>📘 funes: อ่านเพื่อศึกษา local-first memory, trace indexing, provenance และ cross-agent handoff: <a href="https://huggingface.co/blog/funes" target="_blank" rel="noreferrer">Hugging Face</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🧭 สถานการณ์: อยากให้ agent ทำงาน production workflow ยาว ๆ; Pattern: managed harness checklist; Template: “task, environment, tools, memory scope, approvals, artifact path, stop condition”; Verify: มี trace + reproducible output ทุก run.</p>
+<p>🔐 สถานการณ์: เปิด coding agent ให้ทีม enterprise; Pattern: action policy matrix; ตัวอย่าง: read repo = allow, edit protected files = approval, deploy/payment/network unknown = block; Verify: policy จากศูนย์กลาง override local approvals ได้.</p>
+<p>🧩 สถานการณ์: ทำ platform enablement หลาย repo; Pattern: portable plugin bundle; รวม <code>SKILL.md</code>, MCP config, docs index, auth runbook และ eval prompts; Caveat: ต้องระบุ permission boundary และ cleanup path.</p>
+<p>🧠 สถานการณ์: agent ลืม decision ข้าม session; Pattern: provenance-first memory; เก็บ source turn, timestamp, owner, expiry และ secret scan; Verify: agent ต้องอ้าง memory พร้อมแหล่งที่มา ไม่ใช่ตอบจาก summary ลอย ๆ.</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏢 Recommendation: เริ่มออกแบบ “Agent Runtime Governance” เป็น capability แยกจากตัว model: environment, policy, identity, tool registry, memory, eval, trace observability และ cost attribution.</p>
+<p>📌 Next slice: เลือก workflow coding-agent หนึ่งงาน เช่น PR remediation หรือ incident triage แล้วทำ table mapping: tools, allowed actions, approval gate, evidence artifact และ rollback.</p>
+<p>🔎 Watch item: Managed Agents API และ plugins ทำให้ build เร็วขึ้น แต่เพิ่มความเสี่ยง vendor/runtime coupling; ต้องแยก business logic, tools และ state ให้ออกแบบย้ายได้.</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: TechTalkThai มี coverage ต่อเนื่องเรื่อง Agentic AI governance, AI/data security และงานสัมมนาไทยที่โยงกับ production risk ของ agents: <a href="https://www.techtalkthai.com/category/cloud-and-systems/" target="_blank" rel="noreferrer">TechTalkThai</a></p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: Techsauce พูดถึง Graph Engineering/AI workflow และบทเรียนองค์กรไทย เช่น SCB 10X; ใช้เป็น local conversation starter แต่ควร cross-check technical claims กับ primary sources: <a href="https://techsauce.co/ai" target="_blank" rel="noreferrer">Techsauce AI</a></p>
+<p>🇹🇭 ข้อสรุปสำหรับทีมไทย: ควรทำ playbook ภาษาไทยสำหรับ agent governance ที่แปลคำว่า harness, tool permission, sandbox, memory, trace และ human approval ให้ผู้บริหาร/security/legal เข้าใจตรงกัน.</p>
+  </main>
+</body>
+</html>
