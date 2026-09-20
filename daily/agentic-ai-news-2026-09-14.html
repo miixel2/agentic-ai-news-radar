@@ -1,0 +1,72 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-09-14</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-09-14</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-09-14.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>💸 GitHub เปิดตัว tier สำหรับ Copilot auto model selection: Efficiency, Balance, Intelligence เพื่อให้ทีมเลือก trade-off ระหว่างต้นทุน คุณภาพ และ latency ต่อ prompt: <a href="https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🧠 OpenAI Agents API ที่เพิ่งเปิด public beta ชี้ทิศทาง harness-as-a-service: session ยาว, tool search, MCP, subagents, sandbox และ context compaction กลายเป็น capability ระดับ platform: <a href="https://openai.com/index/introducing-the-agents-api/" target="_blank" rel="noreferrer">OpenAI</a></p>
+<p>📚 Hugging Face Papers มีงาน “When Agents Slow Down” เสนอ Elo-per-token analysis เพื่อวัดว่า agent ได้ประโยชน์จาก test-time compute แค่ไหน และชี้ว่า parallel short sessions อาจคุ้มกว่า single long run: <a href="https://huggingface.co/papers/2609.15309" target="_blank" rel="noreferrer">Hugging Face Papers</a></p>
+<p>🔁 Hugging Face Papers มี RSIAgent framework สำหรับให้ agent สร้าง memory จากการสำรวจ environment เอง โดยไม่ fine-tune model weights: <a href="https://huggingface.co/papers/2609.15364" target="_blank" rel="noreferrer">Hugging Face Papers</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>💸 Model routing ไม่ใช่แค่ UX convenience แล้ว แต่เป็น governance lever สำหรับ FinOps เพราะทีมต้องรู้ว่า prompt แบบไหนควรถูก route ไป model แพงหรือเร็ว: <a href="https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🧠 Harness layer กำลังแยกตัวออกจาก application code ทำให้ architecture ต้องระบุชัดว่าอะไรอยู่ใน provider-managed harness และอะไรยังเป็น responsibility ของทีม: <a href="https://openai.com/index/introducing-the-agents-api/" target="_blank" rel="noreferrer">OpenAI</a></p>
+<p>📚 Agent benchmark ที่นับแค่ final score อาจพลาดต้นทุน token/time; Elo-per-token ช่วยถามว่า “agent ช้าลงแล้วคุ้มไหม”: <a href="https://huggingface.co/papers/2609.15309" target="_blank" rel="noreferrer">Hugging Face Papers</a></p>
+<p>🔁 Memory ที่ agent สร้างเองต้องมี verifier และ reuse boundary ไม่เช่นนั้นจะกลายเป็น stale/false operational knowledge: <a href="https://huggingface.co/papers/2609.15364" target="_blank" rel="noreferrer">Hugging Face Papers</a></p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📘 อ่าน GitHub Docs เรื่อง Copilot auto model selection เพื่อแยก use case ที่ควรใช้ Efficiency, Balance, Intelligence ในทีม dev: <a href="https://docs.github.com/en/copilot/concepts/models/auto-model-selection" target="_blank" rel="noreferrer">GitHub Docs</a></p>
+<p>📘 อ่าน OpenAI Agents API เพื่อดู reference ของ MCP tools, hosted sandbox, partner sandbox และ subagent concurrency: <a href="https://openai.com/index/introducing-the-agents-api/" target="_blank" rel="noreferrer">OpenAI</a></p>
+<p>📘 อ่าน LangChain Deep Agents docs เพื่อเปรียบเทียบ harness pattern: planning, virtual filesystem, subagents, memory และ human approval: <a href="https://docs.langchain.com/oss/javascript/deepagents/overview" target="_blank" rel="noreferrer">LangChain Docs</a></p>
+<p>📘 อ่าน paper RSIAgent เพื่อดู broad-then-deep exploration และ verifier memory ก่อนนำแนวคิดไปใช้กับ internal tools: <a href="https://huggingface.co/papers/2609.15364" target="_blank" rel="noreferrer">Hugging Face Papers</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>💸 สถานการณ์: ทีมมี cost overrun จาก coding agents; Pattern: <code>prompt class -&gt; model tier</code>; ตัวอย่าง: docs edit=Efficiency, refactor=Balance, risky architecture=Intelligence; Verify: เทียบ success rate กับ cost ต่อ task: <a href="https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🧠 สถานการณ์: งานซับซ้อนเกิน context เดียว; Pattern: harness contract; ระบุ <code>task</code>, <code>tools</code>, <code>environment</code>, <code>artifact path</code>, <code>subagent limit</code>, <code>review gate</code>; Caveat: อย่าส่ง secret หรือ production access เข้า sandbox โดยไม่มี policy: <a href="https://openai.com/index/introducing-the-agents-api/" target="_blank" rel="noreferrer">OpenAI</a></p>
+<p>📚 สถานการณ์: อยากเพิ่ม compute ให้ agent; Pattern: run 3 short parallel attempts แล้ว merge evidence ก่อนปล่อย long run; Verify: วัด Elo/quality ต่อ token ไม่ใช่แค่ pass/fail: <a href="https://huggingface.co/papers/2609.15309" target="_blank" rel="noreferrer">Hugging Face Papers</a></p>
+<p>🔁 สถานการณ์: agent ต้องเรียนรู้ระบบใหม่; Pattern: explore → verify → freeze memory → reuse; Caveat: memory ต้องมีวันหมดอายุและ evidence link: <a href="https://huggingface.co/papers/2609.15364" target="_blank" rel="noreferrer">Hugging Face Papers</a></p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏗️ Architecture call: เพิ่ม “agent harness boundary” ใน diagram เพื่อแยก model, harness, tools, sandbox, memory, eval และ audit trail: <a href="https://openai.com/index/introducing-the-agents-api/" target="_blank" rel="noreferrer">OpenAI</a></p>
+<p>💰 Governance: ตั้ง policy สำหรับ model-tier routing ก่อน rollout กว้าง โดยผูกกับ budget, task criticality และ data sensitivity: <a href="https://docs.github.com/en/copilot/concepts/models/auto-model-selection" target="_blank" rel="noreferrer">GitHub Docs</a></p>
+<p>🧪 Evaluation: agent ที่ดูเก่งแต่ใช้ token มากอาจไม่ production-ready; dashboard ควรมี quality/token, latency/task และ human-rework rate: <a href="https://huggingface.co/papers/2609.15309" target="_blank" rel="noreferrer">Hugging Face Papers</a></p>
+<p>🧭 Weekly brief: สัปดาห์นี้ signal หลักคือ agent platform เริ่มแข่งกันที่ harness, sandbox, memory, eval และ cost controls มากกว่าการประกาศ model ใหม่เพียงอย่างเดียว: <a href="https://openai.com/index/introducing-the-agents-api/" target="_blank" rel="noreferrer">OpenAI</a></p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: Techsauce รายงาน Wonderful Thailand เรื่องการย้าย AI agents จาก pilot ไป production โดยเน้น workflow design, governance, guardrails และ evaluation ตั้งแต่ต้น: <a href="https://techsauce.co/en/ai/wonderful-ai-agent-pilot-to-production-en" target="_blank" rel="noreferrer">Techsauce</a></p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: DevHub มีบทความภาษาไทยเรื่อง Harness Engineering จากกรณี OpenAI/Codex เหมาะใช้เป็น learning material ให้ทีม dev ไทยเข้าใจบทบาทใหม่ของ engineer: <a href="https://devhub.in.th/th/blog/openai-harness-engineering-codex-zero-code" target="_blank" rel="noreferrer">DevHub</a></p>
+<p>🇹🇭 ข้อสรุปสำหรับทีมไทย: หากเริ่มใช้ coding agents ในองค์กร ควรทำ policy ภาษาไทยสั้น ๆ เรื่อง budget tier, approval gate และ evidence ที่ต้องแนบก่อน merge: <a href="https://docs.github.com/en/copilot/concepts/models/auto-model-selection" target="_blank" rel="noreferrer">GitHub Docs</a></p>
+<h2>Weekly Agentic AI Ecosystem Brief</h2>
+<p>🔄 What changed: Agent stack ขยับจาก prompt/tool demo ไปสู่ managed harness, sandbox, subagents, model routing และ production observability: <a href="https://openai.com/index/introducing-the-agents-api/" target="_blank" rel="noreferrer">OpenAI</a></p>
+<p>🧑‍💻 Impact for builders: ทีมควรออกแบบ task contract และ artifact contract ให้ชัด เพื่อให้ agent ทำงานยาวหรือขนานได้โดยไม่หลุด scope: <a href="https://docs.langchain.com/oss/javascript/deepagents/overview" target="_blank" rel="noreferrer">LangChain Docs</a></p>
+<p>🏭 Production readiness: ตัวชี้วัดใหม่ควรรวม cost-per-success, rework rate, tool-call failure และ human approval latency: <a href="https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🔐 Security/governance risks: subagents และ memory เพิ่ม blast radius หากไม่มี tool permission, memory retention และ audit evidence: <a href="https://openai.com/index/introducing-the-agents-api/" target="_blank" rel="noreferrer">OpenAI</a></p>
+<p>🇹🇭 Thai relevance: องค์กรไทยที่ข้ามจาก pilot ไป scale ควรเริ่มด้วยงานหลังบ้านที่วัดผลได้ เช่น support triage, PR review, report drafting และ approval workflow: <a href="https://techsauce.co/en/ai/wonderful-ai-agent-pilot-to-production-en" target="_blank" rel="noreferrer">Techsauce</a></p>
+<p>📚 Study next: ศึกษา Deep Agents, Agents API, Copilot model routing และ agent evaluation papers เป็นชุดเดียวกันเพื่อเห็นทั้ง framework, platform และ measurement: <a href="https://docs.langchain.com/oss/javascript/deepagents/overview" target="_blank" rel="noreferrer">LangChain Docs</a></p>
+  </main>
+</body>
+</html>
