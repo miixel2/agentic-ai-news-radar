@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-09-23</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-09-23</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">AWS</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-09-23.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🔐 GitHub Copilot app เพิ่ม local sandboxing แบบ project-level สำหรับ filesystem, network และ credentials เพื่อลดผลกระทบจากคำสั่งที่ agent รันโดยไม่ตั้งใจ: <a href="https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🧪 GitHub Copilot code review เพิ่ม personal settings และ enterprise default review effort ให้จัดการ automatic review/draft PR/new push ได้ละเอียดขึ้น: <a href="https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🧭 OpenAI Developers เผย case study ใช้ Codex + GPT-Live-1 + Raspberry Pi ทำ voice-controlled LED assistant แสดง pattern ของ agent handoff, renderer service และ local hardware loop: <a href="https://developers.openai.com/blog/bringing-my-led-display-to-life" target="_blank" rel="noreferrer">OpenAI Developers</a></p>
+<p>⚙️ AWS เผยแนวทางใช้ OpenCode กับ open-weight models บน Amazon Bedrock สำหรับ coding agent ที่คุม data boundary ใน AWS account ของตัวเอง: <a href="https://aws.amazon.com/blogs/machine-learning/use-open-weight-models-as-your-ai-coding-agent-with-amazon-bedrock/" target="_blank" rel="noreferrer">AWS Machine Learning Blog</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🔐 Local sandboxing คือ control สำคัญเมื่อ coding agents แตะไฟล์จริง รัน shell จริง และอาจเห็น credentials; ถ้า OS enforce ไม่ได้ session ควร fail มากกว่ารันแบบไร้ sandbox: <a href="https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🧪 Review effort policy ทำให้ code review agent กลายเป็นเครื่องมือ governance ระดับ enterprise ไม่ใช่แค่ helper ของ developer รายคน: <a href="https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🧭 OpenAI case study ชี้ว่า real-world agents มักต้องแยก voice model, research model, renderer/service และ context handoff ให้ถูก ไม่เช่นนั้นคำว่า “that” หรือ context ต่อเนื่องจะหลุด: <a href="https://developers.openai.com/blog/bringing-my-led-display-to-life" target="_blank" rel="noreferrer">OpenAI Developers</a></p>
+<p>⚙️ Open-weight coding agents บน Bedrock เป็นทางเลือกสำหรับองค์กรที่ต้องการ cost control, model flexibility และ data residency มากกว่า per-seat SaaS อย่างเดียว: <a href="https://aws.amazon.com/blogs/machine-learning/use-open-weight-models-as-your-ai-coding-agent-with-amazon-bedrock/" target="_blank" rel="noreferrer">AWS Machine Learning Blog</a></p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📘 อ่าน Copilot sandboxing เพื่อกำหนด baseline policy สำหรับ local repo sessions ก่อนเปิด agentic coding ให้ทีมใหญ่: <a href="https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>📘 อ่าน Copilot code review settings เพื่อเตรียม enterprise default effort และ automatic review policy: <a href="https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>📘 อ่าน OpenAI LED assistant case study เพื่อเห็น pattern ของ multimodal/voice agent ที่เชื่อม hardware และบริการ local: <a href="https://developers.openai.com/blog/bringing-my-led-display-to-life" target="_blank" rel="noreferrer">OpenAI Developers</a></p>
+<p>📘 อ่าน AWS OpenCode guide ถ้าทีมต้องการ coding agent ที่ใช้ open-weight models ใน AWS account: <a href="https://aws.amazon.com/blogs/machine-learning/use-open-weight-models-as-your-ai-coding-agent-with-amazon-bedrock/" target="_blank" rel="noreferrer">AWS Machine Learning Blog</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🔐 สถานการณ์: เปิด local coding agent; Pattern: sandbox profile per repo; Template: <code>read/write allowlist</code>, <code>deny secrets</code>, <code>network off by default</code>, <code>credentials explicit</code>: <a href="https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🧪 สถานการณ์: Copilot review noise สูง; Pattern: review effort ladder; ใช้ Lite สำหรับ low-risk docs, Balanced สำหรับ feature PR, higher review เฉพาะ security/payment/data changes: <a href="https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🧭 สถานการณ์: voice/multimodal agent ต้อง handoff งาน; Pattern: context packet; ส่ง <code>latest request + relevant prior result + user intent + allowed action</code> ให้ service downstream: <a href="https://developers.openai.com/blog/bringing-my-led-display-to-life" target="_blank" rel="noreferrer">OpenAI Developers</a></p>
+<p>⚙️ สถานการณ์: coding agent ต้องคุมข้อมูลใน cloud account; Pattern: local TUI + managed inference; ตรวจ CloudTrail, IAM scope และ model role assignment ก่อน pilot: <a href="https://aws.amazon.com/blogs/machine-learning/use-open-weight-models-as-your-ai-coding-agent-with-amazon-bedrock/" target="_blank" rel="noreferrer">AWS Machine Learning Blog</a></p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏗️ Agentic coding architecture ควรมี sandbox, telemetry, review policy, model routing และ repository instructions เป็นชุดเดียว ไม่ใช่ตั้งค่าทีละเครื่อง: <a href="https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🔐 Data/security review ของ coding agents ต้องถามว่า code/context ออกจากเครื่องไปที่ไหน, credentials ถูก expose อย่างไร, และ audit log อยู่ที่ใคร: <a href="https://aws.amazon.com/blogs/machine-learning/use-open-weight-models-as-your-ai-coding-agent-with-amazon-bedrock/" target="_blank" rel="noreferrer">AWS Machine Learning Blog</a></p>
+<p>🧭 Multimodal/voice agents ต้องออกแบบ service boundary ให้ชัด เพราะ model ที่คุยกับ user ไม่จำเป็นต้องเป็นตัววาด UI, query calendar หรือเรียก hardware โดยตรง: <a href="https://developers.openai.com/blog/bringing-my-led-display-to-life" target="_blank" rel="noreferrer">OpenAI Developers</a></p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: TechTalkThai ประกาศ AWS Community Day Thailand 2026 วันที่ 3 ต.ค. พร้อมหัวข้อ AI Agent, AI-DLC, DevOps และ cloud security เหมาะกับทีมที่อยากตาม use case เชิงปฏิบัติในไทย: <a href="https://www.techtalkthai.com/aws-community-day-thailand-2026/" target="_blank" rel="noreferrer">TechTalkThai</a></p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: AI FOR ALL Hackathon ยังเป็น local signal ว่า ecosystem ไทยเริ่มผลักดันการสร้างซอฟต์แวร์ AI จากโจทย์จริง ไม่ใช่แค่ prompt demo: <a href="https://techsauce.co/news/ai-for-all-hackathon-true-aws-cp-2026" target="_blank" rel="noreferrer">Techsauce</a></p>
+<p>🇹🇭 ข้อเสนอสำหรับองค์กรไทย: ถ้าจะ pilot coding agents ให้เริ่มด้วย repo ที่ risk ต่ำ แต่เปิด sandbox/telemetry/review policy ตั้งแต่แรกเพื่อเรียนรู้ governance ไปพร้อม output: <a href="https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+  </main>
+</body>
+</html>

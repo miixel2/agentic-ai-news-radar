@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-09-22</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-09-22</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-09-22.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🧪 GitHub Copilot app เพิ่ม OpenTelemetry ผ่าน enterprise-managed settings เพื่อส่ง trace ของ agent session, model request และ tool use ไปยัง monitoring stack ขององค์กร: <a href="https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🔐 AWS เผยแพร่แนวทางประเมิน skill-equipped agents ด้วย Strands Evals และ Bedrock AgentCore Evaluations โดยแยก “เลือก skill ถูกไหม” กับ “ทำตาม instruction ครบไหม”: <a href="https://aws.amazon.com/blogs/machine-learning/evaluate-skill-equipped-agents-with-strands-evals-and-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS Machine Learning Blog</a></p>
+<p>🤖 GitHub ประกาศ availability ของ Claude Opus 5.5 และ GPT-6 Sol/Luna ใน Copilot ทำให้ model portfolio ใน workplace coding agents ซับซ้อนขึ้น: <a href="https://github.blog/changelog/2026-09-22-claude-opus-5-5-is-now-available-in-github-copilot/" target="_blank" rel="noreferrer">GitHub Changelog</a> / <a href="https://github.blog/changelog/2026-09-22-openais-gpt-6-sol-and-gpt-6-luna-now-available/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>⚙️ AWS เผยเคส Bedrock AgentCore สำหรับ Trane/Reactiv และประกาศ model availability บน Bedrock สะท้อนว่าตลาดกำลังเน้น production agent examples มากขึ้น: <a href="https://aws.amazon.com/blogs/machine-learning/" target="_blank" rel="noreferrer">AWS AI Blog</a></p>
+<h2>ทำไมควรรู้</h2>
+<p>🧪 OTel สำหรับ coding agents ทำให้ทีม enterprise เริ่ม debug agent ได้แบบเดียวกับ distributed systems คือดู trace, spans, tool calls และ unexpected behavior: <a href="https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🔐 Skill evaluation คือจุดที่หลายทีมมองข้าม เพราะ final answer อาจดูดีแต่ agent อาจเลือก skill ผิดหรือข้ามขั้นตอนสำคัญ: <a href="https://aws.amazon.com/blogs/machine-learning/evaluate-skill-equipped-agents-with-strands-evals-and-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS Machine Learning Blog</a></p>
+<p>🤖 เมื่อ IDE มีหลาย model ทีมต้องกำหนด default, override, allowed data และ approval path ให้ชัดเพื่อเลี่ยงทั้ง cost spike และ governance drift: <a href="https://github.blog/changelog/label/copilot/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>⚙️ เคส AgentCore ย้ำว่า production value มาจาก workflow integration, identity, telemetry และ eval มากกว่าการเพิ่ม chatbot อีกตัว: <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS AgentOps</a></p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📘 อ่าน GitHub OTel changelog เพื่อออกแบบ telemetry policy สำหรับ Copilot app ก่อนเปิดใช้กับทีมใหญ่: <a href="https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>📘 อ่าน AWS skill evaluation guide เพื่อสร้าง regression suite สำหรับ agent skills และ OpenTelemetry traces: <a href="https://aws.amazon.com/blogs/machine-learning/evaluate-skill-equipped-agents-with-strands-evals-and-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS Machine Learning Blog</a></p>
+<p>📘 อ่าน OpenAI skill/prompt guide เพื่อทบทวนว่า skill descriptions, AGENTS.md และ task prompts ยังสั้นพอหรือไม่: <a href="https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra" target="_blank" rel="noreferrer">OpenAI Developers</a></p>
+<p>📘 อ่าน Google Cloud production-ready agents guide เป็น evergreen reference สำหรับ agents ที่ต้อง deploy จริง: <a href="https://cloud.google.com/blog/products/ai-machine-learning/a-devs-guide-to-production-ready-ai-agents" target="_blank" rel="noreferrer">Google Cloud Blog</a></p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🧪 สถานการณ์: agent skills เริ่มเยอะ; Pattern: skill routing eval; ตัวอย่าง: test case ระบุ expected skill แล้ว assert ว่า skill ถูก invoke ก่อนดู final answer: <a href="https://aws.amazon.com/blogs/machine-learning/evaluate-skill-equipped-agents-with-strands-evals-and-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS Machine Learning Blog</a></p>
+<p>🔎 สถานการณ์: agent ทำ action แปลกใน IDE; Pattern: trace-first debugging; เก็บ session id, model call, tool call, file touched และ decision note ใน OTel backend: <a href="https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🧭 สถานการณ์: มีหลาย model ใน Copilot; Pattern: role-based model matrix; <code>fast edit = low-cost</code>, <code>architecture/security = high-reasoning</code>, <code>sensitive repo = approved models only</code>: <a href="https://github.blog/changelog/label/copilot/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🧹 สถานการณ์: skill/AGENTS.md บวม; Pattern: progressive disclosure audit; ย้าย recipe ยาวไปไฟล์ย่อยและให้ root เป็น router สั้น ๆ: <a href="https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra" target="_blank" rel="noreferrer">OpenAI Developers</a></p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏗️ Observability ของ agent ควรอยู่ใน architecture diagram ตั้งแต่วันแรก พร้อม schema ของ events/spans ที่บอกได้ว่า agent เห็นอะไร ตัดสินใจอย่างไร และเรียก tool ใด: <a href="https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<p>🧪 Evaluation ต้องแยกชั้น output quality, tool correctness, skill selection, policy compliance และ business outcome เพื่อแก้ปัญหาให้ตรงจุด: <a href="https://aws.amazon.com/blogs/machine-learning/evaluate-skill-equipped-agents-with-strands-evals-and-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS Machine Learning Blog</a></p>
+<p>🔐 Enterprise rollout ควรเริ่มจาก default-deny tool access, telemetry enabled, limited model set และ documented exception process: <a href="https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: Techsauce รายงาน AI FOR ALL Hackathon ที่เริ่มจากโจทย์ปัญหาคนไทยก่อนเครื่องมือ เป็นสัญญาณว่าการใช้ AI ในไทยกำลังขยับไปสู่ problem-first delivery: <a href="https://techsauce.co/news/ai-for-all-hackathon-true-aws-cp-2026" target="_blank" rel="noreferrer">Techsauce</a></p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: TechTalkThai โปรโมต AWS Community Day Thailand 2026 พร้อมหัวข้อ AI Agent, AI-DLC, DevOps และ cloud security ซึ่งมีประโยชน์ต่อชุมชน builder ไทย: <a href="https://www.techtalkthai.com/aws-community-day-thailand-2026/" target="_blank" rel="noreferrer">TechTalkThai</a></p>
+<p>🇹🇭 ข้อควรระวัง: ข่าวไทยเกี่ยวกับ global AI ควรใช้เป็น local context และ cross-check รายละเอียด technical จาก official source เสมอ: <a href="https://aws.amazon.com/blogs/machine-learning/evaluate-skill-equipped-agents-with-strands-evals-and-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS Machine Learning Blog</a></p>
+  </main>
+</body>
+</html>
