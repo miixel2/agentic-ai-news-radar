@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-09-27</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-09-27</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-09-27.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🧭 <a href="https://github.blog/changelog/2026-09-25-updates-to-github-copilot-for-slack-and-microsoft-teams/" target="_blank" rel="noreferrer">GitHub Copilot for Slack และ Microsoft Teams</a> เพิ่มบริบทจากไฟล์ แนบข้อความ รูปภาพ และ thread/channel history เพื่อให้ Copilot cloud agent แปลงบทสนทนาเป็น issue หรืองาน GitHub พร้อม trace กลับไปยัง discussion เดิมได้ดีขึ้น; จุดสำคัญสำหรับองค์กรคือยังต้องเปิด policy, cloud agent และ budget control ก่อนใช้งานจริง</p>
+<p>🧩 <a href="https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/" target="_blank" rel="noreferrer">Microsoft เปิดตัว Copilot ใหม่พร้อม Home, Code และ Autopilot</a> โดยวาง Autopilot เป็น persistent agent ที่มี identity, memory, computer และ workspace ใน tenant; นี่เป็นสัญญาณว่า enterprise agent จะถูกจัดการใกล้เคียง user/service account มากขึ้น ไม่ใช่แค่ chatbot</p>
+<p>🛠️ <a href="https://developers.openai.com/api/docs/guides/agents/integrations-observability" target="_blank" rel="noreferrer">OpenAI Agents SDK observability guide</a> เน้น loop สำคัญของ production agent: เลือก MCP/tool boundary ให้ชัด แล้วใช้ tracing เพื่อตรวจ prompt, tools, handoffs และ approvals ก่อนยกระดับเป็น eval suite</p>
+<p>🏗️ <a href="https://cloud.google.com/blog/products/ai-machine-learning/a-devs-guide-to-production-ready-ai-agents" target="_blank" rel="noreferrer">Google Cloud อัปเดตคู่มือ production-ready AI agents</a> ในเดือนกันยายน 2026 ให้ครอบคลุม Gemini Enterprise Agent Platform หลัง Cloud Next/I/O; ประเด็นเด่นคือ agent lifecycle ต้องออกแบบเรื่อง testing, memory, orchestration และ security ตั้งแต่แรก</p>
+<p>🔎 <a href="https://huggingface.co/papers/2609.29892" target="_blank" rel="noreferrer">Qwen-Planner-Agent</a> เสนอ closed-loop AI-for-AI สำหรับ mobile planner agents โดยผูก data production, training และ deployment ผ่าน action-feedback-verification contract; น่าสนใจเพราะชี้ว่า agent ที่ดีขึ้นต้อง co-evolve ทั้ง model, harness, memory, skills และ tool runtime</p>
+<h2>ทำไมควรรู้</h2>
+<p>🏢 Enterprise agent กำลังขยับจาก “ผู้ช่วยใน chat” ไปเป็น “worker ที่มี identity, memory, budget และ governance” ดังนั้น architecture ต้องมี audit trail, permission boundary, cost guardrail และ human approval path ตั้งแต่ sprint แรก</p>
+<p>🔐 Copilot/agent integration ใน Slack, Teams และ Microsoft tenant ทำให้บริบทงานไหลเข้า agent มากขึ้น แต่ก็เพิ่มความเสี่ยงเรื่อง data exposure, source attribution และ action provenance; ทุก workflow ควรมี policy ว่า agent อ่านอะไรได้และ action ไหนต้องขออนุมัติ</p>
+<p>🧪 งานวิจัยล่าสุดเริ่มวัด quality ของ long-horizon agent beyond pass/fail เช่น <a href="https://huggingface.co/papers/2609.25804" target="_blank" rel="noreferrer">The Tasteful Agent</a> ที่ชี้ว่าการตัดสินใจระหว่างทางฝึกได้และกระทบผลลัพธ์งานยาวมาก; ทีม builder ควรเก็บ failure traces ไม่ใช่ดูแค่ final answer</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📚 อ่าน <a href="https://github.blog/changelog/?label=copilot" target="_blank" rel="noreferrer">GitHub Copilot changelog หมวด Copilot</a> เพื่อเช็ก update ด้าน agent operations, enterprise permission, usage metrics, model availability และ sandbox เพราะกระทบ rollout policy โดยตรง</p>
+<p>📚 อ่าน <a href="https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/" target="_blank" rel="noreferrer">Microsoft Copilot announcement</a> คู่กับข่าวไทยจาก <a href="https://www.blognone.com/" target="_blank" rel="noreferrer">Blognone</a> ที่สรุป Home/Code/Autopilot เป็นภาษาไทย; ใช้ Blognone เป็นบริบท local ไม่ใช่แหล่ง primary</p>
+<p>📚 อ่าน <a href="https://aws.amazon.com/blogs/machine-learning/category/learning-levels/intermediate-200/page/3/" target="_blank" rel="noreferrer">AWS Agentic Resource Discovery/Agent Registry note</a> และ <a href="https://huggingface.co/blog/agentic-resource-discovery-launch" target="_blank" rel="noreferrer">Hugging Face ARD explainer</a> ถ้ากำลังออกแบบ catalog สำหรับ MCP tools, skills และ agents ภายในองค์กร</p>
+<p>📚 อ่าน <a href="https://huggingface.co/papers/2609.29892" target="_blank" rel="noreferrer">Qwen-Planner-Agent</a> และ <a href="https://huggingface.co/papers/2609.25804" target="_blank" rel="noreferrer">Tasteful Agent</a> เพื่อดูแนวทางใหม่ของ evaluation loop: action feedback, preserved failure traces, hindsight teacher และ decision-quality benchmark</p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🧰 Pattern: “Trace ก่อน Eval” — ใช้เมื่อ agent workflow ยังเปลี่ยนเร็ว; template: <code>Goal -&gt; Tools allowed -&gt; Approval gates -&gt; Trace fields -&gt; Failure tags -&gt; Eval cases</code> แล้วค่อยย้าย failure ที่ซ้ำบ่อยไปเป็น eval ถาวร; grounded จาก OpenAI observability guide และควร verify ด้วย replay trace</p>
+<p>🧠 Pattern: “Agent Work Item Contract” — ใช้กับ Slack/Teams-to-GitHub flow; ให้ทุกงานที่ agent สร้างมี <code>source link</code>, <code>requested action</code>, <code>accepted files/context</code>, <code>owner</code>, <code>budget</code>, <code>approval status</code>; ช่วยลดปัญหา task ไม่มีที่มา แต่ต้องตรวจว่า link กลับไปยัง conversation ไม่เปิดข้อมูลเกินสิทธิ</p>
+<p>🧩 Skill idea: “Decision Review Skill” — ใช้กับ long-horizon coding/research agent; ให้ skill บังคับ agent สรุป 2-3 ทางเลือกก่อนลงมือ พร้อมเหตุผลที่เลือกและเงื่อนไข rollback; grounded จากแนวคิด Tasteful Agent และควรเก็บ decision log ไว้เทียบกับผลลัพธ์จริง</p>
+<p>🔎 Workflow: “Tool Registry Hygiene” — ใช้เมื่อองค์กรมี MCP/tools เยอะ; แยก <code>publisher</code>, <code>allowed scopes</code>, <code>sample queries</code>, <code>risk tier</code>, <code>owner</code>, <code>last verified</code>; grounded จาก ARD/Agent Registry trend และควรมี scheduled review เพื่อลบ tool ที่ไม่ได้ใช้หรือ owner หาย</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏛️ ออกแบบ agent platform เหมือนระบบ enterprise integration: identity, permission, audit, observability, cost และ incident response สำคัญพอ ๆ กับ model quality</p>
+<p>🧭 สำหรับ AI coding agents ให้แยก governance เป็น 3 ชั้น: repo policy (<code>AGENTS.md</code>/docs), runtime sandbox/permissions และ review gate ใน PR; อย่าฝากความปลอดภัยทั้งหมดไว้ที่ prompt</p>
+<p>📊 KPI ที่ควรวัดเพิ่ม: percent of agent tasks with source trace, approval latency, rollback rate, tool-call failure rate, cost per accepted change และ escaped-defect rate หลัง agent-generated PR</p>
+<p>⚖️ ถ้าองค์กรไทยเริ่ม pilot agent ใน Slack/Teams/Microsoft 365 ควรเริ่มจาก workflow ที่มี owner ชัด, data classification ต่ำถึงกลาง และ action reversible ก่อนขยายไป workflow ที่แตะข้อมูลลูกค้าหรือการเงิน</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: <a href="https://www.blognone.com/" target="_blank" rel="noreferrer">Blognone</a> รายงาน Microsoft Copilot ใหม่ที่รวม Chat, Code และ Agent/Autopilot ในแอปเดียว พร้อมโยงกับประกาศทางการของ Microsoft; เหมาะใช้เป็นสรุปภาษาไทยสำหรับทีม แต่ควรอ้าง primary source เมื่อตัดสินใจเชิงนโยบาย</p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: <a href="https://www.techtalkthai.com/" target="_blank" rel="noreferrer">TechTalkThai</a> มีประเด็น Microsoft Defender ISOC ที่ออกแบบ SOC ให้รองรับ AI Agent และข่าวรายได้ Lovable ที่สะท้อน demand เครื่องมือ vibe coding; ใช้เป็น signal ตลาดไทย/enterprise IT ไม่ใช่หลักฐาน technical performance</p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: <a href="https://techsauce.co/en/ai/wonderful-ai-agent-pilot-to-production-en" target="_blank" rel="noreferrer">Techsauce</a> สรุปมุมมองจาก Techsauce Global Summit 2026 เรื่องการย้าย AI agents จาก pilot ไป production ในไทย; ประเด็นที่ควรนำไปใช้คือ readiness, governance และ business workflow ownership มากกว่าการตาม hype</p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: <a href="https://devhub.in.th/th/blog" target="_blank" rel="noreferrer">devhub.in.th</a> ยังมีบทความสาย agentic coding/harness engineering ที่มีประโยชน์ต่อ dev ไทย แม้ไม่ใช่ข่าวสด 24-72 ชั่วโมง; ใช้เป็น evergreen learning สำหรับการจัด repo/docs/feedback loop ให้ agent อ่านง่าย</p>
+  </main>
+</body>
+</html>
