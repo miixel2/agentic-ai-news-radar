@@ -1,0 +1,72 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-09-28</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-09-28</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-09-28.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🧠 <a href="https://github.blog/changelog/2026-09-28-claude-sonnet-5-5-in-github-copilot/" target="_blank" rel="noreferrer">GitHub เปิดใช้ Claude Sonnet 5.5 ใน Copilot</a> สำหรับ VS Code, CLI, coding agent, Copilot app และ github.com โดย GitHub ระบุว่าเหมาะกับงาน feature/bug ที่ scope ชัดและใช้ steps/tokens/tool calls น้อยลง; จุดที่องค์กรต้องทำคือเช็ก model policy ก่อน rollout</p>
+<p>🧭 <a href="https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/" target="_blank" rel="noreferrer">GitHub Copilot policy/billing update</a> มีผลช่วง 28 ก.ย. เป็นต้นไปสำหรับการรวม Copilot Chat, Mobile และ cloud agent เป็นประสบการณ์เดียว พร้อม sandbox และ retention model แบบ agent sessions; admin ควรทบทวน policy, budget และ data retention</p>
+<p>🛡️ <a href="https://www.anthropic.com/threat-intelligence-report-september-2026" target="_blank" rel="noreferrer">Anthropic รายงาน misuse เดือนกันยายน 2026</a> พบการใช้ agent swarms, subagents และ custom skills ในงานโจมตี/อิทธิพลสารสนเทศ; signal สำคัญคือ agent governance ต้องดูทั้ง tool use, skill distribution, audit trail และ misuse monitoring</p>
+<p>🏥 <a href="https://aws.amazon.com/blogs/architecture/how-mhk-built-a-hipaa-eligible-agentic-ai-solution-on-amazon-bedrock/" target="_blank" rel="noreferrer">AWS/MHK เผยแพร่สถาปัตยกรรม HIPAA-eligible agentic workflow บน Amazon Bedrock</a> ที่ใช้ controller-agent, event-driven orchestration, per-client encryption และ human verification ลด manual review ได้มาก; เหมาะเป็น reference สำหรับ regulated workflow</p>
+<p>🔬 <a href="https://arxiv.org/abs/2609.01736" target="_blank" rel="noreferrer">Harness Engineering in LLM Tool Use</a> เสนอ Tool Primitives/ToolFace/HEART เพื่อลดปัญหา schema/tool catalog ใหญ่และเพิ่ม planner-router-verifier loop; น่าอ่านสำหรับทีมที่กำลังออกแบบ tool registry หรือ MCP catalog ภายใน</p>
+<h2>ทำไมควรรู้</h2>
+<p>🏢 <a href="https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/" target="_blank" rel="noreferrer">GitHub Copilot unified policy</a> ทำให้ cloud agent เป็น default surface มากขึ้น จึงต้องจัดการ identity, retention, model policy และ spend controls แบบเดียวกับระบบ enterprise software ไม่ใช่แค่ IDE extension</p>
+<p>🔐 <a href="https://www.anthropic.com/threat-intelligence-report-september-2026" target="_blank" rel="noreferrer">Anthropic misuse report</a> ชี้ว่า risk ของ agent ไม่ได้อยู่แค่ prompt injection แต่รวมถึงการแตกงานเป็น subagent, reusable skills, data exfiltration และ distillation; solution architect ควรแยก threat model ตาม action boundary</p>
+<p>⚙️ <a href="https://aws.amazon.com/blogs/architecture/how-mhk-built-a-hipaa-eligible-agentic-ai-solution-on-amazon-bedrock/" target="_blank" rel="noreferrer">AWS MHK architecture</a> ย้ำ pattern ที่ practical มาก: ให้ model เป็น inference layer และคุม orchestration/retrieval/validation ใน application layer เมื่อต้องการ compliance สูง</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📚 อ่าน <a href="https://github.blog/changelog/2026-09-28-claude-sonnet-5-5-in-github-copilot/" target="_blank" rel="noreferrer">GitHub Claude Sonnet 5.5 in Copilot</a> คู่กับ <a href="https://docs.github.com/en/copilot/concepts/ai-models/model-comparison" target="_blank" rel="noreferrer">Copilot models docs</a> เพื่อทำ model matrix ว่างาน bugfix, refactor, review และ terminal workflow ควรใช้ model ใด</p>
+<p>📚 อ่าน <a href="https://www.anthropic.com/threat-intelligence-report-september-2026" target="_blank" rel="noreferrer">Anthropic misuse report</a> เพื่อดึง checklist ด้าน agent abuse monitoring: action provenance, tool-call logs, skill review และ detection ของ swarm-like behavior</p>
+<p>📚 อ่าน <a href="https://aws.amazon.com/blogs/architecture/how-mhk-built-a-hipaa-eligible-agentic-ai-solution-on-amazon-bedrock/" target="_blank" rel="noreferrer">AWS HIPAA agentic orchestrator case</a> ถ้ากำลัง pitch agent workflow ใน healthcare/finance/government เพราะมีรายละเอียดเรื่อง token capability, KMS, audit และ data minimization</p>
+<p>📚 อ่าน <a href="https://arxiv.org/abs/2609.01736" target="_blank" rel="noreferrer">HEART/Tool Primitives paper</a> เพื่อเปรียบเทียบกับ MCP/tool-schema design ว่าควร expose raw API หรือห่อเป็น capability-level primitive</p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🧰 Pattern: “Model Policy Matrix” — ใช้เมื่อองค์กรมีหลายโมเดลใน Copilot/agent platform; template: <code>Task class -&gt; allowed models -&gt; cost tier -&gt; data class -&gt; approval owner -&gt; fallback</code>; grounded จาก <a href="https://github.blog/changelog/2026-09-28-claude-sonnet-5-5-in-github-copilot/" target="_blank" rel="noreferrer">GitHub Copilot model policy</a> และควร verify ด้วยงานตัวอย่าง 5-10 เคสต่อ class</p>
+<p>🛡️ Pattern: “Skill Review Gate” — ใช้กับ reusable agent skills; ให้ทุก skill มี owner, source, allowed tools, prohibited data, sample run และ expiration date; grounded จาก <a href="https://www.anthropic.com/threat-intelligence-report-september-2026" target="_blank" rel="noreferrer">Anthropic misuse report</a> และต้อง audit ว่า skill ไม่ขยายสิทธิ์เกินงาน</p>
+<p>🏥 Workflow: “Compliance-Orchestrator First” — ใช้กับ regulated agent; แยก controller, agent step, retrieval, validation, audit และ encryption เป็น platform concern ก่อนเพิ่ม use case; grounded จาก <a href="https://aws.amazon.com/blogs/architecture/how-mhk-built-a-hipaa-eligible-agentic-ai-solution-on-amazon-bedrock/" target="_blank" rel="noreferrer">AWS/MHK</a> และต้องมี human-in-the-loop สำหรับ decision ที่กระทบลูกค้า</p>
+<p>🔎 Prompt pattern: “Tool Necessity Check” — ก่อนเรียก tool ให้ agent ตอบสั้น ๆ ว่า <code>Need tool? yes/no; why; expected output; stop condition</code>; grounded จาก <a href="https://arxiv.org/abs/2609.16268" target="_blank" rel="noreferrer">Spurious Tool Use</a> และช่วยลด tool call ที่เกิดจาก cue มากกว่าความจำเป็นจริง</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏛️ <a href="https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/" target="_blank" rel="noreferrer">Copilot cloud agent convergence</a> หมายความว่า AI coding rollout ต้องมี governance playbook: model enablement, sandbox policy, retention, budget, PR review และ incident escalation</p>
+<p>🧭 <a href="https://aws.amazon.com/blogs/architecture/how-mhk-built-a-hipaa-eligible-agentic-ai-solution-on-amazon-bedrock/" target="_blank" rel="noreferrer">AWS/MHK</a> เป็นตัวอย่างดีของ “agentic workflow as platform”: reusable orchestration ช่วยลดภาระ compliance ต่อ feature แต่ต้องลงทุนกับ schema validation, audit และ least privilege จริง</p>
+<p>📊 KPI ที่ควรวัดเพิ่มจาก <a href="https://www.anthropic.com/threat-intelligence-report-september-2026" target="_blank" rel="noreferrer">Anthropic misuse report</a>: unauthorized tool attempt rate, suspicious parallel subagent count, skill reuse by risk tier, data-classification mismatch และ human override rate</p>
+<p>⚖️ สำหรับทีมไทยที่ใช้ Copilot/Claude Code ควรเริ่ม policy จาก repo สำคัญก่อน: ใครใช้ agent ได้, agent อ่าน secrets ได้หรือไม่, PR ที่ agent เขียนต้อง review แบบใด และ log retention อยู่ที่ไหน</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: <a href="https://techsauce.co/ai/wonderful-ai-agent-pilot-to-production" target="_blank" rel="noreferrer">Techsauce บทความ Beyond the Pilot</a> สรุปมุมมองจาก Wonderful Thailand ว่าการพา AI agent จาก pilot ไป production ติดเรื่อง design, deployment และ measurement มากกว่า model; ใช้เป็นบริบทองค์กรไทย ไม่ใช่แหล่ง technical benchmark</p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: <a href="https://devhub.in.th/th/blog/openai-harness-engineering-codex-zero-code" target="_blank" rel="noreferrer">devhub บทความ Harness Engineering</a> ยังเป็น evergreen ภาษาไทยที่ดีสำหรับอธิบาย agent legibility, repo-as-brain และ feedback loop ให้ทีม dev ไทยก่อนเริ่มใช้ coding agents</p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: <a href="https://www.techtalkthai.com/gen-m-group-x-bluebik-for-enterprise-ai-transformation-pr/" target="_blank" rel="noreferrer">TechTalkThai ข่าว GEN M Group x Bluebik</a> เป็น signal ว่า enterprise AI agent ในไทยเริ่มโยงกับ Microsoft Copilot/Power Platform/SAP มากขึ้น; ควร cross-check รายละเอียดเชิงเทคนิคกับ vendor docs ก่อนตัดสินใจ architecture</p>
+<h2>Weekly Agentic AI Ecosystem Brief</h2>
+<p>🗓️ What changed: สัปดาห์นี้ <a href="https://github.blog/changelog/?label=copilot" target="_blank" rel="noreferrer">GitHub Copilot</a>, <a href="https://openai.com/index/introducing-the-agents-api/" target="_blank" rel="noreferrer">OpenAI Agents API</a> และ <a href="https://aws.amazon.com/blogs/architecture/how-mhk-built-a-hipaa-eligible-agentic-ai-solution-on-amazon-bedrock/" target="_blank" rel="noreferrer">AWS Bedrock agentic cases</a> ชี้ไปทางเดียวกันว่า agent platform กำลังรวม model choice, sandbox, memory, tools และ governance เป็น product surface เดียว</p>
+<p>🏗️ Impact for builders: ให้เลิกคิดแยก “prompt”, “tool”, “eval” เป็นชิ้น ๆ และออกแบบเป็น lifecycle: requirement -&gt; environment -&gt; tools -&gt; trace -&gt; eval -&gt; review -&gt; deploy; ใช้ <a href="https://developers.openai.com/api/docs/guides/agents/integrations-observability" target="_blank" rel="noreferrer">OpenAI observability guide</a> เป็น baseline</p>
+<p>🚦 Production readiness: สัญญาณ mature คือมี policy, budget, audit, rollback และ human gate มาก่อน scale; <a href="https://cloud.google.com/blog/products/ai-machine-learning/a-devs-guide-to-production-ready-ai-agents" target="_blank" rel="noreferrer">Google production-ready agent guide</a> ยังเป็น checklist ที่ดีสำหรับ testing, memory, orchestration และ security</p>
+<p>🔐 Security/governance risks: <a href="https://www.anthropic.com/threat-intelligence-report-september-2026" target="_blank" rel="noreferrer">Anthropic misuse report</a> เตือนว่า agent swarms และ reusable skills ทำให้ misuse เร็วขึ้น; องค์กรต้อง monitor behavior pattern ไม่ใช่แค่ output</p>
+<p>🇹🇭 Thai relevance: <a href="https://techsauce.co/ai/wonderful-ai-agent-pilot-to-production" target="_blank" rel="noreferrer">Techsauce</a> และ <a href="https://www.techtalkthai.com/gen-m-group-x-bluebik-for-enterprise-ai-transformation-pr/" target="_blank" rel="noreferrer">TechTalkThai</a> สะท้อนว่าโจทย์ไทยคือ “จาก pilot สู่ production พร้อม governance” มากกว่าการเลือก model ใหม่ล่าสุด</p>
+<p>🧭 Study next: อ่าน <a href="https://arxiv.org/abs/2609.01736" target="_blank" rel="noreferrer">HEART paper</a>, <a href="https://developers.openai.com/api/docs/guides/agent-evals" target="_blank" rel="noreferrer">OpenAI agent eval guide</a>, และ <a href="https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/" target="_blank" rel="noreferrer">GitHub Copilot policy changelog</a> เพื่อทำ rollout checklist ภายใน</p>
+  </main>
+</body>
+</html>
