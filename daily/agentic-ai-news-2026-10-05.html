@@ -1,0 +1,61 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-10-05</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-10-05</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">AWS</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-10-05.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🧠 <a href="https://aws.amazon.com/blogs/machine-learning/page/2/" target="_blank" rel="noreferrer">AWS GLM 5.3 on Bedrock</a> เพิ่มโมเดล 753B MoE สำหรับ coding/long-horizon agentic tasks และรองรับ OpenAI-compatible APIs, prompt caching และ security testing pattern</p>
+<p>🔎 <a href="https://aws.amazon.com/blogs/machine-learning/page/2/" target="_blank" rel="noreferrer">AWS agentic retrieval with LangChain and Bedrock Knowledge Bases</a> โชว์การเทียบ single-shot retrieval กับ agentic retrieval พร้อม trace/cost เหมาะกับ enterprise RAG ที่คำถามซับซ้อน</p>
+<p>🏦 <a href="https://aws.amazon.com/blogs/machine-learning/page/2/" target="_blank" rel="noreferrer">AWS Claude Code for regulated workloads on Bedrock</a> เป็นสัญญาณว่าการนำ coding agent เข้ากลุ่ม regulated ต้องเริ่มจาก controls, data boundary และ approved runtime</p>
+<p>🧩 <a href="https://aws.amazon.com/blogs/machine-learning/page/2/" target="_blank" rel="noreferrer">AWS MCP server for Amazon Quick promotion</a> ชี้ว่า MCP เริ่มถูกใช้กับงาน platform automation จริง เช่น promote resources ข้าม account แบบ auditable</p>
+<p>📚 <a href="https://github.blog/changelog/?label=copilot" target="_blank" rel="noreferrer">GitHub Copilot changelog feed</a> ควรติดตามต่อเนื่อง เพราะรอบต้นเดือนมีการเปลี่ยน policy/review/model/sandbox หลายรายการ</p>
+<h2>ทำไมควรรู้</h2>
+<p>🏗️ AWS updates วันนี้บอกชัดว่า agent production ไม่ใช่ “เอา LLM ต่อ tools” แต่ต้องมี trace, cost visibility, identity, account boundary และ promotion pipeline</p>
+<p>🔎 Agentic retrieval เหมาะกับคำถามหลายส่วน แต่ต้องเทียบ cost/latency กับ single-shot retrieval ทุกครั้ง ไม่ควรเปิดเป็น default โดยไม่วัด</p>
+<p>🔐 MCP server ที่ใช้ promote resource ต้องมี idempotency, audit และ least privilege เพราะมันเปลี่ยน environment จริง</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📚 อ่าน <a href="https://aws.amazon.com/blogs/machine-learning/" target="_blank" rel="noreferrer">AWS Machine Learning blog feed</a> เพื่อดู AgentCore/Bedrock patterns ล่าสุดของเดือนตุลาคม</p>
+<p>📚 อ่าน <a href="https://aws.amazon.com/blogs/machine-learning/page/2/" target="_blank" rel="noreferrer">AWS page 2 update summary</a> โดยเฉพาะ GLM 5.3, regulated Claude Code และ agentic retrieval</p>
+<p>📚 อ่าน <a href="https://github.blog/changelog/?label=copilot" target="_blank" rel="noreferrer">GitHub Copilot changelog</a> เพื่อจับ policy drift ก่อนทีม dev เจอ behavior เปลี่ยนเอง</p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🔎 Pattern: “Retrieval Duel” — รันคำถาม 20 ข้อแบบ single-shot vs agentic retrieval; วัด answer quality, citations, latency, cost; caveat: agentic retrieval เหมาะกับ multi-hop ไม่ใช่ทุก query</p>
+<p>🧾 Pattern: “MCP Promotion Contract” — ทุก tool ต้องรับ <code>source_env</code>, <code>target_env</code>, <code>resource_id</code>, <code>dry_run</code>, <code>idempotency_key</code>; verify ด้วย dry-run diff ก่อนเขียนจริง</p>
+<p>🔐 Pattern: “Regulated Coding Agent Gate” — ให้ agent อ่าน/เสนอ patch ได้ แต่ merge ต้องผ่าน policy scan, human approver และ trace export; grounded จาก AWS regulated workload direction</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏛️ Agent platform บน cloud ควรแยก runtime plane, tool plane, data plane และ governance plane เพื่อให้ scale ได้โดยไม่ทำให้ security review ติดทุกงาน</p>
+<p>📊 วัด agentic retrieval ด้วย <code>correct cited answer per dollar</code> และ <code>unnecessary tool-call rate</code>; ถ้าไม่มี metric นี้ RAG จะบวมเร็ว</p>
+<p>🧯 MCP automation ที่แตะ infra ควรเริ่มจาก read-only + dry-run + approval ก่อน และเก็บ audit log ที่ทีม compliance อ่านได้</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: <a href="https://conf.techtalkthai.com/atf26-schedule/" target="_blank" rel="noreferrer">TechTalkThai AI &amp; Tech Forum Bangkok 2026 schedule</a> มีหลาย session เรื่อง Agentic AI, governance, FinOps และ AI workforce ที่เหมาะกับ enterprise architects ไทย</p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: <a href="https://techsauce.co/ai/pathumma-connect-agentic-ai-platform" target="_blank" rel="noreferrer">Techsauce Pathumma Connect</a> ยังเป็นตัวอย่าง local agentic document workflow ที่ควรดูควบคู่กับ cloud governance patterns</p>
+  </main>
+</body>
+</html>

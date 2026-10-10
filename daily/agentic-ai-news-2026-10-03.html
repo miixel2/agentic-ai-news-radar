@@ -1,0 +1,61 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-10-03</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-10-03</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-10-03.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🧪 <a href="https://huggingface.co/blog/microsoft/thinkingbox" target="_blank" rel="noreferrer">Microsoft/Hugging Face ThinkingBox</a> ชี้ pain point สำคัญของ agent evaluation: tool call success ไม่เท่ากับ outcome success ต้องตรวจ database/backend state หลัง agent ทำงาน</p>
+<p>📦 <a href="https://huggingface.co/blog" target="_blank" rel="noreferrer">Hugging Face blog feed</a> ยังมีสัญญาณต่อเนื่องเรื่อง enterprise agents และ evaluation data เช่น AutoSynthData; วันนี้ข่าวสดไม่มาก แต่แนวทางวัดผลยังมีประโยชน์สูง</p>
+<p>🔌 <a href="https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level/" target="_blank" rel="noreferrer">GitHub Copilot code review API</a> จากเมื่อวานยังเป็น update ที่ควรลงมือทดลอง เพราะเชื่อม AI review เข้า internal workflow ได้ทันที</p>
+<p>🤖 <a href="https://openai.com/index/introducing-the-agents-api/" target="_blank" rel="noreferrer">OpenAI Agents API</a> เป็น evergreen ของสัปดาห์สำหรับ sandbox + MCP + Codex harness; เหมาะใช้เป็น reference architecture เมื่อต้องคุยกับทีม platform/security</p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: <a href="https://www.techtalkthai.com/ibm-bob-agentic-ai-on-prem-launch/" target="_blank" rel="noreferrer">TechTalkThai IBM Bob self-hosted</a> ยังเป็นสัญญาณ local/enterprise เรื่อง agentic coding ที่ต้องคุม deployment boundary</p>
+<h2>ทำไมควรรู้</h2>
+<p>🧭 ถ้า agent สรุปว่า “สำเร็จ” แต่ระบบปลายทางไม่เปลี่ยนจริง นั่นคือ production bug ไม่ใช่ prompt issue; ThinkingBox ทำให้ทีมต้องวัดหลักฐานหลังการกระทำ</p>
+<p>🧪 Evaluation ของ agent ควรมีทั้ง transcript, tool logs, final state และ human adjudication ไม่เช่นนั้นจะ optimize แค่คำตอบสวย</p>
+<p>🔐 Agentic coding ที่รันใน infra องค์กรต้องมี audit trail และ kill switch ตั้งแต่ pilot เพราะ blast radius ใหญ่กว่า autocomplete</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📚 อ่าน <a href="https://huggingface.co/blog/microsoft/thinkingbox" target="_blank" rel="noreferrer">ThinkingBox</a> แล้วเลือก workflow ภายใน 1 งานที่ตรวจ final state ได้ เช่น ticket status, DB row, PR label หรือ test artifact</p>
+<p>📚 อ่าน <a href="https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level/" target="_blank" rel="noreferrer">GitHub Copilot code review API</a> เพื่อดูว่า request review จากระบบภายในควรใส่ effort level อย่างไร</p>
+<p>📚 อ่าน <a href="https://openai.com/index/introducing-the-agents-api/" target="_blank" rel="noreferrer">OpenAI Agents API</a> เพื่อแยกความรับผิดชอบระหว่าง model, harness, sandbox และ tools</p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🧾 Pattern: “Evidence-First Done” — ใช้กับ agent ที่แก้ระบบจริง; template: <code>Claim: ... Evidence: test output + state diff + artifact link + rollback path</code>; caveat: ห้ามให้ agent grade เฉพาะคำตอบตัวเอง</p>
+<p>🧪 Pattern: “Twenty Runs Consistency” — ให้ agent ทำ task เดียว 20 ครั้งบน sandbox แยก แล้ววัด success แบบ state-based; grounded จาก <a href="https://huggingface.co/blog/microsoft/thinkingbox" target="_blank" rel="noreferrer">ThinkingBox</a></p>
+<p>🔐 Pattern: “Tool Side-Effect Ledger” — ทุก tool ที่เขียนข้อมูลต้อง log actor, input, target, before/after และ approval id; verify ด้วย sample audit</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏛️ Agent platform ควรมี “state verifier” เป็น component แยกจาก agent เพราะ agent อาจมั่นใจผิดหรือรายงานผลเกินจริง</p>
+<p>📊 KPI ที่ควรเพิ่มคือ <code>verified completion rate</code> และ <code>claim-state mismatch rate</code>; ถ้าค่านี้ไม่ดี อย่าเพิ่งเพิ่ม autonomy</p>
+<p>🧯 งานที่เหมาะทดลองก่อนคือ workflow ที่ rollback ง่าย เช่น labels, draft docs, synthetic tickets และ non-prod DB</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: <a href="https://www.techtalkthai.com/ibm-bob-agentic-ai-on-prem-launch/" target="_blank" rel="noreferrer">TechTalkThai IBM Bob</a> น่าสนใจสำหรับองค์กรไทยที่มี policy ห้าม source code ออกจาก environment</p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: <a href="https://devhub.in.th/th/blog/openai-harness-engineering-codex-zero-code" target="_blank" rel="noreferrer">devhub Harness Engineering</a> เหมาะใช้สอนทีม dev ไทยเรื่องการออกแบบ environment/tests/feedback ให้ coding agent ทำงานได้ดีขึ้น</p>
+  </main>
+</body>
+</html>

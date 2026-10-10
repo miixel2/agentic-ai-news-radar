@@ -1,0 +1,61 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-10-04</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-10-04</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-10-04.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🧘 วันนี้ข่าวสด high-signal ค่อนข้างเงียบ จึงควรใช้เป็นวันจัดระเบียบ agent practice: eval, observability, permission และ reusable skills</p>
+<p>📚 <a href="https://developers.openai.com/api/docs/guides/agent-evals" target="_blank" rel="noreferrer">OpenAI agent eval guide</a> เป็น evergreen สำคัญ: สร้าง dataset จาก failure จริง แล้วใช้ grader เพื่อวัดการปรับ prompt/tool/harness อย่างเป็นระบบ</p>
+<p>🔎 <a href="https://developers.openai.com/api/docs/guides/agents/integrations-observability" target="_blank" rel="noreferrer">OpenAI observability integrations</a> ช่วยทำให้ trace ของ agent เข้า monitoring stack ได้ ไม่ใช่ debug จากข้อความสุดท้ายเพียงอย่างเดียว</p>
+<p>🧩 <a href="https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills" target="_blank" rel="noreferrer">Anthropic Agent Skills</a> ยังเป็น reference ดีสำหรับการแพ็ก procedural knowledge เป็น folder ที่ agent discover/load ได้แบบ progressive</p>
+<p>🛡️ <a href="https://github.blog/changelog/2026-06-02-cloud-and-local-sandboxes-for-github-copilot-now-in-public-preview/" target="_blank" rel="noreferrer">GitHub Copilot local sandboxing preview/GA direction</a> เป็นหัวข้อที่ควรเตรียม policy ก่อนเปิด agent ให้รัน command จริง</p>
+<h2>ทำไมควรรู้</h2>
+<p>🧪 ช่วงไม่มีข่าวใหญ่คือเวลาที่ดีที่สุดในการลด technical debt ของ agent workflow: trace ขาด, eval ไม่มี, skill ซ้ำ, permission กว้างเกินไป</p>
+<p>🧠 Skills ทำให้ความรู้ทีมไม่ต้องยัดเข้า prompt ยาวทุกครั้ง แต่ต้องคุม version, ownership และ malicious instruction risk</p>
+<p>🔐 Sandboxing เป็น boundary ของ tool execution ไม่ใช่ model quality; ต่อให้ model ดี ก็ยังต้องจำกัดไฟล์, network และ credential access</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📚 อ่าน <a href="https://developers.openai.com/api/docs/guides/agent-evals" target="_blank" rel="noreferrer">OpenAI agent eval guide</a> แล้วเลือก failure taxonomy 5 หมวดแรกที่ทีมเจอบ่อย</p>
+<p>📚 อ่าน <a href="https://developers.openai.com/api/docs/guides/agents/integrations-observability" target="_blank" rel="noreferrer">OpenAI observability guide</a> เพื่อกำหนด trace fields: task id, tool calls, approvals, cost, final evidence</p>
+<p>📚 อ่าน <a href="https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills" target="_blank" rel="noreferrer">Anthropic Agent Skills</a> เพื่อออกแบบ skill ที่มี instructions, scripts, examples และ validation checklist</p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🧾 Skill template: <code>SKILL.md</code> มี <code>When to use</code>, <code>Inputs</code>, <code>Procedure</code>, <code>Verification</code>, <code>Pitfalls</code>; ใช้เมื่อ workflow ซ้ำเกิน 3 ครั้ง; caveat: ต้องมี owner และ changelog</p>
+<p>🧪 Eval template: <code>Scenario | Expected evidence | Forbidden actions | Grader | Human review rule</code>; ใช้กับ agent ที่แตะ code/data; verify โดยรัน baseline ก่อนแก้ prompt</p>
+<p>🔐 Permission template: <code>Read paths | Write paths | Network | Secrets | Human approval before | Rollback</code>; ใช้ก่อนเปิด sandboxed tool execution</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏛️ Agent readiness ไม่ใช่แค่เลือก framework แต่คือ operating model: ใครเขียน skill, ใครอนุมัติ tool, ใครดู trace, ใครรับผิดชอบ incident</p>
+<p>📊 เสนอ dashboard ขั้นต่ำ: success with evidence, human intervention, tool failure, policy block, cost per accepted task และ rollback count</p>
+<p>🧯 ให้เริ่มจาก reversible automation ก่อน เช่น docs, tests, PR triage, knowledge search แล้วค่อยเพิ่ม write actions</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: <a href="https://devhub.in.th/th/blog/openai-harness-engineering-codex-zero-code" target="_blank" rel="noreferrer">devhub Harness Engineering</a> เป็นบทความไทยที่ช่วยแปลแนวคิด harness ให้ทีม dev เข้าใจง่าย</p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: <a href="https://techsauce.co/ai/pathumma-connect-agentic-ai-platform" target="_blank" rel="noreferrer">Techsauce Pathumma Connect</a> เหมาะใช้คุยเรื่อง agentic document workflow ภาษาไทย แต่ต้องถามเรื่อง audit/data residency เพิ่ม</p>
+  </main>
+</body>
+</html>

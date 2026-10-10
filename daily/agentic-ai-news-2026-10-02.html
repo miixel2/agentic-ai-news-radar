@@ -1,0 +1,68 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-10-02</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-10-02</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-10-02.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🔌 <a href="https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level/" target="_blank" rel="noreferrer">GitHub Copilot code review API support</a> เปิดให้เรียก Copilot review ผ่าน REST/GraphQL และตั้ง review effort ต่อคำขอได้ ทำให้ทีมเอา review agent เข้า workflow ภายในได้ตรงขึ้น</p>
+<p>⚖️ <a href="https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level/" target="_blank" rel="noreferrer">GitHub Copilot code review default เป็น Balanced</a> หลัง policy change วันที่ 28 ก.ย.; ทีม enterprise ต้องตรวจค่า org/repo เพราะมีผลกับ cost, latency และ false positive rate</p>
+<p>🤖 <a href="https://openai.com/index/introducing-the-agents-api/" target="_blank" rel="noreferrer">OpenAI Agents API</a> ยังเป็นฐานสำคัญของรอบนี้: managed sandbox, MCP server URL และ Codex harness แบบ open-source ชี้ว่า production agent ต้องออกแบบ runtime ไม่ใช่ prompt อย่างเดียว</p>
+<p>🧪 <a href="https://huggingface.co/blog" target="_blank" rel="noreferrer">Hugging Face AutoSynthData</a> เป็นสัญญาณเรื่อง synthetic training/eval data สำหรับ enterprise agents; ใช้ได้ดีเมื่อมี schema งานจริงและต้องวัด data quality แยกจาก model quality</p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: <a href="https://www.techtalkthai.com/ibm-bob-agentic-ai-on-prem-launch/" target="_blank" rel="noreferrer">IBM Bob self-hosted ผ่าน TechTalkThai</a> สะท้อน demand ไทย/enterprise สำหรับ agentic coding ที่ติดตั้งใน infra ควบคุมเองได้</p>
+<h2>ทำไมควรรู้</h2>
+<p>🏢 API สำหรับ Copilot review ทำให้ AI review กลายเป็น platform primitive ที่เรียกจาก CI, internal portal หรือ release gate ได้ ไม่ใช่ปุ่มใน PR เท่านั้น</p>
+<p>💸 Balanced effort เป็น default ใหม่ จึงควรเทียบผลกับ Lite/High บน repo จริงก่อนเปิดกว้าง โดยวัด defect found, false positive, AI credits และ Actions minutes</p>
+<p>🔐 Self-hosted/on-prem agentic coding เริ่มเป็น narrative สำหรับ regulated workloads; แต่ต้องตรวจ model boundary, telemetry, update path และ secret handling ให้ชัด</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📚 อ่าน <a href="https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level/" target="_blank" rel="noreferrer">Copilot code review API update</a> แล้วทำ pilot trigger review เฉพาะ PR ที่แตะ payment/auth/security ก่อน</p>
+<p>📚 อ่าน <a href="https://openai.com/index/introducing-the-agents-api/" target="_blank" rel="noreferrer">OpenAI Agents API announcement</a> เพื่อ map ว่า sandbox, MCP, tracing และ harness ตรงกับ governance ที่องค์กรมีแค่ไหน</p>
+<p>📚 อ่าน <a href="https://www.techtalkthai.com/ibm-bob-agentic-ai-on-prem-launch/" target="_blank" rel="noreferrer">TechTalkThai IBM Bob</a> เป็น local signal แต่ควร cross-check vendor docs ก่อนตัดสินใจด้าน deployment</p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🧾 Pattern: “Review API Gate” — ใช้เมื่อ PR แตะ critical path; template: <code>Trigger: paths/auth/<strong>, payments/</strong> | Effort: Balanced | Human owner: team lead | Done: Copilot comments triaged as fixed/wontfix/incorrect</code>; verify ด้วย sampled human review</p>
+<p>🧪 Pattern: “Effort A/B Log” — รัน Lite vs Balanced บน PR ย้อนหลัง 20 รายการ แล้วเก็บ <code>valid finding</code>, <code>duplicate</code>, <code>missed issue</code>, <code>review time</code>, <code>credit cost</code>; grounded จาก <a href="https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level/" target="_blank" rel="noreferrer">GitHub effort controls</a></p>
+<p>🔐 Pattern: “Self-hosted Agent Checklist” — ก่อนใช้ agentic coding on-prem ให้ถาม data egress, audit logs, update cadence, model isolation และ rollback; ใช้กับสัญญาณอย่าง <a href="https://www.techtalkthai.com/ibm-bob-agentic-ai-on-prem-launch/" target="_blank" rel="noreferrer">IBM Bob self-hosted</a></p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏛️ Treat AI code review as a governed service: API, budget, policy, audit และ feedback taxonomy ต้องอยู่ด้วยกัน ไม่เช่นนั้นทีมจะได้ comment เยอะแต่ไม่รู้ว่า quality ดีขึ้นหรือไม่</p>
+<p>📊 Metric สำคัญวันนี้คือ “accepted useful finding per cost unit” มากกว่า “จำนวน comment” เพราะ review agent ที่ noisy จะทำให้ทีมเลิกใช้เร็ว</p>
+<p>🧯 สำหรับ regulated org ให้เริ่มจาก review-only และ non-production repo ก่อน แล้วค่อยขยับไป agent ที่แก้โค้ดเองพร้อม human gate</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: <a href="https://www.techtalkthai.com/ibm-bob-agentic-ai-on-prem-launch/" target="_blank" rel="noreferrer">TechTalkThai IBM Bob</a> มี local relevance ด้าน on-prem/private cloud สำหรับองค์กรข้อมูลอ่อนไหว</p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: <a href="https://techsauce.co/ai/pathumma-connect-agentic-ai-platform" target="_blank" rel="noreferrer">Techsauce Pathumma Connect</a> ยังเป็นกรณีศึกษาไทยเรื่อง document workflow + MCP ที่ควรดูในมุม audit และ human review</p>
+<h2>Research Digest — Friday</h2>
+<p>📄 <a href="https://huggingface.co/blog/microsoft/thinkingbox" target="_blank" rel="noreferrer">ThinkingBox บน Hugging Face</a> — Core idea: ประเมิน agent จาก side effects ใน backend state ไม่ใช่คำตอบ; Why it matters: production failure มักอยู่ที่ “บอกว่าทำแล้ว” แต่ระบบจริงไม่เปลี่ยน; Takeaway: สร้าง state-based grader; Priority: สูง</p>
+<p>📄 <a href="https://arxiv.org/abs/2605.10787" target="_blank" rel="noreferrer">ComplexMCP</a> — Core idea: benchmark tool sandbox ที่ dynamic/interdependent; Why it matters: agent ที่ผ่าน task เดี่ยวอาจพังเมื่อ tool พึ่งพากัน; Takeaway: test multi-step dependency; Priority: กลาง-สูง</p>
+<p>📄 <a href="https://arxiv.org/abs/2608.05179" target="_blank" rel="noreferrer">Autonomous Research Agents survey</a> — Core idea: AI scientist systems มี verification gap; Why it matters: output ดูเหมือน paper แต่ evidence ยังไม่พอ; Takeaway: ต้องเก็บ traces, seeds, novelty checks; Priority: กลาง</p>
+<h2>Monthly Trend Synthesis — ต้นเดือนตุลาคม 2026</h2>
+<p>📈 Agentic workflow กำลังขยับจาก demo ไปเป็น controlled service: review API, sandbox, MCP, managed runtime และ self-hosted options เริ่มเป็นสิ่งที่ต้องออกแบบร่วมกัน</p>
+<p>🔐 Governance trend เด่นคือ “agent ทำอะไรได้บ้าง” ต้องผูกกับ identity, policy, evidence และ cost controls ไม่ใช่แค่ role-based access แบบเดิม</p>
+  </main>
+</body>
+</html>

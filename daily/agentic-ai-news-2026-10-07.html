@@ -1,0 +1,61 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-10-07</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-10-07</h1>
+    <div class="tags"><span class="tag">Anthropic</span><span class="tag">AWS</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-10-07.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🛡️ <a href="https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available/" target="_blank" rel="noreferrer">GitHub Copilot local sandboxing GA</a> เปิดใช้ใน Copilot CLI, Copilot app และ VS Code Agent Host โดยจำกัด filesystem, network, credentials และ tool execution ตาม policy</p>
+<p>⚡ <a href="https://github.blog/changelog/month/10-2026/" target="_blank" rel="noreferrer">Claude Haiku 5.5 in GitHub Copilot</a> เพิ่ม lightweight model สำหรับ subagents, quick edits และ terminal tasks; เหมาะกับงานปริมาณสูงที่ต้องคุม latency/cost</p>
+<p>🔐 <a href="https://github.blog/changelog/month/10-2026/" target="_blank" rel="noreferrer">GitHub purpose-built model for leaked secret detection</a> สะท้อนว่า AI security scanning กำลังแยก model ตามงานเฉพาะ ไม่ใช่ใช้ general chat model ตรวจทุกอย่าง</p>
+<p>💻 <a href="https://github.blog/changelog/month/10-2026/" target="_blank" rel="noreferrer">GitHub Copilot CLI local model discovery</a> ทำให้ developer workflow เริ่มรวม local models เข้ากับ Copilot CLI โดยไม่ต้องออกจาก terminal</p>
+<p>☁️ <a href="https://aws.amazon.com/blogs/machine-learning/" target="_blank" rel="noreferrer">AWS Introducing Claude Haiku 5.5 on AWS</a> ช่วยให้ทีมที่อยู่บน Bedrock ใช้โมเดลเบาสำหรับ subagents/high-volume tasks ได้ใน governance เดิม</p>
+<h2>ทำไมควรรู้</h2>
+<p>🔐 Local sandboxing GA คือ milestone สำคัญของ agentic coding: autonomy เพิ่มได้เมื่อ tool execution มี boundary ที่ enforce ได้จริง</p>
+<p>💸 Lightweight subagent model ทำให้ multi-agent workflow ถูกลง แต่ต้องมี routing rule ว่างานไหนใช้ small model ได้และงานไหนต้อง escalate</p>
+<p>🧩 Local model discovery ทำให้ hybrid/local workflow น่าสนใจขึ้นสำหรับงาน privacy-sensitive แต่ต้องวัด quality และ policy ให้ชัด</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📚 อ่าน <a href="https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available/" target="_blank" rel="noreferrer">GitHub local sandboxing GA</a> แล้วร่าง policy สำหรับ read/write/network/credential access ในทีม</p>
+<p>📚 อ่าน <a href="https://github.blog/changelog/month/10-2026/" target="_blank" rel="noreferrer">GitHub October changelog</a> เพื่อดู Claude Haiku 5.5, secret detection และ local model discovery ในชุดเดียวกัน</p>
+<p>📚 อ่าน <a href="https://aws.amazon.com/blogs/machine-learning/" target="_blank" rel="noreferrer">AWS Bedrock updates</a> เพื่อเทียบ model availability และ governance เมื่อใช้ Claude Haiku 5.5 บน cloud platform</p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🔐 Pattern: “Sandbox Policy by Task Class” — docs task read/write เฉพาะ docs, test task write เฉพาะ tests, release task network off by default; verify ด้วย intentional denied action</p>
+<p>⚡ Pattern: “Small-Model Subagent Router” — ใช้ Haiku/lightweight model กับ classify, summarize, grep, draft; escalate to stronger model เมื่อแตะ architecture/security; caveat: sample-check output</p>
+<p>🧪 Pattern: “Secret Detection Feedback Loop” — ทุก false positive/false negative ต้อง tag provider, file type, secret shape และ fix path; ใช้ปรับ policy ไม่ใช่แค่ปิด alert</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏛️ Enterprise agent rollout ควรผูก sandbox policy กับ repo sensitivity และ task class ไม่ใช่อนุญาตแบบ all-or-nothing</p>
+<p>📊 Metrics สำคัญ: sandbox block rate, approved escalation rate, local vs cloud model success rate และ secret detection precision/recall</p>
+<p>🧯 แยก model execution กับ tool isolation ให้ชัด: เปลี่ยนโมเดลไม่ควรเปลี่ยนสิทธิ tool execution โดยอัตโนมัติ</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: <a href="https://conf.techtalkthai.com/atf26-schedule/" target="_blank" rel="noreferrer">TechTalkThai AI &amp; Tech Forum Bangkok 2026 schedule</a> มี session เรื่อง governance/FinOps/platform สำหรับ Agentic AI ที่เข้ากับ sandboxing trend โดยตรง</p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: <a href="https://www.techtalkthai.com/tenable-webinar-tenable-hexa-ai-102026/" target="_blank" rel="noreferrer">TechTalkThai Tenable Hexa AI</a> ชี้ว่า security automation ในไทยกำลังขยับจาก prompt assistant ไป agentic remediation</p>
+  </main>
+</body>
+</html>

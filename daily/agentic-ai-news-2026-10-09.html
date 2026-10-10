@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-10-09</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-10-09</h1>
+    <div class="tags"><span class="tag">AWS</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-10-09.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🗞️ <a href="https://github.blog/changelog/month/10-2026/" target="_blank" rel="noreferrer">GitHub Copilot weekly releases — October 5</a> สรุปสัปดาห์ที่ Copilot เพิ่ม sandboxing, model, billing controls, local models และ management surface หลายจุด</p>
+<p>🏗️ <a href="https://aws.amazon.com/blogs/machine-learning/" target="_blank" rel="noreferrer">AWS ICYMI: September 2026 AI builders</a> สรุป Bedrock/AgentCore/Strands: broader model choice, faster serverless agents with evals และ automated KB syncing/connectors</p>
+<p>🧰 <a href="https://aws.amazon.com/blogs/machine-learning/" target="_blank" rel="noreferrer">Postman Agent Mode on Amazon Bedrock</a> เป็น case study production agent สำหรับ 40M developers โดยเน้น tool sprawl, schema-based reads และ context bottleneck</p>
+<p>📊 <a href="https://huggingface.co/blog" target="_blank" rel="noreferrer">Hugging Face blog feed</a> มีหลายบทความวันที่ 7-9 ต.ค. รวมถึง GPU scheduling และ open models; สำหรับ agent teams ประเด็นคือ infra fairness/cost เริ่มกระทบ developer AI workflow</p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: <a href="https://www.techtalkthai.com/category/cloud-and-systems/ai/" target="_blank" rel="noreferrer">TechTalkThai AI category</a> รวมข่าว Agentic AI ไทย/enterprise ล่าสุด เช่น Cisco Webex, Qwen Conference และ security agent webinars</p>
+<h2>ทำไมควรรู้</h2>
+<p>🧭 สัปดาห์นี้ธีมชัดคือ “control plane for agents”: sandbox, billing, model routing, local model, code review API และ workspace agent controls</p>
+<p>🧰 Postman case ย้ำว่าปัญหา agent scale คือ tool design และ context management มากกว่าความฉลาดโมเดลเพียงอย่างเดียว</p>
+<p>📊 AI infra scheduling/fairness สำคัญขึ้นเมื่อ agent runs ยาวขึ้นและรันพร้อมกันหลายงานในทีม</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📚 อ่าน <a href="https://github.blog/changelog/month/10-2026/" target="_blank" rel="noreferrer">GitHub October changelog</a> เพื่อทำ weekly Copilot admin review</p>
+<p>📚 อ่าน <a href="https://aws.amazon.com/blogs/machine-learning/" target="_blank" rel="noreferrer">AWS Machine Learning blog</a> โดยเฉพาะ Postman/ICYMI เพื่อเก็บ production patterns</p>
+<p>📚 อ่าน <a href="https://huggingface.co/blog" target="_blank" rel="noreferrer">Hugging Face Blog</a> เพื่อดู community/research signals ด้าน eval, open models และ infra scheduling</p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>🧰 Pattern: “Tool Sprawl Audit” — list tools ที่ agent ใช้จริง, รวม duplicate, บังคับ schema-based read และกำหนด write tool ให้น้อยที่สุด; verify ด้วย trace sample</p>
+<p>📊 Pattern: “Agent Run Budget Envelope” — ตั้งเพดาน tokens, wall time, tool calls, GPU queue และ retry ต่อ task class; caveat: task ยาวต้องมี checkpoint/resume</p>
+<p>🧪 Pattern: “Weekly Agent Control Review” — ทุกศุกร์ตรวจ sandbox policy, model deprecations, billing settings, failed runs และ security blocks; ใช้ <a href="https://github.blog/changelog/?label=copilot" target="_blank" rel="noreferrer">GitHub changelog</a> เป็น input</p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏛️ Agent platform ที่ดีควรมี catalog ของ tools/skills/models พร้อม owner, cost, permission และ eval status ไม่เช่นนั้นจะเกิด tool sprawl เร็ว</p>
+<p>📊 Production readiness ต้องวัดทั้ง task quality, infra fairness, spending limits และ auditability ในรอบเดียวกัน</p>
+<p>🧯 อย่าให้ agent write tools เพิ่มเองโดยไม่มี review; schema และ side-effect policy คือ boundary สำคัญของ platform</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: <a href="https://www.techtalkthai.com/category/cloud-and-systems/ai/" target="_blank" rel="noreferrer">TechTalkThai AI category</a> วันนี้เหมาะเป็น watchlist ภาษาไทยสำหรับ enterprise AI/agentic updates</p>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: <a href="https://www.techtalkthai.com/techtalkthai-report-qwen-conference-thailand-2026/" target="_blank" rel="noreferrer">Qwen Conference Thailand 2026 report</a> ยังเป็น local signal เรื่อง AI-native future แต่ควรถามหา concrete architecture และ metrics</p>
+<h2>Research Digest — Friday</h2>
+<p>📄 <a href="https://paperswithcode.co/paper/2609.35427" target="_blank" rel="noreferrer">LLMs are General Asynchronous Agents</a> — Core idea: มอง LLM เป็น asynchronous agents แทน sequential loop; Why it matters: real-world agents ต้องรับ stream/tool events พร้อมกัน; Takeaway: ออกแบบ queue/state/checkpoint; Priority: กลาง-สูง</p>
+<p>📄 <a href="https://paperswithcode.co/paper/2609.35432" target="_blank" rel="noreferrer">Self-Evolving Coding Agents</a> — Core idea: coding-agent pattern ขยายไปสู่ physical-world intelligence; Why it matters: feedback/tool verification เป็น common substrate; Takeaway: อย่าข้าม safety boundary เมื่อ agent แตะโลกจริง; Priority: กลาง</p>
+<p>📄 <a href="https://huggingface.co/papers?q=agent" target="_blank" rel="noreferrer">Agent-SafetyBench via Hugging Face Papers</a> — Core idea: benchmark safety ของ LLM agents; Why it matters: agent risk อยู่ที่ action/tool use; Takeaway: เพิ่ม safety test ก่อน production; Priority: สูง</p>
+<p>📄 <a href="https://huggingface.co/papers/2607.26637" target="_blank" rel="noreferrer">Filesystem-Based Memory for LLM Agents</a> — Core idea: agent memory เป็น filesystem ที่ agent อ่าน/เขียน/จัดระเบียบเอง; Why it matters: memory drift และ stale knowledge เป็น operational risk; Takeaway: version memory + summarize + prune; Priority: กลาง</p>
+  </main>
+</body>
+</html>
