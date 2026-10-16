@@ -1,0 +1,54 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-10-13</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-10-13</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-10-13.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>&#129520; <a href="https://cloud.google.com/blog/topics/developers-practitioners/one-agent-development-kit-five-languages" target="_blank" rel="noreferrer">Google เปิด Agent Development Kit ครบ 5 ภาษา</a> — Python, Go, TypeScript, Java และ Kotlin — พร้อม scaffold สำหรับ A2A และ deploy ไป Cloud Run, Gemini Enterprise Agent Runtime หรือ GKE</p>
+<p>&#129504; <a href="https://cloud.google.com/blog/products/ai-machine-learning/gemini-4-argon-available-on-google-cloud" target="_blank" rel="noreferrer">Gemini 4 Argon พร้อมใช้บน Google Cloud</a> โดยเน้นงานหลายขั้นตอนและ domain expertise; ควรประเมินกับ workload จริงก่อนเปลี่ยนโมเดล production</p>
+<p>⚙️ <a href="https://aws.amazon.com/blogs/machine-learning/build-long-horizon-agents-with-grok-4-7-on-amazon-bedrock/" target="_blank" rel="noreferrer">AWS อธิบายการสร้าง long-horizon tool-calling agent</a> ที่วัด correctness และ token cost ตามระดับ reasoning effort แทนการดู benchmark เดี่ยว</p>
+<h2>ทำไมควรรู้</h2>
+<p>&#127959;️ ADK หลายภาษาลดแรงเสียดทานขององค์กร Java/Kotlin/Go ที่ไม่ต้องสร้าง Python sidecar เพียงเพื่อ orchestration แต่ยังต้องกำหนด contract ของ tool, state และ A2A ให้เหมือนกันข้ามภาษา</p>
+<p>&#128184; การตั้ง reasoning effort เป็นตัวแปร runtime หมายความว่า architecture ควร route task ตาม risk/latency/budget พร้อมวัดผลลัพธ์ ไม่ควรใช้ค่าพลังคิดสูงสุดเป็นค่า default</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>&#128218; อ่าน <a href="https://cloud.google.com/blog/topics/developers-practitioners/one-agent-development-kit-five-languages" target="_blank" rel="noreferrer">ADK five languages</a> แล้วเลือกหนึ่ง use case ที่มี tool contract ชัดเจนมาทำ cross-language proof of concept</p>
+<p>&#128218; อ่าน <a href="https://cloud.google.com/blog/products/ai-machine-learning/a-devs-guide-to-production-ready-ai-agents" target="_blank" rel="noreferrer">Google production-ready agents guide</a> เพื่อทบทวน test, memory, orchestration และ security ก่อนย้ายจาก demo</p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>&#129513; Pattern: “Language-neutral Tool Contract” — ใช้เมื่อ agent มีหลาย runtime; กำหนด JSON schema, idempotency key, timeout, error taxonomy และ auth scope ของ tool ไว้กลาง; verify ด้วย contract tests จากทุก SDK อ้างอิง <a href="https://cloud.google.com/blog/topics/developers-practitioners/one-agent-development-kit-five-languages" target="_blank" rel="noreferrer">ADK</a></p>
+<p>&#128202; Pattern: “Reasoning Budget Ladder” — route <code>classify/extract → low</code>, <code>plan → medium</code>, <code>irreversible/high-risk → high + review</code>; verify ด้วย quality/cost per completed outcome ไม่ใช่ token อย่างเดียว อ้างอิง <a href="https://aws.amazon.com/blogs/machine-learning/build-long-horizon-agents-with-grok-4-7-on-amazon-bedrock/" target="_blank" rel="noreferrer">AWS long-horizon agents</a></p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>&#129517; แยก portability สองเรื่อง: SDK หลายภาษาแก้ developer fit แต่ไม่แทน observability, identity, deployment และ policy ที่ต้องเป็นมาตรฐานแพลตฟอร์มเดียวกัน</p>
+<p>&#128272; ก่อนเปิด multi-agent/A2A ให้บังคับ service identity ต่อ agent, explicit tool scopes และ trace correlation ID ข้าม agent เพื่อ audit ได้จริง</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>&#127481;&#127469; ข่าว/โพสต์จากชุมชนไทย: <a href="https://devhub.in.th/th/blog/openai-harness-engineering-codex-zero-code" target="_blank" rel="noreferrer">devhub อธิบาย Harness Engineering</a> เป็นบริบทไทยที่ดีต่อการย้ายจุดสนใจจาก “เลือกโมเดล” ไปสู่ environment, verification และ feedback loop; ให้ยึด <a href="https://openai.com/index/harness-engineering/" target="_blank" rel="noreferrer">ประกาศ OpenAI</a> สำหรับข้อเท็จจริงต้นทาง</p>
+  </main>
+</body>
+</html>

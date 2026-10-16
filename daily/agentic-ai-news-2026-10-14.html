@@ -1,0 +1,54 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-10-14</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-10-14</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-10-14.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>&#128737;️ <a href="https://aws.amazon.com/blogs/opensource/introducing-strands-box-ai-agent-sandboxes-powered-by-dogwood/" target="_blank" rel="noreferrer">AWS Strands Box</a> เปิดแนวทาง sandbox สำหรับ agent ที่ต้องอ่านไฟล์ รันคำสั่ง และเรียก API โดยวาง policy enforcement ไว้ที่ runtime ไม่ใช่หวัง prompt</p>
+<p>&#128270; <a href="https://aws.amazon.com/blogs/machine-learning/evaluate-any-agent-framework-with-amazon-bedrock-agentcore-evaluations/" target="_blank" rel="noreferrer">AWS AgentCore Evaluations รองรับ agent หลาย framework ผ่าน OpenTelemetry</a> โดย reconstruct session จาก agent, inference และ tool spans เพื่อให้ eval ไม่ผูกกับ SDK เดียว</p>
+<p>&#129520; <a href="https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud" target="_blank" rel="noreferrer">Google Data Agent Kit GA</a> เพิ่ม MCP tools และ agent skills เชื่อมบริการ Data Cloud กับ coding agents หลายตัว รวมถึง Codex และ Claude Code</p>
+<h2>ทำไมควรรู้</h2>
+<p>&#128272; Sandbox และ eval เป็น control plane คนละชั้น: sandbox จำกัดสิ่งที่ “ทำได้”; telemetry/eval พิสูจน์สิ่งที่ “ทำไปและได้ผลหรือไม่” ต้องมีทั้งคู่</p>
+<p>&#128207; OpenTelemetry ช่วยลด vendor lock-in หากทีมตกลง semantic conventions, trace IDs และข้อมูลขั้นต่ำของ prompt/tool/result ตั้งแต่ต้น โดยต้อง redact ข้อมูลลับก่อน export</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>&#128218; อ่าน <a href="https://aws.amazon.com/blogs/machine-learning/evaluate-any-agent-framework-with-amazon-bedrock-agentcore-evaluations/" target="_blank" rel="noreferrer">AgentCore evaluation design</a> เพื่อออกแบบชุด trace ขั้นต่ำที่ไม่ผูก provider</p>
+<p>&#128218; อ่าน <a href="https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud" target="_blank" rel="noreferrer">Data Agent Kit</a> หากทีมต้องเปิด data tools ให้ coding agent และต้องการ schema-aware workflow</p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>&#128737;️ Pattern: “Sandbox First, Escalate Later” — เริ่ม <code>network=off, secrets=off, read-only</code> แล้วเพิ่ม capability เฉพาะ task; verify ด้วย negative tests ที่พยายามอ่าน credential/ออก network และต้องถูกปฏิเสธ อ้างอิง <a href="https://aws.amazon.com/blogs/opensource/introducing-strands-box-ai-agent-sandboxes-powered-by-dogwood/" target="_blank" rel="noreferrer">Strands Box</a></p>
+<p>&#128200; Pattern: “Three-Span Minimum” — บันทึก <code>invoke_agent</code>, <code>inference</code>, <code>execute_tool</code> พร้อม outcome/latency/error; caveat: redact prompt และ tool output ก่อนส่ง telemetry อ้างอิง <a href="https://aws.amazon.com/blogs/machine-learning/evaluate-any-agent-framework-with-amazon-bedrock-agentcore-evaluations/" target="_blank" rel="noreferrer">AgentCore Evaluations</a></p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>&#127959;️ ทำ platform contract ให้ agent ทุกตัวส่ง trace ด้วย schema เดียว แล้วค่อยอนุญาตให้ product teams เลือก framework/model ได้ภายใน guardrail เดียวกัน</p>
+<p>&#128272; MCP ที่เชื่อมข้อมูลองค์กรควรเป็น least-privilege data product: จำกัด read scope, query budget, row/column policy และ audit per tool call มากกว่าการแจก connector กว้าง ๆ</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>&#127481;&#127469; ข่าว/โพสต์จากชุมชนไทย: <a href="https://devhub.in.th/blog/agentic-coding" target="_blank" rel="noreferrer">devhub Agentic Coding Tips</a> มีตัวอย่างแยก environment/permission สำหรับงาน agent; เป็นข้อแนะนำชุมชน ไม่ใช่มาตรฐาน security จึงควรตรวจด้วย sandbox policy ของ platform ที่ใช้จริง</p>
+  </main>
+</body>
+</html>

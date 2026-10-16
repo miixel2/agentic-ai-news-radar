@@ -1,0 +1,54 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-10-16</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-10-16</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-10-16.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>&#129517; ยังไม่พบประกาศ primary-source ที่มีนัยสำคัญใหม่ในช่วงต้นวัน; ประเด็นที่ควรตามต่อคือ <a href="https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026" target="_blank" rel="noreferrer">Gemini agent สำหรับองค์กร</a>, <a href="https://cloud.google.com/blog/topics/developers-practitioners/one-agent-development-kit-five-languages" target="_blank" rel="noreferrer">ADK หลายภาษา</a> และ <a href="https://aws.amazon.com/blogs/machine-learning/trust-in-depth-giving-agents-more-autonomy-without-losing-control/" target="_blank" rel="noreferrer">Trust in Depth ของ AWS</a></p>
+<p>&#128272; สัญญาณร่วมของสัปดาห์คือ agent platform กำลัง productize “identity + sandbox + policy + telemetry” เป็นชุดเดียว; อย่าตีความ feature announcement ว่าระบบพร้อมใช้งาน production โดยไม่ผ่าน threat model และ eval ขององค์กร</p>
+<h2>ทำไมควรรู้</h2>
+<p>&#127959;️ ความสามารถใหม่ทำให้ทีมสร้าง agent ได้เร็วขึ้น แต่คอขวดจริงย้ายไปอยู่ที่การกำหนดสิทธิ์, evidence, error recovery และ ownership ของ tool/data integration</p>
+<p>&#128201; ความเสี่ยงเชิงปฏิบัติยังอยู่ที่ cost runaway, tool misuse, prompt injection ผ่านข้อมูลภายนอก และ review queue ที่ล้นเมื่อ agent ถูกใช้มากขึ้น</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>&#128218; ใช้ <a href="https://cloud.google.com/blog/products/ai-machine-learning/a-devs-guide-to-production-ready-ai-agents" target="_blank" rel="noreferrer">Google production-ready agents guide</a> เป็น checklist แบ่ง pilot ที่เล็ก ตรวจสอบได้ และ reversible</p>
+<p>&#128218; ใช้ <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS AgentOps</a> เป็น reference สำหรับ versioning, evaluation และ observability แม้ไม่ได้ใช้ AWS</p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>✅ Pattern: “Evidence-Backed Handoff” — เมื่อ agent ส่งงานต่อ ให้ส่ง <code>objective, changed state, source/tool IDs, tests run, unresolved risk, rollback</code>; verify โดยผู้รับทำซ้ำ verification query ได้โดยไม่เชื่อคำว่า done อ้างอิง <a href="https://aws.amazon.com/blogs/machine-learning/evaluate-any-agent-framework-with-amazon-bedrock-agentcore-evaluations/" target="_blank" rel="noreferrer">AgentCore evaluation model</a></p>
+<p>&#129514; Pattern: “Canary Tool Rollout” — เปิด tool ใหม่กับ task class/tenant เล็ก, จำกัด calls และ require audit ก่อนขยาย; caveat: canary ต้องมี representative adversarial inputs ไม่ใช่ happy path อย่างเดียว อ้างอิง <a href="https://aws.amazon.com/blogs/machine-learning/trust-in-depth-giving-agents-more-autonomy-without-losing-control/" target="_blank" rel="noreferrer">AWS Trust in Depth</a></p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>&#129517; แผนที่แนะนำ: (1) inventory agent/tools/data, (2) กำหนด risk tiers และ permission ladder, (3) instrumentation/eval baseline, (4) canary พร้อม rollback, (5) ขยายตาม outcome ที่วัดได้</p>
+<p>&#128272; Definition of done สำหรับ agent capability ควรมี owner, identity, scope, trace, quality threshold, spend limit และ offboarding path เสมอ</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>&#127481;&#127469; ข่าว/โพสต์จากชุมชนไทย: <a href="https://devhub.in.th/th/blog/openai-harness-engineering-codex-zero-code" target="_blank" rel="noreferrer">devhub Harness Engineering</a> เหมาะเป็น material ภาษาไทยสำหรับ workshop เรื่อง repo legibility, test/CI และ verification loop; อ้างอิง <a href="https://openai.com/index/harness-engineering/" target="_blank" rel="noreferrer">OpenAI original</a> เมื่อต้องใช้ตัวเลขหรือข้ออ้างเชิงเทคนิค</p>
+<p>&#127481;&#127469; ข้อสังเกต: ยังไม่พบข่าวไทยใหม่ที่มี technical evidence สูงพอในรอบนี้ จึงไม่สรุปโพสต์ซ้ำหรือข่าว engagement-only</p>
+  </main>
+</body>
+</html>

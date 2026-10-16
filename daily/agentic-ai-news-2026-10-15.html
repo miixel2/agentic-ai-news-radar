@@ -1,0 +1,54 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-10-15</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-10-15</h1>
+    <div class="tags"><span class="tag">Anthropic</span><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-10-15.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>&#128737;️ <a href="https://aws.amazon.com/blogs/machine-learning/trust-in-depth-giving-agents-more-autonomy-without-losing-control/" target="_blank" rel="noreferrer">AWS เสนอ “Trust in Depth” สำหรับ agent autonomy</a> โดยแยก deterministic controls ออกจากการใช้ human judgment และเตือนเรื่อง approval fatigue</p>
+<p>☁️ <a href="https://cloud.google.com/blog/products/data-analytics/borderless-lakehouse-integrates-with-gemini" target="_blank" rel="noreferrer">Google Borderless Lakehouse เชื่อม Gemini</a> เพื่อให้ agents ใช้ข้อมูลข้าม cloud โดยลดการย้ายข้อมูล; เป็น architecture claim ที่ต้องพิสูจน์ data governance และ latency ในบริบทตนเอง</p>
+<p>&#128272; <a href="https://www.anthropic.com/news/2026-usage-policy-update" target="_blank" rel="noreferrer">Anthropic อัปเดต Usage Policy 2026</a> เพิ่มตัวอย่างการใช้โมเดลในงานอิสระยาวขึ้น, high-risk domains และ physical actions — policy product ไม่ใช่ substitute สำหรับองค์กรที่ต้องออกแบบ controls ของตนเอง</p>
+<h2>ทำไมควรรู้</h2>
+<p>&#129517; “คนอนุมัติทุกอย่าง” ไม่ scale; ทางออกคือ deterministic guardrails สำหรับ action ที่นิยามได้ และ human review เฉพาะความกำกวม/ผลกระทบสูง พร้อม queue ที่จัดลำดับความเสี่ยง</p>
+<p>&#128272; การให้ agent ข้าม data estate ยกระดับโจทย์จาก RAG quality ไปสู่ data access, lineage, residency, query cost และ evidence ที่ตอบกลับผู้ใช้ได้</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>&#128218; อ่าน <a href="https://aws.amazon.com/blogs/machine-learning/trust-in-depth-giving-agents-more-autonomy-without-losing-control/" target="_blank" rel="noreferrer">AWS Trust in Depth</a> คู่กับ <a href="https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS AgentOps</a> เพื่อแปลงจากหลักคิดไปเป็น governance/build/eval/observability</p>
+<p>&#128218; อ่าน <a href="https://www.anthropic.com/news/2026-usage-policy-update" target="_blank" rel="noreferrer">Anthropic policy update</a> แล้วเทียบกับ use-case register ขององค์กร โดยเฉพาะ health, finance, surveillance และ external actions</p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>&#129517; Pattern: “Risk-Routed Approval” — ให้ policy engine auto-allow งาน read-only/low-impact, auto-deny งานต้องห้าม และส่งเฉพาะ action ambiguous/high-impact เข้าคิว reviewer; verify ด้วย false-approve/false-block rate อ้างอิง <a href="https://aws.amazon.com/blogs/machine-learning/trust-in-depth-giving-agents-more-autonomy-without-losing-control/" target="_blank" rel="noreferrer">AWS Trust in Depth</a></p>
+<p>&#129534; Pattern: “Answer With Data Provenance” — ทุก tool response ส่ง dataset/source, access policy, timestamp และ query ID กลับมาพร้อมคำตอบ; caveat: อย่าให้ provenance เองเผย metadata ต้องห้าม อ้างอิง <a href="https://cloud.google.com/blog/products/data-analytics/borderless-lakehouse-integrates-with-gemini" target="_blank" rel="noreferrer">Google Lakehouse</a></p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>&#127959;️ สร้าง approval service กลาง แยกจาก agent runtime เพื่อบังคับ policy, retention และ segregation of duties ได้สม่ำเสมอทุก use case</p>
+<p>&#128202; เพิ่ม metrics: automation rate ตาม risk tier, reviewer load, override rate, time-to-evidence และ data-access denials เพื่อมองเห็นทั้ง safety และ productivity</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>&#127481;&#127469; ข่าว/โพสต์จากชุมชนไทย: <a href="https://devhub.in.th/en/showcase/thanawin/appgu-ai-agent-builder/" target="_blank" rel="noreferrer">AppGu บน devhub</a> เป็นตัวอย่าง community showcase ของ agent/LINE bot แบบ multi-tenant ในไทย; ใช้เป็นสัญญาณ use case ท้องถิ่น ไม่ใช่หลักฐานรับรองความปลอดภัยหรือความพร้อมใช้งาน</p>
+  </main>
+</body>
+</html>
