@@ -1,0 +1,54 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-10-17</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-10-17</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-10-17.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<p>🧪 <a href="https://cloud.google.com/blog/topics/developers-practitioners/four-eval-engineering-lessons/" target="_blank" rel="noreferrer">Google Cloud: four evaluation-engineering lessons</a> ชี้ว่าให้วัด trace และผลของ tool call ไม่ใช่ให้ LLM-as-a-judge ดูเพียงข้อความสรุปท้ายงาน เพราะอาจตีว่าล้มเหลวทั้งที่ agent ทำขั้นตอนสำคัญครบแล้ว</p>
+<p>🔐 <a href="https://github.blog/changelog/?label=copilot&amp;opened-months=10" target="_blank" rel="noreferrer">GitHub Copilot changelog</a> ระบุว่า agentic autofix สำหรับ code-scanning alerts พร้อมใช้งานทั่วไป และมีการปรับ enterprise managed-settings; ทีมที่ใช้ต้องทบทวนสิทธิ์, reviewer และการยอมรับ patch ตามนโยบายของตน</p>
+<p>🛡️ <a href="https://aws.amazon.com/blogs/machine-learning/trust-in-depth-giving-agents-more-autonomy-without-losing-control/" target="_blank" rel="noreferrer">AWS: Trust in Depth</a> เสนอว่าการเพิ่ม autonomy ไม่ควรจบที่ human approval ทุกจุด แต่ต้องประกอบด้วย policy, evidence, sandbox และการตรวจสอบผลลัพธ์เป็นชั้น ๆ</p>
+<h2>ทำไมควรรู้</h2>
+<p>📏 คุณภาพของ agent อยู่ที่ execution ที่ตรวจสอบย้อนกลับได้ ไม่ใช่ความลื่นไหลของ final answer; สถาปัตยกรรมที่เก็บ tool trace และ state change จึงเป็น prerequisite ของการปล่อยงานจริง</p>
+<p>🏢 ฟีเจอร์ coding agent ที่นำ action ไปใช้กับ code/security alert ช่วยลดเวลาได้ แต่เปลี่ยน risk profile จาก “คำแนะนำ” เป็น “การเปลี่ยนระบบ” จึงต้องมี branch protection และ policy gate ที่สอดคล้องกัน</p>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<p>📚 อ่าน <a href="https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-generally-available/" target="_blank" rel="noreferrer">GitHub agentic autofix GA</a> ควบคู่กับการกำหนด severity, ownership และ test ที่ patch ต้องผ่านก่อน merge</p>
+<p>📚 ใช้ <a href="https://aws.amazon.com/blogs/machine-learning/evaluate-any-agent-framework-with-amazon-bedrock-agentcore-evaluations/" target="_blank" rel="noreferrer">AWS AgentCore evaluations</a> เป็นตัวอย่างการแยก evaluation ออกจาก framework แม้ระบบหลักจะไม่ได้อยู่บน AWS</p>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<p>✅ Pattern: “Trace-first Eval” — ใช้เมื่อ agent มี tools หรือ side effects; เก็บ <code>intent → tool arguments → response → state delta → final claim</code> และ rubric ต่อขั้น; caveat: ต้อง redaction ข้อมูลลับก่อนส่งเข้า evaluator อ้างอิง <a href="https://cloud.google.com/blog/topics/developers-practitioners/four-eval-engineering-lessons/" target="_blank" rel="noreferrer">Google eval lessons</a></p>
+<p>🧰 Pattern: “Security-fix PR gate” — ใช้กับ agentic autofix: จำกัด scope ต่อ alert, บังคับ tests + SAST ซ้ำ, และ require code-owner approval; caveat: อย่า auto-merge เพียงเพราะ severity สูง อ้างอิง <a href="https://github.blog/changelog/?label=copilot&amp;opened-months=10" target="_blank" rel="noreferrer">GitHub Changelog</a></p>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<p>🏗️ แยก control plane (identity, policy, budgets, approvals) ออกจาก execution plane (agent, tools, sandbox) และส่ง trace กลับมาเชื่อมกับ change/incident record เสมอ</p>
+<p>🔐 เกณฑ์ go-live ควรเป็น “พิสูจน์ได้ว่าใครทำอะไรกับข้อมูล/ระบบใดและ rollback อย่างไร” ไม่ใช่เพียง benchmark ผ่านหรือ demo สำเร็จ</p>
+<h2>Thai Ecosystem Watch</h2>
+<p>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: ยังไม่พบโพสต์ใหม่ที่มีหลักฐานเชิงเทคนิคสูงพอในวันนี้ จึงไม่สรุปข่าวซ้ำ; ใช้ <a href="https://devhub.in.th/th/blog/openai-harness-engineering-codex-zero-code" target="_blank" rel="noreferrer">devhub: Harness Engineering</a> เป็นสื่อภาษาไทยประกอบการอธิบายเรื่อง repo legibility และ verification loop ได้ โดยตรวจข้ออ้างกับ <a href="https://openai.com/index/harness-engineering/" target="_blank" rel="noreferrer">OpenAI original</a> ก่อนนำไปใช้ตัดสินใจ</p>
+  </main>
+</body>
+</html>
