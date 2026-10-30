@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-10-20</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-10-20</h1>
+    <div class="tags"><span class="tag">AWS</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-10-20.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<ul>
+<li>🧭 ยังไม่พบ primary-source ใหม่ที่มีนัยสูงต่อ agent platform ในวันที่ตรวจย้อนหลัง; ใช้ <a href="https://aws.amazon.com/blogs/machine-learning/migrate-agentic-workloads-to-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS AgentCore migration guide</a> เป็นกรอบทบทวน production readiness</li>
+</ul>
+<h2>ทำไมควรรู้</h2>
+<ul>
+<li>🏗️ ย้าย agent ไม่ใช่แค่ย้าย model call: session isolation, durable state, tool auth และ patching เป็นภาระที่ต้องมี owner</li>
+</ul>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<ul>
+<li>📚 อ่าน <a href="https://aws.amazon.com/blogs/machine-learning/migrate-agentic-workloads-to-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS migration stages</a> เพื่อแยก “hosted agent” ออกจาก “เปลี่ยน harness”</li>
+</ul>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<ul>
+<li>🧪 Pattern: “Stage-1 hosting first” — ย้าย runtime/gateway/memory โดยคง graph เดิมก่อน; เหมาะเมื่ออยากลด infra risk; verify tool traces และ session isolation ก่อน refactor orchestration</li>
+</ul>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<ul>
+<li>📊 ตั้ง SLO ของ agent เป็น task success + blocked unsafe action + approval latency + cost ไม่ใช่ token throughput อย่างเดียว</li>
+</ul>
+<h2>Thai Ecosystem Watch</h2>
+<ul>
+<li>🇹🇭 ไม่มีสัญญาณไทยเฉพาะวันที่ยืนยันได้; เริ่ม pilot ใน data classification ต่ำและให้ทีม security ร่วมออก acceptance criteria</li>
+</ul>
+  </main>
+</body>
+</html>
