@@ -1,0 +1,87 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-10-31</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-10-31</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-10-31.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<ul>
+<li>🤖 <a href="https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available/" target="_blank" rel="noreferrer">GitHub Agentic Workflows GA</a>: เขียน workflow งาน reasoning เช่น triage, วิเคราะห์ CI, docs และ tests เป็น Markdown แล้ว compile เป็น GitHub Actions; ค่าเริ่มต้นเป็น read-only พร้อม sandbox, Agent Workflow Firewall, safe-output validation และ threat-detection job</li>
+</ul>
+<ul>
+<li>☁️ <a href="https://github.blog/changelog/2026-10-28-work-from-anywhere-with-a-new-connected-copilot-cloud-experience/" target="_blank" rel="noreferrer">Copilot cloud experience</a> รวม session เดียวระหว่าง GitHub, Mobile, CLI, VS Code, Slack และ Teams; paid plans ได้ cloud sandbox แบบ isolated/resumable และต้องบริหารสิทธิ์ MCP/connector ตาม enterprise policy</li>
+</ul>
+<ul>
+<li>🧠 <a href="https://github.blog/changelog/2026-10-28-github-intelligence-puts-your-code-context-and-history-to-work/" target="_blank" rel="noreferrer">GitHub intelligence: Memory และ Dreaming</a> ให้ Copilot เก็บความจำระดับบุคคล/repository ข้าม session; Dreaming เป็น preview และ opt-in โดยการเปลี่ยน skills/instructions ที่ check-in ถูกเสนอเป็น PR แต่ใช้ AI credits</li>
+</ul>
+<ul>
+<li>🛡️ <a href="https://cloud.google.com/blog/topics/ai-infrastructure/introducing-agent-compute-engine-and-expanded-agent-governance/" target="_blank" rel="noreferrer">Google Agent Compute Engine และ governance</a> ประกาศ preview ที่จะมา โดยเน้น hardware-isolated sandbox, unified identity, policy และ auditability สำหรับ workload agent ที่ไม่น่าเชื่อถือ</li>
+</ul>
+<h2>ทำไมควรรู้</h2>
+<ul>
+<li>🧱 การทำ agent ในองค์กรกำลังย้ายจาก “รัน prompt” เป็น managed execution plane: policy, identity, sandbox, budget, trace และ approval ต้องออกแบบร่วมกับ workflow ตั้งแต่วันแรก</li>
+</ul>
+<ul>
+<li>💳 Cloud agent ที่ resume ได้เพิ่ม productivity แต่เปลี่ยนรูปความเสี่ยงและต้นทุน: ตรวจ runner/compute entitlement, data boundary, retention และ MCP allowlist แยกตาม repository ก่อนเปิดใช้กว้าง</li>
+</ul>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<ul>
+<li>📚 อ่าน <a href="https://aws.amazon.com/blogs/machine-learning/building-trust-in-ai-agents-a-production-ready-evaluation-framework-with-amazon-bedrock-agentcore/" target="_blank" rel="noreferrer">AWS evaluation framework สำหรับ AgentCore</a> เพื่อวาง continuous quality loop ที่วัดได้ ไม่ยอมรับเพียง demo ที่ตอบดูน่าเชื่อ</li>
+</ul>
+<ul>
+<li>📚 อ่าน <a href="https://openai.com/index/introducing-the-agents-api/" target="_blank" rel="noreferrer">OpenAI Agents API</a> เพื่อเทียบ managed harness, subagents และ sandbox กับแนวทาง GitHub/AWS/Google ก่อนเลือก control plane</li>
+</ul>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<ul>
+<li>📝 Pattern: “Markdown workflow → reviewed execution” — ใช้เมื่อต้อง automation งานซ้ำใน repo; เก็บ prompt, input scope, expected evidence และ stop condition ในไฟล์เดียว แล้ว compile/run ผ่าน CI; verify ด้วย read-only default, branch protection และ test fixture ก่อนให้ agent เขียนจริง</li>
+</ul>
+<ul>
+<li>🧠 Pattern: “Memory-as-code” — ใช้กับคำสั่งทดสอบ, definition of done และ convention ที่ทีมใช้ซ้ำ; เก็บ repository memory/skill ใน version control และให้การเปลี่ยนผ่าน PR; caveat: อย่าปล่อย memory ที่ model สรุปเองเป็น policy โดยไม่มี owner review</li>
+</ul>
+<ul>
+<li>🔐 Pattern: “Cloud-agent admission checklist” — ก่อนเปิด sandbox หรือ MCP ให้ตรวจ identity/SSO, repo scope, network egress, secret access, tool allowlist, spend cap และ trace retention; ทดลองกับ repo ต่ำความเสี่ยงก่อนและทดสอบการ revoke สิทธิ์</li>
+</ul>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<ul>
+<li>🧭 เลือก framework ตาม control plane ที่มีอยู่: ถ้า CI/repo คือศูนย์กลาง ให้เริ่ม workflow ที่มี deterministic checks; ถ้าเป็นงานข้ามระบบ ให้กำหนด workload identity และ tool gateway ก่อนเพิ่ม autonomy</li>
+</ul>
+<ul>
+<li>📏 KPI ที่ควรวัดควบคู่ velocity คือ pass rate ของ validation, escaped defect, manual-review rate, tool-denial/approval rate, cost ต่อ successful task และเวลา rollback—not จำนวน task ที่ agent ปิดได้</li>
+</ul>
+<h2>Thai Ecosystem Watch</h2>
+<ul>
+<li>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: <a href="https://www.techtalkthai.com/llm-d-1-0-cncf-production-ready-distributed-ai-inference/" target="_blank" rel="noreferrer">TechTalkThai รายงาน llm-d 1.0</a> ชี้โจทย์ production ของ agentic serving เช่น multi-tenant QoS, context reuse และ traffic ที่คาดเดายาก; ควรตรวจ release note/CNCF ต้นทางก่อนตัดสินใจนำไปใช้</li>
+</ul>
+<ul>
+<li>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: <a href="https://techsauce.co/news/openai-fellow-intelligence-thailand-partnership-2026" target="_blank" rel="noreferrer">Techsauce: OpenAI &#215; Fellow Intelligence</a> เป็นสัญญาณการนำ enterprise AI สู่ตลาดไทย; สำหรับ pilot ควรยืนยันขอบเขตข้อมูล, PDPA, Thai-language evaluation และผู้อนุมัติ action กับผู้ให้บริการโดยตรง</li>
+</ul>
+  </main>
+</body>
+</html>
