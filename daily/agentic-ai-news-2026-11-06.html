@@ -1,0 +1,95 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-11-06</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-11-06</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Google</span><span class="tag">Microsoft</span><span class="tag">Research</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-11-06.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<ul>
+<li>⚙️ <a href="https://cloud.google.com/blog/products/containers-kubernetes/open-infrastructure-for-autonomous-agents-comes-to-cncf" target="_blank" rel="noreferrer">Google: Agent Substrate on GKE/CNCF</a> เป็นสัญญาณชัดว่า production agent ต้องมี runtime สำหรับ state, sandbox และ subagent—not เพียง orchestration library</li>
+</ul>
+<ul>
+<li>🧑‍⚖️ <a href="https://cloud.google.com/blog/topics/consulting/lessons-for-adopting-ai-agents" target="_blank" rel="noreferrer">Google: people-first agent adoption</a> ชี้ให้ human-directed workflow เป็นแกนการเปลี่ยนผ่านองค์กร แทนการให้ autonomy เต็มรูปแบบตั้งแต่เริ่ม</li>
+</ul>
+<ul>
+<li>🧰 <a href="https://openai.com/index/scaling-git-at-openai/" target="_blank" rel="noreferrer">OpenAI: Scaling Git at OpenAI</a> ทำให้เห็นว่าเมื่อ coding agents ทำงานพร้อมกัน source-control throughput และ merge governance กลายเป็น architectural concern</li>
+</ul>
+<ul>
+<li>🤖 <a href="https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november/" target="_blank" rel="noreferrer">GitHub: Copilot model retirement</a> มี deadline 16 พ.ย. สำหรับโมเดลที่ระบุ; ผู้ดูแลควรตรวจ policy และ smoke test ก่อนเปลี่ยน</li>
+</ul>
+<h2>ทำไมควรรู้</h2>
+<ul>
+<li>🧱 สัปดาห์นี้ภาพรวมเปลี่ยนจาก “เลือก model/agent framework” เป็น “ออกแบบ execution + data + identity + review plane” ที่ตรวจสอบและกู้คืนได้</li>
+</ul>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<ul>
+<li>📚 <a href="https://developers.openai.com/api/docs/deprecations" target="_blank" rel="noreferrer">OpenAI API deprecations</a>: Evals, reusable prompts และ Agent Builder มีกำหนดปิด 30 พ.ย. 2026—ตรวจ inventory/migration ตอนนี้</li>
+</ul>
+<ul>
+<li>📚 <a href="https://developers.openai.com/api/docs/changelog" target="_blank" rel="noreferrer">OpenAI API changelog</a>: ใช้เป็น source of truth สำหรับ Agents API, sandbox และ MCP security changes</li>
+</ul>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<ul>
+<li>🧪 “Recovery game day” — ใช้กับ agent ที่เรียกเครื่องมือจริง: ตัด worker/หมดอายุ credential/ให้ tool timeout แล้วตรวจว่า resume จาก checkpoint, ไม่ทำ action ซ้ำ และทิ้ง trace ครบ</li>
+</ul>
+<ul>
+<li>📝 “Policy-as-code skill” — เก็บ allowed tools, data classes, approval thresholds และ test cases ไว้ใน repo; ให้ PR review ก่อน policy เปลี่ยน และใช้ unit test ตรวจ deny path</li>
+</ul>
+<ul>
+<li>📊 “Agent rollout scorecard” — วัด task success ที่ผ่าน validation, rollback, human escalation, denied-tool rate, latency และ cost/task; อย่าวัดเพียงจำนวน action หรือ LOC</li>
+</ul>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<ul>
+<li>🧭 เลือก managed runtime เมื่อความเร็วและ control plane สำเร็จรูปสำคัญ; เลือก Kubernetes/open runtime เมื่อต้องควบคุม network, tenancy และ lifecycle อย่างลึก—ทั้งสองทางยังต้องมี policy gateway และ evidence store</li>
+</ul>
+<h2>Thai Ecosystem Watch</h2>
+<ul>
+<li>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: <a href="https://techsauce.co/review/81fb2aa9-f99f-46ca-9860-2fa77684d9f9" target="_blank" rel="noreferrer">Techsauce: Sea &#215; OpenAI Codex Hackathon</a> เป็นโอกาสให้ทีมไทยทดลอง production-grade agentic work; ยืนยันวัน/เงื่อนไขกับผู้จัดก่อนวางแผน</li>
+</ul>
+<h2>Friday Research Digest</h2>
+<ul>
+<li>📄 <strong><a href="https://cloud.google.com/blog/products/containers-kubernetes/open-infrastructure-for-autonomous-agents-comes-to-cncf" target="_blank" rel="noreferrer">Open infrastructure for autonomous agents</a></strong> — แกนคิด: agent loop ต้องมี sandbox/state/runtime; สำคัญเพราะย้ายความเสี่ยงจาก prompt ไปสู่ workload platform; takeaway: เริ่มด้วย checkpoint และ identity ต่อ task; <strong>อ่าน: สูง</strong></li>
+</ul>
+<ul>
+<li>📄 <strong><a href="https://cloud.google.com/blog/topics/consulting/lessons-for-adopting-ai-agents" target="_blank" rel="noreferrer">Leading in the agentic era</a></strong> — แกนคิด: งานให้ agent execute แต่คนยังชี้ทิศ/ตัดสินใจ; takeaway: ออกแบบ ownership และ escalation ก่อนเพิ่ม autonomy; <strong>อ่าน: สูง</strong></li>
+</ul>
+<ul>
+<li>📄 <strong><a href="https://openai.com/index/scaling-git-at-openai/" target="_blank" rel="noreferrer">Scaling Git at OpenAI</a></strong> — แกนคิด: concurrent coding agents เปลี่ยน SCM เป็น infrastructure; takeaway: วัด PR/CI/merge queue ก่อนขยาย fleet; <strong>อ่าน: กลาง-สูง</strong></li>
+</ul>
+<ul>
+<li>📄 <strong><a href="https://developers.openai.com/api/docs/deprecations" target="_blank" rel="noreferrer">OpenAI deprecations</a></strong> — แกนคิด: platform lifecycle เป็นความเสี่ยงของ agent architecture; takeaway: ทำ migration inventory และ regression suite ก่อน deadline; <strong>อ่าน: สูงสำหรับทีม OpenAI</strong></li>
+</ul>
+<h2>Monthly Trend Synthesis</h2>
+<ul>
+<li>📈 ต้นเดือนพฤศจิกายนเห็นสามแนวโน้ม: runtime agent เริ่มเป็น platform concern, governance ต้องฝังใน identity/data/tool layer, และ coding-agent scale กระทบ CI/SCM; เดือนนี้ควรทำ inventory ของ tools/credentials/models, เลือกหนึ่ง workflow ที่ reversible และทำ recovery+approval drill ก่อนขยายผล</li>
+</ul>
+  </main>
+</body>
+</html>
