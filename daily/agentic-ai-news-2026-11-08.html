@@ -1,0 +1,93 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-11-08</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-11-08</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-11-08.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<ul>
+<li>🧩 <a href="https://developers.openai.com/api/docs/changelog" target="_blank" rel="noreferrer">OpenAI API Changelog: Agents API sessions ปรับ tool ได้กลาง session</a> — การเปลี่ยน tool set จะมีผลกับ model call ถัดไปสำหรับ function/MCP และ turn ถัดไปสำหรับ built-in tools; context compaction แบบ background เป็นค่าเริ่มต้น จึงต้องประเมินผลกระทบต่อ cost และการสืบย้อนเหตุผลของ agent</li>
+</ul>
+<ul>
+<li>🗂️ <a href="https://openai.com/index/openai-to-acquire-pierre/" target="_blank" rel="noreferrer">OpenAI เข้าซื้อ Pierre Computer Company</a> เพื่อขยายเครื่องมือจัดการ/ทำความเข้าใจ/review code ของ Codex; สัญญาณสำคัญคือ workflow Git ต้องรองรับการแตกงานขนานของ coding agents ไม่ใช่แค่เพิ่มความเร็วในการ generate code</li>
+</ul>
+<ul>
+<li>🛡️ <a href="https://cloud.google.com/blog/products/identity-security/helping-you-build-and-defend-at-machine-speed-in-the-agentic-era" target="_blank" rel="noreferrer">Google Cloud: security ในยุค agentic</a> ยกตัวอย่าง CodeMender ที่แยกการยืนยันช่องโหว่และการจำลอง exploit ใน sandbox/VM พร้อม human-in-the-loop ก่อนเขียนไฟล์หรือสั่งคำสั่ง—เป็นแนวทางลด blast radius ที่นำไปใช้กับ agent อื่นได้</li>
+</ul>
+<ul>
+<li>🔐 <a href="https://cloud.google.com/blog/products/data-analytics/query-enterprise-data-in-gemini-with-data-cloud-connectors" target="_blank" rel="noreferrer">Google Data Cloud connectors for Gemini</a> อยู่ใน preview สำหรับถามข้อมูล enterprise แบบ natural language โดยย้ำการบังคับ row/column-level security และ end-user credentials; อย่าตีความว่า connector แก้ปัญหา data authorization แทนการออกแบบ policy</li>
+</ul>
+<ul>
+<li>☁️ <a href="https://aws.amazon.com/blogs/aws/category/artificial-intelligence/" target="_blank" rel="noreferrer">AWS Weekly Roundup: Step Functions เป็น agent tools</a> ชี้ทิศทางเชื่อม workflow ที่ deterministic เข้ากับ agent ผ่านเครื่องมือที่มี state/permission ชัดเจน แทนเปิดสิทธิ์ cloud API แบบกว้างให้ model เรียกโดยตรง</li>
+</ul>
+<h2>ทำไมควรรู้</h2>
+<ul>
+<li>🧭 ความยืดหยุ่นของ tool ระหว่าง session ทำให้ agent ปรับตัวเร็วขึ้น แต่เพิ่มความเสี่ยง configuration drift: trace ต้องบันทึก tool manifest, version, identity และ policy decision ของทุก turn ที่มีผลกระทบ</li>
+</ul>
+<ul>
+<li>🔏 การให้ agent ค้นข้อมูลสดหรือแก้ vulnerability ต้องใช้ least privilege สองชั้น: จำกัด identity/data scope ก่อน แล้วจำกัด execution/sandbox อีกชั้น; human review เป็น control สำหรับ action ที่ย้อนกลับยาก ไม่ใช่แค่ปุ่มยืนยัน</li>
+</ul>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<ul>
+<li>🧪 <a href="https://developers.openai.com/api/docs/guides/agent-builder" target="_blank" rel="noreferrer">OpenAI Agent Builder transition note</a> — Agent Builder ถูกประกาศ deprecate และมีกำหนดปิด 30 พ.ย. 2026; ทีมที่ใช้ visual workflow ควร inventory workflow, export/deploy code และซ้อม regression ก่อน deadline</li>
+</ul>
+<ul>
+<li>📊 <a href="https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud" target="_blank" rel="noreferrer">BigQuery observability for data agents</a> — ใช้เป็นตัวอย่าง baseline: ดู performance, adoption, latency, cost และ multi-turn traces ร่วมกัน ก่อนขยาย conversational analytics</li>
+</ul>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<ul>
+<li>🧾 <strong>Tool-manifest snapshot</strong> — ใช้เมื่อ agent เปลี่ยน tools/MCP ระหว่างงาน: บันทึก <code>session_id</code>, tool name/version, scopes, policy hash และเวลา ก่อนทุก privileged call; เทียบ diff กับ allowlist ใน CI. *Caveat:* ต้อง redaction token/PII ออกจาก trace ก่อนเก็บระยะยาว</li>
+</ul>
+<ul>
+<li>🧱 <strong>Deterministic workflow wrapper</strong> — ใช้เมื่อ agent ต้องทำงาน cloud ที่มีผลกระทบ: ให้ agent เลือกเฉพาะ input แล้วเรียก Step Function/workflow ที่กำหนด state, retry และ IAM ล่วงหน้า; ตัวอย่าง prompt: <code>เลือก action จาก allowlist และส่ง only typed inputs; ถ้าไม่มี action ที่ตรง ให้ escalate</code>. *ตรวจ:* ทดสอบ deny path, duplicate request และ rollback</li>
+</ul>
+<ul>
+<li>🧯 <strong>Two-phase security remediation</strong> — ใช้กับ agent หา/แก้ช่องโหว่: phase 1 ให้ตรวจ/จำลองใน isolated sandbox แบบ read-only, phase 2 สร้าง patch + test และรอ human approval ก่อน write/merge. *ตรวจ:* ยืนยันว่า sandbox ไม่มี production credential และ artifact จาก phase 1 แนบกับ PR</li>
+</ul>
+<ul>
+<li>🔄 <strong>Workflow exit plan</strong> — ใช้กับ visual/managed agent builder ที่มีประกาศเปลี่ยนแปลง: ส่งออก DAG/config, เก็บ golden test inputs/expected tool calls แล้วรัน parity test บน runtime เป้าหมาย. *Caveat:* อย่าวัดแค่คำตอบสุดท้าย—ตรวจ tool-call order, permission denial และ recovery ด้วย</li>
+</ul>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<ul>
+<li>🏗️ วาง “agent change management” เป็น production capability: ทุกการปรับ model, tool, instruction หรือ policy ต้องมี owner, versioned manifest, eval suite และ rollout/rollback path เหมือนการเปลี่ยน service API</li>
+</ul>
+<ul>
+<li>🔒 สำหรับ enterprise data agent ให้ identity เป็นของผู้ใช้หรือ workload ที่ตรวจสอบได้ ไม่ใช่ shared super-service account; ทำ permission boundary ที่ data connector และ execution runtime แยกกัน พร้อม trace ที่เชื่อมคำถาม → query/tool → outcome</li>
+</ul>
+<h2>Thai Ecosystem Watch</h2>
+<ul>
+<li>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: <a href="https://devhub.in.th/th/blog/binance-hacked-by-fake-job-interview-ai-tool-2026" target="_blank" rel="noreferrer">devhub: กรณี AI coding tool ใน fake job interview</a> เป็นสื่อเตือนภัยที่เข้าใจง่ายสำหรับทีมไทยเกี่ยวกับ repository/installer และสิทธิ์ของ coding agent; รายละเอียด incident เป็นการสรุปจากชุมชน จึงควรยืนยันกับรายงานผู้เสียหาย/forensics ก่อนใช้ใน risk register</li>
+</ul>
+<ul>
+<li>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: <a href="https://www.techtalkthai.com/category/products/" target="_blank" rel="noreferrer">TechTalkThai: Snowflake CoCo/CoWork Bots</a> ชี้ว่าตลาด enterprise เริ่มออกแบบ agent ให้ทำงานเบื้องหลังและเรียกคนเฉพาะจุดอนุมัติ; ใช้เป็นประเด็น workshop ได้ แต่ควรตรวจเอกสาร Snowflake โดยตรงสำหรับ availability, data boundary และข้อกำหนดในไทย</li>
+</ul>
+  </main>
+</body>
+</html>

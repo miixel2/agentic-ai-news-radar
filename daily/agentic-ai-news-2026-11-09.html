@@ -1,0 +1,103 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic AI News - 2026-11-09</title>
+  <style>
+    :root { --ink:#142438; --muted:#64748b; --line:#e2e8f0; --accent:#1667d9; --tag:#edf3fb; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none !important; }
+    body { margin:0; padding:24px 26px 42px; color:var(--ink); background:#fff; font-family:"Segoe UI",Tahoma,Arial,sans-serif; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); padding-bottom:16px; margin-bottom:18px; }
+    h1 { margin:0 0 7px; font-size:1.48rem; letter-spacing:-.02em; }
+    h2 { font-size:1.12rem; color:#173a67; margin:24px 0 8px; }
+    p { margin:10px 0; }
+    ul { padding-left:25px; margin:8px 0; }
+    li { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 5px; background:#f0f4f9; border-radius:5px; font-size:.91em; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .tag { padding:3px 10px; border-radius:999px; font-size:.78rem; color:#4a5e76; background:var(--tag); }
+    .source { color:var(--muted); font-size:.83rem; margin-top:8px; }
+    @media (max-width:640px) { body { padding:17px 15px 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI News Radar - 2026-11-09</h1>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">Google</span><span class="tag">AWS</span><span class="tag">Safety</span><span class="tag">Thai</span><span class="tag">Prompting</span><span class="tag">Skills</span><span class="tag">Workflow</span></div>
+    <div class="source">Generated from sources/agentic-ai-news-2026-11-09.md</div>
+  </header>
+  <main>
+    <h2>ข่าวสำคัญ</h2>
+<ul>
+<li>📊 <a href="https://github.blog/changelog/2026-11-05-usage-metrics-api-adds-code-review-details-and-addressed-rate/" target="_blank" rel="noreferrer">GitHub: Usage metrics เพิ่ม code-review addressed rate</a> — รายงานระดับ enterprise/org เห็นว่าความเห็นจาก Copilot ถูกจัดการจริงกี่รายการ แยก severity, review tier และแหล่ง customization (instructions/skills/MCP) ได้; ให้วัดเมื่อ PR merge จึงไม่ควรนำไปตีความเป็นคุณภาพแบบ real-time</li>
+</ul>
+<ul>
+<li>🧭 <a href="https://cloud.google.com/blog/topics/consulting/lessons-for-adopting-ai-agents" target="_blank" rel="noreferrer">Google Cloud: บทเรียนการนำ AI agents ไปใช้</a> เสนอให้ redesign งานเป็น “agent-executed, human-directed”: ให้ agent รับงาน routine/parallel และส่งเฉพาะกรณีกำกวมหรือใช้ judgment สูงให้คนตัดสินใจ แทนการให้คนตรวจทุกจุดจน workflow ช้า</li>
+</ul>
+<ul>
+<li>🛡️ <a href="https://aws.amazon.com/blogs/architecture/how-tui-scales-threat-modeling-for-100-teams-with-amazon-bedrock/" target="_blank" rel="noreferrer">AWS: TUI ขยาย threat modeling สู่ 100+ ทีมด้วย Bedrock</a> เป็น case study การวางมาตรฐาน security assessment ให้ agent ช่วยทำซ้ำได้ในวงกว้าง; ตัวเลขผลลัพธ์เป็นรายงานจากผู้ให้บริการ จึงควรใช้เป็นแนวทางสถาปัตยกรรม ไม่ใช่ SLA ที่ย้ายมาใช้ได้ทันที</li>
+</ul>
+<ul>
+<li>🧰 <a href="https://developers.openai.com/api/docs/guides/agents-api/overview" target="_blank" rel="noreferrer">OpenAI Agents API overview</a> ย้ำขอบเขตความรับผิดชอบที่ควรแยกชัด: managed harness ดูแล session/orchestration/context recovery ขณะที่แอปเป็นเจ้าของ tools, MCP และ execution environment—จุดตัดนี้คือ security boundary และต้นทุนหลักของ production agent</li>
+</ul>
+<h2>ทำไมควรรู้</h2>
+<ul>
+<li>📐 การใช้งาน agent ที่ “เยอะ” ไม่เท่ากับสร้างผลลัพธ์: KPI ที่ดีต้องเชื่อม tool trace → PR/decision → ผลตรวจโดยคนหรือ CI → remediation/rollback และแยก missing telemetry ออกจากการไม่มีการใช้งาน</li>
+</ul>
+<ul>
+<li>🔒 การยกระดับ autonomy ควรผูกกับระดับความย้อนกลับได้: เริ่มจากสรุป/วิเคราะห์แบบ read-only, ไปสู่ PR ที่มี CI, แล้วค่อยเปิด action ที่มี approval และ audit trail ครบ</li>
+</ul>
+<h2>น่าลอง/น่าอ่านต่อ</h2>
+<ul>
+<li>📈 <a href="https://github.blog/changelog/2026-11-05-usage-metrics-api-flags-telemetry-and-version-gaps/" target="_blank" rel="noreferrer">GitHub: telemetry และ version gaps ใน Usage Metrics API</a> — ใช้แยก “ไม่มี detail เพราะ client/extension/proxy” ออกจาก “ทีมไม่ใช้”; ค่า <code>null</code>/missing คือ data unavailable ไม่ใช่ศูนย์</li>
+</ul>
+<ul>
+<li>🧪 <a href="https://aws.amazon.com/blogs/architecture/automating-agentic-ai-well-architected-reviews-with-the-aws-agentic-ai-lens/" target="_blank" rel="noreferrer">AWS: Agentic AI Well-Architected Lens</a> — ตัวอย่างเปลี่ยน best-practice checklist เป็น skill ที่สร้างหลักฐาน review; ตรวจให้ human ยืนยัน evidence และ exception ก่อนปิด finding</li>
+</ul>
+<h2>เทคนิค/Skills/Workflow น่าลอง</h2>
+<ul>
+<li>🧾 <strong>Outcome-backed review metric</strong> — ใช้เมื่อ rollout Copilot code review: เก็บ <code>comments_evaluated</code>, <code>comments_addressed</code>, severity และผล CI/incident ตาม repository; template: <code>addressed_rate + escaped_defects + median_review_time</code>. *ตรวจ:* ระวังนับซ้ำ เพราะ metric ถูกลงวันที่ merge และอาจรวม bot PR บางส่วน</li>
+</ul>
+<ul>
+<li>🚦 <strong>Graduated autonomy matrix</strong> — ใช้เมื่อเลือกงานให้ agent: กำหนดระดับ <code>read → draft → PR → execute</code> พร้อม tool allowlist, identity, rollback และ approver สำหรับแต่ละระดับ. *ตรวจ:* ทดสอบ deny path/credential expiry และยืนยันว่า policy เปลี่ยนระดับไม่ได้ด้วย prompt เพียงอย่างเดียว</li>
+</ul>
+<ul>
+<li>🔍 <strong>Evidence-first architecture review skill</strong> — ใช้เมื่อ agent ช่วย threat model: ให้ output เป็น <code>asset → threat → control → evidence link → owner → due date</code> แทน prose; ให้ skill เปิด finding ได้ แต่ห้ามปิด finding เอง. *Caveat:* coverage ของ agent ไม่ใช่หลักฐานว่าระบบปลอดภัย ต้องสุ่ม review โดย security engineer</li>
+</ul>
+<h2>มุมมองสำหรับ Solution Architect</h2>
+<ul>
+<li>🏗️ ทำให้ “evidence plane” เป็นส่วนหนึ่งของ platform ตั้งแต่ต้น: event schema เดียวควรผูก actor/identity, model+instruction version, tool permission, input class, policy decision, output, human action และ business outcome เพื่อให้ audit และ cost attribution ตอบคำถามเดียวกันได้</li>
+</ul>
+<ul>
+<li>🔐 สำหรับ coding agents ให้ ownership ของ skill/MCP/custom instructions ชัดเจนตาม repository; ใช้ metrics เพื่อหา drift หรือ adoption gap แต่ให้ CI, code owner และ security review เป็น source of truth สำหรับความถูกต้อง</li>
+</ul>
+<h2>Thai Ecosystem Watch</h2>
+<ul>
+<li>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: <a href="https://techsauce.co/pr-news/sea-x-openai-hackathon-thailand" target="_blank" rel="noreferrer">Techsauce: Sea x OpenAI Regional Codex Hackathon ที่ไทย</a> เป็นสัญญาณว่าโจทย์ “autonomous/adaptive AI, AI-native operations, deep-domain AI” เริ่มถูกหยิบมาสร้างในชุมชนไทย; ข่าวระบุวันจัด 21 พ.ย. 2569 แต่กำหนดสมัครที่เผยแพร่คือ 23 ต.ค. จึงควรตรวจสถานะกับผู้จัดโดยตรงก่อนอ้างอิงหรือเข้าร่วม</li>
+</ul>
+<ul>
+<li>🇹🇭 ข่าว/โพสต์จากชุมชนไทย: <a href="https://www.techtalkthai.com/google-cloud-launches-gemini-agent-for-enterprise-supports-claude/" target="_blank" rel="noreferrer">TechTalkThai: Gemini agent สำหรับองค์กร</a> ช่วยสรุปมุม local ของ agent ที่มี identity/governance/cost control; เป็นบทความสื่อไทยและข่าวเดิม จึงควรยืนยัน availability, data residency และเงื่อนไขสัญญาจาก <a href="https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026" target="_blank" rel="noreferrer">ประกาศ Google Cloud ต้นทาง</a> ก่อนออกแบบใช้งานจริง</li>
+</ul>
+<h2>Weekly Brief — 3–9 พ.ย. 2026</h2>
+<ul>
+<li>🗓️ <strong>What changed:</strong> สัปดาห์นี้สัญญาณหลักไม่ใช่ model ใหม่ แต่เป็น control plane ที่ละเอียดขึ้น—GitHub เพิ่ม metrics สำหรับ code review/telemetry และ Google เน้น ownership กับ human-directed workflows; การเปลี่ยนแปลง Copilot วันที่ 5–6 พ.ย. ถูกบันทึกในรายงานก่อนหน้าแล้ว</li>
+</ul>
+<ul>
+<li>🛠️ <strong>Impact for builders:</strong> เริ่มกับ workflow ที่ output ตรวจได้ เช่น review, threat-model draft หรือ data investigation แบบ read-only; นิยาม input/output schema, human handoff และ golden cases ก่อนเพิ่ม tools หรือ subagents</li>
+</ul>
+<ul>
+<li>✅ <strong>Production readiness:</strong> พร้อมเมื่อมี least-privilege identity, sandbox/tool boundary, trace ที่ redacted, CI/eval gate, rollback และ owner ของทุก skill/MCP—not เพียงแค่ agent ทำ demo สำเร็จ</li>
+</ul>
+<ul>
+<li>⚠️ <strong>Security/governance risk:</strong> dashboard ที่ telemetry ขาดหรือ metric รวมผิด cohort ทำให้ตัดสินใจจากข้อมูลหลอกได้; review feedback ที่ “addressed” ก็ยังไม่ยืนยันว่าการแก้ถูกต้อง จึงต้องตามด้วย tests และ post-merge signals</li>
+</ul>
+<ul>
+<li>🇹🇭 <strong>Thai relevance / study next:</strong> ใช้ hackathon และสื่อชุมชนเป็นช่องทางทดลอง skill/workflow ในโจทย์ไทย แต่ยึด primary docs เป็นฐาน; หัวข้อที่ควรศึกษาในสัปดาห์หน้า: agent identity, evidence contracts, review-provenance และ human-exception queue</li>
+</ul>
+  </main>
+</body>
+</html>
